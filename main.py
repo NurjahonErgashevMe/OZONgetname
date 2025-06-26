@@ -26,7 +26,7 @@ def read_links():
 def validate_ozon_url(url):
     """Проверяет, является ли ссылка валидным URL Ozon"""
     # Обновленное регулярное выражение для поддержки всех поддоменов
-    if not re.match(r'^https?://([a-z]+\.)?ozon\.(ru|kz|com|by|uz)', url, re.IGNORECASE):
+    if not re.search(r'([a-z]+\.)?ozon\.(ru|kz|com|by|uz)', url, re.IGNORECASE):
         return False
     if "/category/" not in url:
         return False
@@ -45,23 +45,23 @@ def main():
     
     # Запрос ссылки у пользователя
     while True:
-        target_url = input("\nВведите ссылку на категорию Ozon (например: https://www.ozon.ru/category/sistemnye-bloki-15704/): ")
-        
-        # Нормализация URL (удаление пробелов)
+        target_url = input("\nВведите ссылку на категорию Ozon: ")
         target_url = target_url.strip()
         
         if not validate_ozon_url(target_url):
-            logger.error("Некорректная ссылка! Пример правильной ссылки: https://www.ozon.ru/category/sistemnye-bloki-15704/")
-            logger.error("Или: https://uz.ozon.com/category/kompyuternye-i-ofisnye-kresla-38450/")
+            logger.error("Некорректная ссылка! Примеры правильных ссылок:")
+            logger.error("- https://www.ozon.ru/category/sistemnye-bloki-15704/")
+            logger.error("- https://uz.ozon.com/category/kompyuternye-i-ofisnye-kresla-38450/")
             continue
         
-        # Извлекаем имя категории
         category_name = get_category_from_url(target_url)
         logger.info(f"Категория: {category_name}")
         break
     
     # Этап 1: Парсинг ссылок
     logger.info("\n=== ЭТАП 1: ПАРСИНГ ССЫЛОК ===")
+    logger.info(f"Целевое количество ссылок: {TOTAL_LINKS}")
+    
     link_parser = OzonLinkParser(target_url)
     success, product_urls = link_parser.run()
     
@@ -69,12 +69,9 @@ def main():
         logger.error("Не удалось собрать ссылки. Завершение работы.")
         return
     
-    # Этап 2: Чтение ссылок
-    logger.info("\n=== ЭТАП 2: ЧТЕНИЕ ССЫЛОК ===")
-    logger.info(f"Прочитано ссылок: {len(product_urls)}")
-    
-    # Этап 3: Парсинг товаров
-    logger.info("\n=== ЭТАП 3: ПАРСИНГ ТОВАРОВ ===")
+    # Этап 2: Парсинг товаров
+    logger.info("\n=== ЭТАП 2: ПАРСИНГ ТОВАРОВ ===")
+    logger.info(f"Количество товаров: {len(product_urls)}")
     logger.info(f"Количество воркеров: {WORKER_COUNT}")
     
     product_parser = OzonProductParser(category_name)

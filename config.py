@@ -1,6 +1,6 @@
 import os
-from datetime import datetime
 import re
+from datetime import datetime
 
 # Общие настройки
 CHROMEDRIVER_PATH = r"C:\chromedriver-win64\chromedriver.exe"
@@ -9,10 +9,9 @@ WORKER_COUNT = 3
 
 # Настройки для парсера ссылок
 LINKS_OUTPUT_FILE = "links.txt"
-TOTAL_LINKS = 100
-BATCH_SIZE = 10
-MAX_SCROLL_ATTEMPTS = 20
-SCROLL_DELAY = 3
+TOTAL_LINKS = 100  # Целевое количество ссылок
+MAX_IDLE_SCROLLS = 5  # Максимум скроллов без новых ссылок
+SCROLL_DELAY = 1.5  # Задержка между скроллами
 LOAD_TIMEOUT = 15
 
 # Папка для результатов

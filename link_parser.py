@@ -13,10 +13,8 @@ class OzonLinkParser:
         self.driver = None
         self.unique_links = set()
         self.ordered_links = []
-        self.scroll_attempts = 0
+        self.idle_scrolls = 0  # Счетчик скроллов без новых ссылок
         self.logger = logging.getLogger('link_parser')
-        
-        # Извлекаем имя категории
         self.category_name = get_category_name(target_url)
         self.logger.info(f"Категория: {self.category_name}")
 
@@ -24,6 +22,8 @@ class OzonLinkParser:
         options = uc.ChromeOptions()
         options.add_argument("--disable-blink-features=AutomationControlled")
         options.add_argument("--start-maximized")
+        options.add_argument("--disable-infobars")
+        options.add_argument("--disable-extensions")
         
         self.driver = uc.Chrome(
             driver_executable_path=CHROMEDRIVER_PATH,
@@ -38,6 +38,7 @@ class OzonLinkParser:
             self.logger.info(f"Загрузка страницы: {self.target_url}")
             self.driver.get(self.target_url)
             
+            # Ожидаем появления хотя бы одного товара
             WebDriverWait(self.driver, LOAD_TIMEOUT).until(
                 EC.presence_of_element_located((By.CSS_SELECTOR, ".tile-root"))
             )
@@ -48,7 +49,12 @@ class OzonLinkParser:
             return False
 
     def scroll_page(self):
-        self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+        """Выполняет плавный скролл до конца страницы"""
+        # Плавный скролл вместо резкого прыжка
+        scroll_height = self.driver.execute_script("return document.body.scrollHeight")
+        for i in range(0, scroll_height, 300):
+            self.driver.execute_script(f"window.scrollTo(0, {i});")
+            time.sleep(0.05)
         time.sleep(SCROLL_DELAY)
 
     def extract_links(self):
@@ -63,15 +69,17 @@ class OzonLinkParser:
         new_links = current_links - self.unique_links
         
         if new_links:
+            self.logger.info(f"Найдено новых ссылок: {len(new_links)}")
             for link in new_links:
                 self.unique_links.add(link)
                 self.ordered_links.append(link)
             
-            new_count = len(self.ordered_links)
-            self.logger.info(f"Найдено новых ссылок: {len(new_links)} | Всего: {new_count}/{TOTAL_LINKS}")
-            self.scroll_attempts = 0
+            # Сбрасываем счетчик скроллов без изменений
+            self.idle_scrolls = 0
             return True
-        return False
+        else:
+            self.idle_scrolls += 1
+            return False
 
     def save_links(self):
         try:
@@ -92,19 +100,27 @@ class OzonLinkParser:
                 self.logger.info(f"Начальное количество ссылок: {len(self.ordered_links)}/{TOTAL_LINKS}")
             
             # Основной цикл сбора
-            while len(self.ordered_links) < TOTAL_LINKS and self.scroll_attempts < MAX_SCROLL_ATTEMPTS:
+            while len(self.ordered_links) < TOTAL_LINKS and self.idle_scrolls < MAX_IDLE_SCROLLS:
                 self.scroll_page()
-                self.scroll_attempts += 1
                 
-                if not self.collect_links():
-                    self.logger.info(f"Новых ссылок не обнаружено. Попытка: {self.scroll_attempts}/{MAX_SCROLL_ATTEMPTS}")
+                if self.collect_links():
+                    current_count = len(self.ordered_links)
+                    self.logger.info(f"Всего ссылок: {current_count}/{TOTAL_LINKS}")
+                
+                # Проверяем, не достигли ли мы конца страницы
+                new_scroll_height = self.driver.execute_script("return document.body.scrollHeight")
+                old_scroll_height = self.driver.execute_script("return window.pageYOffset + window.innerHeight")
+                
+                if new_scroll_height <= old_scroll_height:
+                    self.logger.info("Достигнут конец страницы")
+                    break
             
             # Финализация
-            self.save_links()
             final_count = len(self.ordered_links)
+            self.save_links()
             
             if final_count < TOTAL_LINKS:
-                self.logger.warning(f"Собрано только {final_count} из {TOTAL_LINKS} ссылок")
+                self.logger.warning(f"Собрано только {final_count} из {TOTAL_LINKS} ссылок (причина: {'конец страницы' if self.idle_scrolls < MAX_IDLE_SCROLLS else 'нет новых ссылок'})")
             else:
                 self.logger.info(f"Успешно собрано {final_count} ссылок")
                 

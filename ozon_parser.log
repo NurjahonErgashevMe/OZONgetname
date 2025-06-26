@@ -466,3 +466,392 @@ Stacktrace:
 2025-06-26 06:36:52,245 - main - INFO - 
 === ПАРСИНГ УСПЕШНО ЗАВЕРШЕН ===
 2025-06-26 06:36:52,245 - main - INFO - Отчет сохранен: C:\Users\nurja\OneDrive\Рабочий стол\ozon_parser\results\kompyuternye-i-ofisnye-kresla-38450_26.06.2025-06_33_55.xlsx
+2025-06-26 06:44:25,876 - main - INFO - === ЗАПУСК ПАРСЕРА OZON ===
+2025-06-26 06:44:30,516 - main - INFO - Категория: kompyuternye-i-ofisnye-kresla-38450
+2025-06-26 06:44:30,517 - main - INFO - 
+=== ЭТАП 1: ПАРСИНГ ССЫЛОК ===
+2025-06-26 06:44:30,517 - main - INFO - Целевое количество ссылок: 100
+2025-06-26 06:44:30,517 - link_parser - INFO - Категория: kompyuternye-i-ofisnye-kresla-38450
+2025-06-26 06:44:31,990 - link_parser - INFO - Браузер инициализирован
+2025-06-26 06:44:31,995 - link_parser - INFO - Загрузка страницы: https://uz.ozon.com/category/kompyuternye-i-ofisnye-kresla-38450/?category_was_predicted=true&deny_category_prediction=true&from_global=true&text=%D0%BA%D1%80%D0%B5%D1%81%D0%BB%D0%BE+%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D0%BE%D0%B5
+2025-06-26 06:44:37,649 - link_parser - INFO - Страница успешно загружена
+2025-06-26 06:44:38,103 - link_parser - INFO - Найдено новых ссылок: 12
+2025-06-26 06:44:38,104 - link_parser - INFO - Начальное количество ссылок: 12/100
+2025-06-26 06:44:41,627 - link_parser - INFO - Найдено новых ссылок: 24
+2025-06-26 06:44:41,627 - link_parser - INFO - Всего ссылок: 36/100
+2025-06-26 06:44:50,267 - link_parser - INFO - Найдено новых ссылок: 24
+2025-06-26 06:44:50,267 - link_parser - INFO - Всего ссылок: 60/100
+2025-06-26 06:45:00,952 - link_parser - INFO - Найдено новых ссылок: 32
+2025-06-26 06:45:00,953 - link_parser - INFO - Всего ссылок: 92/100
+2025-06-26 06:45:07,753 - link_parser - INFO - Найдено новых ссылок: 24
+2025-06-26 06:45:07,754 - link_parser - INFO - Всего ссылок: 116/100
+2025-06-26 06:45:07,764 - link_parser - INFO - Ссылки сохранены в файл: C:\Users\nurja\OneDrive\Рабочий стол\ozon_parser\links.txt
+2025-06-26 06:45:07,766 - link_parser - INFO - Успешно собрано 116 ссылок
+2025-06-26 06:45:08,316 - link_parser - INFO - Браузер закрыт
+2025-06-26 06:45:08,317 - main - INFO - 
+=== ЭТАП 2: ПАРСИНГ ТОВАРОВ ===
+2025-06-26 06:45:08,318 - main - INFO - Количество товаров: 116
+2025-06-26 06:45:08,318 - main - INFO - Количество воркеров: 3
+2025-06-26 06:45:08,319 - product_parser - INFO - Файл результатов: results\kompyuternye-i-ofisnye-kresla-38450_26.06.2025-06_45_08.xlsx
+2025-06-26 06:45:08,320 - product_parser - INFO - Начало обработки 116 товаров
+2025-06-26 06:45:10,273 - product_parser - INFO - Воркер 1 запущен
+2025-06-26 06:45:10,843 - product_parser - INFO - Воркер 2 запущен
+2025-06-26 06:45:11,820 - product_parser - INFO - Воркер 3 запущен
+2025-06-26 06:45:25,534 - product_parser - INFO - [1/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-ofisnoe-dlya-rukovoditelya-1674586686/?at=pZtpgAE5oTBJK6PwIKy0OOQsJR0Rn9fxJyMy7Ck22726
+2025-06-26 06:45:25,534 - product_parser - INFO -    Товар: Кресло компьютерное офисное, для руководителя
+2025-06-26 06:45:25,535 - product_parser - INFO -    Продавец: DAGLI SHOP
+2025-06-26 06:45:25,690 - product_parser - INFO - [2/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-igrovoe-ofisnoe-cherno-seryy-geymerskiy-stul-gamelab-tetra-660008696/?at=gpt4vG58yUKOLvpoIDl2PXDt4nOGrpfO7PE9JhgpN3X3
+2025-06-26 06:45:25,691 - product_parser - INFO -    Товар: Кресло компьютерное игровое, офисное, Черно-серый геймерский стул GAMELAB TETRA
+2025-06-26 06:45:25,692 - product_parser - INFO -    Продавец: Бизнес-фабрика
+2025-06-26 06:45:34,302 - product_parser - INFO - [3/116] УСПЕШНО: https://uz.ozon.com/product/topchairs-ofisnoe-kreslo-chernyy-new-1164853326/?at=16tLrqw8GHmVRAjRtqQYJ90s2oGLpqHko34APSm9kQ33
+2025-06-26 06:45:34,304 - product_parser - INFO -    Товар: Topchairs Офисное кресло, черный new
+2025-06-26 06:45:34,304 - product_parser - INFO -    Продавец: ООО «Стул Груп»
+2025-06-26 06:45:40,711 - product_parser - INFO - [4/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-igrovoe-knight-wolf-chernyy-seryy-1711910189/?at=qQtJgX69NcMrGmRnHKxGPzocrlGz2AhYxE7p5UwE13W
+2025-06-26 06:45:40,712 - product_parser - INFO -    Товар: Кресло игровое Knight Wolf черный/серый
+2025-06-26 06:45:40,713 - product_parser - INFO -    Продавец: БЮРОКРАТ
+2025-06-26 06:45:41,372 - product_parser - INFO - [5/116] УСПЕШНО: https://uz.ozon.com/product/mychair-kreslo-kompyuternoe-igrovoe-geymerskiy-igrovoy-stul-velyur-chernyy-1157850781/?at=mqtkVWLvlFxrw3mmTR7rx0kUo6ZvBQu07MmRlc2OvwrQ
+2025-06-26 06:45:41,373 - product_parser - INFO -    Товар: MyChair Кресло компьютерное игровое, геймерский игровой стул Велюр Черный
+2025-06-26 06:45:41,374 - product_parser - INFO -    Продавец: Chair Empire
+2025-06-26 06:45:46,601 - product_parser - INFO - [6/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-yeeler-kreslo-ofisnoe-stul-reguliruemyy-po-vysote-s-podstavkoy-pod-nogi-1899850974/?at=PjtJB3AQXcAl3AD2IPWjGQjI0wOjZKUZLKkVRhANLDrY
+2025-06-26 06:45:46,602 - product_parser - INFO -    Товар: Кресло компьютерное, YEELER, кресло офисное, стул, регулируемый по высоте, с подставкой под ноги, механизм качания
+2025-06-26 06:45:46,604 - product_parser - INFO -    Продавец: ЙИЛЕРМебель
+2025-06-26 06:45:52,591 - product_parser - INFO - [7/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-igrovoe-kompyuternoe-knight-cyber-f-chernyy-1714115456/?at=VvtzVgjMyT52LMBxSzz5kYJt8rk5K9U9B05MRCALl5JM
+2025-06-26 06:45:52,591 - product_parser - INFO -    Товар: Кресло игровое компьютерное Knight Cyber/F черный
+2025-06-26 06:45:52,592 - product_parser - INFO -    Продавец: БЮРОКРАТ
+2025-06-26 06:45:53,102 - product_parser - INFO - [8/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-igrovoe-stul-kompyuternyy-1999937820/?at=28t0L8o73h1gjq0Ysp542PxfmqVQx2tNmP56zHGpnO5z
+2025-06-26 06:45:53,103 - product_parser - INFO -    Товар: Кресло компьютерное игровое, стул компьютерный
+2025-06-26 06:45:53,103 - product_parser - INFO -    Продавец: DAGLI SHOP
+2025-06-26 06:46:02,886 - product_parser - INFO - [9/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-igrovoe-gamelab-nomad-black-ekokozha-chernyy-1239781553/?at=46tRZlAr5t3lMwBvuGyoXAJt5g14npHL1VB6jS1G4G7Z
+2025-06-26 06:46:02,888 - product_parser - INFO -    Товар: Кресло компьютерное игровое GAMELAB NOMAD Black (экокожа, черный)
+2025-06-26 06:46:02,891 - product_parser - INFO -    Продавец: Бизнес-фабрика
+2025-06-26 06:46:08,496 - product_parser - INFO - [10/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-igrovoe-knight-wolf-chernyy-ekokozha-1711910104/?at=z6tOX4NKqc3gOOXcwPA3NmT9vQDl6hGQKkjkUMzEyjj
+2025-06-26 06:46:08,499 - product_parser - INFO -    Товар: Кресло игровое Knight Wolf черный экокожа
+2025-06-26 06:46:08,500 - product_parser - INFO -    Продавец: БЮРОКРАТ
+2025-06-26 06:46:11,880 - product_parser - INFO - [11/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-kreslo-ofisnoe-stul-yeeler-reguliruemyy-po-vysote-s-podstavkoy-pod-nogi-2229711109/?at=OgtEDvr3xhrYyMo5TWMMzXwuKE0Q7xT6QwrDzFVNX7yv
+2025-06-26 06:46:11,881 - product_parser - INFO -    Товар: Кресло компьютерное, кресло офисное, стул, YEELER, регулируемый по высоте, с подставкой под ноги, механизм качания
+2025-06-26 06:46:11,882 - product_parser - INFO -    Продавец: КомфортиК
+2025-06-26 06:46:14,989 - product_parser - INFO - [12/116] УСПЕШНО: https://uz.ozon.com/product/kompyuternoe-ofisnoe-kreslo-detskoe-kreslo-dlya-ucheby-uyutnyy-ugoloknd2005-chernyy-belyy-2001859341/?at=mqtkVWLvlFwlnMJLfxqm7G3iq27KrkI27Do4KU1MVvxR
+2025-06-26 06:46:14,990 - product_parser - INFO -    Товар: Компьютерное офисное кресло, детское кресло для учебы, Uyutnyy UgolokND2005, черный + белый + подголовник, внутренняя отделка из сетки/ткани
+2025-06-26 06:46:14,990 - product_parser - INFO -    Продавец: Comfort corner
+2025-06-26 06:46:23,246 - product_parser - INFO - [13/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-igrovoe-knight-nitro-sero-goluboy-chernyy-s-podstavkoy-dlya-nog-1627426678/?at=x6tPpxqZvF7G2BYNcBGrx36UYymw5QhYNAjVouJXJ1nv
+2025-06-26 06:46:23,246 - product_parser - INFO -    Товар: Кресло игровое Knight Nitro серо-голубой/черный с подставкой для ног
+2025-06-26 06:46:23,248 - product_parser - INFO -    Продавец: БЮРОКРАТ
+2025-06-26 06:46:29,155 - product_parser - INFO - [14/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-m1-na-kolesikah-setka-chernyy-1602676358/?at=K8tZQ4xLWh8vyA0wtPLO2omHgWnJlZTnDz3M6s7qnjYg
+2025-06-26 06:46:29,155 - product_parser - INFO -    Товар: Кресло компьютерное M1 на колесиках, сетка, черный
+2025-06-26 06:46:29,155 - product_parser - INFO -    Продавец: Red Line
+2025-06-26 06:46:36,204 - product_parser - INFO - [15/116] УСПЕШНО: https://uz.ozon.com/product/kompyuternoe-shkolnoe-kreslo-na-kolesikah-byroom-office-staff-vc6001plb-g-dlya-raboty-za-892017647/?at=nRtr4mpnDCNK4BmtyLlOvjt1OGEDnhKGzoNPCv3WZq3
+2025-06-26 06:46:36,204 - product_parser - INFO -    Товар: Компьютерное школьное кресло на колесиках BYROOM Office Staff VC6001plb-G для работы за компьютером ПК. Взрослый крутящийся офисный стул для школьника, руководителя с ортопедической спинкой
+2025-06-26 06:46:36,205 - product_parser - INFO -    Продавец: DiRetail
+2025-06-26 06:46:44,187 - product_parser - INFO - [16/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-shkolnoe-na-kolesikah-dlya-kompyutera-pk-byroom-office-sub-black-dc155-b-stul-1680776808/?at=57twy6YA9cJjzKJxU19wj7XhKNQkqOcwlQ8DGfwVjqWr
+2025-06-26 06:46:44,187 - product_parser - INFO -    Товар: Кресло компьютерное школьное на колесиках для компьютера ПК BYROOM Office Sub black DC155-B. Стул офисный крутящийся взрослый со спинкой для руководителя, школьника
+2025-06-26 06:46:44,188 - product_parser - INFO -    Продавец: DiRetail
+2025-06-26 06:46:50,313 - product_parser - INFO - [17/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-igrovoe-ofisnoe-geymerskiy-igrovoy-stul-gamelab-warlock-784030062/?at=jYtZzR1gmhV8xygNSl415LmCZ7197Mun0K6xwHE6OM7m
+2025-06-26 06:46:50,314 - product_parser - INFO -    Товар: Кресло компьютерное игровое, офисное, геймерский игровой стул GAMELAB WARLOCK
+2025-06-26 06:46:50,314 - product_parser - INFO -    Продавец: Бизнес-фабрика
+2025-06-26 06:46:51,700 - product_parser - INFO - [18/116] УСПЕШНО: https://uz.ozon.com/product/emperor-camp-igrovoe-kompyuternoe-kreslo-cherno-beloe-bez-934823083/?at=57twy6YA9cWOWKLjhnYBgllcvWzXN4hlQ4309sLO5XGN
+2025-06-26 06:46:51,701 - product_parser - INFO -    Товар: EMPEROR CAMP Игровое компьютерное кресло, черно-белое(Без)
+2025-06-26 06:46:51,701 - product_parser - INFO -    Продавец: Emperor Camp
+2025-06-26 06:46:56,431 - product_parser - INFO - [19/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-yeeler-kreslo-ofisnoe-myagkoe-stul-reguliruemyy-po-vysote-s-podstavkoy-pod-nogi-1899871016/?at=NOtwYj5o3czpYrKc6nRyv4fZj7vZJS5R0O2GCPq917E
+2025-06-26 06:46:56,431 - product_parser - INFO -    Товар: Кресло компьютерное, YEELER, кресло офисное, мягкое, стул, регулируемый по высоте, с подставкой под ноги, механизм качания
+2025-06-26 06:46:56,432 - product_parser - INFO -    Продавец: ЙИЛЕРМебель
+2025-06-26 06:47:15,781 - product_parser - INFO - [20/116] УСПЕШНО: https://uz.ozon.com/product/ofisnoe-kreslo-stul-ofisnyy-daily-chernyy-1878218167/?at=28t0L8o73h58xY1jf4yYnjQu7jGRy7HWOrv7wTQq17Wp
+2025-06-26 06:47:15,787 - product_parser - INFO -    Товар: Офисное кресло, стул офисный DAILY Черный
+2025-06-26 06:47:15,788 - product_parser - INFO -    Продавец: LIKE HOME
+2025-06-26 06:47:15,797 - product_parser - INFO - [21/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-igrovoe-knight-optimum-chernyy-seryy-1711964945/?at=VvtzVgjMyTl6p3j9Cg0pYpkCzwENnWtGOZ176UQPoZPq
+2025-06-26 06:47:15,797 - product_parser - INFO -    Товар: Кресло игровое Knight Optimum черный/серый
+2025-06-26 06:47:15,804 - product_parser - INFO -    Продавец: БЮРОКРАТ
+2025-06-26 06:47:18,751 - product_parser - INFO - [22/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-detskoe-kompyuternoe-byurokrat-burokids-1-spaceman-chernyy-siniy-kosmonavt-1698750020/?at=46tRZlAr5tKq9MzGuQx6o4LhEXZYPrH9AOV7F0wYog2
+2025-06-26 06:47:18,787 - product_parser - INFO -    Товар: Кресло детское компьютерное Бюрократ BUROKIDS 1 SPACEMAN черный/синий, космонавт
+2025-06-26 06:47:18,928 - product_parser - INFO -    Продавец: Фирменный магазин Бюрократ
+2025-06-26 06:47:27,743 - product_parser - INFO - [23/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-detskoe-kompyuternoe-byurokrat-burokids-1-spaceman-chernyy-siniy-kosmonavt-1698750020/?at=lRt6WXqLEINl82jgsQkx1YXCK0wAxDSVR5861CzLKgJO
+2025-06-26 06:47:27,745 - product_parser - INFO -    Товар: Кресло детское компьютерное Бюрократ BUROKIDS 1 SPACEMAN черный/синий, космонавт
+2025-06-26 06:47:27,746 - product_parser - INFO -    Продавец: Фирменный магазин Бюрократ
+2025-06-26 06:47:28,331 - product_parser - INFO - [24/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-shkolnoe-na-kolesikah-dlya-kompyutera-pk-byroom-office-sub-black-dc155-b-stul-1680776808/?at=gpt4vG58yU6vzy8NS0JxMvf1O1rROcnvR3QjSnNLBN1
+2025-06-26 06:47:28,332 - product_parser - INFO -    Товар: Кресло компьютерное школьное на колесиках для компьютера ПК BYROOM Office Sub black DC155-B. Стул офисный крутящийся взрослый со спинкой для руководителя, школьника
+2025-06-26 06:47:28,333 - product_parser - INFO -    Продавец: DiRetail
+2025-06-26 06:47:31,729 - product_parser - INFO - [25/116] УСПЕШНО: https://uz.ozon.com/product/razmer-v-kreslo-herman-miller-aeron-tsvet-graphite-1573164181/?at=z6tOX4NKqcG69orWuNpnKO2hwRrEOuOZzRBysoyWRVp
+2025-06-26 06:47:31,730 - product_parser - INFO -    Товар: Размер В, Кресло Herman Miller Aeron, цвет Graphite
+2025-06-26 06:47:31,731 - product_parser - INFO -    Продавец: Millsey | Премиальная офисная мебель
+2025-06-26 06:47:40,858 - product_parser - INFO - [26/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-igrovoe-knight-nitro-f-temno-siniy-s-podstavkoy-dlya-nog-1782414811/?at=46tRZlAr5tMZQzqZSmnB09OU6VnpgWczVxjMCpX3oOB
+2025-06-26 06:47:40,859 - product_parser - INFO -    Товар: Кресло игровое Knight Nitro/F темно-синий с подставкой для ног
+2025-06-26 06:47:40,859 - product_parser - INFO -    Продавец: БЮРОКРАТ
+2025-06-26 06:47:42,289 - product_parser - INFO - [27/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-igrovoe-knight-nitro-chernyy-seryy-s-podstavkoy-dlya-nog-1664037919/?at=lRt6WXqLEIvznLA9FMm1xmZh0OW7jyFOnjPDLFgXB5EL
+2025-06-26 06:47:42,290 - product_parser - INFO -    Товар: Кресло игровое Knight Nitro черный/серый с подставкой для ног
+2025-06-26 06:47:42,291 - product_parser - INFO -    Продавец: БЮРОКРАТ
+2025-06-26 06:47:44,718 - product_parser - INFO - [28/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-mebel-24-103-tsvet-seryy-shhghv-59h56h83-94-sm-maksimalnaya-nagruzka-120-kg-1799791412/?at=Z8tX1QnzgtkAEvANTpVvVrqfoJOV0JFK8zGV1ClPwmL1
+2025-06-26 06:47:44,718 - product_parser - INFO -    Товар: Кресло компьютерное Мебель 24 103, цвет серый, ШхГхВ 59х56х83-94 см., максимальная нагрузка 120 кг.
+2025-06-26 06:47:44,719 - product_parser - INFO -    Продавец: компания "Мебель 24"
+2025-06-26 06:47:54,086 - product_parser - INFO - [29/116] УСПЕШНО: https://uz.ozon.com/product/kksky-ofisnoe-kreslo-chernyy-1859737988/?at=k2toD53gBhGZm8QGu8Dy53ycNg3BNjTLpJMppszByz5j
+2025-06-26 06:47:54,092 - product_parser - INFO -    Товар: KKSKY Офисное кресло, черный
+2025-06-26 06:47:54,094 - product_parser - INFO -    Продавец: MUUSK
+2025-06-26 06:47:55,529 - product_parser - INFO - [30/116] УСПЕШНО: https://uz.ozon.com/product/detskoe-kompyuternoe-kreslo-gmmwcb-ortopedicheskoe-semnaya-podstavka-dlya-nog-dopolnitelnyy-chehol-1630903256/?at=99trJ2V8qC1vlvm6hrVV20yFDPZlpvumqGl0mFnkEQk2
+2025-06-26 06:47:55,529 - product_parser - INFO -    Товар: Детское компьютерное кресло GMMWCB,ортопедическое,съёмная подставка для ног, дополнительный чехол в цвет кресла,Регулируемые подлокотники,гравитационное колесо,серый
+2025-06-26 06:47:55,530 - product_parser - INFO -    Продавец: GMMWCB
+2025-06-26 06:47:57,540 - product_parser - INFO - [31/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-igrovoe-knight-optimum-svetlo-seryy-1782397763/?at=x6tPpxqZvFYWq9jrfBnWWREI542RmqiMl41RytKJ8Mo0
+2025-06-26 06:47:57,571 - product_parser - INFO -    Товар: Кресло игровое Knight Optimum светло-серый
+2025-06-26 06:47:57,572 - product_parser - INFO -    Продавец: БЮРОКРАТ
+2025-06-26 06:48:06,631 - product_parser - INFO - [32/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-rukovoditelya-363f-s-podnozhkoy-ofisnyy-stul-kreslo-kompyuternoe-s-podstavkoy-dlya-nog-seroe-2031662260/?at=36tWj2YZKs5BDw4Zcmgxx1WI08pmn6cOqBjnpiRnoDJZ
+2025-06-26 06:48:06,632 - product_parser - INFO -    Товар: Кресло руководителя 363F с подножкой, офисный стул, кресло компьютерное с подставкой для ног, серое, износостойкая ткань
+2025-06-26 06:48:06,633 - product_parser - INFO -    Продавец: DECORILLA
+2025-06-26 06:48:07,994 - product_parser - INFO - [33/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-ofisnoe-prestige-stul-kompyuternyy-dlya-shkolnika-chernyy-detskiy-igrovoy-s-1768147776/?at=K8tZQ4xLWhGlrDzLfKk1v7xhRnp8N9FLAAgwKCEr4zmv
+2025-06-26 06:48:08,001 - product_parser - INFO -    Товар: Кресло компьютерное офисное Prestige, стул компьютерный для школьника черный, детский игровой с мягкой сидушкой, обивка дышащая ткань сетка, крестовина пластик, Ами МЕБЕЛЬ
+2025-06-26 06:48:08,009 - product_parser - INFO -    Продавец: Ami
+2025-06-26 06:48:14,576 - product_parser - INFO - [34/116] УСПЕШНО: https://uz.ozon.com/product/layfmebel-kompyuternoe-kreslo-tron-belyy-993589906/?at=28t0L8o73h9WKEYQfgRMjj6F8OKo1rcE2pnwPuvW5ml2
+2025-06-26 06:48:15,079 - product_parser - INFO -    Товар: Лайфмебель Компьютерное кресло Tron белый
+2025-06-26 06:48:15,080 - product_parser - INFO -    Продавец: ЛайфМебель
+2025-06-26 06:48:23,411 - product_parser - INFO - [35/116] УСПЕШНО: https://uz.ozon.com/product/chernoe-krasnoe-igrovoe-kreslo-hele-ekokozha-s-podgolovnikom-metallicheskiy-zheleznyy-karkas-1560434201/?at=oZt6AvpkYIEEnyXwt0R4qmZiLAVGLLC2DOmjPCzrN1zk
+2025-06-26 06:48:23,412 - product_parser - INFO -    Товар: Черное/красное игровое кресло HELE, экокожа, с подголовником, металлический железный каркас, с подставкой для ног, регулируемые подлокотники, регулируемая спинка
+2025-06-26 06:48:23,412 - product_parser - INFO -    Продавец: HELE
+2025-06-26 06:48:27,273 - product_parser - INFO - [36/116] УСПЕШНО: https://uz.ozon.com/product/kompyuternoe-ofisnoe-kreslo-detskoe-rabochee-kreslo-uyutnyy-ugoloknd2001-chernyy-podgolovnik-stul-1542579894/?at=A6tGxEJjOcM1wWk3S8lLzQOIJqxx3nhE8oogpTjonXRv
+2025-06-26 06:48:27,274 - product_parser - INFO -    Товар: Компьютерное офисное кресло,Детское рабочее кресло Uyutnyy UgolokND2001, черный +подголовник,стул компьютерный обивка сетки/ткани
+2025-06-26 06:48:27,275 - product_parser - INFO -    Продавец: Comfort corner
+2025-06-26 06:48:27,836 - product_parser - INFO - [37/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-igrovoe-knight-nitro-f-temno-seryy-s-podstavkoy-dlya-nog-1782414703/?at=ywtAGLmYoTE8N42yFVvqLpjFrADw24H0AR3J4tZRW9oA
+2025-06-26 06:48:27,841 - product_parser - INFO -    Товар: Кресло игровое Knight Nitro/F темно-серый с подставкой для ног
+2025-06-26 06:48:27,843 - product_parser - INFO -    Продавец: БЮРОКРАТ
+2025-06-26 06:48:40,377 - product_parser - INFO - [38/116] УСПЕШНО: https://uz.ozon.com/product/kksky-ofisnoe-kreslo-chernyy-1836737938/?at=MZtvpzVj3hQoyBvvulOX8Xi30q6w1HYAqRn6fKL35NA
+2025-06-26 06:48:40,377 - product_parser - INFO -    Товар: KKSKY Офисное кресло, черный
+2025-06-26 06:48:40,378 - product_parser - INFO -    Продавец: MUUSK
+2025-06-26 06:48:45,261 - product_parser - INFO - [39/116] УСПЕШНО: https://uz.ozon.com/product/stul-kompyuternyy-kreslo-ofisnoe-rabochee-bh-10-03-tsvet-belyy-chernyy-chernyy-1751829643/?at=NOtwYj5o3c3y5GRRHWOW5ALTp79590ikZLz6JTM7y6lL
+2025-06-26 06:48:45,261 - product_parser - INFO -    Товар: Стул компьютерный, кресло офисное, рабочее BH.10.03 цвет белый, черный, черный
+2025-06-26 06:48:45,262 - product_parser - INFO -    Продавец: BM-BERIHOME
+2025-06-26 06:48:45,598 - product_parser - INFO - [40/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-igrovoe-s-podgolovnikom-reguliruemaya-spinka-chernyy-1941297210/?at=mqtkVWLvlFB75xzKf9LZEgJhR77prKHPyAMR8uOz71Qw
+2025-06-26 06:48:45,598 - product_parser - INFO -    Товар: Кресло компьютерное игровое, с подголовником,регулируемая спинка чёрный
+2025-06-26 06:48:45,598 - product_parser - INFO -    Продавец: HOMEST
+2025-06-26 06:48:53,557 - product_parser - INFO - [41/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-ofisnoe-hele-tkan-chernyy-s-mehanizmom-kachaniya-dyshashchaya-spinka-2060029874/?at=Z8tX1QnzgtJw2O81TLPgzxotvQWO2wF9jv5zEUJDnoGv
+2025-06-26 06:48:53,558 - product_parser - INFO -    Товар: Кресло компьютерное/офисное,HELE,ткань,Черный,с механизмом качания,дышащая спинка,стальная крестовина
+2025-06-26 06:48:53,558 - product_parser - INFO -    Продавец: HELE
+2025-06-26 06:48:57,918 - product_parser - INFO - [42/116] УСПЕШНО: https://uz.ozon.com/product/kksky-ofisnoe-kreslo-seryy-1859778913/?at=XQtklO7mKFQMo6nAhPq3PABT4GpB7IWOxz33hxG08X7
+2025-06-26 06:48:57,920 - product_parser - INFO -    Товар: KKSKY Офисное кресло, серый
+2025-06-26 06:48:57,920 - product_parser - INFO -    Продавец: MUUSK
+2025-06-26 06:48:58,273 - product_parser - INFO - [43/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-rukovoditelya-ofisnoe-s-podnozhkoy-dlya-nog-ofisnyy-stul-kreslo-kompyuternoe-ekokozha-chernyy-1979006877/?at=lRt6WXqLEIQAVGGLHNAKVZUlyk2R4hw3m92Vtm9KoYJ
+2025-06-26 06:48:58,273 - product_parser - INFO -    Товар: Кресло руководителя офисное с подножкой для ног, офисный стул, кресло компьютерное, экокожа черный
+2025-06-26 06:48:58,273 - product_parser - INFO -    Продавец: HOMEST
+2025-06-26 06:49:10,697 - product_parser - INFO - [44/116] УСПЕШНО: https://uz.ozon.com/product/kompyuternoe-kreslo-igrovoe-geymerskoe-gamelab-tetra-rgb-podsvetka-gazlift-klass-4-1293991714/?at=vQtrJA0v8CZjMxkjUqYqmD0c7Dmz8jckpBYOXC7K04on
+2025-06-26 06:49:10,697 - product_parser - INFO -    Товар: Компьютерное кресло, игровое, геймерское GAMELAB TETRA RGB подсветка, газлифт класс 4
+2025-06-26 06:49:10,699 - product_parser - INFO -    Продавец: Бизнес-фабрика
+2025-06-26 06:49:17,582 - product_parser - INFO - [45/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-igrovoe-knight-evolution-chernyy-1712277036/?at=NOtwYj5o3cVPnX7Oh87kNMEI2w2L09U8KXzjjFMn0Von
+2025-06-26 06:49:17,582 - product_parser - INFO -    Товар: Кресло игровое Knight Evolution черный
+2025-06-26 06:49:17,590 - product_parser - INFO -    Продавец: БЮРОКРАТ
+2025-06-26 06:49:17,640 - product_parser - INFO - [46/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-igrovoe-s-podstavkoy-dlya-nog-reguliruemaya-spinkas-podgolovnikom-belyy-1941363457/?at=DqtD73rXAF7Gr0R3hvqVzNNtvjAX7kTvmLkXnFRjlBYn
+2025-06-26 06:49:17,640 - product_parser - INFO -    Товар: Кресло компьютерное игровое, с подставкой для ног, регулируемая спинкас подголовником,белый
+2025-06-26 06:49:17,641 - product_parser - INFO -    Продавец: HOMEST
+2025-06-26 06:49:25,474 - product_parser - INFO - [47/116] УСПЕШНО: https://uz.ozon.com/product/topchairs-kreslo-rukovoditelya-ekokozha-korichnevyy-166065823/?at=PjtJB3AQXc03Y494urROYrQcQnMxRwI5WM5RxIVPMNo6
+2025-06-26 06:49:25,475 - product_parser - INFO -    Товар: Topchairs Кресло руководителя, Экокожа, коричневый
+2025-06-26 06:49:25,475 - product_parser - INFO -    Продавец: ООО «Стул Груп»
+2025-06-26 06:49:30,681 - product_parser - INFO - [48/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-igrovoe-zone-51-armada-278114844/?at=ywtAGLmYoTgV5GJ9tmyVBGDFYj5zYghMOnAOqHmRmOJx
+2025-06-26 06:49:30,683 - product_parser - INFO -    Товар: Кресло компьютерное игровое ZONE 51 ARMADA
+2025-06-26 06:49:30,683 - product_parser - INFO -    Продавец: Бизнес-фабрика
+2025-06-26 06:49:33,315 - product_parser - INFO - [49/116] УСПЕШНО: https://uz.ozon.com/product/dragon-spirit-kreslo-kompyuternoe-igrovoe-ortopedicheskoe-chernyy-1350758318/?at=XQtklO7mKF6DkzzjFyxPXXlS7MgX3QuMXzw4XcL8XVY0
+2025-06-26 06:49:33,315 - product_parser - INFO -    Товар: Dragon Spirit Кресло компьютерное игровое ортопедическое, черный
+2025-06-26 06:49:33,317 - product_parser - INFO -    Продавец: Hausland
+2025-06-26 06:49:43,967 - product_parser - INFO - [50/116] УСПЕШНО: https://uz.ozon.com/product/igrovoe-geymerskoe-kreslo-na-kolesikah-byroom-game-nerf-gf-8066-brw-krutyashcheesya-dlya-1682848429/?at=Rltyw5PNWF4r0y5lIJ86qBRH21z0jWtnRnyWYsEpvPGk
+2025-06-26 06:49:43,968 - product_parser - INFO -    Товар: Игровое геймерское кресло на колесиках BYROOM Game NERF GF-8066-BRW крутящееся для взрослого, школьника. Компьютерный стул для геймера с ортопедической высокой спинкой для игр и работы на ПК
+2025-06-26 06:49:43,968 - product_parser - INFO -    Продавец: DiRetail
+2025-06-26 06:49:45,110 - product_parser - INFO - [51/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-kreslo-ofisnoe-detskoe-stul-yeeler-reguliruemyy-po-vysote-mehanizm-kachaniya-2229711575/?at=MZtvpzVj3hGEnxRgcx9LM7OHqnp5Z1Iy97qk6injJY30
+2025-06-26 06:49:45,112 - product_parser - INFO -    Товар: Кресло компьютерное, кресло офисное, детское, стул, YEELER, регулируемый по высоте, механизм качания
+2025-06-26 06:49:45,113 - product_parser - INFO -    Продавец: КомфортиК
+2025-06-26 06:49:47,398 - product_parser - INFO - [52/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-kreslo-ofisnoe-stul-yeeler-reguliruemyy-po-vysote-s-podstavkoy-pod-nogi-2229711157/?at=08tYnm0jBc2M87KkILlKP11h0RODm6FxpMxG0sEAGk8V
+2025-06-26 06:49:47,401 - product_parser - INFO -    Товар: Кресло компьютерное, кресло офисное, стул, YEELER, регулируемый по высоте, с подставкой под ноги, механизм качания
+2025-06-26 06:49:47,402 - product_parser - INFO -    Продавец: КомфортиК
+2025-06-26 06:49:57,210 - product_parser - INFO - [53/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-igrovoe-kreslo-defender-serenity-1959989057/?at=pZtpgAE5oTD9LAPRuEOZw9WsxMnj7qCWl5EYXHLo4qwV
+2025-06-26 06:49:57,211 - product_parser - INFO -    Товар: Кресло компьютерное / игровое кресло Defender Serenity
+2025-06-26 06:49:57,212 - product_parser - INFO -    Продавец: Defender
+2025-06-26 06:49:58,656 - product_parser - INFO - [54/116] УСПЕШНО: https://uz.ozon.com/product/razmer-v-kreslo-herman-miller-aeron-tsvet-graphite-1573164181/?at=16tLrqw8GHN0zPBRsBrRxD3tYjPmLzCoy17NXc5Z7VnX
+2025-06-26 06:49:58,657 - product_parser - INFO -    Товар: Размер В, Кресло Herman Miller Aeron, цвет Graphite
+2025-06-26 06:49:58,657 - product_parser - INFO -    Продавец: Millsey | Премиальная офисная мебель
+2025-06-26 06:50:03,616 - product_parser - INFO - [55/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-kreslo-ofisnoe-detskoe-stul-yeeler-reguliruemyy-po-vysote-mehanizm-kachaniya-2229711575/?at=Z8tX1QnzgtnLnWLZI7v57oNUlrBzP2I05q3RxTjPDNnn
+2025-06-26 06:50:03,617 - product_parser - INFO -    Товар: Кресло компьютерное, кресло офисное, детское, стул, YEELER, регулируемый по высоте, механизм качания
+2025-06-26 06:50:03,617 - product_parser - INFO -    Продавец: КомфортиК
+2025-06-26 06:50:17,861 - product_parser - INFO - [56/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-igrovoe-ofisnoe-geymerskiy-igrovoy-stul-gamelab-warlock-784030062/?at=79tnrZjLNh4RxoArHKK5AzruQElv0PS0zxWlQCPoAyNW
+2025-06-26 06:50:17,862 - product_parser - INFO -    Товар: Кресло компьютерное игровое, офисное, геймерский игровой стул GAMELAB WARLOCK
+2025-06-26 06:50:17,862 - product_parser - INFO -    Продавец: Бизнес-фабрика
+2025-06-26 06:50:19,537 - product_parser - INFO - [57/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-herman-miller-aeron-graphite-razmer-b-1189506059/?at=w0tg5yZoxFxNQnAMS1K15VXHGVYx99srgpMMEtp28OkZ
+2025-06-26 06:50:19,538 - product_parser - INFO -    Товар: Кресло Herman Miller Aeron Graphite, размер B
+2025-06-26 06:50:19,538 - product_parser - INFO -    Продавец: HM-Market
+2025-06-26 06:50:28,288 - product_parser - INFO - [58/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-igrovoe-knight-wolf-seryy-1842042398/?at=pZtpgAE5oT0ZwOjGcWVRYzlC56VmQ7cRv84nqIrArlj8
+2025-06-26 06:50:28,289 - product_parser - INFO -    Товар: Кресло игровое Knight Wolf серый
+2025-06-26 06:50:28,291 - product_parser - INFO -    Продавец: БЮРОКРАТ
+2025-06-26 06:50:31,786 - product_parser - INFO - [59/116] УСПЕШНО: https://uz.ozon.com/product/mtt-mebel-ofisnoe-kreslo-chernyy-1679932489/?at=WPtN1Dw0quxqW6qAuOL2X53FnDqgZKtL6R5QkS1Kj1Vq
+2025-06-26 06:50:31,787 - product_parser - INFO -    Товар: MTT mebel Офисное кресло, Черный
+2025-06-26 06:50:31,787 - product_parser - INFO -    Продавец: MTT-mebel
+2025-06-26 06:50:32,205 - product_parser - INFO - [60/116] УСПЕШНО: https://uz.ozon.com/product/kksky-ofisnoe-kreslo-chernyy-1836737938/?at=Brtzx8JvKTkyV8xF6oYNM9TrK7GN6tDqNQV3hEZ8JAq
+2025-06-26 06:50:32,205 - product_parser - INFO -    Товар: KKSKY Офисное кресло, черный
+2025-06-26 06:50:32,206 - product_parser - INFO -    Продавец: MUUSK
+2025-06-26 06:50:43,562 - product_parser - INFO - [61/116] УСПЕШНО: https://uz.ozon.com/product/kompyuternoe-kreslo-igrovoe-geymerskoe-gamelab-tetra-rgb-podsvetka-gazlift-klass-4-1293991714/?at=Y7tjKAo5lfrwWM00ipgW4koIEwzvykfvo9roQuWqDvjD
+2025-06-26 06:50:43,566 - product_parser - INFO -    Товар: Компьютерное кресло, игровое, геймерское GAMELAB TETRA RGB подсветка, газлифт класс 4
+2025-06-26 06:50:43,567 - product_parser - INFO -    Продавец: Бизнес-фабрика
+2025-06-26 06:50:44,737 - product_parser - INFO - [62/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-igrovoe-kreslo-defender-serenity-1959989057/?at=k2toD53gBhQ7XW56TJD5BErcR326nwuOXD8OpHRV6mE9
+2025-06-26 06:50:44,738 - product_parser - INFO -    Товар: Кресло компьютерное / игровое кресло Defender Serenity
+2025-06-26 06:50:44,738 - product_parser - INFO -    Продавец: Defender
+2025-06-26 06:50:48,946 - product_parser - INFO - [63/116] УСПЕШНО: https://uz.ozon.com/product/seroe-tkanyu-igrovoe-kreslo-hele-s-podgolovnikom-metallicheskiy-zheleznyy-karkas-s-podstavkoy-1611136335/?at=mqtkVWLvlFEE1Q3lhN2k0Nph797BV5hzkmm4kS9gz1G6
+2025-06-26 06:50:48,955 - product_parser - INFO -    Товар: Серое тканью игровое кресло HELE, с подголовником, металлический железный каркас, с подставкой для ног, регулируемые подлокотники, регулируемая спинка
+2025-06-26 06:50:48,957 - product_parser - INFO -    Продавец: HELE
+2025-06-26 06:50:59,407 - product_parser - INFO - [64/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-ofisnoe-kreslo-1715305334/?at=OgtEDvr3xhwyoD4LSlOQ385uRDxYxvFPmMOOPiYZDApz
+2025-06-26 06:50:59,408 - product_parser - INFO -    Товар: Кресло компьютерное, офисное кресло
+2025-06-26 06:50:59,408 - product_parser - INFO -    Продавец: Palpets
+2025-06-26 06:51:00,073 - product_parser - INFO - [65/116] УСПЕШНО: https://uz.ozon.com/product/topchairs-ofisnoe-kreslo-belyy-seraya-setka-1026985321/?at=J8tgkKLxwFKJjGXYcDnBwqMf999kyEH2DVwPmcwjprzZ
+2025-06-26 06:51:00,074 - product_parser - INFO -    Товар: Topchairs Офисное кресло, белый, серая сетка
+2025-06-26 06:51:00,075 - product_parser - INFO -    Продавец: ООО «Стул Груп»
+2025-06-26 06:51:04,405 - product_parser - INFO - [66/116] УСПЕШНО: https://uz.ozon.com/product/stool-group-ofisnoe-kreslo-plastik-belyy-547743939/?at=K8tZQ4xLWh75wQAzTL7kJ7u4vMgYlFZljvvZsrOOjRp
+2025-06-26 06:51:04,406 - product_parser - INFO -    Товар: Stool Group Офисное кресло, Пластик, белый
+2025-06-26 06:51:04,407 - product_parser - INFO -    Продавец: ООО «Стул Груп»
+2025-06-26 06:51:13,561 - product_parser - INFO - [67/116] УСПЕШНО: https://uz.ozon.com/product/nxteam-igrovoe-kompyuternoe-kreslo-chernyy-1572966584/?at=QktJno47PcADL29gc3Lr0DI1llEKwt6xJVEwfZmqV3G
+2025-06-26 06:51:13,567 - product_parser - INFO -    Товар: NXTeam Игровое компьютерное кресло, черный
+2025-06-26 06:51:13,568 - product_parser - INFO -    Продавец: NXTeam
+2025-06-26 06:51:13,611 - product_parser - INFO - [68/116] УСПЕШНО: https://uz.ozon.com/product/detskoe-kompyuternoe-kreslo-chairman-ch111-ekokozha-chernyy-krasnyy-1315880588/?at=r2t4y23xZUBzwEvOS6WyzY8CYN04mjSwmDwGQcl3L1j
+2025-06-26 06:51:13,618 - product_parser - INFO -    Товар: Детское компьютерное кресло CHAIRMAN CH111, экокожа, черный/красный
+2025-06-26 06:51:13,618 - product_parser - INFO -    Продавец: CHAIRMAN | SKYLAND производитель
+2025-06-26 06:51:16,529 - product_parser - INFO - [69/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-igrovoe-ofisnoe-sero-oranzhevyy-geymerskiy-igrovoy-stul-gamelab-tetra-1379769956/?at=28t0L8o73hMD8QygfWr414EFvoxL03cxpRBLEfKPgk1x
+2025-06-26 06:51:16,529 - product_parser - INFO -    Товар: Кресло компьютерное игровое, офисное, Серо-оранжевый геймерский игровой стул GAMELAB TETRA
+2025-06-26 06:51:16,530 - product_parser - INFO -    Продавец: Бизнес-фабрика
+2025-06-26 06:51:27,097 - product_parser - INFO - [70/116] УСПЕШНО: https://uz.ozon.com/product/chernyy-belyy-igrovoe-kreslo-gmmwcb-ekokozha-s-podgolovnikom-metallicheskiy-zheleznyy-karkas-1605910438/?at=79tnrZjLNhEjj902iR34ZJWUZmzDwJhn4gMmECzqjJvO
+2025-06-26 06:51:27,098 - product_parser - INFO -    Товар: Черный/белый игровое кресло GMMWCB, экокожа, с подголовником, металлический железный каркас, с подставкой для ног, регулируемые подлокотники, регулируемая спинка
+2025-06-26 06:51:27,098 - product_parser - INFO -    Продавец: gmmwcb
+2025-06-26 06:51:27,867 - product_parser - INFO - [71/116] УСПЕШНО: https://uz.ozon.com/product/igrovoe-kompyuternoe-kreslo-a4tech-bloody-gc-500-ekokozha-krestovina-plastik-chernyy-185853897/?at=Brtzx8JvKT82wnv5FmDR7xLf93X1RMhJOMgyrI0OJwWG
+2025-06-26 06:51:27,868 - product_parser - INFO -    Товар: Игровое компьютерное кресло A4Tech Bloody GC-500, экокожа, крестовина пластик, черный
+2025-06-26 06:51:27,868 - product_parser - INFO -    Продавец: Позитроника
+2025-06-26 06:51:28,931 - product_parser - INFO - [72/116] УСПЕШНО: https://uz.ozon.com/product/igrovoe-geymerskoe-kreslo-na-kolesikah-byroom-game-ban-blue-hs-5010-bl-kozhanoe-krutyashcheesya-892022382/?at=PjtJB3AQXc9rDj5zUB98n9QHrWmYzDS34E7YNtG3mXpq
+2025-06-26 06:51:28,931 - product_parser - INFO -    Товар: Игровое геймерское кресло на колесиках BYROOM Game BAN blue HS-5010-BL кожаное крутящееся. Компьютерный стул для геймера с ортопедической высокой спинкой для игр и работы на пк
+2025-06-26 06:51:28,932 - product_parser - INFO -    Продавец: DiRetail
+2025-06-26 06:51:39,353 - product_parser - INFO - [73/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-igrovoe-knight-optimum-1746918664/?at=qQtJgX69Nc9lzAwNu86omw8ulyG5Agfxg9Egms7MOjwl
+2025-06-26 06:51:39,354 - product_parser - INFO -    Товар: Кресло игровое Knight Optimum
+2025-06-26 06:51:39,354 - product_parser - INFO -    Продавец: БЮРОКРАТ
+2025-06-26 06:51:39,905 - product_parser - INFO - [74/116] УСПЕШНО: https://uz.ozon.com/product/igrovoe-kompyuternoe-kreslo-chernyy-1611714235/?at=MZtvpzVj3h7EqvXWU161L5wImmG8JqHnR5PYniz4w719
+2025-06-26 06:51:39,905 - product_parser - INFO -    Товар: Игровое компьютерное кресло, черный
+2025-06-26 06:51:39,906 - product_parser - INFO -    Продавец: Oriental greats
+2025-06-26 06:51:40,419 - product_parser - INFO - [75/116] УСПЕШНО: https://uz.ozon.com/product/igrovoe-kompyuternoe-kreslo-belyy-chernyy-1798184289/?at=83tBmY89qfO4zKAoCmw58ZxFnl34l0C3m24wNu9olPz6
+2025-06-26 06:51:40,421 - product_parser - INFO -    Товар: Игровое компьютерное кресло, белый, черный
+2025-06-26 06:51:40,425 - product_parser - INFO -    Продавец: МЕБЕЛЬНЫЙ ДОМ
+2025-06-26 06:51:51,540 - product_parser - INFO - [76/116] УСПЕШНО: https://uz.ozon.com/product/pro-play-kreslo-kompyuternoe-rgb-tsvetoe-beloe-kovrik-dlya-myshi-rgb-v-podarok-gazlift-klass-3-2132968430/?at=36tWj2YZKsjj8r5Vc9Yw7LzT8mLXj2IjojAGQI29qwY
+2025-06-26 06:51:51,541 - product_parser - INFO -    Товар: PRO PLAY Кресло компьютерное RGB цветое белое/Коврик для мыши RGB в подарок/газлифт класс 3
+2025-06-26 06:51:51,541 - product_parser - INFO -    Продавец: Донн Магазин
+2025-06-26 06:51:52,449 - product_parser - INFO - [77/116] УСПЕШНО: https://uz.ozon.com/product/kksky-ofisnoe-kreslo-belyy-1836687442/?at=99trJ2V8qCGpAP5yu6RX01MFzKBRyfxZ31ANT7kA3xo
+2025-06-26 06:51:52,449 - product_parser - INFO -    Товар: KKSKY Офисное кресло, белый
+2025-06-26 06:51:52,450 - product_parser - INFO -    Продавец: MUUSK
+2025-06-26 06:51:55,051 - product_parser - INFO - [78/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-mychair-kompyuternoe-kreslo-rukovoditelya-s-vibromassazhem-tkanevoe-1541524048/?at=ywtAGLmYoTN0mG1WFY9OZ2QsPj9k62SGPqkvtZjQRKP
+2025-06-26 06:51:55,052 - product_parser - INFO -    Товар: Кресло компьютерное MyChair Компьютерное кресло руководителя с вибромассажем , Тканевое
+2025-06-26 06:51:55,052 - product_parser - INFO -    Продавец: Chair Empire
+2025-06-26 06:52:06,195 - product_parser - INFO - [79/116] УСПЕШНО: https://uz.ozon.com/product/rastushchee-kompyuternoe-detskoe-kreslo-dlya-shkolnika-holto-31-c-podlokotnikami-podstavkoy-dlya-nog-1597448939/?at=VvtzVgjMyT8wm5Y8iEpyJ7kSwNQZw4Fp8O5xnu6NzgV
+2025-06-26 06:52:06,197 - product_parser - INFO -    Товар: Растущее компьютерное детское кресло для школьника Holto-31 c подлокотниками, подставкой для ног и чехлом в подарок
+2025-06-26 06:52:06,197 - product_parser - INFO -    Продавец: Полезные технологии
+2025-06-26 06:52:06,790 - product_parser - INFO - [80/116] УСПЕШНО: https://uz.ozon.com/product/kksky-igrovoe-kompyuternoe-kreslo-chernyy-1836903874/?at=mqtkVWLvlFNjlJXNi2O5r5QiNNo2rzTJAJr8ZcOmN897
+2025-06-26 06:52:06,790 - product_parser - INFO -    Товар: KKSKY Игровое компьютерное кресло, черный
+2025-06-26 06:52:06,791 - product_parser - INFO -    Продавец: MUUSK
+2025-06-26 06:52:09,684 - product_parser - INFO - [81/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-ofisnoe-hele-tkan-chernyy-s-mehanizmom-kachaniya-dyshashchaya-spinka-2060029874/?at=K8tZQ4xLWhXvKl5ot5Bm7NOf9PoN7ET1AZPD4UQ0qPOK
+2025-06-26 06:52:09,695 - product_parser - INFO -    Товар: Кресло компьютерное/офисное,HELE,ткань,Черный,с механизмом качания,дышащая спинка,стальная крестовина
+2025-06-26 06:52:09,696 - product_parser - INFO -    Продавец: HELE
+2025-06-26 06:52:20,327 - product_parser - INFO - [82/116] УСПЕШНО: https://uz.ozon.com/product/kksky-igrovoe-kompyuternoe-kreslo-belyy-1836939946/?at=Y7tjKAo5lf2GX4r6cq2N2QmSK9MEZyT8xgpPVsXnKGwr
+2025-06-26 06:52:20,328 - product_parser - INFO -    Товар: KKSKY Игровое компьютерное кресло, белый
+2025-06-26 06:52:20,328 - product_parser - INFO -    Продавец: MUUSK
+2025-06-26 06:52:20,880 - product_parser - INFO - [83/116] УСПЕШНО: https://uz.ozon.com/product/kompyuternoe-ofisnoe-kreslo-detskoe-rabochee-kreslo-uyutnyy-ugolok-nd2003-seryy-belyy-stul-1693163466/?at=pZtpgAE5oTB5M59DFvOJ3gWTNqrJMnI8JXRwgTPPjoyx
+2025-06-26 06:52:20,880 - product_parser - INFO -    Товар: Компьютерное офисное кресло,Детское рабочее кресло Uyutnyy Ugolok ND2003,серый +белый, стул компьютерный,сетчатый/кожаный салон
+2025-06-26 06:52:20,881 - product_parser - INFO -    Продавец: Comfort corner
+2025-06-26 06:52:25,504 - product_parser - INFO - [84/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-igrovoe-knight-optimum-1746918664/?at=pZtpgAE5oTQOO1mQT13rlvOuPLZWQlCoyrxYKtxJD8m8
+2025-06-26 06:52:25,505 - product_parser - INFO -    Товар: Кресло игровое Knight Optimum
+2025-06-26 06:52:25,506 - product_parser - INFO -    Продавец: БЮРОКРАТ
+2025-06-26 06:52:32,544 - product_parser - INFO - [85/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-rukovoditelya-313f-s-podnozhkoy-ofisnyy-stul-kreslo-kompyuternoe-s-podstavkoy-dlya-nog-haki-1688788567/?at=Y7tjKAo5lf8vnKlpFk9ZwWvC0myk2LfRZ1xK5C21DZNM
+2025-06-26 06:52:32,544 - product_parser - INFO -    Товар: Кресло руководителя 313F с подножкой, офисный стул, кресло компьютерное с подставкой для ног, хаки бежевое, ткань
+2025-06-26 06:52:32,544 - product_parser - INFO -    Продавец: Атмосфера Мебели
+2025-06-26 06:52:36,269 - product_parser - INFO - [86/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-mychair-kompyuternoe-kreslo-rukovoditelya-s-vibromassazhem-tkanevoe-1541524048/?at=oZt6AvpkYI6mnnw1CZr6G71cjjNKr8UZ9RgAJhyxJ9g6
+2025-06-26 06:52:36,275 - product_parser - INFO -    Товар: Кресло компьютерное MyChair Компьютерное кресло руководителя с вибромассажем , Тканевое
+2025-06-26 06:52:36,276 - product_parser - INFO -    Продавец: Chair Empire
+2025-06-26 06:52:38,474 - product_parser - INFO - [87/116] УСПЕШНО: https://uz.ozon.com/product/kksky-igrovoe-kompyuternoe-kreslo-belyy-1883491729/?at=z6tOX4NKqcYz9oDGiKwkk3F0w62JBhzARVmRC7ZrvvQ
+2025-06-26 06:52:38,475 - product_parser - INFO -    Товар: KKSKY Игровое компьютерное кресло, белый
+2025-06-26 06:52:38,476 - product_parser - INFO -    Продавец: KKSKY
+2025-06-26 06:52:44,959 - product_parser - INFO - [88/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-igrovoe-zone-51-armada-278114844/?at=K8tZQ4xLWh27kPDVhOZxLPVuOMOoAPI3qAzxyhLqnpgl
+2025-06-26 06:52:44,960 - product_parser - INFO -    Товар: Кресло компьютерное игровое ZONE 51 ARMADA
+2025-06-26 06:52:44,960 - product_parser - INFO -    Продавец: Бизнес-фабрика
+2025-06-26 06:52:48,116 - product_parser - INFO - [89/116] УСПЕШНО: https://uz.ozon.com/product/evrostil-kreslo-rukovoditelya-chernyy-1268088503/?at=WPtN1Dw0qu0W5ExQFkRpjNZTWKrp3ruyXpKQMHNEJG5o
+2025-06-26 06:52:48,117 - product_parser - INFO -    Товар: ЕвроСтиль Кресло руководителя, Черный
+2025-06-26 06:52:48,117 - product_parser - INFO -    Продавец: KresloOnline
+2025-06-26 06:52:51,181 - product_parser - INFO - [90/116] УСПЕШНО: https://uz.ozon.com/product/ofisnoe-kreslo-seryy-1798184796/?at=EqtkwpoBxFpRJ722S9Nnr94TZZrJGYH3g9qmpF5xl5jG
+2025-06-26 06:52:51,182 - product_parser - INFO -    Товар: Офисное кресло, серый
+2025-06-26 06:52:51,182 - product_parser - INFO -    Продавец: МЕБЕЛЬНЫЙ ДОМ
+2025-06-26 06:52:57,629 - product_parser - INFO - [91/116] УСПЕШНО: https://uz.ozon.com/product/ofisnoe-kreslo-roskresla-atlant-1-rukovoditelya-ekokozha-korichnevyy-1856758553/?at=LZtl0QML9HjJJRGjfJpKv3PHRWQGB6H6GQ2R1uoAgpqr
+2025-06-26 06:52:57,630 - product_parser - INFO -    Товар: Офисное кресло РОСКРЕСЛА Атлант-1 руководителя, экокожа, коричневый
+2025-06-26 06:52:57,631 - product_parser - INFO -    Продавец: РОСКРЕСЛА
+2025-06-26 06:53:10,532 - product_parser - INFO - [92/116] УСПЕШНО: https://uz.ozon.com/product/dragon-spirit-kreslo-kompyuternoe-igrovoe-ortopedicheskoe-chernyy-1350758318/?at=x6tPpxqZvF3vL24Xu8XqWRpfn671KRFnNo9mQHQPwymY
+2025-06-26 06:53:10,533 - product_parser - INFO -    Товар: Dragon Spirit Кресло компьютерное игровое ортопедическое, черный
+2025-06-26 06:53:10,534 - product_parser - INFO -    Продавец: Hausland
+2025-06-26 06:53:13,327 - product_parser - INFO - [93/116] УСПЕШНО: https://uz.ozon.com/product/office-lab-kreslo-rukovoditelya-sero-bezhevyy-velyur-1589683363/?at=nRtr4mpnDCz54DLltJVyVE3hZ9W9wRhRxVxO2FDkm1W9
+2025-06-26 06:53:13,328 - product_parser - INFO -    Товар: Office Lab Кресло руководителя, серо-бежевый велюр
+2025-06-26 06:53:13,329 - product_parser - INFO -    Продавец: Office lab
+2025-06-26 06:53:18,543 - product_parser - INFO - [94/116] УСПЕШНО: https://uz.ozon.com/product/stul-kompyuternyy-kreslo-ofisnoe-rabochee-bh-10-03-tsvet-chernyy-1751842626/?at=z6tOX4NKqcYRZpjRsxQGjz2iN2Zlv2t9RBDnZh6KVEVJ
+2025-06-26 06:53:18,544 - product_parser - INFO -    Товар: Стул компьютерный, кресло офисное, рабочее BH.10.03 цвет черный
+2025-06-26 06:53:18,544 - product_parser - INFO -    Продавец: BM-BERIHOME
+2025-06-26 06:53:24,037 - product_parser - INFO - [95/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-rukovoditelya-diplomat-s-podnozhkoy-ofisnyy-stul-kreslo-kompyuternoe-igrovoe-ekokozha-belyy-1936567510/?at=PjtJB3AQXcxNrr2KhqXJo0oC8MWr0WsnjZAoYhYMJYLO
+2025-06-26 06:53:24,037 - product_parser - INFO -    Товар: Кресло руководителя Diplomat с подножкой, офисный стул, кресло компьютерное игровое, экокожа, белый
+2025-06-26 06:53:24,039 - product_parser - INFO -    Продавец: HOMEST
+2025-06-26 06:53:26,671 - product_parser - INFO - [96/116] УСПЕШНО: https://uz.ozon.com/product/topchairs-kreslo-rukovoditelya-iskusstvennaya-kozha-korichnevyy-163544619/?at=83tBmY89qfgVNO3qSYwmpw0uEE9QO1HDDynPPsqM4QgL
+2025-06-26 06:53:26,673 - product_parser - INFO -    Товар: Topchairs Кресло руководителя, Искусственная кожа, коричневый
+2025-06-26 06:53:26,674 - product_parser - INFO -    Продавец: ООО «Стул Груп»
+2025-06-26 06:53:32,141 - product_parser - INFO - [97/116] УСПЕШНО: https://uz.ozon.com/product/igrovoe-kompyuternoe-kreslo-seryy-1752712289/?at=79tnrZjLNhE65MRQtEL3Y9Gcy4zrWPsJ0nmG1i6jZm2o
+2025-06-26 06:53:32,141 - product_parser - INFO -    Товар: Игровое компьютерное кресло, серый
+2025-06-26 06:53:32,141 - product_parser - INFO -    Продавец: Comfort Seat
+2025-06-26 06:53:37,251 - product_parser - INFO - [98/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-igrovoe-zone-51-gravity-chernyy-s-krasnymi-vstavkami-255092263/?at=k2toD53gBhD7l2Y2UpBOj3guXoWrQ1FNXMjYniKNlwk
+2025-06-26 06:53:37,253 - product_parser - INFO -    Товар: Кресло компьютерное игровое ZONE 51 GRAVITY, Черный с красными вставками
+2025-06-26 06:53:37,253 - product_parser - INFO -    Продавец: Бизнес-фабрика
+2025-06-26 06:53:39,165 - product_parser - INFO - [99/116] УСПЕШНО: https://uz.ozon.com/product/vysokokachestvennoe-ergonomichnoe-kreslo-bs-lk618-s-poloy-dyshashchey-podushkoy-sidenya-reguliruemoy-1686832506/?at=GRt2rAZw4Fm5rw6JIQPgJ83frD00RDurm4q4Gum3nA3v
+2025-06-26 06:53:39,167 - product_parser - INFO -    Товар: Высококачественное эргономичное кресло BS-LK618 с полой дышащей подушкой сиденья, регулируемой спинкой, регулируемыми подлокотниками, вешалкой для одежды и подставкой для ног
+2025-06-26 06:53:39,224 - product_parser - INFO -    Продавец: 12 стульев
+2025-06-26 06:53:45,298 - product_parser - INFO - [100/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-igrovoe-kompyuternoe-knight-icon-f-1617898929/?at=r2t4y23xZU60rRx4SLK770GH4qvEPKuLzr7nTk784m0
+2025-06-26 06:53:45,299 - product_parser - INFO -    Товар: Кресло игровое компьютерное Knight Icon-F
+2025-06-26 06:53:45,300 - product_parser - INFO -    Продавец: БЮРОКРАТ
+2025-06-26 06:53:53,490 - product_parser - INFO - [101/116] УСПЕШНО: https://uz.ozon.com/product/kompyuternoe-kreslo-igrovoe-byurokrat-zombie-neo-geymerskoe-ergonomichnoe-tkanevoe-1020087733/?at=99trJ2V8qCpOxwqvh4Jk7kzTOwARZ8tKx7WZ0cjLmWP5
+2025-06-26 06:53:53,491 - product_parser - INFO -    Товар: Компьютерное кресло игровое Бюрократ Zombie NEO, геймерское эргономичное тканевое
+2025-06-26 06:53:53,491 - product_parser - INFO -    Продавец: iCover
+2025-06-26 06:53:56,049 - product_parser - INFO - [102/116] УСПЕШНО: https://uz.ozon.com/product/chernoe-krasnoe-igrovoe-kreslo-gmmwcb-ekokozha-s-podgolovnikom-metallicheskiy-zheleznyy-karkas-1601531369/?at=jYtZzR1gmhpOvJLqizkGlMETox8GrMCp0kRzwtnyV6ko
+2025-06-26 06:53:56,050 - product_parser - INFO -    Товар: Черное/красное игровое кресло GMMWCB, экокожа, с подголовником, металлический железный каркас, с подставкой для ног, регулируемые подлокотники, регулируемая спинка
+2025-06-26 06:53:56,051 - product_parser - INFO -    Продавец: gmmwcb
+2025-06-26 06:53:58,112 - product_parser - INFO - [103/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-igrovoe-knight-wolf-bezhevyy-1851813431/?at=Z8tX1QnzgtyP6kOOfRjMyDjuQGXjQxS7jnpX6TAXKAM1
+2025-06-26 06:53:58,113 - product_parser - INFO -    Товар: Кресло игровое Knight Wolf бежевый
+2025-06-26 06:53:58,113 - product_parser - INFO -    Продавец: БЮРОКРАТ
+2025-06-26 06:54:06,704 - product_parser - INFO - [104/116] УСПЕШНО: https://uz.ozon.com/product/topchairs-kreslo-rukovoditelya-iskusstvennaya-kozha-korichnevyy-163544619/?at=Rltyw5PNWF4NRNEWsEX1n72SROO1J9h4kxpGvcpOQnDR
+2025-06-26 06:54:06,712 - product_parser - INFO -    Товар: Topchairs Кресло руководителя, Искусственная кожа, коричневый
+2025-06-26 06:54:06,715 - product_parser - INFO -    Продавец: ООО «Стул Груп»
+2025-06-26 06:54:08,141 - product_parser - INFO - [105/116] УСПЕШНО: https://uz.ozon.com/product/klerk-ofisnoe-kreslo-chernyy-2046481472/?at=qQtJgX69NcZ88Z7GSWX7X0IrMMolXsA29k97TpAjzN5
+2025-06-26 06:54:08,144 - product_parser - INFO -    Товар: КЛЕРК Офисное кресло, черный
+2025-06-26 06:54:08,144 - product_parser - INFO -    Продавец: Доступная среда kz
+2025-06-26 06:54:14,049 - product_parser - INFO - [106/116] УСПЕШНО: https://uz.ozon.com/product/chernyy-belyy-igrovoe-kreslo-hele-ekokozha-s-podgolovnikom-metallicheskiy-zheleznyy-karkas-1611140773/?at=QktJno47PcvGWE8MUk50wRlCD0ZR2QFjgExz9HpkL13E
+2025-06-26 06:54:14,051 - product_parser - INFO -    Товар: Черный/белый игровое кресло HELE, экокожа, с подголовником, металлический железный каркас, с подставкой для ног, регулируемые подлокотники, регулируемая спинка
+2025-06-26 06:54:14,051 - product_parser - INFO -    Продавец: HELE
+2025-06-26 06:54:21,979 - product_parser - INFO - [107/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-igrovoe-zone-51-gravity-chernyy-s-krasnymi-vstavkami-255092263/?at=lRt6WXqLEIkExxvZSjqk8NwFZEYLXGcOzXMQohBv3glQ
+2025-06-26 06:54:21,980 - product_parser - INFO -    Товар: Кресло компьютерное игровое ZONE 51 GRAVITY, Черный с красными вставками
+2025-06-26 06:54:21,980 - product_parser - INFO -    Продавец: Бизнес-фабрика
+2025-06-26 06:54:23,957 - product_parser - INFO - [108/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-igrovoe-zone-51-frost-rgb-1581639285/?at=79tnrZjLNhOgo9UJJnVn3fmK7y3MuyGWrWWcNZBMZN
+2025-06-26 06:54:23,957 - product_parser - INFO -    Товар: Кресло компьютерное игровое ZONE 51 FROST RGB
+2025-06-26 06:54:23,958 - product_parser - INFO -    Продавец: Бизнес-фабрика
+2025-06-26 06:54:26,697 - product_parser - INFO - [109/116] УСПЕШНО: https://uz.ozon.com/product/ofisnyy-shkolnyy-stul-na-kolesikah-bez-podlokotnikov-krutyashchiysya-so-spinkoy-byroom-office-el-918062710/?at=Z8tX1QnzgtoPRollHAxz5YLUW3LpmNTko8Al0i6lr9PE
+2025-06-26 06:54:26,703 - product_parser - INFO -    Товар: Офисный школьный стул на колесиках без подлокотников крутящийся со спинкой byROOM Office EL'ff VC1007O-W. Рабочее компьютерное кресло на колесах для работы за компьютером ПК для школьника, взрослого
+2025-06-26 06:54:26,705 - product_parser - INFO -    Продавец: DiRetail
+2025-06-26 06:54:35,615 - product_parser - INFO - [110/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-igrovoe-tron-gaming-prestige-rogozhka-reguliruemye-2d-podlokotniki-grafit-2127639314/?at=k2toD53gBhVQwx4DIKo66prtnnYPLYFN9w3P8sQK8AjQ
+2025-06-26 06:54:35,616 - product_parser - INFO -    Товар: Кресло компьютерное игровое Tron Gaming Prestige рогожка, регулируемые 2D подлокотники, графит
+2025-06-26 06:54:35,616 - product_parser - INFO -    Продавец: TRON
+2025-06-26 06:54:39,292 - product_parser - INFO - [111/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-rukovoditelya-boss-s-podnozhkoy-i-massazhem-ofisnyy-stul-kreslo-kompyuternoe-belyy-1911847419/?at=w0tg5yZoxFXXMDlzIgB7JJpcwlNKvKunRB1m7cogAynP
+2025-06-26 06:54:39,293 - product_parser - INFO -    Товар: Кресло руководителя BOSS с подножкой и массажем, офисный стул, кресло компьютерное, белый, износостойкая экокожа
+2025-06-26 06:54:39,293 - product_parser - INFO -    Продавец: Молния плюс
+2025-06-26 06:54:39,981 - product_parser - INFO - [112/116] УСПЕШНО: https://uz.ozon.com/product/topchairs-igrovoe-kompyuternoe-kreslo-cherno-krasnyy-1733676659/?at=jYtZzR1gmhwxkqlkuNv0Y70cMmEpkh78WVp9TLZwYzO
+2025-06-26 06:54:39,983 - product_parser - INFO -    Товар: Topchairs Игровое компьютерное кресло, черно-красный
+2025-06-26 06:54:39,983 - product_parser - INFO -    Продавец: ООО «Стул Груп»
+2025-06-26 06:54:56,573 - product_parser - INFO - [113/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-igrovoe-ofisnoe-geymerskiy-igrovoy-stul-gamelab-warlock-breeze-grey-1301356120/?at=nRtr4mpnDCmL3GqGINNQPL2cE26KVxcogRjW6S74q9BO
+2025-06-26 06:54:56,574 - product_parser - INFO -    Товар: Кресло компьютерное игровое, офисное, геймерский игровой стул GAMELAB WARLOCK Breeze Grey
+2025-06-26 06:54:56,574 - product_parser - INFO -    Продавец: Бизнес-фабрика
+2025-06-26 06:54:57,482 - product_parser - INFO - [114/116] УСПЕШНО: https://uz.ozon.com/product/inglin-igrovoe-kompyuternoe-kreslo-chernyy-1392476088/?at=OgtEDvr3xhkrG48VCW5jJ7ZtvkNrmZUwqn2jASXzA823
+2025-06-26 06:54:57,483 - product_parser - INFO -    Товар: INGLIN Игровое компьютерное кресло, черный
+2025-06-26 06:54:57,484 - product_parser - INFO -    Продавец: INGLIN
+2025-06-26 06:54:57,535 - product_parser - INFO - [115/116] УСПЕШНО: https://uz.ozon.com/product/kreslo-igrovoe-knight-optimum-chernyy-karbon-1711965117/?at=vQtrJA0v8Cq5g5vNuK11v7LuLM0MgrUKYWyzJHGzE3vB
+2025-06-26 06:54:57,536 - product_parser - INFO -    Товар: Кресло игровое Knight Optimum черный/карбон
+2025-06-26 06:54:57,536 - product_parser - INFO -    Продавец: БЮРОКРАТ
+2025-06-26 06:54:58,306 - product_parser - INFO - Воркер 1 завершил работу
+2025-06-26 06:54:58,361 - product_parser - INFO - Воркер 2 завершил работу
+2025-06-26 06:55:51,934 - product_parser - INFO - [116/116] УСПЕШНО: https://uz.ozon.com/product/rozovoe-ergonomichnoe-detskoe-kreslo-s-reguliruemoy-podnozhkoy-komfort-dlya-ucheby-i-igr-1933855055/?at=LZtl0QML9HPk1K9RFKWXx2Zu52y796FPnRxGWF4Eq2Xo
+2025-06-26 06:55:51,934 - product_parser - INFO -    Товар: Детское розовое кресло с регулируемой подножкой и блокировкой колес Эргономика, безопасность для учебы и игр купить на OZON по низкой цене в Узбекистане, Ташкенте (1933855055)
+2025-06-26 06:55:51,936 - product_parser - INFO -    Продавец: Продавец не найден
+2025-06-26 06:55:52,203 - product_parser - INFO - Результаты сохранены в results\kompyuternye-i-ofisnye-kresla-38450_26.06.2025-06_45_08.xlsx
+2025-06-26 06:55:52,204 - product_parser - INFO - Обработка завершена за 643.88 секунд
+2025-06-26 06:55:52,204 - product_parser - INFO - Средняя скорость: 0.18 товаров/сек
+2025-06-26 06:55:52,768 - product_parser - INFO - Воркер 3 завершил работу
+2025-06-26 06:55:53,711 - product_parser - INFO - Все браузеры закрыты
+2025-06-26 06:55:53,713 - main - INFO - 
+=== ПАРСИНГ УСПЕШНО ЗАВЕРШЕН ===
+2025-06-26 06:55:53,713 - main - INFO - Отчет сохранен: C:\Users\nurja\OneDrive\Рабочий стол\ozon_parser\results\kompyuternye-i-ofisnye-kresla-38450_26.06.2025-06_45_08.xlsx

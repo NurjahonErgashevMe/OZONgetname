@@ -1,0 +1,468 @@
+2025-06-26 05:11:47,591 [INFO] Starting Ozon parser
+2025-06-26 05:11:49,940 [INFO] Driver initialized successfully
+2025-06-26 05:11:49,976 [INFO] Loading page: https://uz.ozon.ru/category/sistemnye-bloki-15704/
+2025-06-26 05:12:06,232 [ERROR] Page loading error: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff787f1fea5+79173]
+	GetHandleVerifier [0x0x7ff787f1ff00+79264]
+	(No symbol) [0x0x7ff787cd9e5a]
+	(No symbol) [0x0x7ff787d30586]
+	(No symbol) [0x0x7ff787d3083c]
+	(No symbol) [0x0x7ff787d84247]
+	(No symbol) [0x0x7ff787d589af]
+	(No symbol) [0x0x7ff787d8100d]
+	(No symbol) [0x0x7ff787d58743]
+	(No symbol) [0x0x7ff787d214c1]
+	(No symbol) [0x0x7ff787d22253]
+	GetHandleVerifier [0x0x7ff7881ea2dd+3004797]
+	GetHandleVerifier [0x0x7ff7881e472d+2981325]
+	GetHandleVerifier [0x0x7ff788203380+3107360]
+	GetHandleVerifier [0x0x7ff787f3aa2e+188622]
+	GetHandleVerifier [0x0x7ff787f422bf+219487]
+	GetHandleVerifier [0x0x7ff787f28df4+115860]
+	GetHandleVerifier [0x0x7ff787f28fa9+116297]
+	GetHandleVerifier [0x0x7ff787f0f558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-26 05:12:06,745 [INFO] Driver closed
+2025-06-26 05:12:06,748 [ERROR] Link parsing failed. Exiting.
+2025-06-26 05:12:48,132 [INFO] Starting Ozon parser
+2025-06-26 05:12:51,113 [INFO] Driver initialized successfully
+2025-06-26 05:12:51,113 [INFO] Loading page: https://uz.ozon.com/category/sistemnye-bloki-15704/?category_was_predicted=true&deny_category_prediction=true&from_global=true&text=%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80
+2025-06-26 05:13:00,473 [INFO] Page loaded successfully
+2025-06-26 05:13:01,121 [INFO] Initial links: 12/10
+2025-06-26 05:13:01,130 [INFO] Saved 12 links to C:\Users\nurja\OneDrive\Рабочий стол\ozon_parser\links.txt
+2025-06-26 05:13:01,891 [INFO] Driver closed
+2025-06-26 05:13:02,049 [INFO] Starting processing of 12 product URLs
+2025-06-26 05:13:24,297 [INFO] [1/12] NOT FOUND: https://uz.ozon.com/product/erying-sistemnyy-blok-intel-core-i5-4590-ram-16-gb-ssd-512-gb-intel-hd-graphics-4600-windows-10-1824909618/?at=6WtZRyXO2Cj9GPoxfAro0B1TQBLxMLiD842R7FANVjVA
+2025-06-26 05:13:24,494 [INFO]    Product: Not Found
+2025-06-26 05:13:24,494 [INFO]    Seller: Not Found
+2025-06-26 05:13:28,615 [INFO] [2/12] NOT FOUND: https://uz.ozon.com/product/erying-sistemnyy-blok-intel-xeon-e5-2670v2-ram-32-gb-ssd-1024-gb-amd-radeon-rx-580-8-gb-windows-10-1820929387/?at=EqtkwpB9rcR2XWnyHYxgOVlIk0K8PqTrEY16nT76P745
+2025-06-26 05:13:28,615 [INFO]    Product: Not Found
+2025-06-26 05:13:28,617 [INFO]    Seller: Not Found
+2025-06-26 05:13:33,072 [INFO] [3/12] NOT FOUND: https://uz.ozon.com/product/erying-sistemnyy-blok-intel-xeon-e5-2670v2-ram-32-gb-ssd-1024-gb-amd-radeon-rx-580-8-gb-windows-10-1820606604/?at=r2t4y2xVKiJyo0YiPoxV3pCMoY14im2lZylI195pRD
+2025-06-26 05:13:33,074 [INFO]    Product: Not Found
+2025-06-26 05:13:33,076 [INFO]    Seller: Not Found
+2025-06-26 05:13:36,646 [INFO] [4/12] NOT FOUND: https://uz.ozon.com/product/erying-sistemnyy-blok-intel-xeon-e5-2670v2-ram-32-gb-ssd-512-gb-amd-radeon-rx-580-8-gb-windows-10-1820470875/?at=16tLrq8zyC1LrqzOfl4Lw13c7QkmvWhyM08W4soKPjWp
+2025-06-26 05:13:36,649 [INFO]    Product: Not Found
+2025-06-26 05:13:36,650 [INFO]    Seller: Not Found
+2025-06-26 05:13:46,333 [INFO] [5/12] NOT FOUND: https://uz.ozon.com/product/intel-sistemnyy-blok-intel-core-i5-2400-ram-16-gb-ssd-256-gb-intel-hd-graphics-windows-10-1863569779/?at=x6tPpxZM6cNlDq1ZcrOAkm8ip7K1xXugBRnEPt2ZBYvw
+2025-06-26 05:13:46,344 [INFO]    Product: Not Found
+2025-06-26 05:13:46,345 [INFO]    Seller: Not Found
+2025-06-26 05:13:47,889 [INFO] [6/12] NOT FOUND: https://uz.ozon.com/product/erying-sistemnyy-blok-intel-xeon-e5-2670v2-ram-32-gb-ssd-512-gb-amd-radeon-rx-580-8-gb-windows-10-1821008724/?at=pZtpgA5MrcGwWkR8TArEDklCjE0WNou7Lg9qpHYVk4D3
+2025-06-26 05:13:47,890 [INFO]    Product: Not Found
+2025-06-26 05:13:47,894 [INFO]    Seller: Not Found
+2025-06-26 05:13:50,032 [INFO] [7/12] NOT FOUND: https://uz.ozon.com/product/intel-sistemnyy-blok-intel-core-i5-6500-ram-16-gb-ssd-512-gb-intel-hd-graphics-windows-10-1847417214/?at=vQtrJAvNmcVjPQG4iNONZGWh8EW1xhyjPvm5Czl6pk6
+2025-06-26 05:13:50,045 [INFO]    Product: Not Found
+2025-06-26 05:13:50,053 [INFO]    Seller: Not Found
+2025-06-26 05:13:57,463 [INFO] [8/12] NOT FOUND: https://uz.ozon.com/product/iru-sistemnyy-blok-310h6s-intel-core-i3-12100-ram-16-gb-ssd-512-gb-intel-uhd-graphics-730-freedos-1861628806/?at=oZt6AvkqNTM3WX0OSwr7ZG4Flxj2olckMJvAoiN8B4EW
+2025-06-26 05:13:57,470 [INFO]    Product: Not Found
+2025-06-26 05:13:57,470 [INFO]    Seller: Not Found
+2025-06-26 05:14:01,444 [INFO] [9/12] NOT FOUND: https://uz.ozon.com/product/sistemnyy-blok-intel-core-i5-12400f-ram-32-gb-ssd-500-gb-nvidia-geforce-rtx-4060-8-gb-windows-10-1928918467/?at=83tBmY9vVFoJKpLCz34NZ9hElzO6nTEpM5NRU8nwnm7
+2025-06-26 05:14:01,463 [INFO]    Product: Not Found
+2025-06-26 05:14:01,478 [INFO]    Seller: Not Found
+2025-06-26 05:14:12,628 [INFO] [10/12] NOT FOUND: https://uz.ozon.com/product/ultra-kompyutery-sistemnyy-blok-office-classic-intel-core-i5-3470-ram-16-gb-ssd-240-gb-intel-1472136445/?at=16tLrq8zyCAwzZWVFjkwWD7HXqkG2mS1vK5rQSYnPKvL
+2025-06-26 05:14:12,645 [INFO]    Product: Not Found
+2025-06-26 05:14:12,678 [INFO]    Seller: Not Found
+2025-06-26 05:14:18,563 [INFO] [11/12] NOT FOUND: https://uz.ozon.com/product/ultra-kompyutery-sistemnyy-blok-office-classic-intel-core-i5-2400-ram-16-gb-ssd-240-gb-intel-1215207887/?at=K8tZQ4LEgC35BDG9hWXQ53PUmLvPA8sp4xw2qslDYDjY
+2025-06-26 05:14:18,593 [INFO]    Product: Not Found
+2025-06-26 05:14:18,642 [INFO]    Seller: Not Found
+2025-06-26 05:14:30,046 [INFO] [12/12] NOT FOUND: https://uz.ozon.com/product/monozone-sistemnyy-blok-kompyuter-intel-core-i7-2600-ram-16-gb-ssd-256-gb-intel-hd-graphics-1825101266/?at=x6tPpxZM6cwlBP8ZcDQzNzvtZO3254CXJv39phwjmwm0
+2025-06-26 05:14:30,047 [INFO]    Product: Not Found
+2025-06-26 05:14:30,048 [INFO]    Seller: Not Found
+2025-06-26 05:14:31,048 [INFO] Results saved to results.xlsx
+2025-06-26 05:14:31,049 [INFO] Processing completed in 89.00 seconds
+2025-06-26 05:14:31,050 [INFO] Successfully processed: 0/12
+2025-06-26 05:14:31,051 [INFO] Ozon parser completed successfully
+2025-06-26 05:33:04,299 [INFO] Starting Ozon parser
+2025-06-26 05:33:04,321 [INFO] Step 1: Parsing product links
+2025-06-26 05:33:36,074 [INFO] Starting Ozon parser
+2025-06-26 05:33:36,075 [INFO] Step 1: Parsing product links
+2025-06-26 05:33:45,009 [INFO] Collected 10 product links
+2025-06-26 05:33:45,012 [INFO] Step 2: Parsing product details
+2025-06-26 05:34:12,435 [INFO] Starting Ozon parser
+2025-06-26 05:34:12,514 [INFO] Step 1: Parsing product links
+2025-06-26 05:34:23,338 [INFO] Collected 10 product links
+2025-06-26 05:34:23,346 [INFO] Step 2: Parsing product details
+2025-06-26 05:56:48,368 - main - INFO - === ЗАПУСК ПАРСЕРА OZON ===
+2025-06-26 05:56:48,370 - main - INFO - Категория: sistemnye-bloki-15704
+2025-06-26 05:57:03,832 - main - INFO - === ЗАПУСК ПАРСЕРА OZON ===
+2025-06-26 05:57:03,833 - main - INFO - Категория: sistemnye-bloki-15704
+2025-06-26 05:57:03,834 - main - INFO - Целевое количество ссылок: 100
+2025-06-26 05:57:03,834 - main - INFO - 
+=== ЭТАП 1: ПАРСИНГ ССЫЛОК ===
+2025-06-26 05:57:05,595 - link_parser - INFO - Браузер инициализирован
+2025-06-26 05:57:05,614 - link_parser - INFO - Загрузка страницы: https://uz.ozon.com/category/sistemnye-bloki-15704/?category_was_predicted=true&deny_category_prediction=true&from_global=true&text=%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80
+2025-06-26 05:57:23,373 - main - INFO - === ЗАПУСК ПАРСЕРА OZON ===
+2025-06-26 05:57:23,374 - main - INFO - Категория: sistemnye-bloki-15704
+2025-06-26 05:57:23,375 - main - INFO - Целевое количество ссылок: 10
+2025-06-26 05:57:23,375 - main - INFO - 
+=== ЭТАП 1: ПАРСИНГ ССЫЛОК ===
+2025-06-26 05:57:24,956 - link_parser - INFO - Браузер инициализирован
+2025-06-26 05:57:24,959 - link_parser - INFO - Загрузка страницы: https://uz.ozon.com/category/sistemnye-bloki-15704/?category_was_predicted=true&deny_category_prediction=true&from_global=true&text=%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80
+2025-06-26 05:57:28,158 - link_parser - INFO - Страница успешно загружена
+2025-06-26 05:57:30,340 - link_parser - INFO - Найдено новых ссылок: 8 | Всего: 8/10
+2025-06-26 05:57:30,340 - link_parser - INFO - Начальное количество ссылок: 8/10
+2025-06-26 05:57:32,496 - link_parser - INFO - Найдено новых ссылок: 16 | Всего: 24/10
+2025-06-26 05:57:32,498 - link_parser - INFO - Ссылки сохранены в файл: C:\Users\nurja\OneDrive\Рабочий стол\ozon_parser\links.txt
+2025-06-26 05:57:32,500 - link_parser - INFO - Успешно собрано 24 ссылок
+2025-06-26 05:57:33,017 - link_parser - INFO - Браузер закрыт
+2025-06-26 05:57:33,017 - main - INFO - 
+=== ЭТАП 2: ЧТЕНИЕ ССЫЛОК ===
+2025-06-26 05:57:33,049 - main - INFO - Прочитано ссылок: 24
+2025-06-26 05:57:33,050 - main - INFO - 
+=== ЭТАП 3: ПАРСИНГ ТОВАРОВ ===
+2025-06-26 05:57:49,702 - main - INFO - === ЗАПУСК ПАРСЕРА OZON ===
+2025-06-26 05:57:49,704 - main - INFO - Категория: sistemnye-bloki-15704
+2025-06-26 05:57:49,704 - main - INFO - Целевое количество ссылок: 10
+2025-06-26 05:57:49,705 - main - INFO - 
+=== ЭТАП 1: ПАРСИНГ ССЫЛОК ===
+2025-06-26 05:57:50,607 - link_parser - INFO - Браузер инициализирован
+2025-06-26 05:57:50,608 - link_parser - INFO - Загрузка страницы: https://uz.ozon.com/category/sistemnye-bloki-15704/?category_was_predicted=true&deny_category_prediction=true&from_global=true&text=%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80
+2025-06-26 05:57:53,567 - link_parser - INFO - Страница успешно загружена
+2025-06-26 05:57:55,462 - link_parser - INFO - Найдено новых ссылок: 8 | Всего: 8/10
+2025-06-26 05:57:55,462 - link_parser - INFO - Начальное количество ссылок: 8/10
+2025-06-26 05:57:57,466 - link_parser - INFO - Найдено новых ссылок: 16 | Всего: 24/10
+2025-06-26 05:57:57,468 - link_parser - INFO - Ссылки сохранены в файл: C:\Users\nurja\OneDrive\Рабочий стол\ozon_parser\links.txt
+2025-06-26 05:57:57,470 - link_parser - INFO - Успешно собрано 24 ссылок
+2025-06-26 05:57:57,982 - link_parser - INFO - Браузер закрыт
+2025-06-26 05:57:57,984 - main - INFO - 
+=== ЭТАП 2: ЧТЕНИЕ ССЫЛОК ===
+2025-06-26 05:57:58,021 - main - INFO - Прочитано ссылок: 24
+2025-06-26 05:57:58,023 - main - INFO - 
+=== ЭТАП 3: ПАРСИНГ ТОВАРОВ ===
+2025-06-26 05:57:58,023 - main - INFO - Количество воркеров: 3
+2025-06-26 05:57:58,024 - main - INFO - Выходной файл: sistemnye-bloki-15704_26.06.2025-05_57_49.xlsx
+2025-06-26 05:57:58,028 - product_parser - INFO - Начало обработки 24 товаров
+2025-06-26 05:57:59,140 - product_parser - INFO - Воркер 1 запущен
+2025-06-26 05:58:00,317 - product_parser - INFO - Воркер 2 запущен
+2025-06-26 05:58:01,785 - product_parser - INFO - Воркер 3 запущен
+2025-06-26 05:58:16,197 - product_parser - INFO - [1/24] УСПЕШНО: https://uz.ozon.com/product/acer-sistemnyy-blok-acer-2610-veriton-3-2100-intel-core-i3-2100-ram-4-gb-hdd-500-gb-intel-1707162805/?at=nRtr4mnO0cNNJm5YcnPgGXYcoRoEnqt7lA2GXuxpEn0Z
+2025-06-26 05:58:16,198 - product_parser - INFO -    Товар: Название не найдено
+2025-06-26 05:58:16,198 - product_parser - INFO -    Продавец: Compunity
+2025-06-26 05:58:16,427 - product_parser - INFO - [2/24] УСПЕШНО: https://uz.ozon.com/product/ultra-kompyutery-sistemnyy-blok-office-classic-intel-core-i5-2400-ram-16-gb-ssd-240-gb-intel-1215207887/?at=QktJno7AGc7nX3BWfXvQoPrUJw6nNNirrA80QTyB2B8n
+2025-06-26 05:58:16,429 - product_parser - INFO -    Товар: Название не найдено
+2025-06-26 05:58:16,430 - product_parser - INFO -    Продавец: Ультра +
+2025-06-26 05:58:23,345 - product_parser - INFO - [3/24] УСПЕШНО: https://uz.ozon.com/product/compbaster-sistemnyy-blok-imba-amd-ryzen-5-5500-ram-16-gb-ssd-512-gb-amd-radeon-rx-5700-8-gb-1931581098/?at=57twy6Ajmc4j5nXT1ognxvUGEK0w9HJZEKwwcggGQM3
+2025-06-26 05:58:23,363 - product_parser - INFO -    Товар: Название не найдено
+2025-06-26 05:58:23,365 - product_parser - INFO -    Продавец: COMPBASTER
+2025-06-26 05:58:29,379 - product_parser - INFO - [4/24] УСПЕШНО: https://uz.ozon.com/product/iru-sistemnyy-blok-310h6s-intel-core-i3-12100-ram-16-gb-ssd-512-gb-intel-uhd-graphics-730-freedos-1861628806/?at=z6tOX4KglcozO6k7swMVgVqtLyX2BF3g2VD4TolVy3w
+2025-06-26 05:58:29,380 - product_parser - INFO -    Товар: Название не найдено
+2025-06-26 05:58:29,381 - product_parser - INFO -    Продавец: Позитроника
+2025-06-26 05:58:30,147 - product_parser - INFO - [5/24] УСПЕШНО: https://uz.ozon.com/product/ultra-kompyutery-sistemnyy-blok-office-classic-intel-core-i5-3470-ram-16-gb-ssd-240-gb-intel-1472136445/?at=Y7tjKA51Rh991GwRuqy2AxULrMGG6hDokRQ3cvV76nX
+2025-06-26 05:58:30,148 - product_parser - INFO -    Товар: Название не найдено
+2025-06-26 05:58:30,148 - product_parser - INFO -    Продавец: Ультра +
+2025-06-26 05:58:33,476 - product_parser - INFO - [6/24] УСПЕШНО: https://uz.ozon.com/product/monozone-sistemnyy-blok-kompyuter-intel-core-i7-2600-ram-16-gb-ssd-256-gb-intel-hd-graphics-1825101266/?at=mqtkVWvJwcP1pVW8FYxEQpRCDLoqEMfm7Pm2Gcg7124P
+2025-06-26 05:58:33,476 - product_parser - INFO -    Товар: Название не найдено
+2025-06-26 05:58:33,476 - product_parser - INFO -    Продавец: Mono Store
+2025-06-26 05:58:41,252 - product_parser - INFO - [7/24] УСПЕШНО: https://uz.ozon.com/product/erying-sistemnyy-blok-intel-xeon-e5-2670v2-ram-32-gb-ssd-512-gb-amd-radeon-rx-580-8-gb-windows-10-1820470875/?at=mqtkVWvJwcYGOKonUVJ8M6ZIRjNKgKiJ9qLmRtLvJQr4
+2025-06-26 05:58:41,252 - product_parser - INFO -    Товар: Название не найдено
+2025-06-26 05:58:41,254 - product_parser - INFO -    Продавец: huasheng
+2025-06-26 05:58:44,297 - product_parser - INFO - [8/24] УСПЕШНО: https://uz.ozon.com/product/sistemnyy-blok-intel-core-i5-12400f-ram-32-gb-ssd-500-gb-nvidia-geforce-rtx-4060-8-gb-windows-10-1928918467/?at=WPtN1D097TOXY5woFAPJKAWHLGDYB3fYx24rvi1wovxX
+2025-06-26 05:58:44,298 - product_parser - INFO -    Товар: Название не найдено
+2025-06-26 05:58:44,299 - product_parser - INFO -    Продавец: Продавец не найден
+2025-06-26 05:58:47,951 - product_parser - INFO - [9/24] УСПЕШНО: https://uz.ozon.com/product/iru-sistemnyy-blok-310b7g-intel-core-i7-12700-ram-32-gb-ssd-1024-gb-intel-uhd-graphics-770-freedos-1861628848/?at=K8tZQ4LEgC4JVjmPtn8x4MncgPqjgrUKLmM5XSLV4ylz
+2025-06-26 05:58:47,952 - product_parser - INFO -    Товар: Название не найдено
+2025-06-26 05:58:47,952 - product_parser - INFO -    Продавец: Позитроника
+2025-06-26 05:58:53,320 - product_parser - INFO - [10/24] УСПЕШНО: https://uz.ozon.com/product/intel-sistemnyy-blok-intel-core-i5-12400-ram-32-gb-ssd-512-gb-intel-hd-graphics-windows-11-1943090693/?at=Rltyw5Nm9ToPG7AwSA3vMYvI7onZExFPWOOmxf3Rg6kJ
+2025-06-26 05:58:53,321 - product_parser - INFO -    Товар: Название не найдено
+2025-06-26 05:58:53,321 - product_parser - INFO -    Продавец: DINKS COMP
+2025-06-26 05:59:01,319 - product_parser - INFO - [11/24] УСПЕШНО: https://uz.ozon.com/product/iru-sistemnyy-blok-310h6g-intel-core-i5-12400-ram-16-gb-ssd-1024-gb-intel-uhd-graphics-730-freedos-1861628524/?at=36tWj2ZA1TXjP825UD5DmVnsWB2vDysxNLovLuPK982
+2025-06-26 05:59:01,320 - product_parser - INFO -    Товар: Название не найдено
+2025-06-26 05:59:01,320 - product_parser - INFO -    Продавец: Продавец не найден
+2025-06-26 05:59:02,483 - product_parser - INFO - [12/24] УСПЕШНО: https://uz.ozon.com/product/iru-sistemnyy-blok-510b7gm-intel-core-i5-12400-ram-16-gb-ssd-512-gb-intel-uhd-graphics-730-freedos-1861628687/?at=XQtklOm5vc2ABNpEuoj3lDkC59D1wMFJ9okE9FNol8DL
+2025-06-26 05:59:02,483 - product_parser - INFO -    Товар: Название не найдено
+2025-06-26 05:59:02,484 - product_parser - INFO -    Продавец: Продавец не найден
+2025-06-26 05:59:06,521 - product_parser - INFO - [13/24] УСПЕШНО: https://uz.ozon.com/product/asus-sistemnyy-blok-intel-core-i7-3770-ram-16-gb-ssd-512-gb-nvidia-geforce-gtx-1050-ti-4-gb-belyy-1836945129/?at=28t0L87lqCxQmR2gS3KW7mNcWoV1VBflmoX4Wt56nEoo
+2025-06-26 05:59:06,522 - product_parser - INFO -    Товар: Название не найдено
+2025-06-26 05:59:06,522 - product_parser - INFO -    Продавец: Comp+
+2025-06-26 05:59:16,292 - product_parser - INFO - [14/24] УСПЕШНО: https://uz.ozon.com/product/sistemnyy-blok-intel-core-i5-12400f-ram-16-gb-ssd-1000-gb-nvidia-geforce-rtx-3060-12-gb-windows-1973884208/?at=pZtpgA5MrcB5r63ZTAGK2gNc7oAVO0S6662PLirWOW2k
+2025-06-26 05:59:16,293 - product_parser - INFO -    Товар: Название не найдено
+2025-06-26 05:59:16,294 - product_parser - INFO -    Продавец: Продавец не найден
+2025-06-26 05:59:21,771 - product_parser - INFO - [15/24] УСПЕШНО: https://uz.ozon.com/product/sistemnyy-blok-igrovoy-kompyuter-intel-xeon-e5-2650v3-ram-32-gb-ssd-1024-gb-nvidia-geforce-rtx-4060-1678819684/?at=Z8tX1Qz4ZTRlQ89jImW9P0Vf2DEB5zI70k3rOTJOBvNk
+2025-06-26 05:59:21,789 - product_parser - INFO -    Товар: Название не найдено
+2025-06-26 05:59:21,792 - product_parser - INFO -    Продавец: Продавец не найден
+2025-06-26 05:59:23,469 - product_parser - INFO - [16/24] УСПЕШНО: https://uz.ozon.com/product/intel-sistemnyy-blok-intel-core-i5-13400-ram-32-gb-ssd-960-gb-intel-hd-graphics-windows-11-1943143574/?at=36tWj2ZA1Tznln96UERBzB6cZJVJZjfzAQLAXsv6n0Ar
+2025-06-26 05:59:23,470 - product_parser - INFO -    Товар: Название не найдено
+2025-06-26 05:59:23,471 - product_parser - INFO -    Продавец: DINKS COMP
+2025-06-26 05:59:27,759 - product_parser - INFO - [17/24] УСПЕШНО: https://uz.ozon.com/product/iru-sistemnyy-blok-310b7g-intel-core-i7-12700-ram-16-gb-ssd-1024-gb-intel-uhd-graphics-770-freedos-1861628646/?at=EqtkwpB9rcPjDgYLi4k9RrQU61OD0xHj8P5yHrjLR0q
+2025-06-26 05:59:27,759 - product_parser - INFO -    Товар: Название не найдено
+2025-06-26 05:59:27,760 - product_parser - INFO -    Продавец: Позитроника
+2025-06-26 05:59:33,202 - product_parser - INFO - [18/24] УСПЕШНО: https://uz.ozon.com/product/compbaster-sistemnyy-blok-standart-amd-ryzen-5-5600-ram-32-gb-ssd-1024-gb-amd-radeon-rx-5700-8-gb-1957008782/?at=mqtkVWvJwc4m7jXLs9m2Yz8CDGngRJiZK0BpXhXzMO6m
+2025-06-26 05:59:33,202 - product_parser - INFO -    Товар: Название не найдено
+2025-06-26 05:59:33,202 - product_parser - INFO -    Продавец: COMPBASTER
+2025-06-26 05:59:34,826 - product_parser - INFO - [19/24] УСПЕШНО: https://uz.ozon.com/product/erying-sistemnyy-blok-intel-xeon-e5-2670v2-ram-32-gb-ssd-1024-gb-amd-radeon-rx-580-8-gb-windows-10-1820606604/?at=GRt2rAwYxu7RxlzxT8WvXYwfj5G6NrHoAnKnzFvmMqnx
+2025-06-26 05:59:34,826 - product_parser - INFO -    Товар: Название не найдено
+2025-06-26 05:59:34,827 - product_parser - INFO -    Продавец: huasheng
+2025-06-26 05:59:42,095 - product_parser - INFO - [20/24] УСПЕШНО: https://uz.ozon.com/product/intel-sistemnyy-blok-intel-core-i7-4770-ram-16-gb-ssd-512-gb-intel-hd-graphics-windows-10-1960468112/?at=Rltyw5Nm9TM63n8ZFD6mYq2FEpJpBlCB3YOD4fEgY965
+2025-06-26 05:59:42,095 - product_parser - INFO -    Товар: Название не найдено
+2025-06-26 05:59:42,097 - product_parser - INFO -    Продавец: Продавец не найден
+2025-06-26 05:59:48,657 - product_parser - INFO - [21/24] УСПЕШНО: https://uz.ozon.com/product/erying-sistemnyy-blok-intel-xeon-e5-2670v2-ram-32-gb-ssd-512-gb-amd-radeon-rx-580-8-gb-windows-10-1821008724/?at=57twy6AjmcP6wEVzC7M5JJpTNZp3DzfR2ALy7fy48NlK
+2025-06-26 05:59:48,658 - product_parser - INFO -    Товар: Название не найдено
+2025-06-26 05:59:48,659 - product_parser - INFO -    Продавец: huasheng2
+2025-06-26 05:59:50,564 - product_parser - INFO - [22/24] УСПЕШНО: https://uz.ozon.com/product/red-dot-sistemnyy-blok-chili-peppers-intel-xeon-e5-2650v3-ram-16-gb-ssd-512-gb-nvidia-geforce-rtx-1611651720/?at=DqtD73Xv2I2XwPDVuBLRp97iNKwl4rF37WRAECqMgO4Z
+2025-06-26 05:59:50,565 - product_parser - INFO -    Товар: Название не найдено
+2025-06-26 05:59:50,566 - product_parser - INFO -    Продавец: Продавец не найден
+2025-06-26 05:59:51,386 - product_parser - INFO - Воркер 3 завершил работу
+2025-06-26 05:59:57,143 - product_parser - INFO - [23/24] УСПЕШНО: https://uz.ozon.com/product/erying-sistemnyy-blok-intel-xeon-e5-2670v2-ram-32-gb-ssd-1024-gb-amd-radeon-rx-580-8-gb-windows-10-1820929387/?at=mqtkVWvJwc324445hjxwEKwinLmQgnuOwwO0XIPxXY13
+2025-06-26 05:59:57,144 - product_parser - INFO -    Товар: Название не найдено
+2025-06-26 05:59:57,145 - product_parser - INFO -    Продавец: huasheng2
+2025-06-26 05:59:57,960 - product_parser - INFO - Воркер 2 завершил работу
+2025-06-26 05:59:58,662 - product_parser - INFO - [24/24] УСПЕШНО: https://uz.ozon.com/product/sistemnyy-blok-kompyuter-intel-xeon-e5-2650v2-ram-32-gb-ssd-512-gb-nvidia-geforce-gt-730-4-gb-1678819651/?at=28t0L87lqCWpNDOBTRWp8YgUok6Z63cpBWq38swBg7EW
+2025-06-26 05:59:58,664 - product_parser - INFO -    Товар: Название не найдено
+2025-06-26 05:59:58,664 - product_parser - INFO -    Продавец: NAVI COMPUTERS
+2025-06-26 05:59:58,778 - product_parser - INFO - Результаты сохранены в файл: sistemnye-bloki-15704_26.06.2025-05_57_49.xlsx
+2025-06-26 05:59:58,817 - product_parser - INFO - Обработка завершена за 120.79 секунд
+2025-06-26 05:59:58,817 - product_parser - INFO - Средняя скорость: 0.20 товаров/сек
+2025-06-26 05:59:58,818 - main - INFO - 
+=== ПАРСИНГ УСПЕШНО ЗАВЕРШЕН ===
+2025-06-26 06:08:32,395 - main - INFO - === ЗАПУСК ПАРСЕРА OZON ===
+2025-06-26 06:08:32,395 - main - INFO - Категория: sistemnye-bloki-15704
+2025-06-26 06:08:32,396 - main - INFO - Целевое количество ссылок: 10
+2025-06-26 06:08:32,398 - main - INFO - 
+=== ЭТАП 1: ПАРСИНГ ССЫЛОК ===
+2025-06-26 06:08:34,123 - link_parser - INFO - Браузер инициализирован
+2025-06-26 06:08:34,179 - link_parser - INFO - Загрузка страницы: https://uz.ozon.com/category/sistemnye-bloki-15704/?category_was_predicted=true&deny_category_prediction=true&from_global=true&text=%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80
+2025-06-26 06:08:39,550 - link_parser - INFO - Страница успешно загружена
+2025-06-26 06:08:40,132 - link_parser - INFO - Найдено новых ссылок: 12 | Всего: 12/10
+2025-06-26 06:08:40,133 - link_parser - INFO - Начальное количество ссылок: 12/10
+2025-06-26 06:08:40,135 - link_parser - INFO - Ссылки сохранены в файл: C:\Users\nurja\OneDrive\Рабочий стол\ozon_parser\links.txt
+2025-06-26 06:08:40,139 - link_parser - INFO - Успешно собрано 12 ссылок
+2025-06-26 06:08:40,716 - link_parser - INFO - Браузер закрыт
+2025-06-26 06:08:40,734 - main - INFO - 
+=== ЭТАП 2: ЧТЕНИЕ ССЫЛОК ===
+2025-06-26 06:08:40,899 - main - INFO - Прочитано ссылок: 12
+2025-06-26 06:08:40,965 - main - INFO - 
+=== ЭТАП 3: ПАРСИНГ ТОВАРОВ ===
+2025-06-26 06:08:41,067 - main - INFO - Количество воркеров: 3
+2025-06-26 06:08:41,117 - main - INFO - Выходной файл: sistemnye-bloki-15704_26.06.2025-06_08_32.xlsx
+2025-06-26 06:08:41,182 - product_parser - INFO - Начало обработки 12 товаров
+2025-06-26 06:08:43,322 - product_parser - INFO - Воркер 1 запущен
+2025-06-26 06:08:45,500 - product_parser - INFO - Воркер 2 запущен
+2025-06-26 06:08:47,080 - product_parser - INFO - Воркер 3 запущен
+2025-06-26 06:09:05,791 - product_parser - INFO - [1/12] УСПЕШНО: https://uz.ozon.com/product/sistemnyy-blok-intel-core-i5-12400f-ram-32-gb-ssd-500-gb-nvidia-geforce-rtx-4060-8-gb-windows-10-1928918467/?at=J8tgkKLxwFnJxVqLFRrmmK3SzVp8vEh3QVmLnuA9gKDK
+2025-06-26 06:09:05,804 - product_parser - INFO -    Товар: Системный блок (Intel Core i5-12400F, RAM 32 ГБ, SSD 500 ГБ, NVIDIA GeForce RTX 4060 (8 Гб), Windows 10 Pro), белый
+2025-06-26 06:09:05,806 - product_parser - INFO -    Продавец: NOMA Comp
+2025-06-26 06:09:09,649 - product_parser - INFO - [2/12] УСПЕШНО: https://uz.ozon.com/product/erying-sistemnyy-blok-intel-core-i5-4590-ram-16-gb-ssd-512-gb-intel-hd-graphics-4600-windows-10-1824909618/?at=Rltyw5PNWFLvG2WLtWKkr0Dc1o2XmvI6Pz68EI604Ypo
+2025-06-26 06:09:09,649 - product_parser - INFO -    Товар: ERYING Системный блок (Intel Core i5-4590, RAM 16 ГБ, SSD 512 ГБ, Intel HD Graphics 4600, Windows 10 Pro), черный
+2025-06-26 06:09:09,650 - product_parser - INFO -    Продавец: huasheng2
+2025-06-26 06:09:17,062 - product_parser - INFO - [3/12] УСПЕШНО: https://uz.ozon.com/product/ultra-kompyutery-sistemnyy-blok-office-classic-intel-core-i5-2400-ram-16-gb-ssd-240-gb-intel-1215207887/?at=Z8tX1Qnzgt3AQNNghRYmvm3CpggAwkImXY2VVUAlAgp7
+2025-06-26 06:09:17,071 - product_parser - INFO -    Товар: Ультра компьютеры Системный блок Office Classic (Intel Core i5-2400, RAM 16 ГБ, SSD 240 ГБ, Intel HD Graphics, Windows 10 Pro), черный
+2025-06-26 06:09:17,072 - product_parser - INFO -    Продавец: Ультра +
+2025-06-26 06:09:23,468 - product_parser - INFO - [4/12] УСПЕШНО: https://uz.ozon.com/product/erying-sistemnyy-blok-intel-xeon-e5-2670v2-ram-32-gb-ssd-1024-gb-amd-radeon-rx-580-8-gb-windows-10-1820606604/?at=gpt4vG58yUPQEyO6cGpA7j5sJYRgmmFmzDPn8snnzxzp
+2025-06-26 06:09:23,470 - product_parser - INFO -    Товар: ERYING Системный блок (Intel Xeon E5-2670V2, RAM 32 ГБ, SSD 1024 ГБ, AMD Radeon RX 580 (8 Гб), Windows 10 Pro), черный
+2025-06-26 06:09:23,471 - product_parser - INFO -    Продавец: huasheng
+2025-06-26 06:09:24,957 - product_parser - INFO - [5/12] УСПЕШНО: https://uz.ozon.com/product/intel-sistemnyy-blok-intel-core-i5-6500-ram-16-gb-ssd-512-gb-intel-hd-graphics-windows-10-1847417214/?at=A6tGxEJjOcJVPy0QfEPWX0VuNy4YP7SBnz87zCAYMZB5
+2025-06-26 06:09:24,969 - product_parser - INFO -    Товар: Intel Системный блок (Intel Core i5-6500, RAM 16 ГБ, SSD 512 ГБ, Intel HD Graphics, Windows 10 Pro), черный
+2025-06-26 06:09:24,971 - product_parser - INFO -    Продавец: Umbrella-PC
+2025-06-26 06:09:37,822 - product_parser - INFO - [6/12] УСПЕШНО: https://uz.ozon.com/product/ultra-kompyutery-sistemnyy-blok-office-classic-intel-core-i5-3470-ram-16-gb-ssd-240-gb-intel-1472136445/?at=OgtEDvr3xhBM9ypJF3ANM2JI7KNDAiGnn30ZH96BpZ1
+2025-06-26 06:09:37,823 - product_parser - INFO -    Товар: Ультра компьютеры Системный блок Office Classic (Intel Core i5-3470, RAM 16 ГБ, SSD 240 ГБ, Intel HD Graphics, Windows 10 Pro), черный
+2025-06-26 06:09:37,825 - product_parser - INFO -    Продавец: Ультра +
+2025-06-26 06:09:42,303 - product_parser - INFO - [7/12] УСПЕШНО: https://uz.ozon.com/product/monozone-sistemnyy-blok-kompyuter-intel-core-i7-2600-ram-16-gb-ssd-256-gb-intel-hd-graphics-1825101266/?at=r2t4y23xZU2NG62oHgz2KyWHWOBVMAuYnz6kgsPK33pY
+2025-06-26 06:09:42,306 - product_parser - INFO -    Товар: MonoZone Системный блок Компьютер (Intel Core i7-2600, RAM 16 ГБ, SSD 256 ГБ, Intel HD Graphics, Windows 10 Pro), черный
+2025-06-26 06:09:42,308 - product_parser - INFO -    Продавец: Mono Store
+2025-06-26 06:09:50,388 - product_parser - INFO - [8/12] УСПЕШНО: https://uz.ozon.com/product/iru-sistemnyy-blok-310h6s-intel-core-i3-12100-ram-16-gb-ssd-512-gb-intel-uhd-graphics-730-freedos-1861628806/?at=lRt6WXqLEIvLEQPAuEjzJ6MfN2XMl2u6p6DmzUjRWZXg
+2025-06-26 06:09:50,391 - product_parser - INFO -    Товар: iRU Системный блок 310H6S (Intel Core i3-12100, RAM 16 ГБ, SSD 512 ГБ, Intel UHD Graphics 730, FreeDOS), 2074830, черный
+2025-06-26 06:09:50,392 - product_parser - INFO -    Продавец: Позитроника
+2025-06-26 06:09:53,267 - product_parser - INFO - [9/12] УСПЕШНО: https://uz.ozon.com/product/intel-sistemnyy-blok-intel-core-i5-2400-ram-16-gb-ssd-256-gb-intel-hd-graphics-windows-10-1863569779/?at=mqtkVWLvlFxmL70KUorPGLvC3RNmjlskGrWMQf5ZBYyE
+2025-06-26 06:09:53,268 - product_parser - INFO -    Товар: Intel Системный блок (Intel Core i5-2400, RAM 16 ГБ, SSD 256 ГБ, Intel HD Graphics, Windows 10 Pro), черный
+2025-06-26 06:09:53,270 - product_parser - INFO -    Продавец: Umbrella-PC
+2025-06-26 06:09:54,840 - product_parser - INFO - [10/12] УСПЕШНО: https://uz.ozon.com/product/erying-sistemnyy-blok-intel-xeon-e5-2670v2-ram-32-gb-ssd-512-gb-amd-radeon-rx-580-8-gb-windows-10-1820470875/?at=6WtZRylXmhKx473h17JDWvuXgGjA0SjqXWVPhzV5YAm
+2025-06-26 06:09:54,841 - product_parser - INFO -    Товар: ERYING Системный блок (Intel Xeon E5-2670V2, RAM 32 ГБ, SSD 512 ГБ, AMD Radeon RX 580 (8 Гб), Windows 10 Pro), черный
+2025-06-26 06:09:54,844 - product_parser - INFO -    Продавец: huasheng
+2025-06-26 06:09:55,664 - product_parser - INFO - Воркер 2 завершил работу
+2025-06-26 06:10:03,446 - product_parser - INFO - [11/12] УСПЕШНО: https://uz.ozon.com/product/erying-sistemnyy-blok-intel-xeon-e5-2670v2-ram-32-gb-ssd-512-gb-amd-radeon-rx-580-8-gb-windows-10-1821008724/?at=Z8tX1QnzgtEpy53nUQ834kNUO0l09YczDR6NnFy8kkWR
+2025-06-26 06:10:03,447 - product_parser - INFO -    Товар: ERYING Системный блок (Intel Xeon E5-2670V2, RAM 32 ГБ, SSD 512 ГБ, AMD Radeon RX 580 (8 Гб), Windows 10 Pro), черный
+2025-06-26 06:10:03,447 - product_parser - INFO -    Продавец: huasheng2
+2025-06-26 06:10:04,264 - product_parser - INFO - Воркер 1 завершил работу
+2025-06-26 06:10:08,833 - product_parser - INFO - [12/12] УСПЕШНО: https://uz.ozon.com/product/erying-sistemnyy-blok-intel-xeon-e5-2670v2-ram-32-gb-ssd-1024-gb-amd-radeon-rx-580-8-gb-windows-10-1820929387/?at=XQtklO7mKFGW9Y15fL5XmgS5yXWDJiR3GBQztRQ1Axz
+2025-06-26 06:10:08,833 - product_parser - INFO -    Товар: ERYING Системный блок (Intel Xeon E5-2670V2, RAM 32 ГБ, SSD 1024 ГБ, AMD Radeon RX 580 (8 Гб), Windows 10 Pro), черный
+2025-06-26 06:10:08,834 - product_parser - INFO -    Продавец: huasheng2
+2025-06-26 06:10:08,915 - product_parser - INFO - Результаты сохранены в файл: sistemnye-bloki-15704_26.06.2025-06_08_32.xlsx
+2025-06-26 06:10:08,916 - product_parser - INFO - Обработка завершена за 87.73 секунд
+2025-06-26 06:10:08,917 - product_parser - INFO - Средняя скорость: 0.14 товаров/сек
+2025-06-26 06:10:08,917 - main - INFO - 
+=== ПАРСИНГ УСПЕШНО ЗАВЕРШЕН ===
+2025-06-26 06:19:08,175 - main - INFO - === ЗАПУСК ПАРСЕРА OZON ===
+2025-06-26 06:19:08,176 - main - INFO - Категория: sistemnye-bloki-15704
+2025-06-26 06:19:08,177 - main - INFO - Целевое количество ссылок: 10
+2025-06-26 06:19:08,177 - main - INFO - 
+=== ЭТАП 1: ПАРСИНГ ССЫЛОК ===
+2025-06-26 06:19:09,708 - link_parser - INFO - Браузер инициализирован
+2025-06-26 06:19:09,714 - link_parser - INFO - Загрузка страницы: https://uz.ozon.com/category/sistemnye-bloki-15704/?category_was_predicted=true&deny_category_prediction=true&from_global=true&text=%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80
+2025-06-26 06:19:15,665 - link_parser - INFO - Страница успешно загружена
+2025-06-26 06:19:16,525 - link_parser - INFO - Найдено новых ссылок: 12 | Всего: 12/10
+2025-06-26 06:19:16,525 - link_parser - INFO - Начальное количество ссылок: 12/10
+2025-06-26 06:19:16,529 - link_parser - INFO - Ссылки сохранены в файл: C:\Users\nurja\OneDrive\Рабочий стол\ozon_parser\links.txt
+2025-06-26 06:19:16,531 - link_parser - INFO - Успешно собрано 12 ссылок
+2025-06-26 06:19:17,048 - link_parser - INFO - Браузер закрыт
+2025-06-26 06:19:17,048 - main - INFO - 
+=== ЭТАП 2: ЧТЕНИЕ ССЫЛОК ===
+2025-06-26 06:19:17,090 - main - INFO - Прочитано ссылок: 12
+2025-06-26 06:19:17,090 - main - INFO - 
+=== ЭТАП 3: ПАРСИНГ ТОВАРОВ ===
+2025-06-26 06:19:17,091 - main - INFO - Количество воркеров: 3
+2025-06-26 06:19:17,092 - main - INFO - Выходной файл: sistemnye-bloki-15704_26.06.2025-06_19_07.xlsx
+2025-06-26 06:19:17,092 - product_parser - INFO - Начало обработки 12 товаров
+2025-06-26 06:19:18,692 - product_parser - INFO - Воркер 1 запущен
+2025-06-26 06:19:20,073 - product_parser - INFO - Воркер 2 запущен
+2025-06-26 06:19:21,230 - product_parser - INFO - Воркер 3 запущен
+2025-06-26 06:19:38,805 - product_parser - INFO - [1/12] УСПЕШНО: https://uz.ozon.com/product/iru-sistemnyy-blok-310h6s-intel-core-i3-12100-ram-16-gb-ssd-512-gb-intel-uhd-graphics-730-freedos-1861628806/?at=EqtkwpoBxFRWxLKKSvOB3W7upXp8pXUwqK6A7tnwWJ4R
+2025-06-26 06:19:38,807 - product_parser - INFO -    Товар: iRU Системный блок 310H6S (Intel Core i3-12100, RAM 16 ГБ, SSD 512 ГБ, Intel UHD Graphics 730, FreeDOS), 2074830, черный
+2025-06-26 06:19:38,807 - product_parser - INFO -    Продавец: Позитроника
+2025-06-26 06:19:39,046 - product_parser - INFO - [2/12] УСПЕШНО: https://uz.ozon.com/product/erying-sistemnyy-blok-intel-xeon-e5-2670v2-ram-32-gb-ssd-1024-gb-amd-radeon-rx-580-8-gb-windows-10-1820929387/?at=DqtD73rXAFNkw6kIOzKGQ2uNQkN7gfjn11JxUWQ748v
+2025-06-26 06:19:39,047 - product_parser - INFO -    Товар: ERYING Системный блок (Intel Xeon E5-2670V2, RAM 32 ГБ, SSD 1024 ГБ, AMD Radeon RX 580 (8 Гб), Windows 10 Pro), черный
+2025-06-26 06:19:39,048 - product_parser - INFO -    Продавец: huasheng2
+2025-06-26 06:19:44,360 - product_parser - INFO - [3/12] УСПЕШНО: https://uz.ozon.com/product/erying-sistemnyy-blok-intel-xeon-e5-2670v2-ram-32-gb-ssd-512-gb-amd-radeon-rx-580-8-gb-windows-10-1820470875/?at=K8tZQ4xLWhYMRJRnt0YXQQXTQGj8v9F321ryZs2xyJ56
+2025-06-26 06:19:44,361 - product_parser - INFO -    Товар: ERYING Системный блок (Intel Xeon E5-2670V2, RAM 32 ГБ, SSD 512 ГБ, AMD Radeon RX 580 (8 Гб), Windows 10 Pro), черный
+2025-06-26 06:19:44,362 - product_parser - INFO -    Продавец: huasheng
+2025-06-26 06:19:51,432 - product_parser - INFO - [4/12] УСПЕШНО: https://uz.ozon.com/product/erying-sistemnyy-blok-intel-xeon-e5-2670v2-ram-32-gb-ssd-1024-gb-amd-radeon-rx-580-8-gb-windows-10-1820606604/?at=79tnrZjLNh3k50kPCM7PRmzuXZN1omCE1mR66Uj84lrw
+2025-06-26 06:19:51,432 - product_parser - INFO -    Товар: ERYING Системный блок (Intel Xeon E5-2670V2, RAM 32 ГБ, SSD 1024 ГБ, AMD Radeon RX 580 (8 Гб), Windows 10 Pro), черный
+2025-06-26 06:19:51,433 - product_parser - INFO -    Продавец: huasheng
+2025-06-26 06:20:07,874 - product_parser - INFO - [5/12] УСПЕШНО: https://uz.ozon.com/product/ultra-kompyutery-sistemnyy-blok-office-classic-intel-core-i5-2400-ram-16-gb-ssd-240-gb-intel-1215207887/?at=K8tZQ4xLWhmwMWR6IqNG2WOSxBNlwVc6BGBMkUX1p2p
+2025-06-26 06:20:07,875 - product_parser - INFO -    Товар: Ультра компьютеры Системный блок Office Classic (Intel Core i5-2400, RAM 16 ГБ, SSD 240 ГБ, Intel HD Graphics, Windows 10 Pro), черный
+2025-06-26 06:20:07,876 - product_parser - INFO -    Продавец: Ультра +
+2025-06-26 06:20:07,988 - product_parser - INFO - [6/12] УСПЕШНО: https://uz.ozon.com/product/intel-sistemnyy-blok-intel-core-i5-2400-ram-16-gb-ssd-256-gb-intel-hd-graphics-windows-10-1863569779/?at=36tWj2YZKs8DQ16EsrPJQ2Bcw66XwzF1ZKKYvTQ7Lrk5
+2025-06-26 06:20:07,990 - product_parser - INFO -    Товар: Intel Системный блок (Intel Core i5-2400, RAM 16 ГБ, SSD 256 ГБ, Intel HD Graphics, Windows 10 Pro), черный
+2025-06-26 06:20:07,991 - product_parser - INFO -    Продавец: Umbrella-PC
+2025-06-26 06:20:19,260 - product_parser - INFO - [7/12] УСПЕШНО: https://uz.ozon.com/product/erying-sistemnyy-blok-intel-core-i5-4590-ram-16-gb-ssd-512-gb-intel-hd-graphics-4600-windows-10-1824909618/?at=gpt4vG58yUKGygM9HYqY55Wt2Y5JOOcVNjnqXfJ6YW86
+2025-06-26 06:20:19,342 - product_parser - INFO -    Товар: ERYING Системный блок (Intel Core i5-4590, RAM 16 ГБ, SSD 512 ГБ, Intel HD Graphics 4600, Windows 10 Pro), черный
+2025-06-26 06:20:19,370 - product_parser - INFO -    Продавец: huasheng2
+2025-06-26 06:20:26,946 - product_parser - INFO - [8/12] УСПЕШНО: https://uz.ozon.com/product/intel-sistemnyy-blok-intel-core-i5-6500-ram-16-gb-ssd-512-gb-intel-hd-graphics-windows-10-1847417214/?at=PjtJB3AQXcmDRzXRt9MR3YwUAJnpN8tGN9EylC8k9BME
+2025-06-26 06:20:26,958 - product_parser - INFO -    Товар: Intel Системный блок (Intel Core i5-6500, RAM 16 ГБ, SSD 512 ГБ, Intel HD Graphics, Windows 10 Pro), черный
+2025-06-26 06:20:26,962 - product_parser - INFO -    Продавец: Umbrella-PC
+2025-06-26 06:20:26,966 - product_parser - INFO - [9/12] УСПЕШНО: https://uz.ozon.com/product/ultra-kompyutery-sistemnyy-blok-office-classic-intel-core-i5-3470-ram-16-gb-ssd-240-gb-intel-1472136445/?at=MZtvpzVj3hX2ZDpRIv3lKn8CZ5x1BxfBDl6KKUNLpkNP
+2025-06-26 06:20:26,982 - product_parser - INFO -    Товар: Ультра компьютеры Системный блок Office Classic (Intel Core i5-3470, RAM 16 ГБ, SSD 240 ГБ, Intel HD Graphics, Windows 10 Pro), черный
+2025-06-26 06:20:27,042 - product_parser - INFO -    Продавец: Ультра +
+2025-06-26 06:20:35,557 - product_parser - INFO - [10/12] УСПЕШНО: https://uz.ozon.com/product/erying-sistemnyy-blok-intel-xeon-e5-2670v2-ram-32-gb-ssd-512-gb-amd-radeon-rx-580-8-gb-windows-10-1821008724/?at=jYtZzR1gmhWNQw10UpQBxKOFZnLOkoTWkYJ7Lu7qQk0k
+2025-06-26 06:20:35,560 - product_parser - INFO -    Товар: ERYING Системный блок (Intel Xeon E5-2670V2, RAM 32 ГБ, SSD 512 ГБ, AMD Radeon RX 580 (8 Гб), Windows 10 Pro), черный
+2025-06-26 06:20:35,561 - product_parser - INFO -    Продавец: huasheng2
+2025-06-26 06:20:36,529 - product_parser - INFO - Воркер 3 завершил работу
+2025-06-26 06:20:41,703 - product_parser - INFO - [11/12] УСПЕШНО: https://uz.ozon.com/product/sistemnyy-blok-intel-core-i5-12400f-ram-32-gb-ssd-500-gb-nvidia-geforce-rtx-4060-8-gb-windows-10-1928918467/?at=Y7tjKAo5lfYm7XROcjJr9Y7hvE1x3tAZLAl3hAEGyQp
+2025-06-26 06:20:41,704 - product_parser - INFO -    Товар: Системный блок (Intel Core i5-12400F, RAM 32 ГБ, SSD 500 ГБ, NVIDIA GeForce RTX 4060 (8 Гб), Windows 10 Pro), белый
+2025-06-26 06:20:41,706 - product_parser - INFO -    Продавец: NOMA Comp
+2025-06-26 06:20:42,628 - product_parser - INFO - Воркер 1 завершил работу
+2025-06-26 06:20:45,569 - product_parser - INFO - [12/12] УСПЕШНО: https://uz.ozon.com/product/monozone-sistemnyy-blok-kompyuter-intel-core-i7-2600-ram-16-gb-ssd-256-gb-intel-hd-graphics-1825101266/?at=VvtzVgjMyTQWv5K1FYLynOpSDLNRXPTY73yRGCAMznxx
+2025-06-26 06:20:45,570 - product_parser - INFO -    Товар: MonoZone Системный блок Компьютер (Intel Core i7-2600, RAM 16 ГБ, SSD 256 ГБ, Intel HD Graphics, Windows 10 Pro), черный
+2025-06-26 06:20:45,570 - product_parser - INFO -    Продавец: Mono Store
+2025-06-26 06:20:45,673 - product_parser - INFO - Результаты сохранены в results\sistemnye-bloki-15704_26.06.2025-06_19_07.xlsx
+2025-06-26 06:20:45,675 - product_parser - INFO - Обработка завершена за 88.58 секунд
+2025-06-26 06:20:45,679 - product_parser - INFO - Средняя скорость: 0.14 товаров/сек
+2025-06-26 06:20:46,459 - product_parser - INFO - Воркер 2 завершил работу
+2025-06-26 06:20:48,067 - product_parser - INFO - Все браузеры закрыты
+2025-06-26 06:20:48,071 - main - INFO - 
+=== ПАРСИНГ УСПЕШНО ЗАВЕРШЕН ===
+2025-06-26 06:29:57,215 - main - INFO - === ЗАПУСК ПАРСЕРА OZON ===
+2025-06-26 06:30:00,640 - main - ERROR - Некорректная ссылка! Пример правильной ссылки: https://www.ozon.ru/category/sistemnye-bloki-15704/
+2025-06-26 06:33:26,567 - main - INFO - === ЗАПУСК ПАРСЕРА OZON ===
+2025-06-26 06:33:30,595 - main - INFO - Категория: kompyuternye-i-ofisnye-kresla-38450
+2025-06-26 06:33:30,596 - main - INFO - 
+=== ЭТАП 1: ПАРСИНГ ССЫЛОК ===
+2025-06-26 06:33:41,025 - main - INFO - === ЗАПУСК ПАРСЕРА OZON ===
+2025-06-26 06:33:43,875 - main - INFO - Категория: kompyuternye-i-ofisnye-kresla-38450
+2025-06-26 06:33:43,877 - main - INFO - 
+=== ЭТАП 1: ПАРСИНГ ССЫЛОК ===
+2025-06-26 06:33:43,878 - link_parser - INFO - Категория: kompyuternye-i-ofisnye-kresla-38450
+2025-06-26 06:33:45,762 - link_parser - INFO - Браузер инициализирован
+2025-06-26 06:33:45,779 - link_parser - INFO - Загрузка страницы: https://uz.ozon.com/category/kompyuternye-i-ofisnye-kresla-38450/?category_was_predicted=true&deny_category_prediction=true&from_global=true&text=%D0%BA%D1%80%D0%B5%D1%81%D0%BB%D0%BE+%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D0%BE%D0%B5
+2025-06-26 06:33:49,772 - link_parser - INFO - Страница успешно загружена
+2025-06-26 06:33:52,002 - link_parser - INFO - Найдено новых ссылок: 8 | Всего: 8/10
+2025-06-26 06:33:52,003 - link_parser - INFO - Начальное количество ссылок: 8/10
+2025-06-26 06:33:54,734 - link_parser - INFO - Найдено новых ссылок: 16 | Всего: 24/10
+2025-06-26 06:33:54,737 - link_parser - INFO - Ссылки сохранены в файл: C:\Users\nurja\OneDrive\Рабочий стол\ozon_parser\links.txt
+2025-06-26 06:33:54,741 - link_parser - INFO - Успешно собрано 24 ссылок
+2025-06-26 06:33:55,284 - link_parser - INFO - Браузер закрыт
+2025-06-26 06:33:55,291 - main - INFO - 
+=== ЭТАП 2: ЧТЕНИЕ ССЫЛОК ===
+2025-06-26 06:33:55,298 - main - INFO - Прочитано ссылок: 24
+2025-06-26 06:33:55,302 - main - INFO - 
+=== ЭТАП 3: ПАРСИНГ ТОВАРОВ ===
+2025-06-26 06:33:55,303 - main - INFO - Количество воркеров: 3
+2025-06-26 06:33:55,305 - product_parser - INFO - Файл результатов: results\kompyuternye-i-ofisnye-kresla-38450_26.06.2025-06_33_55.xlsx
+2025-06-26 06:33:55,307 - product_parser - INFO - Начало обработки 24 товаров
+2025-06-26 06:33:57,653 - product_parser - INFO - Воркер 1 запущен
+2025-06-26 06:33:58,480 - product_parser - INFO - Воркер 2 запущен
+2025-06-26 06:34:00,833 - product_parser - INFO - Воркер 3 запущен
+2025-06-26 06:34:21,806 - product_parser - INFO - [1/24] УСПЕШНО: https://uz.ozon.com/product/kompyuternoe-ofisnoe-kreslo-detskoe-kreslo-dlya-ucheby-uyutnyy-ugoloknd2005-chernyy-belyy-2001859341/?at=16tLrqw8GH1oVjrlcvGkXJ7t1G7mGKhVjny61UWgWQ0O
+2025-06-26 06:34:21,808 - product_parser - INFO -    Товар: Компьютерное офисное кресло, детское кресло для учебы, Uyutnyy UgolokND2005, черный + белый + подголовник, внутренняя отделка из сетки/ткани
+2025-06-26 06:34:21,819 - product_parser - INFO -    Продавец: Comfort corner
+2025-06-26 06:34:33,551 - product_parser - INFO - [2/24] УСПЕШНО: https://uz.ozon.com/product/mtt-mebel-ofisnoe-kreslo-chernyy-1679932489/?at=z6tOX4NKqcp2zNn9S84VGns2NxkviG6opz5S3kv9VN
+2025-06-26 06:34:33,552 - product_parser - INFO -    Товар: MTT mebel Офисное кресло, Черный
+2025-06-26 06:34:33,553 - product_parser - INFO -    Продавец: MTT-mebel
+2025-06-26 06:34:37,239 - product_parser - INFO - [3/24] УСПЕШНО: https://uz.ozon.com/product/seroe-tkanyu-igrovoe-kreslo-hele-s-podgolovnikom-metallicheskiy-zheleznyy-karkas-s-podstavkoy-1611136335/?at=36tWj2YZKsOYRpAMsA1RE28SQ9XPRqhJBKkLYFNzLMK
+2025-06-26 06:34:37,270 - product_parser - INFO -    Товар: Серое тканью игровое кресло HELE, с подголовником, металлический железный каркас, с подставкой для ног, регулируемые подлокотники, регулируемая спинка
+2025-06-26 06:34:37,372 - product_parser - INFO -    Продавец: HELE
+2025-06-26 06:34:47,279 - product_parser - INFO - [4/24] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-ofisnoe-dlya-rukovoditelya-1674586686/?at=36tWj2YZKswZ2YRYSEVxkj4c0YgkxJswRYAgkCQZAvZL
+2025-06-26 06:34:47,285 - product_parser - INFO -    Товар: Кресло компьютерное офисное, для руководителя
+2025-06-26 06:34:47,287 - product_parser - INFO -    Продавец: DAGLI SHOP
+2025-06-26 06:34:58,985 - product_parser - INFO - [5/24] УСПЕШНО: https://uz.ozon.com/product/kreslo-igrovoe-kompyuternoe-knight-cyber-f-chernyy-1714115456/?at=A6tGxEJjOcQy7A4nt3vVqwRcNnEqA3tMk0BrnFOnA3lJ
+2025-06-26 06:34:58,988 - product_parser - INFO -    Товар: Кресло игровое компьютерное Knight Cyber/F черный
+2025-06-26 06:34:58,989 - product_parser - INFO -    Продавец: БЮРОКРАТ
+2025-06-26 06:35:05,424 - product_parser - INFO - [6/24] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-igrovoe-stul-kompyuternyy-1999937820/?at=Rltyw5PNWFZ11E45s6V4zQEsQyxOmAc4Kx6Xjf9k266m
+2025-06-26 06:35:05,428 - product_parser - INFO -    Товар: Кресло компьютерное игровое, стул компьютерный
+2025-06-26 06:35:05,432 - product_parser - INFO -    Продавец: DAGLI SHOP
+2025-06-26 06:35:05,438 - product_parser - INFO - [7/24] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-igrovoe-gamelab-nomad-black-ekokozha-chernyy-1239781553/?at=57twy6YA9cBDVn55hDpy9DlHj3V6XyhnzLEnBilpBX7j
+2025-06-26 06:35:05,440 - product_parser - INFO -    Товар: Кресло компьютерное игровое GAMELAB NOMAD Black (экокожа, черный)
+2025-06-26 06:35:05,446 - product_parser - INFO -    Продавец: Бизнес-фабрика
+2025-06-26 06:35:15,556 - product_parser - INFO - [8/24] УСПЕШНО: https://uz.ozon.com/product/mychair-kreslo-kompyuternoe-igrovoe-geymerskiy-igrovoy-stul-tkan-siniy-1825691253/?at=ywtAGLmYoTv40GOGijWRm94tZyqY57iz2G0OwUz9Xq46
+2025-06-26 06:35:15,559 - product_parser - INFO -    Товар: MyChair Кресло компьютерное игровое, геймерский игровой стул Ткань Синий
+2025-06-26 06:35:15,560 - product_parser - INFO -    Продавец: Chair Empire
+2025-06-26 06:35:21,253 - product_parser - INFO - [9/24] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-kreslo-ofisnoe-stul-yeeler-reguliruemyy-po-vysote-s-podstavkoy-pod-nogi-2229711109/?at=oZt6AvpkYI0XVWJrfmXrK3ZTYLZjoOU9Zogzph6Xy83R
+2025-06-26 06:35:21,253 - product_parser - INFO -    Товар: Кресло компьютерное, кресло офисное, стул, YEELER, регулируемый по высоте, с подставкой под ноги, механизм качания
+2025-06-26 06:35:21,256 - product_parser - INFO -    Продавец: КомфортиК
+2025-06-26 06:35:29,711 - product_parser - INFO - [10/24] УСПЕШНО: https://uz.ozon.com/product/emperor-camp-igrovoe-kompyuternoe-kreslo-cherno-beloe-bez-934823083/?at=vQtrJA0v8CZYDQYgsA1VJ28CZLnNzMSN7VlmvsJDVJqD
+2025-06-26 06:35:29,726 - product_parser - INFO -    Товар: EMPEROR CAMP Игровое компьютерное кресло, черно-белое(Без)
+2025-06-26 06:35:29,741 - product_parser - INFO -    Продавец: Emperor Camp
+2025-06-26 06:35:41,266 - product_parser - INFO - [11/24] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-yeeler-kreslo-ofisnoe-myagkoe-stul-reguliruemyy-po-vysote-s-podstavkoy-pod-nogi-1899871016/?at=vQtrJA0v8CPvBmQ3hynJnvqTXzzRR1uLxl8wBcGXNrpn
+2025-06-26 06:35:41,268 - product_parser - INFO -    Товар: Кресло компьютерное, YEELER, кресло офисное, мягкое, стул, регулируемый по высоте, с подставкой под ноги, механизм качания
+2025-06-26 06:35:41,268 - product_parser - INFO -    Продавец: ЙИЛЕРМебель
+2025-06-26 06:35:41,320 - product_parser - INFO - [12/24] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-ofisnoe-prestige-stul-kompyuternyy-dlya-shkolnika-chernyy-detskiy-igrovoy-s-1768147776/?at=08tYnm0jBcBR9W8rhyy7gqEckq6nyCk6WExVHmrmPrk
+2025-06-26 06:35:41,322 - product_parser - INFO -    Товар: Кресло компьютерное офисное Prestige, стул компьютерный для школьника черный, детский игровой с мягкой сидушкой, обивка дышащая ткань сетка, крестовина пластик, Ами МЕБЕЛЬ
+2025-06-26 06:35:41,332 - product_parser - INFO -    Продавец: Ami
+2025-06-26 06:35:52,877 - product_parser - INFO - [13/24] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-yeeler-kreslo-ofisnoe-stul-reguliruemyy-po-vysote-s-podstavkoy-pod-nogi-1899850974/?at=28t0L8o73hmLOMooSGVQNXyILzOG0PSJjlpwBfz76YqY
+2025-06-26 06:35:52,878 - product_parser - INFO -    Товар: Кресло компьютерное, YEELER, кресло офисное, стул, регулируемый по высоте, с подставкой под ноги, механизм качания
+2025-06-26 06:35:52,879 - product_parser - INFO -    Продавец: ЙИЛЕРМебель
+2025-06-26 06:35:55,790 - product_parser - INFO - [14/24] УСПЕШНО: https://uz.ozon.com/product/geymerskoe-kreslo-imba-s-vydvizhnoy-podnozhkoy-i-naklonom-135-igrovoe-kompyuternoe-kreslo-1552016103/?at=pZtpgAE5oTQrjMljU33831XuG2q2VkuY6pVQJtxXoq3O
+2025-06-26 06:35:55,791 - product_parser - INFO -    Товар: Геймерское кресло IMBA с выдвижной подножкой и наклоном 135 игровое компьютерное кресло, эргономичное, до 120 кг, бело-чёрное
+2025-06-26 06:35:55,793 - product_parser - INFO -    Продавец: IMBA
+2025-06-26 06:35:55,850 - product_parser - INFO - [15/24] УСПЕШНО: https://uz.ozon.com/product/kreslo-igrovoe-knight-optimum-svetlo-seryy-1782397763/?at=57twy6YA9cJv6OxwTqjVmq6FwMk4R1T92r1g1uNLLXJW
+2025-06-26 06:35:55,852 - product_parser - INFO -    Товар: Кресло игровое Knight Optimum светло-серый
+2025-06-26 06:35:55,853 - product_parser - INFO -    Продавец: БЮРОКРАТ
+2025-06-26 06:36:05,110 - product_parser - INFO - [16/24] УСПЕШНО: https://uz.ozon.com/product/kompyuternoe-kreslo-ch-608-byurokrat-1851847909/?at=QktJno47PcjLEX5XivQmkA5srXL6PsplNRyvfQNAV97
+2025-06-26 06:36:05,111 - product_parser - INFO -    Товар: Компьютерное кресло CH-608 Бюрократ
+2025-06-26 06:36:05,113 - product_parser - INFO -    Продавец: БЮРОКРАТ
+2025-06-26 06:36:17,912 - product_parser - INFO - [17/24] УСПЕШНО: https://uz.ozon.com/product/kompyuternoe-shkolnoe-kreslo-na-kolesikah-byroom-office-staff-vc6001plb-g-dlya-raboty-za-892017647/?at=NOtwYj5o3cpJB66rioVxVE4TxwOyNlUjBMD9ySKO77nm
+2025-06-26 06:36:17,914 - product_parser - INFO -    Товар: Компьютерное школьное кресло на колесиках BYROOM Office Staff VC6001plb-G для работы за компьютером ПК. Взрослый крутящийся офисный стул для школьника, руководителя с ортопедической спинкой
+2025-06-26 06:36:17,916 - product_parser - INFO -    Продавец: DiRetail
+2025-06-26 06:36:17,918 - product_parser - INFO - [18/24] УСПЕШНО: https://uz.ozon.com/product/kreslo-igrovoe-knight-nitro-sero-goluboy-chernyy-s-podstavkoy-dlya-nog-1627426678/?at=VvtzVgjMyTgv2M2khkpyr7ptP6o3xKf5Gk9K5hYpDlZg
+2025-06-26 06:36:17,920 - product_parser - INFO -    Товар: Кресло игровое Knight Nitro серо-голубой/черный с подставкой для ног
+2025-06-26 06:36:17,921 - product_parser - INFO -    Продавец: БЮРОКРАТ
+2025-06-26 06:36:26,351 - product_parser - INFO - [19/24] УСПЕШНО: https://uz.ozon.com/product/kreslo-igrovoe-knight-nitro-chernyy-seryy-s-podstavkoy-dlya-nog-1664037919/?at=PjtJB3AQXcR6Lv44INm2KGwTqRE9NGtgN1x3ksgKmQY9
+2025-06-26 06:36:26,353 - product_parser - INFO -    Товар: Кресло игровое Knight Nitro черный/серый с подставкой для ног
+2025-06-26 06:36:26,356 - product_parser - INFO -    Продавец: БЮРОКРАТ
+2025-06-26 06:36:35,814 - product_parser - INFO - [20/24] УСПЕШНО: https://uz.ozon.com/product/kreslo-igrovoe-knight-optimum-chernyy-seryy-1711964945/?at=46tRZlAr5tZnvgwzcMLplkBU98KP4Burj1KOjC8lkmzB
+2025-06-26 06:36:35,815 - product_parser - INFO -    Товар: Кресло игровое Knight Optimum черный/серый
+2025-06-26 06:36:35,815 - product_parser - INFO -    Продавец: БЮРОКРАТ
+2025-06-26 06:36:36,011 - product_parser - INFO - [21/24] УСПЕШНО: https://uz.ozon.com/product/chernoe-krasnoe-igrovoe-kreslo-hele-ekokozha-s-podgolovnikom-metallicheskiy-zheleznyy-karkas-1560434201/?at=w0tg5yZoxFQAmEO3UKg70XlfwEwNq8hWm9z9riQrok9x
+2025-06-26 06:36:36,011 - product_parser - INFO -    Товар: Черное/красное игровое кресло HELE, экокожа, с подголовником, металлический железный каркас, с подставкой для ног, регулируемые подлокотники, регулируемая спинка
+2025-06-26 06:36:36,012 - product_parser - INFO -    Продавец: HELE
+2025-06-26 06:36:41,629 - product_parser - INFO - [22/24] УСПЕШНО: https://uz.ozon.com/product/igrovoe-kreslo-hiland-black-izgotovlennoe-iz-ekologicheski-chistoy-kozhi-osnashcheno-2161075091/?at=mqtkVWLvlFwM0QBkhnYj9W5igWgwKzHOmDX4LUKRkENL
+2025-06-26 06:36:41,630 - product_parser - INFO -    Товар: Игровое кресло Hiland black, изготовленное из экологически чистой кожи, оснащено подголовниками, педалями, регулируемыми подлокотниками и регулируемой спинкой кресла
+2025-06-26 06:36:41,630 - product_parser - INFO -    Продавец: Hiland
+2025-06-26 06:36:42,493 - product_parser - INFO - Воркер 3 завершил работу
+2025-06-26 06:36:47,744 - product_parser - INFO - [23/24] УСПЕШНО: https://uz.ozon.com/product/kreslo-igrovoe-knight-wolf-chernyy-seryy-1711910189/?at=lRt6WXqLEIlOvBPzFpQAKZxuonnpRZu18NoQXFLnZ19
+2025-06-26 06:36:47,745 - product_parser - INFO -    Товар: Кресло игровое Knight Wolf черный/серый
+2025-06-26 06:36:47,745 - product_parser - INFO -    Продавец: БЮРОКРАТ
+2025-06-26 06:36:48,566 - product_parser - INFO - Воркер 2 завершил работу
+2025-06-26 06:36:50,158 - product_parser - INFO - [24/24] УСПЕШНО: https://uz.ozon.com/product/kreslo-kompyuternoe-igrovoe-ofisnoe-cherno-seryy-geymerskiy-stul-gamelab-tetra-660008696/?at=OgtEDvr3xhRyyQlyivwWQyptLnwOpVCppkEO7hX8ovOr
+2025-06-26 06:36:50,160 - product_parser - INFO -    Товар: Кресло компьютерное игровое, офисное, Черно-серый геймерский стул GAMELAB TETRA
+2025-06-26 06:36:50,160 - product_parser - INFO -    Продавец: Бизнес-фабрика
+2025-06-26 06:36:50,332 - product_parser - INFO - Результаты сохранены в results\kompyuternye-i-ofisnye-kresla-38450_26.06.2025-06_33_55.xlsx
+2025-06-26 06:36:50,340 - product_parser - INFO - Обработка завершена за 175.03 секунд
+2025-06-26 06:36:50,346 - product_parser - INFO - Средняя скорость: 0.14 товаров/сек
+2025-06-26 06:36:51,527 - product_parser - INFO - Воркер 1 завершил работу
+2025-06-26 06:36:52,244 - product_parser - INFO - Все браузеры закрыты
+2025-06-26 06:36:52,245 - main - INFO - 
+=== ПАРСИНГ УСПЕШНО ЗАВЕРШЕН ===
+2025-06-26 06:36:52,245 - main - INFO - Отчет сохранен: C:\Users\nurja\OneDrive\Рабочий стол\ozon_parser\results\kompyuternye-i-ofisnye-kresla-38450_26.06.2025-06_33_55.xlsx

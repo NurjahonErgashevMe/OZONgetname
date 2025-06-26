@@ -13,6 +13,7 @@ TOTAL_LINKS = 100  # Целевое количество ссылок
 MAX_IDLE_SCROLLS = 5  # Максимум скроллов без новых ссылок
 SCROLL_DELAY = 1.5  # Задержка между скроллами
 LOAD_TIMEOUT = 15
+TELEGRAM_CHAT_ID= os.getenv('TELEGRAM_CHAT_ID')  # ID чата для отправки сообщений
 
 # Папка для результатов
 RESULTS_DIR = "results"

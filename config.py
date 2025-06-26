@@ -1,6 +1,10 @@
 import os
 import re
 from datetime import datetime
+from dotenv import load_dotenv
+
+
+load_dotenv()
 
 # Общие настройки
 CHROMEDRIVER_PATH = r"C:\chromedriver-win64\chromedriver.exe"

@@ -10,6 +10,7 @@ from aiogram.filters import Command
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 from aiogram.types import FSInputFile
+from dotenv import load_dotenv
 import time
 from config import (
     CHROMEDRIVER_PATH, 
@@ -35,6 +36,8 @@ logging.basicConfig(
     ]
 )
 logger = logging.getLogger('telegram_bot')
+
+load_dotenv()
 
 # Конфигурация бота
 BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')

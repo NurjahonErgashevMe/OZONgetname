@@ -1,3 +1,1945 @@
 2025-06-26 13:04:33,633 - telegram_bot - INFO - ������ ����...
 2025-06-26 13:04:33,634 - aiogram.dispatcher - INFO - Start polling
 2025-06-26 13:04:33,992 - aiogram.dispatcher - INFO - Run polling for bot @ozongetnamerbot id=7955956815 - 'ozongetnamer'
+2025-06-30 04:23:43,815 - main - INFO - === ЗАПУСК ПАРСЕРА OZON ===
+2025-06-30 04:23:43,816 - main - INFO - Целевая категория: https://www.ozon.ru/category/sistemnye-bloki-15704/?category_was_predicted=true&deny_category_prediction=true&from_global=true&text=%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80
+2025-06-30 04:23:43,851 - main - INFO - Целевое количество ссылок: 100
+2025-06-30 04:23:43,851 - link_parser - INFO - Категория: sistemnye-bloki-15704
+2025-06-30 04:23:45,380 - link_parser - INFO - Браузер инициализирован
+2025-06-30 04:23:45,390 - link_parser - INFO - Загрузка страницы: https://www.ozon.ru/category/sistemnye-bloki-15704/?category_was_predicted=true&deny_category_prediction=true&from_global=true&text=%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80
+2025-06-30 04:23:52,965 - link_parser - INFO - Страница успешно загружена
+2025-06-30 04:23:53,705 - link_parser - INFO - Найдено новых ссылок: 8
+2025-06-30 04:23:53,706 - link_parser - INFO - Начальное количество ссылок: 8/100
+2025-06-30 04:23:59,326 - link_parser - INFO - Найдено новых ссылок: 28
+2025-06-30 04:23:59,327 - link_parser - INFO - Всего ссылок: 36/100
+2025-06-30 04:24:04,403 - link_parser - INFO - Найдено новых ссылок: 24
+2025-06-30 04:24:04,403 - link_parser - INFO - Всего ссылок: 60/100
+2025-06-30 04:24:10,453 - link_parser - INFO - Найдено новых ссылок: 24
+2025-06-30 04:24:10,453 - link_parser - INFO - Всего ссылок: 84/100
+2025-06-30 04:24:17,715 - link_parser - INFO - Найдено новых ссылок: 24
+2025-06-30 04:24:17,716 - link_parser - INFO - Всего ссылок: 108/100
+2025-06-30 04:24:17,731 - link_parser - INFO - Ссылки сохранены в файл: C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\links.txt
+2025-06-30 04:24:17,731 - link_parser - INFO - Успешно собрано 108 ссылок
+2025-06-30 04:24:18,255 - link_parser - INFO - Браузер закрыт
+2025-06-30 04:24:18,257 - main - INFO - === ЭТАП 2: ПАРСИНГ ТОВАРОВ ===
+2025-06-30 04:24:18,258 - main - INFO - Количество товаров: 108
+2025-06-30 04:24:18,258 - main - INFO - Количество воркеров: 3
+2025-06-30 04:24:18,259 - excel_exporter - INFO - Файл результатов: results\sistemnye-bloki-15704_30.06.2025-04_24_18.xlsx
+2025-06-30 04:24:18,259 - product_parser - INFO - Инициализирован парсер для категории: sistemnye-bloki-15704
+2025-06-30 04:24:18,260 - product_parser - INFO - Начало обработки 108 товаров
+2025-06-30 04:24:20,240 - driver_manager - INFO - Создан новый браузер. Всего активных: 1
+2025-06-30 04:24:20,247 - product_parser - INFO - Воркер 1 запущен
+2025-06-30 04:24:20,803 - driver_manager - INFO - Создан новый браузер. Всего активных: 2
+2025-06-30 04:24:20,814 - product_parser - INFO - Воркер 2 запущен
+2025-06-30 04:24:21,905 - driver_manager - INFO - Создан новый браузер. Всего активных: 3
+2025-06-30 04:24:21,909 - product_parser - INFO - Воркер 3 запущен
+2025-06-30 04:24:41,246 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:24:48,533 - product_parser - INFO - [1/108] УСПЕШНО: https://www.ozon.ru/product/treidcomputers-sistemnyy-blok-intel-core-i7-12700f-ram-32-gb-ssd-960-gb-nvidia-geforce-rtx-4060-8-gb-1922781204/?at=Z8tX1Xy7rUEj5MxgcRlAMJxHYkK8YEC4yBy9pF1Qvzoq
+2025-06-30 04:24:48,595 - product_parser - INFO -    Товар: TREIDCOMPUTERS Системный блок (Intel Core i7-12700F, RAM 32 ГБ, SSD 960 ГБ, NVIDIA GeForce RTX 4060 (8 Гб), Windows 10 Pro), черный
+2025-06-30 04:24:48,972 - product_parser - INFO -    Продавец: TREIDCOMPUTERS
+2025-06-30 04:24:49,181 - product_parser - INFO -    Компания: ИП Буторин Илья Сергеевич
+2025-06-30 04:24:49,328 - product_parser - INFO -    ИНН: 319774600299562
+2025-06-30 04:25:02,980 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:25:07,314 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:25:16,499 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:25:16,587 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 04:25:20,760 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 04:25:27,807 - seller_info_parser - INFO - Попытка 3 получить данные продавца
+2025-06-30 04:25:32,317 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 04:25:34,255 - seller_info_parser - INFO - Попытка 3 получить данные продавца
+2025-06-30 04:25:36,444 - product_parser - INFO - [2/108] УСПЕШНО: https://www.ozon.ru/product/robotcomp-sistemnyy-blok-m-16-v3-plus-aqua-intel-core-i5-14400f-ram-64-gb-ssd-960-gb-nvidia-2229058233/?at=36tWjWVX6hp4AD4DuAgY8YTN0vDjU8nrpz5SWNzYQO
+2025-06-30 04:25:36,445 - product_parser - INFO -    Товар: Robotcomp Системный блок M-16 V3 Plus Aqua (Intel Core i5-14400F, RAM 64 ГБ, SSD 960 ГБ, NVIDIA GeForce RTX 5060 (8 Гб), Windows 10 Pro), черный, прозрачный
+2025-06-30 04:25:36,446 - product_parser - INFO -    Продавец: ООО "Роботкомп Корп"
+2025-06-30 04:25:36,448 - product_parser - INFO -    Компания: ООО "РОБОТКОМП КОРП"
+2025-06-30 04:25:36,449 - product_parser - INFO -    ИНН: 1155047011481
+2025-06-30 04:25:41,177 - seller_info_parser - INFO - Попытка 3 получить данные продавца
+2025-06-30 04:25:41,895 - product_parser - INFO - [3/108] УСПЕШНО: https://www.ozon.ru/product/iru-sistemnyy-blok-310sc-intel-core-i7-12700-ram-32-gb-ssd-1024-gb-intel-uhd-graphics-770-windows-1767344909/?at=x6tPpPKLns96w9mnUXrJ4E7CpLW4gDcVg1PxGtnO5Nmz
+2025-06-30 04:25:41,897 - product_parser - INFO -    Товар: iRU Системный блок 310SC (Intel Core i7-12700, RAM 32 ГБ, SSD 1024 ГБ, Intel UHD Graphics 770, Windows 11 Pro), 2017895, черный
+2025-06-30 04:25:41,897 - product_parser - INFO -    Продавец: Ситилинк Доставка
+2025-06-30 04:25:41,898 - product_parser - INFO -    Компания: ООО "СИТИЛИНК"
+2025-06-30 04:25:41,898 - product_parser - INFO -    ИНН: 1147746461422
+2025-06-30 04:25:50,285 - product_parser - INFO - [4/108] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-amd-ryzen-5-7500f-ram-32-gb-ssd-1024-gb-nvidia-geforce-rtx-5060-8-gb-windows-11-2185192641/?at=28t0L0AVPf66N3QRh6W7Q19sq0rYPrI32RkJwT90zJk0
+2025-06-30 04:25:50,289 - product_parser - INFO -    Товар: Системный блок (AMD Ryzen 5 7500F, RAM 32 ГБ, SSD 1024 ГБ, NVIDIA GeForce RTX 5060 (8 Гб), Windows 11 Pro), черный
+2025-06-30 04:25:50,292 - product_parser - INFO -    Продавец: ZAR PC
+2025-06-30 04:25:50,293 - product_parser - INFO -    Компания: Не найдено
+2025-06-30 04:25:50,294 - product_parser - INFO -    ИНН: Не найдено
+2025-06-30 04:25:57,433 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:26:02,399 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:26:04,976 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:26:06,020 - product_parser - INFO - [5/108] УСПЕШНО: https://www.ozon.ru/product/treidcomputers-sistemnyy-blok-amd-ryzen-5-5600g-ram-32-gb-ssd-960-gb-amd-radeon-vega-7-windows-10-1940505582/?at=6WtZRZxPjfjxlNENfZ4L5REcPPWGpohp8yz1vh4PGRZy
+2025-06-30 04:26:06,021 - product_parser - INFO -    Товар: TREIDCOMPUTERS Системный блок (AMD Ryzen 5 5600G, RAM 32 ГБ, SSD 960 ГБ, AMD Radeon Vega 7, Windows 10 Pro), темно-коричневый, черный
+2025-06-30 04:26:06,022 - product_parser - INFO -    Продавец: TREIDCOMPUTERS
+2025-06-30 04:26:06,022 - product_parser - INFO -    Компания: ИП Буторин Илья Сергеевич
+2025-06-30 04:26:06,023 - product_parser - INFO -    ИНН: 319774600299562
+2025-06-30 04:26:13,157 - product_parser - INFO - [6/108] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-igrovoy-kompyuter-amd-ryzen-5-5600-ram-16-gb-ssd-512-gb-nvidia-geforce-rtx-3060-ti-1728646024/?at=VvtzVz12NSQvAXKYiZ7mR8KT66ZZpXsw54QGGC8j3GAp
+2025-06-30 04:26:13,158 - product_parser - INFO -    Товар: Системный блок Игровой компьютер (AMD Ryzen 5 5600, RAM 16 ГБ, SSD 512 ГБ, NVIDIA GeForce RTX 3060 Ti (8 Гб), Windows 10 Pro), черный
+2025-06-30 04:26:13,159 - product_parser - INFO -    Продавец: ДомЛюкс
+2025-06-30 04:26:13,160 - product_parser - INFO -    Компания: ИП Букреев Вячеслав Дмитриевич
+2025-06-30 04:26:13,161 - product_parser - INFO -    ИНН: 324547600077071
+2025-06-30 04:26:13,198 - product_parser - INFO - [7/108] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-intel-core-i5-14400f-ram-32-gb-ssd-1024-gb-nvidia-geforce-rtx-5060-8-gb-windows-2268471231/?at=NOtwYw1ZDcVBEz9wI9QWJVlIMLzgrXF8wlgQxuZxXE8m
+2025-06-30 04:26:13,199 - product_parser - INFO -    Товар: Системный блок (Intel Core i5-14400F, RAM 32 ГБ, SSD 1024 ГБ, NVIDIA GeForce RTX 5060 (8 Гб), Windows 10 Pro), 1222, белый
+2025-06-30 04:26:13,200 - product_parser - INFO -    Продавец: NOVA
+2025-06-30 04:26:13,201 - product_parser - INFO -    Компания: ИП Дудников Роман Олегович
+2025-06-30 04:26:13,201 - product_parser - INFO -    ИНН: 322366800050827
+2025-06-30 04:26:17,697 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:26:26,307 - product_parser - INFO - [8/108] УСПЕШНО: https://www.ozon.ru/product/robotcomp-sistemnyy-blok-m-16-v1-aqua-white-intel-core-i5-14400f-ram-32-gb-ssd-960-gb-nvidia-geforce-2246017617/?at=mqtkVkGpBhYwXBnYuG100N4fDA0gKQIQqWWA4t2poRJV
+2025-06-30 04:26:26,308 - product_parser - INFO -    Товар: Robotcomp Системный блок M-16 V1 Aqua White (Intel Core i5-14400F, RAM 32 ГБ, SSD 960 ГБ, NVIDIA GeForce RTX 5060 (8 Гб), ), белый, прозрачный
+2025-06-30 04:26:26,308 - product_parser - INFO -    Продавец: ООО "Роботкомп Корп"
+2025-06-30 04:26:26,309 - product_parser - INFO -    Компания: ООО "РОБОТКОМП КОРП"
+2025-06-30 04:26:26,309 - product_parser - INFO -    ИНН: 1155047011481
+2025-06-30 04:26:27,270 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:26:32,141 - product_parser - INFO - [9/108] УСПЕШНО: https://www.ozon.ru/product/intel-sistemnyy-blok-intel-core-i5-4460-ram-16-gb-ssd-480-gb-intel-hd-graphics-windows-10-1374623635/?at=79tnrn9z4sQyDVNLFNKgNZxtPjDJKpc27NXLWUrP4BVB
+2025-06-30 04:26:32,144 - product_parser - INFO -    Товар: Intel Системный блок (Intel Core i5-4460, RAM 16 ГБ, SSD 480 ГБ, Intel HD Graphics, Windows 10 Pro), черный
+2025-06-30 04:26:32,144 - product_parser - INFO -    Продавец: relotech
+2025-06-30 04:26:32,145 - product_parser - INFO -    Компания: ИП Давыдов Владимир Олегович
+2025-06-30 04:26:32,146 - product_parser - INFO -    ИНН: 317344300018441
+2025-06-30 04:26:35,140 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:26:39,369 - product_parser - INFO - [10/108] УСПЕШНО: https://www.ozon.ru/product/robotcomp-sistemnyy-blok-topol-m-v3-plus-white-intel-core-ultra-9-285k-ram-64-gb-ssd-4000-gb-2278230795/?at=MZtvpvG2MfDDvRVXigDNqAyIJpVYkQHKEpRBGiLWpLmX
+2025-06-30 04:26:39,369 - product_parser - INFO -    Товар: Robotcomp Системный блок Тополь-М V3 Plus White (Intel Core Ultra 9 285K, RAM 64 ГБ, SSD 4000 ГБ, NVIDIA GeForce RTX 5080 (16 Гб), Windows 11 Pro), белый
+2025-06-30 04:26:39,370 - product_parser - INFO -    Продавец: ООО "Роботкомп Корп"
+2025-06-30 04:26:39,370 - product_parser - INFO -    Компания: ООО "РОБОТКОМП КОРП"
+2025-06-30 04:26:39,371 - product_parser - INFO -    ИНН: 1155047011481
+2025-06-30 04:26:42,850 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:26:47,351 - product_parser - INFO - [11/108] УСПЕШНО: https://www.ozon.ru/product/o-kseon-sistemnyy-blok-intel-core-i7-7700-ram-32-gb-ssd-512-gb-amd-radeon-rx-560-4-gb-1970282402/?at=28t0L0AVPfxVz1KEiDVAgZkumQEyZ9HkgnNGjt7nAzN
+2025-06-30 04:26:47,352 - product_parser - INFO -    Товар: О Ксеон Системный блок (Intel Core i7-7700, RAM 32 ГБ, SSD 512 ГБ, AMD Radeon RX 560 (4 Гб), Windows), черный
+2025-06-30 04:26:47,352 - product_parser - INFO -    Продавец: О! КСЕОН
+2025-06-30 04:26:47,352 - product_parser - INFO -    Компания: ИП Алексеев Руслан Султангусейнович
+2025-06-30 04:26:47,352 - product_parser - INFO -    ИНН: 324784700125699
+2025-06-30 04:26:53,373 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:26:53,474 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:26:57,270 - product_parser - INFO - [12/108] УСПЕШНО: https://www.ozon.ru/product/yukoms-sistemnyy-blok-amd-ryzen-5-5600-ram-16-gb-ssd-512-gb-nvidia-geforce-rtx-2060-super-8-gb-1416675222/?at=QktJnJmXMck86Vp8FzNPmgxTZ4WOO9fVW25ywI2gOlq2
+2025-06-30 04:26:57,270 - product_parser - INFO -    Товар: ЮКОМС Системный блок (AMD Ryzen 5 5600, RAM 16 ГБ, SSD 512 ГБ, NVIDIA GeForce RTX 2060 SUPER (8 Гб), Windows 10 Pro), черный
+2025-06-30 04:26:57,271 - product_parser - INFO -    Продавец: ЮКОМС - КОМПЬЮТЕРНЫЙ МАГАЗИН
+2025-06-30 04:26:57,271 - product_parser - INFO -    Компания: ИП Казаков Александр Павлович
+2025-06-30 04:26:57,271 - product_parser - INFO -    ИНН: 319774600474616
+2025-06-30 04:27:03,074 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:27:04,238 - seller_info_parser - ERROR - Ошибка в попытке 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:27:04,241 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 04:27:08,711 - product_parser - INFO - [13/108] УСПЕШНО: https://www.ozon.ru/product/lenovo-sistemnyy-blok-kompyuter-pk-amd-a10-6700-ram-16-gb-ssd-240-gb-amd-radeon-r7-windows-10-2042778498/?at=OgtEDEoNzFlJO3xyC3gr27KTxkQXJKFVrOn91hXg1Axv
+2025-06-30 04:27:08,719 - product_parser - INFO -    Товар: Lenovo Системный блок Компьютер ПК (AMD A10-6700, RAM 16 ГБ, SSD 240 ГБ, AMD Radeon R7, Windows 10 Pro), черный
+2025-06-30 04:27:08,720 - product_parser - INFO -    Продавец: Simple Store PC
+2025-06-30 04:27:08,720 - product_parser - INFO -    Компания: ИП Сенчихина Ангелина Евгеньевна
+2025-06-30 04:27:08,721 - product_parser - INFO -    ИНН: 323169000169536
+2025-06-30 04:27:15,273 - seller_info_parser - ERROR - Ошибка в попытке 2: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:27:15,285 - seller_info_parser - INFO - Попытка 3 получить данные продавца
+2025-06-30 04:27:18,457 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:27:27,393 - product_parser - INFO - [14/108] УСПЕШНО: https://www.ozon.ru/product/jetgame-sistemnyy-blok-intel-xeon-e5-2650v3-ram-32-gb-ssd-1024-gb-amd-radeon-rx-580-8-gb-windows-10-1827034357/?at=28t0L0AVPfx1vxAnU1PDlk1cPgJGV5HkD4lrOCR7gBqw
+2025-06-30 04:27:27,474 - product_parser - INFO -    Товар: JetGame Системный блок (Intel Xeon E5-2650V3, RAM 32 ГБ, SSD 1024 ГБ, AMD Radeon RX 580 (8 Гб), Windows 10 Pro), черный
+2025-06-30 04:27:27,482 - product_parser - INFO -    Продавец: JetGame
+2025-06-30 04:27:27,489 - product_parser - INFO -    Компания: ИП Курлов Александр Алексеевич
+2025-06-30 04:27:27,503 - product_parser - INFO -    ИНН: 323508100624725
+2025-06-30 04:27:33,275 - seller_info_parser - ERROR - Ошибка в попытке 3: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:27:33,403 - product_parser - INFO - [15/108] УСПЕШНО: https://www.ozon.ru/product/trade-electronics-sistemnyy-blok-intel-core-i7-7700-ram-32-gb-ssd-1024-gb-amd-radeon-rx-580-8-gb-2009635132/?at=NOtwYw1ZDc7jKqVBcjY5Nn1f7Gm0vnFXnE1DxUMP2Pw9
+2025-06-30 04:27:33,415 - product_parser - INFO -    Товар: TRADE Electronics Системный блок (Intel Core i7-7700, RAM 32 ГБ, SSD 1024 ГБ, AMD Radeon RX 580 (8 Гб), Windows 10 Pro), черный
+2025-06-30 04:27:33,419 - product_parser - INFO -    Продавец: «TRADE Electronics»
+2025-06-30 04:27:33,423 - product_parser - INFO -    Компания: Не найдено
+2025-06-30 04:27:33,432 - product_parser - INFO -    ИНН: Не найдено
+2025-06-30 04:27:35,604 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:27:44,584 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:27:48,129 - product_parser - INFO - [16/108] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-kompyuter-intel-xeon-e5-2650v2-ram-32-gb-ssd-512-gb-nvidia-geforce-gt-730-4-gb-1678819651/?at=nRtr4rQXAsjrwYvBS7wgnA2H93Z5ZmhwPOPB9tAV9jJg
+2025-06-30 04:27:48,129 - product_parser - INFO -    Товар: Системный блок Компьютер (Intel Xeon E5-2650V2, RAM 32 ГБ, SSD 512 ГБ, NVIDIA GeForce GT 730 (4 Гб), Windows 10 Pro), черный
+2025-06-30 04:27:48,130 - product_parser - INFO -    Продавец: NAVI COMPUTERS
+2025-06-30 04:27:48,131 - product_parser - INFO -    Компания: ИП Кузнецов Егор Сергеевич
+2025-06-30 04:27:48,131 - product_parser - INFO -    ИНН: 321547600104762
+2025-06-30 04:27:49,626 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 04:27:58,618 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:27:59,800 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:28:02,303 - product_parser - INFO - [17/108] УСПЕШНО: https://www.ozon.ru/product/treidcomputers-sistemnyy-blok-igrovoy-kompyuter-intel-core-i7-7700-ram-32-gb-ssd-960-gb-1922781186/?at=6WtZRZxPjfExN2AJhEXGrrDfYvZ7zMhlmB8ZjTv14jRK
+2025-06-30 04:28:02,304 - product_parser - INFO -    Товар: TREIDCOMPUTERS Системный блок Игровой компьютер (Intel Core i7-7700, RAM 32 ГБ, SSD 960 ГБ, NVIDIA GeForce RTX 4060 (8 Гб), Windows 10 Pro), черный
+2025-06-30 04:28:02,312 - product_parser - INFO -    Продавец: TREIDCOMPUTERS
+2025-06-30 04:28:02,313 - product_parser - INFO -    Компания: ИП Буторин Илья Сергеевич
+2025-06-30 04:28:02,313 - product_parser - INFO -    ИНН: 319774600299562
+2025-06-30 04:28:02,664 - seller_info_parser - INFO - Попытка 3 получить данные продавца
+2025-06-30 04:28:03,474 - product_parser - INFO - [18/108] УСПЕШНО: https://www.ozon.ru/product/robotcomp-sistemnyy-blok-feniks-white-amd-ryzen-9-9950x-ram-64-gb-ssd-4000-gb-nvidia-geforce-2278238527/?at=36tWjWVX6h7vVWX7F0MkQAZU96pyQ0IN96OZrF0gvDA9
+2025-06-30 04:28:03,479 - product_parser - INFO -    Товар: Robotcomp Системный блок Феникс White (AMD Ryzen 9 9950X, RAM 64 ГБ, SSD 4000 ГБ, NVIDIA GeForce RTX 5080 (16 Гб), Windows 11 Pro), белый
+2025-06-30 04:28:03,481 - product_parser - INFO -    Продавец: ООО "Роботкомп Корп"
+2025-06-30 04:28:03,483 - product_parser - INFO -    Компания: ООО "РОБОТКОМП КОРП"
+2025-06-30 04:28:03,485 - product_parser - INFO -    ИНН: 1155047011481
+2025-06-30 04:28:06,816 - product_parser - INFO - [19/108] УСПЕШНО: https://www.ozon.ru/product/bloody-sistemnyy-blok-bd-pc-cb76c2-amd-ryzen-5-7500f-ram-32-gb-ssd-1024-gb-nvidia-geforce-rtx-4060-8-1923001293/?at=OgtEDEoNzFAqo62ncX6BDYAtOj969EF1NKMmLCzm5lZw
+2025-06-30 04:28:06,845 - product_parser - INFO -    Товар: Bloody Системный блок BD-PC CB76C2 (AMD Ryzen 5 7500F, RAM 32 ГБ, SSD 1024 ГБ, NVIDIA GeForce RTX 4060 (8 Гб), Windows), 2086014, черный
+2025-06-30 04:28:06,849 - product_parser - INFO -    Продавец: Официальный магазин Bloody
+2025-06-30 04:28:06,850 - product_parser - INFO -    Компания: ООО "РЕНТСОФТ"
+2025-06-30 04:28:06,851 - product_parser - INFO -    ИНН: 1097746578863
+2025-06-30 04:28:14,613 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:28:18,137 - product_parser - INFO - [20/108] УСПЕШНО: https://www.ozon.ru/product/robotcomp-sistemnyy-blok-feniks-plus-amd-ryzen-9-9950x-ram-128-gb-ssd-4000-gb-nvidia-geforce-2246607844/?at=Rltywy8Gjso3ERrDuXxBgznfDp2jB6IODyJRrUzNx2Vq
+2025-06-30 04:28:18,140 - product_parser - INFO -    Товар: Robotcomp Системный блок Феникс Plus (AMD Ryzen 9 9950X, RAM 128 ГБ, SSD 4000 ГБ, NVIDIA GeForce RTX 5080 (16 Гб), Windows 11 Pro), черный
+2025-06-30 04:28:18,141 - product_parser - INFO -    Продавец: ООО "Роботкомп Корп"
+2025-06-30 04:28:18,141 - product_parser - INFO -    Компания: ООО "РОБОТКОМП КОРП"
+2025-06-30 04:28:18,141 - product_parser - INFO -    ИНН: 1155047011481
+2025-06-30 04:28:19,337 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:28:20,134 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:28:22,976 - product_parser - INFO - [21/108] УСПЕШНО: https://www.ozon.ru/product/acer-sistemnyy-blok-acer-2610-veriton-3-2100-intel-core-i3-2100-ram-4-gb-intel-graphics-bez-os-2157493460/?at=mqtkVkGpBhZZoK7iV8RQY2cJOnl7GsqKEjV1t9qKGzw
+2025-06-30 04:28:22,977 - product_parser - INFO -    Товар: Acer Системный блок acer 2610 veriton 3-2100 (Intel Core i3-2100, RAM 4 ГБ, Intel Graphics, Без ОС), 1, черный
+2025-06-30 04:28:22,977 - product_parser - INFO -    Продавец: Compunity
+2025-06-30 04:28:22,978 - product_parser - INFO -    Компания: ИП Кротченко Михаил Владимирович
+2025-06-30 04:28:22,978 - product_parser - INFO -    ИНН: 318665800228612
+2025-06-30 04:28:23,820 - product_parser - INFO - [22/108] УСПЕШНО: https://www.ozon.ru/product/intel-sistemnyy-blok-kompyuter-pk-intel-core-i3-4130-ram-8-gb-ssd-240-gb-intel-hd-graphics-1771435264/?at=GRt2r2oBKc44MwNZHlOPqG8Hg379w2SxxAEcZMAV96
+2025-06-30 04:28:23,820 - product_parser - INFO -    Товар: Intel Системный блок Компьютер ПК (Intel Core i3-4130, RAM 8 ГБ, SSD 240 ГБ, Intel HD Graphics, Windows 10 Pro), черный, черный матовый
+2025-06-30 04:28:23,821 - product_parser - INFO -    Продавец: Simple Store PC
+2025-06-30 04:28:23,831 - product_parser - INFO -    Компания: ИП Сенчихина Ангелина Евгеньевна
+2025-06-30 04:28:23,832 - product_parser - INFO -    ИНН: 323169000169536
+2025-06-30 04:28:30,579 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:28:34,079 - product_parser - INFO - [23/108] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-igrovoy-kompyuter-intel-core-i5-12400f-ram-16-gb-ssd-512-gb-nvidia-geforce-rtx-1685907194/?at=6WtZRZxPjf4164w7uNp8BgAsl6RV7BFjLpzEEIz0WGnk
+2025-06-30 04:28:34,080 - product_parser - INFO -    Товар: Системный блок Игровой компьютер (Intel Core i5-12400F, RAM 16 ГБ, SSD 512 ГБ, NVIDIA GeForce RTX 3060 Ti (8 Гб), Windows 10 Pro), черный
+2025-06-30 04:28:34,080 - product_parser - INFO -    Продавец: ДомЛюкс
+2025-06-30 04:28:34,081 - product_parser - INFO -    Компания: ИП Букреев Вячеслав Дмитриевич
+2025-06-30 04:28:34,081 - product_parser - INFO -    ИНН: 324547600077071
+2025-06-30 04:28:35,074 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:28:36,073 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:28:38,656 - product_parser - INFO - [24/108] УСПЕШНО: https://www.ozon.ru/product/robotcomp-sistemnyy-blok-feniks-amd-ryzen-9-9950x-ram-64-gb-ssd-4000-gb-nvidia-geforce-rtx-5080-2246607023/?at=57twywOM5cD96Po2IglYwMBt04g2AkCzZjjPziJMkVXm
+2025-06-30 04:28:38,657 - product_parser - INFO -    Товар: Robotcomp Системный блок Феникс (AMD Ryzen 9 9950X, RAM 64 ГБ, SSD 4000 ГБ, NVIDIA GeForce RTX 5080 (16 Гб), Windows 11 Pro), черный
+2025-06-30 04:28:38,657 - product_parser - INFO -    Продавец: ООО "Роботкомп Корп"
+2025-06-30 04:28:38,657 - product_parser - INFO -    Компания: ООО "РОБОТКОМП КОРП"
+2025-06-30 04:28:38,659 - product_parser - INFO -    ИНН: 1155047011481
+2025-06-30 04:28:39,717 - product_parser - INFO - [25/108] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-amd-a8-8670e-ram-4-gb-amd-radeon-r7-bez-os-1-cherno-seryy-1707200180/?at=Z8tX1Xy7rUZ2WM5LunyYB0LhvwJ29EiXXZXvsy5mvpR
+2025-06-30 04:28:39,719 - product_parser - INFO -    Товар: Системный блок (AMD A8 8670E, RAM 4 ГБ, AMD Radeon R7, Без ОС), 1, черно-серый
+2025-06-30 04:28:39,719 - product_parser - INFO -    Продавец: Compunity
+2025-06-30 04:28:39,719 - product_parser - INFO -    Компания: ИП Кротченко Михаил Владимирович
+2025-06-30 04:28:39,720 - product_parser - INFO -    ИНН: 318665800228612
+2025-06-30 04:28:46,433 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:28:49,905 - product_parser - INFO - [26/108] УСПЕШНО: https://www.ozon.ru/product/robotcomp-sistemnyy-blok-m-16-v3-aqua-intel-core-i5-14400f-ram-32-gb-ssd-960-gb-nvidia-geforce-rtx-2229057548/?at=r2t4y4XrPFVNN1y3S1A5GKlsDMYjq0CA3POAgFOyQjY7
+2025-06-30 04:28:49,905 - product_parser - INFO -    Товар: Robotcomp Системный блок M-16 V3 Aqua (Intel Core i5-14400F, RAM 32 ГБ, SSD 960 ГБ, NVIDIA GeForce RTX 5060 (8 Гб), Windows 10 Pro), черный, прозрачный
+2025-06-30 04:28:49,906 - product_parser - INFO -    Продавец: ООО "Роботкомп Корп"
+2025-06-30 04:28:49,906 - product_parser - INFO -    Компания: ООО "РОБОТКОМП КОРП"
+2025-06-30 04:28:49,907 - product_parser - INFO -    ИНН: 1155047011481
+2025-06-30 04:28:50,375 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:28:52,253 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:28:53,934 - product_parser - INFO - [27/108] УСПЕШНО: https://www.ozon.ru/product/robotcomp-sistemnyy-blok-m-16-v2-aqua-white-intel-core-i5-14400f-ram-32-gb-ssd-960-gb-nvidia-geforce-2246018851/?at=w0tg5gXvJTLlgpNXH9VGjPLsJggkw4CZq06lHGnP45G
+2025-06-30 04:28:53,936 - product_parser - INFO -    Товар: Robotcomp Системный блок M-16 V2 Aqua White (Intel Core i5-14400F, RAM 32 ГБ, SSD 960 ГБ, NVIDIA GeForce RTX 5060 (8 Гб), ), белый, прозрачный
+2025-06-30 04:28:53,936 - product_parser - INFO -    Продавец: ООО "Роботкомп Корп"
+2025-06-30 04:28:53,936 - product_parser - INFO -    Компания: ООО "РОБОТКОМП КОРП"
+2025-06-30 04:28:53,936 - product_parser - INFO -    ИНН: 1155047011481
+2025-06-30 04:28:55,842 - product_parser - INFO - [28/108] УСПЕШНО: https://www.ozon.ru/product/robotcomp-sistemnyy-blok-feniks-plus-white-amd-ryzen-9-9950x-ram-128-gb-ssd-4000-gb-nvidia-geforce-2278238050/?at=qQtJgJG1KcvL75K8iwzLp44H3zLg3vHlP2WrQTxovJE
+2025-06-30 04:28:55,843 - product_parser - INFO -    Товар: Robotcomp Системный блок Феникс Plus White (AMD Ryzen 9 9950X, RAM 128 ГБ, SSD 4000 ГБ, NVIDIA GeForce RTX 5080 (16 Гб), Windows 11 Pro), белый
+2025-06-30 04:28:55,845 - product_parser - INFO -    Продавец: ООО "Роботкомп Корп"
+2025-06-30 04:28:55,845 - product_parser - INFO -    Компания: ООО "РОБОТКОМП КОРП"
+2025-06-30 04:28:55,846 - product_parser - INFO -    ИНН: 1155047011481
+2025-06-30 04:29:06,534 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:29:10,097 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:29:12,967 - product_parser - INFO - [29/108] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-kompyuter-intel-core-i7-2600-ram-16-gb-ssd-512-gb-nvidia-geforce-gtx-1050-ti-4-gb-1678819795/?at=x6tPpPKLnsRPRp7QCpDRy0pUNY6MwKC3mVpWNFl469DA
+2025-06-30 04:29:12,967 - product_parser - INFO -    Товар: Системный блок Компьютер (Intel Core i7-2600, RAM 16 ГБ, SSD 512 ГБ, NVIDIA GeForce GTX 1050 Ti (4 Гб), Windows 10 Pro), черный
+2025-06-30 04:29:12,968 - product_parser - INFO -    Продавец: NAVI COMPUTERS
+2025-06-30 04:29:12,969 - product_parser - INFO -    Компания: ИП Кузнецов Егор Сергеевич
+2025-06-30 04:29:12,981 - product_parser - INFO -    ИНН: 321547600104762
+2025-06-30 04:29:15,845 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:29:17,715 - product_parser - INFO - [30/108] УСПЕШНО: https://www.ozon.ru/product/sevengroup-sistemnyy-blok-igrovoy-kompyuter-pk-amd-ryzen-5-5600-ram-32-gb-ssd-1024-gb-amd-radeon-rx-1553830051/?at=83tBmBxXDT9zJx2rC41Wywji0nmwjrTDmlWBVu5xY70
+2025-06-30 04:29:17,766 - product_parser - INFO -    Товар: SevenGroup Системный блок Игровой компьютер ПК (AMD Ryzen 5 5600, RAM 32 ГБ, SSD 1024 ГБ, AMD Radeon RX 580 (8 Гб), Windows 10 Pro), ПК, белый
+2025-06-30 04:29:18,018 - product_parser - INFO -    Продавец: Scetch
+2025-06-30 04:29:18,147 - product_parser - INFO -    Компания: ИП Савастеева Марина Андреевна
+2025-06-30 04:29:18,201 - product_parser - INFO -    ИНН: 323508100073711
+2025-06-30 04:29:22,078 - product_parser - INFO - [31/108] УСПЕШНО: https://www.ozon.ru/product/lenovo-sistemnyy-blok-kompyuter-pk-amd-pro-a8-8650b-ram-16-gb-ssd-120-gb-amd-radeon-r7-windows-10-1590381111/?at=DqtD7DQoNsq12nEvHKPN8G9S70xwWOUG1zznrIgyzPEv
+2025-06-30 04:29:22,079 - product_parser - INFO -    Товар: Lenovo Системный блок Компьютер ПК (AMD PRO A8-8650B, RAM 16 ГБ, SSD 120 ГБ, AMD Radeon R7, Windows 10 Pro), черный
+2025-06-30 04:29:22,079 - product_parser - INFO -    Продавец: Simple Store PC
+2025-06-30 04:29:22,080 - product_parser - INFO -    Компания: ИП Сенчихина Ангелина Евгеньевна
+2025-06-30 04:29:22,080 - product_parser - INFO -    ИНН: 323169000169536
+2025-06-30 04:29:29,700 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:29:33,393 - product_parser - INFO - [32/108] УСПЕШНО: https://www.ozon.ru/product/robotcomp-sistemnyy-blok-topol-m-v3-white-intel-core-ultra-9-285k-ram-32-gb-ssd-4000-gb-2278237697/?at=Y7tjKjPDEhnjJ1kZsOyWEBAUWmqnP5hL0BqO3FW0W09O
+2025-06-30 04:29:33,394 - product_parser - INFO -    Товар: Robotcomp Системный блок Тополь-М V3 White (Intel Core Ultra 9 285K, RAM 32 ГБ, SSD 4000 ГБ, NVIDIA GeForce RTX 5080 (16 Гб), Windows 11 Pro), белый
+2025-06-30 04:29:33,394 - product_parser - INFO -    Продавец: ООО "Роботкомп Корп"
+2025-06-30 04:29:33,395 - product_parser - INFO -    Компания: ООО "РОБОТКОМП КОРП"
+2025-06-30 04:29:33,395 - product_parser - INFO -    ИНН: 1155047011481
+2025-06-30 04:29:33,760 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:29:37,212 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:29:38,026 - product_parser - INFO - [33/108] УСПЕШНО: https://www.ozon.ru/product/it-baza-sistemnyy-blok-intel-i3-2100-ram-8gb-ssd-240gb-windows-10-pro-intel-core-i3-2100-ram-8-1044578885/?at=gpt4v4nqOF3x49qRuL8OnEqflV0opASzYJmLBIgn4ONL
+2025-06-30 04:29:38,028 - product_parser - INFO -    Товар: IT-BAZA Системный блок Intel i3-2100, RAM 8ГБ , SSD 240ГБ, Windows 10 Pro (Intel Core i3-2100, RAM 8 ГБ, SSD 240 ГБ, Intel HD Graphics 2000, Windows 10 Pro), черный, черно-серый
+2025-06-30 04:29:38,033 - product_parser - INFO -    Продавец: IT-BAZA
+2025-06-30 04:29:38,034 - product_parser - INFO -    Компания: ООО АЙТИ БАЗА
+2025-06-30 04:29:38,061 - product_parser - INFO -    ИНН: 1225600004035
+2025-06-30 04:29:41,044 - product_parser - INFO - [34/108] УСПЕШНО: https://www.ozon.ru/product/treidcomputers-sistemnyy-blok-igrovoy-kompyuter-intel-core-i5-10400f-ram-32-gb-ssd-960-gb-2224310920/?at=79tnrn9z4s8QDQvQTwEvVgJiojqNWLfj13VLiZOZgBv
+2025-06-30 04:29:41,044 - product_parser - INFO -    Товар: TREIDCOMPUTERS Системный блок Игровой компьютер (Intel Core i5-10400F, RAM 32 ГБ, SSD 960 ГБ, NVIDIA GeForce RTX 4060 (8 Гб), Windows 10 Pro), белый
+2025-06-30 04:29:41,046 - product_parser - INFO -    Продавец: TREIDCOMPUTERS
+2025-06-30 04:29:41,046 - product_parser - INFO -    Компания: ИП Буторин Илья Сергеевич
+2025-06-30 04:29:41,046 - product_parser - INFO -    ИНН: 319774600299562
+2025-06-30 04:29:47,845 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:29:51,605 - product_parser - INFO - [35/108] УСПЕШНО: https://www.ozon.ru/product/intel-sistemnyy-blok-intel-core-i5-2400-ram-16-gb-ssd-480-gb-nvidia-geforce-gt-730-4-gb-windows-10-1372069683/?at=oZt6A6JDjFBqmQXlFQZGVq8TYryo5VfmX7zwuJlmWny
+2025-06-30 04:29:51,606 - product_parser - INFO -    Товар: Intel Системный блок (Intel Core i5-2400, RAM 16 ГБ, SSD 480 ГБ, NVIDIA GeForce GT 730 (4 Гб), Windows 10 Pro), черный
+2025-06-30 04:29:51,606 - product_parser - INFO -    Продавец: relotech
+2025-06-30 04:29:51,606 - product_parser - INFO -    Компания: ИП Давыдов Владимир Олегович
+2025-06-30 04:29:51,606 - product_parser - INFO -    ИНН: 317344300018441
+2025-06-30 04:30:39,412 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:30:39,910 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:30:42,875 - product_parser - INFO - [36/108] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-komp-intel-core-i3-2100-ram-8-gb-ssd-120-gb-intel-hd-graphics-windows-1-chernyy-1788256708/?at=79tnrn9z4sBzN5wKcqQxWqYsP8kLkLIxGQnkjc4WlqKx
+2025-06-30 04:30:42,877 - product_parser - INFO -    Товар: Системный блок комп (Intel Core i3-2100, RAM 8 ГБ, SSD 120 ГБ, Intel HD Graphics, Windows), 1, черный, черный матовый
+2025-06-30 04:30:42,877 - product_parser - INFO -    Продавец: Compunity
+2025-06-30 04:30:42,877 - product_parser - INFO -    Компания: ИП Кротченко Михаил Владимирович
+2025-06-30 04:30:42,878 - product_parser - INFO -    ИНН: 318665800228612
+2025-06-30 04:30:50,900 - seller_info_parser - ERROR - Ошибка в попытке 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:30:50,903 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 04:30:56,453 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:31:00,056 - product_parser - INFO - [37/108] УСПЕШНО: https://www.ozon.ru/product/black-white-pc-sistemnyy-blok-kompyuter-pk-combo-i5-task-intel-core-i5-4590-ram-16-gb-ssd-512-1595827973/?at=Y7tjKjPDEhjzWqqRSDLm9J2FY0JgKkHOM5OXOIPzDPEP
+2025-06-30 04:31:00,057 - product_parser - INFO -    Товар: Black & White PC Системный блок Компьютер ПК Combo i5 Task (Intel Core i5-4590, RAM 16 ГБ, SSD 512 ГБ, Intel HD Graphics 4600, Windows), черно-серый
+2025-06-30 04:31:00,058 - product_parser - INFO -    Продавец: Black&White PC
+2025-06-30 04:31:00,058 - product_parser - INFO -    Компания: ИП Гизатуллин Тимур Абрекович
+2025-06-30 04:31:00,059 - product_parser - INFO -    ИНН: 322784700350873
+2025-06-30 04:31:01,751 - seller_info_parser - ERROR - Ошибка в попытке 2: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:31:01,753 - seller_info_parser - INFO - Попытка 3 получить данные продавца
+2025-06-30 04:31:03,298 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:31:12,319 - seller_info_parser - ERROR - Ошибка в попытке 3: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:31:12,320 - product_parser - INFO - [38/108] УСПЕШНО: https://www.ozon.ru/product/sevengroup-sistemnyy-blok-igrovoy-kompyuter-pk-intel-xeon-e5-2650-ram-16-gb-ssd-512-gb-nvidia-2129421028/?at=36tWjWVX6hEgQrjqFrx08R6FQ4JQ0xCM7Egokflo29NQ
+2025-06-30 04:31:12,321 - product_parser - INFO -    Товар: SevenGroup Системный блок Игровой компьютер ПК (Intel Xeon E5-2650, RAM 16 ГБ, SSD 512 ГБ, NVIDIA GeForce GTX 1660 SUPER (6 Гб), Windows 10 Pro), ПК, белый, прозрачный
+2025-06-30 04:31:12,321 - product_parser - INFO -    Продавец: Scetch
+2025-06-30 04:31:12,321 - product_parser - INFO -    Компания: Не найдено
+2025-06-30 04:31:12,321 - product_parser - INFO -    ИНН: Не найдено
+2025-06-30 04:31:13,856 - seller_info_parser - ERROR - Ошибка в попытке 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:31:13,859 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 04:31:14,791 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:31:18,300 - product_parser - INFO - [39/108] УСПЕШНО: https://www.ozon.ru/product/sevengroup-sistemnyy-blok-igrovoy-kompyuter-pk-amd-ryzen-5-3600-ram-16-gb-ssd-512-gb-nvidia-geforce-1553830244/?at=MZtvpvG2MfPzjZ1oSz7xOlBIX2jJjKS1117PQtAwA8zj
+2025-06-30 04:31:18,301 - product_parser - INFO -    Товар: SevenGroup Системный блок Игровой компьютер ПК (AMD Ryzen 5 3600, RAM 16 ГБ, SSD 512 ГБ, NVIDIA GeForce GTX 1660 SUPER (6 Гб), Windows 10 Pro), ПК, черный
+2025-06-30 04:31:18,302 - product_parser - INFO -    Продавец: Scetch
+2025-06-30 04:31:18,302 - product_parser - INFO -    Компания: ИП Савастеева Марина Андреевна
+2025-06-30 04:31:18,302 - product_parser - INFO -    ИНН: 323508100073711
+2025-06-30 04:31:24,867 - seller_info_parser - ERROR - Ошибка в попытке 2: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:31:24,869 - seller_info_parser - INFO - Попытка 3 получить данные продавца
+2025-06-30 04:31:30,103 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:31:33,550 - product_parser - INFO - [40/108] УСПЕШНО: https://www.ozon.ru/product/yukoms-sistemnyy-blok-intel-xeon-e5-2650v2-ram-32-gb-ssd-256-gb-nvidia-geforce-gtx-1050-2-gb-2078702924/?at=79tnrn9z4slnn93OTOQmWYVtA308Ywh0WPGKphrXkVM3
+2025-06-30 04:31:33,551 - product_parser - INFO -    Товар: ЮКОМС Системный блок (Intel Xeon E5-2650V2, RAM 32 ГБ, SSD 256 ГБ, NVIDIA GeForce GTX 1050 (2 Гб), Windows 10 Pro), черный
+2025-06-30 04:31:33,552 - product_parser - INFO -    Продавец: ЮКОМС - КОМПЬЮТЕРНЫЙ МАГАЗИН
+2025-06-30 04:31:33,552 - product_parser - INFO -    Компания: ИП Казаков Александр Павлович
+2025-06-30 04:31:33,553 - product_parser - INFO -    ИНН: 319774600474616
+2025-06-30 04:31:33,716 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:31:35,710 - seller_info_parser - ERROR - Ошибка в попытке 3: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:31:35,716 - product_parser - INFO - [41/108] УСПЕШНО: https://www.ozon.ru/product/lenovo-sistemnyy-blok-kompyuter-pk-amd-a10-6700-ram-otsutstvuet-amd-radeon-r7-freedos-chernyy-1644248201/?at=K8tZQZ0DzfOl890lSpDxJOoi2yzyX7iJpmWXAHXOvNPM
+2025-06-30 04:31:35,717 - product_parser - INFO -    Товар: Lenovo Системный блок Компьютер ПК (AMD A10-6700, RAM Отсутствует, AMD Radeon R7, FreeDOS), черный
+2025-06-30 04:31:35,718 - product_parser - INFO -    Продавец: Simple Store PC
+2025-06-30 04:31:35,719 - product_parser - INFO -    Компания: Не найдено
+2025-06-30 04:31:35,719 - product_parser - INFO -    ИНН: Не найдено
+2025-06-30 04:31:44,450 - seller_info_parser - ERROR - Ошибка в попытке 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:31:44,454 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 04:31:46,417 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:31:49,927 - product_parser - INFO - [42/108] УСПЕШНО: https://www.ozon.ru/product/robotcomp-sistemnyy-blok-m-16-v1-plus-aqua-white-intel-core-i5-14400f-ram-64-gb-ssd-960-gb-2246018134/?at=K8tZQZ0Dzfw9nK6Ask80l4Bt4y55pviVREvBMtoYokyk
+2025-06-30 04:31:49,927 - product_parser - INFO -    Товар: Robotcomp Системный блок M-16 V1 Plus Aqua White (Intel Core i5-14400F, RAM 64 ГБ, SSD 960 ГБ, NVIDIA GeForce RTX 5060 (8 Гб), ), белый, прозрачный
+2025-06-30 04:31:49,928 - product_parser - INFO -    Продавец: ООО "Роботкомп Корп"
+2025-06-30 04:31:49,928 - product_parser - INFO -    Компания: ООО "РОБОТКОМП КОРП"
+2025-06-30 04:31:49,929 - product_parser - INFO -    ИНН: 1155047011481
+2025-06-30 04:31:53,160 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:31:55,166 - seller_info_parser - ERROR - Ошибка в попытке 2: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:31:55,174 - seller_info_parser - INFO - Попытка 3 получить данные продавца
+2025-06-30 04:31:56,755 - product_parser - INFO - [43/108] УСПЕШНО: https://www.ozon.ru/product/black-white-pc-sistemnyy-blok-kompyuter-combo-i5-512-intel-core-i5-3470-ram-16-gb-ssd-512-gb-1216928618/?at=nRtr4rQXAsOnjqY2sE6EM87SMoRK2NI0ZjGpEIVjNn0A
+2025-06-30 04:31:56,756 - product_parser - INFO -    Товар: Black & White PC Системный блок Компьютер Combo i5 512 (Intel Core i5-3470, RAM 16 ГБ, SSD 512 ГБ, Intel HD Graphics 2500, Windows), серый
+2025-06-30 04:31:56,757 - product_parser - INFO -    Продавец: Black&White PC
+2025-06-30 04:31:56,757 - product_parser - INFO -    Компания: ИП Гизатуллин Тимур Абрекович
+2025-06-30 04:31:56,757 - product_parser - INFO -    ИНН: 322784700350873
+2025-06-30 04:32:02,852 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:32:05,817 - seller_info_parser - ERROR - Ошибка в попытке 3: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:32:05,821 - product_parser - INFO - [44/108] УСПЕШНО: https://www.ozon.ru/product/robotcomp-sistemnyy-blok-poseydon-3-0-v3-plus-aqua-black-amd-ryzen-9-7900x-ram-64-gb-ssd-2000-1891423572/?at=16tLrLK62F127J9Bh65xWZrUjZ9y1Eho8rVGqt0YKNN
+2025-06-30 04:32:05,822 - product_parser - INFO -    Товар: Robotcomp Системный блок Посейдон 3.0 V3 Plus Aqua Black (AMD Ryzen 9 7900X, RAM 64 ГБ, SSD 2000 ГБ, NVIDIA GeForce RTX 5080 (16 Гб), Windows 11 Pro), черный, прозрачный
+2025-06-30 04:32:05,823 - product_parser - INFO -    Продавец: ООО "Роботкомп Корп"
+2025-06-30 04:32:05,824 - product_parser - INFO -    Компания: Не найдено
+2025-06-30 04:32:05,824 - product_parser - INFO -    ИНН: Не найдено
+2025-06-30 04:32:06,387 - product_parser - INFO - [45/108] УСПЕШНО: https://www.ozon.ru/product/robotcomp-sistemnyy-blok-m-16-v2-aqua-intel-core-i5-14400f-ram-32-gb-ssd-960-gb-nvidia-geforce-rtx-2229058173/?at=46tRZRGzMfQnN4YgsMmEkM0Ix5D72zuXXVN3Au49LDMx
+2025-06-30 04:32:06,388 - product_parser - INFO -    Товар: Robotcomp Системный блок M-16 V2 Aqua (Intel Core i5-14400F, RAM 32 ГБ, SSD 960 ГБ, NVIDIA GeForce RTX 5060 (8 Гб), Windows 10 Pro), черный, прозрачный
+2025-06-30 04:32:06,389 - product_parser - INFO -    Продавец: ООО "Роботкомп Корп"
+2025-06-30 04:32:06,389 - product_parser - INFO -    Компания: ООО "РОБОТКОМП КОРП"
+2025-06-30 04:32:06,390 - product_parser - INFO -    ИНН: 1155047011481
+2025-06-30 04:32:08,642 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:32:12,520 - product_parser - INFO - [46/108] УСПЕШНО: https://www.ozon.ru/product/intel-sistemnyy-blok-kompyuter-pk-intel-core-i5-4570-ram-16-gb-ssd-240-gb-intel-hd-graphics-1609981429/?at=57twywOM5c3l8E8yC6r9rRQTR3nqPNF56oOGEcpkw8YQ
+2025-06-30 04:32:12,520 - product_parser - INFO -    Товар: Intel Системный блок Компьютер ПК (Intel Core i5-4570, RAM 16 ГБ, SSD 240 ГБ, Intel HD Graphics, Windows 10 Pro), черный, черный матовый
+2025-06-30 04:32:12,521 - product_parser - INFO -    Продавец: Simple Store PC
+2025-06-30 04:32:12,521 - product_parser - INFO -    Компания: ИП Сенчихина Ангелина Евгеньевна
+2025-06-30 04:32:12,522 - product_parser - INFO -    ИНН: 323169000169536
+2025-06-30 04:32:19,443 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:32:22,954 - product_parser - INFO - [47/108] УСПЕШНО: https://www.ozon.ru/product/robotcomp-sistemnyy-blok-zevs-3-0-v3-aqua-black-rtx-5080-intel-core-i9-14900kf-ram-32-gb-ssd-2000-gb-1890036111/?at=GRt2r2oBKcEzQ4BpImJgOjcklzXVYfWrP99rTkGnXDv
+2025-06-30 04:32:22,955 - product_parser - INFO -    Товар: Robotcomp Системный блок Зевс 3.0 V3 Aqua Black RTX 5080 (Intel Core i9-14900KF, RAM 32 ГБ, SSD 2000 ГБ, HDD 2000 ГБ, NVIDIA GeForce RTX 5080 (16 Гб), Windows 10 Pro), черный, прозрачный
+2025-06-30 04:32:22,956 - product_parser - INFO -    Продавец: ООО "Роботкомп Корп"
+2025-06-30 04:32:22,957 - product_parser - INFO -    Компания: ООО "РОБОТКОМП КОРП"
+2025-06-30 04:32:22,958 - product_parser - INFO -    ИНН: 1155047011481
+2025-06-30 04:32:27,398 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:32:30,929 - product_parser - INFO - [48/108] УСПЕШНО: https://www.ozon.ru/product/auroralabs-sistemnyy-blok-intel-core-i7-3770-ram-16-gb-ssd-500-gb-intel-hd-graphics-4000-windows-10-1412508908/?at=vQtrJroEpsyx6452HyEM6pwHXEym0XFw7WGDGImZw38k
+2025-06-30 04:32:30,930 - product_parser - INFO -    Товар: AURORALABS Системный блок (Intel Core i7-3770, RAM 16 ГБ, SSD 500 ГБ, Intel HD Graphics 4000, Windows 10 Pro), черный
+2025-06-30 04:32:30,930 - product_parser - INFO -    Продавец: AURORALABS
+2025-06-30 04:32:30,930 - product_parser - INFO -    Компания: ИП Ульянов Илья Андреевич
+2025-06-30 04:32:30,932 - product_parser - INFO -    ИНН: 319112100019031
+2025-06-30 04:32:32,967 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:32:35,648 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:32:39,125 - product_parser - INFO - [49/108] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-amd-ryzen-5-5600-ram-32-gb-ssd-1024-gb-nvidia-geforce-rtx-4060-8-gb-windows-10-pro-2268472126/?at=VvtzVz12NS0QjXxYhgOmv9jiM7NvP5io7nG2ntJw4vz2
+2025-06-30 04:32:39,127 - product_parser - INFO -    Товар: Системный блок (AMD Ryzen 5 5600, RAM 32 ГБ, SSD 1024 ГБ, NVIDIA GeForce RTX 4060 (8 Гб), Windows 10 Pro), 1222, черный
+2025-06-30 04:32:39,128 - product_parser - INFO -    Продавец: NOVA
+2025-06-30 04:32:39,128 - product_parser - INFO -    Компания: ИП Дудников Роман Олегович
+2025-06-30 04:32:39,128 - product_parser - INFO -    ИНН: 322366800050827
+2025-06-30 04:32:43,286 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:32:43,657 - seller_info_parser - ERROR - Ошибка в попытке 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:32:43,667 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 04:32:46,815 - product_parser - INFO - [50/108] УСПЕШНО: https://www.ozon.ru/product/robotcomp-sistemnyy-blok-zevs-3-0-v3-plus-5080-black-intel-core-i9-14900kf-ram-64-gb-ssd-2000-gb-hdd-1867613087/?at=6WtZRZxPjfmALXWMsg469rgt9MP5GPHpnMYLoi1kD3xP
+2025-06-30 04:32:46,815 - product_parser - INFO -    Товар: Robotcomp Системный блок Зевс 3.0 V3 Plus 5080 Black (Intel Core i9-14900KF, RAM 64 ГБ, SSD 2000 ГБ, HDD 2000 ГБ, NVIDIA GeForce RTX 5080 (16 Гб), Windows 10 Pro), черный
+2025-06-30 04:32:46,816 - product_parser - INFO -    Продавец: ООО "Роботкомп Корп"
+2025-06-30 04:32:46,816 - product_parser - INFO -    Компания: ООО "РОБОТКОМП КОРП"
+2025-06-30 04:32:46,816 - product_parser - INFO -    ИНН: 1155047011481
+2025-06-30 04:32:52,603 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:32:54,209 - seller_info_parser - ERROR - Ошибка в попытке 2: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:32:54,215 - seller_info_parser - INFO - Попытка 3 получить данные продавца
+2025-06-30 04:32:56,089 - product_parser - INFO - [51/108] УСПЕШНО: https://www.ozon.ru/product/intel-sistemnyy-blok-amd-ryzen-5-5600-ram-32-gb-ssd-1000-gb-nvidia-geforce-rtx-3060-12-gb-windows-11-1778081189/?at=36tWjWVX6hD4zGgwSgAnJBGfYK7lYJuNQMR9ouwXLJp6
+2025-06-30 04:32:56,090 - product_parser - INFO -    Товар: Intel Системный блок (AMD Ryzen 5 5600, RAM 32 ГБ, SSD 1000 ГБ, NVIDIA GeForce RTX 3060 (12 Гб), Windows 11 Pro), разноцветный
+2025-06-30 04:32:56,091 - product_parser - INFO -    Продавец: relotech
+2025-06-30 04:32:56,091 - product_parser - INFO -    Компания: ИП Давыдов Владимир Олегович
+2025-06-30 04:32:56,091 - product_parser - INFO -    ИНН: 317344300018441
+2025-06-30 04:32:58,991 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:33:02,872 - product_parser - INFO - [52/108] УСПЕШНО: https://www.ozon.ru/product/iru-sistemnyy-blok-intel-core-i3-13100-ram-16-gb-ssd-1024-gb-intel-uhd-graphics-730-freedos-chernyy-1867612496/?at=lRt6W6D10FGZkxqmi0QDM7Jc7g8vPzTgnWl7zUmwmx87
+2025-06-30 04:33:02,873 - product_parser - INFO -    Товар: iRU Системный блок (Intel Core i3-13100, RAM 16 ГБ, SSD 1024 ГБ, Intel UHD Graphics 730, FreeDOS), черный
+2025-06-30 04:33:02,873 - product_parser - INFO -    Продавец: Ситилинк Доставка
+2025-06-30 04:33:02,874 - product_parser - INFO -    Компания: ООО "СИТИЛИНК"
+2025-06-30 04:33:02,876 - product_parser - INFO -    ИНН: 1147746461422
+2025-06-30 04:33:05,098 - seller_info_parser - ERROR - Ошибка в попытке 3: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:33:05,101 - product_parser - INFO - [53/108] УСПЕШНО: https://www.ozon.ru/product/jetgame-sistemnyy-blok-igrovoy-kompyuter-intel-xeon-e5-2650v2-ram-32-gb-ssd-512-gb-nvidia-geforce-1315711257/?at=gpt4v4nqOFPwkkE9Ukn4JVJh4xnLnYTy7wglquyyz39L
+2025-06-30 04:33:05,101 - product_parser - INFO -    Товар: JetGame Системный блок Игровой компьютер (Intel Xeon E5-2650V2, RAM 32 ГБ, SSD 512 ГБ, NVIDIA GeForce GT 730 (4 Гб), Windows 10 Pro), черный
+2025-06-30 04:33:05,102 - product_parser - INFO -    Продавец: JetGame
+2025-06-30 04:33:05,103 - product_parser - INFO -    Компания: Не найдено
+2025-06-30 04:33:05,103 - product_parser - INFO -    ИНН: Не найдено
+2025-06-30 04:33:11,340 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:33:14,631 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:33:14,798 - product_parser - INFO - [54/108] УСПЕШНО: https://www.ozon.ru/product/intel-sistemnyy-blok-intel-core-i7-7700-ram-32-gb-ssd-512-gb-amd-radeon-rx-580-8-gb-windows-1956535129/?at=MZtvpvG2MfM9WoDDUZjmYkjs2VpKlptoxE2GrtV1QJ8Y
+2025-06-30 04:33:14,798 - product_parser - INFO -    Товар: Intel Системный блок (Intel Core i7-7700, RAM 32 ГБ, SSD 512 ГБ, AMD Radeon RX 580 (8 Гб), Windows), M7, черный
+2025-06-30 04:33:14,798 - product_parser - INFO -    Продавец: Just PC
+2025-06-30 04:33:14,798 - product_parser - INFO -    Компания: ИП Волкова Ангелина Константиновна
+2025-06-30 04:33:14,798 - product_parser - INFO -    ИНН: 324169000011320
+2025-06-30 04:33:18,225 - product_parser - INFO - [55/108] УСПЕШНО: https://www.ozon.ru/product/robotcomp-sistemnyy-blok-grad-3-0-v3-white-intel-core-i7-13700kf-ram-32-gb-ssd-960-gb-hdd-2000-gb-1391137229/?at=mqtkVkGpBhL2z2PoTjokRjLhDYYXPxhYWxnvBh8PEArq
+2025-06-30 04:33:18,226 - product_parser - INFO -    Товар: Robotcomp Системный блок Град 3.0 V3 White (Intel Core i7-13700KF, RAM 32 ГБ, SSD 960 ГБ, HDD 2000 ГБ, NVIDIA GeForce RTX 5070 (12 Гб), Windows 10 Pro), белый
+2025-06-30 04:33:18,230 - product_parser - INFO -    Продавец: ООО "Роботкомп Корп"
+2025-06-30 04:33:18,232 - product_parser - INFO -    Компания: ООО "РОБОТКОМП КОРП"
+2025-06-30 04:33:18,239 - product_parser - INFO -    ИНН: 1155047011481
+2025-06-30 04:33:26,303 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:33:28,838 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:33:32,471 - product_parser - INFO - [56/108] УСПЕШНО: https://www.ozon.ru/product/auroralabs-sistemnyy-blok-intel-core-i5-4570-ram-16-gb-ssd-512-gb-intel-hd-graphics-4600-windows-1838758187/?at=oZt6A6JDjF2j1AZQSBrpYQohVyPW3WulN20LOfKlgvpD
+2025-06-30 04:33:32,471 - product_parser - INFO -    Товар: AURORALABS Системный блок (Intel Core i5-4570, RAM 16 ГБ, SSD 512 ГБ, Intel HD Graphics 4600, Windows 10 Pro), черный матовый
+2025-06-30 04:33:32,472 - product_parser - INFO -    Продавец: AURORALABS
+2025-06-30 04:33:32,472 - product_parser - INFO -    Компания: ИП Ульянов Илья Андреевич
+2025-06-30 04:33:32,473 - product_parser - INFO -    ИНН: 319112100019031
+2025-06-30 04:33:32,491 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:33:36,031 - product_parser - INFO - [57/108] УСПЕШНО: https://www.ozon.ru/product/intel-sistemnyy-blok-intel-core-i7-2600-ram-16-gb-ssd-1000-gb-intel-hd-graphics-windows-10-1375422912/?at=PjtJBJq08cRDgExxtYv5pPDCGMrY8EupWnAKouBw875q
+2025-06-30 04:33:36,032 - product_parser - INFO -    Товар: Intel Системный блок (Intel Core i7-2600, RAM 16 ГБ, SSD 1000 ГБ, Intel HD Graphics, Windows 10 Pro), черный
+2025-06-30 04:33:36,032 - product_parser - INFO -    Продавец: relotech
+2025-06-30 04:33:36,033 - product_parser - INFO -    Компания: ИП Давыдов Владимир Олегович
+2025-06-30 04:33:36,033 - product_parser - INFO -    ИНН: 317344300018441
+2025-06-30 04:33:36,947 - seller_info_parser - ERROR - Ошибка в попытке 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:33:36,952 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 04:33:47,608 - seller_info_parser - ERROR - Ошибка в попытке 2: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:33:47,610 - seller_info_parser - INFO - Попытка 3 получить данные продавца
+2025-06-30 04:33:49,258 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:33:50,332 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:33:57,017 - product_parser - INFO - [58/108] УСПЕШНО: https://www.ozon.ru/product/auroralabs-sistemnyy-blok-intel-core-i7-3770-ram-16-gb-ssd-500-gb-intel-hd-graphics-4000-windows-1271880807/?at=LZtl0l5kyi55MjNvf3joqRMS98x57GURG60JLSZ3kRvg
+2025-06-30 04:33:57,017 - product_parser - INFO -    Товар: AURORALABS Системный блок (Intel Core i7-3770, RAM 16 ГБ, SSD 500 ГБ, Intel HD Graphics 4000, Windows 10 Pro), черный матовый
+2025-06-30 04:33:57,018 - product_parser - INFO -    Продавец: AURORALABS
+2025-06-30 04:33:57,018 - product_parser - INFO -    Компания: ИП Ульянов Илья Андреевич
+2025-06-30 04:33:57,019 - product_parser - INFO -    ИНН: 319112100019031
+2025-06-30 04:33:57,981 - product_parser - INFO - [59/108] УСПЕШНО: https://www.ozon.ru/product/sevengroup-sistemnyy-blok-igrovoy-pk-sistemnyy-blok-intel-core-i5-2400-ram-16-gb-ssd-512-gb-nvidia-2241588579/?at=oZt6A6JDjF8mKYVQSRq5JJvhglQQ2Fg0kj55UPP01E1
+2025-06-30 04:33:57,982 - product_parser - INFO -    Товар: SevenGroup Системный блок Игровой ПК Системный блок (Intel Core i5-2400, RAM 16 ГБ, SSD 512 ГБ, NVIDIA GeForce GT 730 (4 Гб), Windows 10 Pro), ПК, черный
+2025-06-30 04:33:57,983 - product_parser - INFO -    Продавец: Scetch
+2025-06-30 04:33:57,983 - product_parser - INFO -    Компания: ИП Савастеева Марина Андреевна
+2025-06-30 04:33:57,984 - product_parser - INFO -    ИНН: 323508100073711
+2025-06-30 04:33:58,088 - product_parser - INFO - [60/108] УСПЕШНО: https://www.ozon.ru/product/jetgame-sistemnyy-blok-igrovoy-kompyuter-intel-xeon-e5-2650v3-ram-32-gb-ssd-1024-gb-amd-radeon-1874945342/?at=OgtEDEoNzFYgQ8VMfjqWwm1tL8E4nxcmo7Vwtk4MVGj
+2025-06-30 04:33:58,095 - product_parser - INFO -    Товар: JetGame Системный блок Игровой компьютер (Intel Xeon E5-2650V3, RAM 32 ГБ, SSD 1024 ГБ, AMD Radeon RX 580 (4 Гб), Windows 10 Pro), черный
+2025-06-30 04:33:58,096 - product_parser - INFO -    Продавец: JetGame
+2025-06-30 04:33:58,098 - product_parser - INFO -    Компания: ИП Курлов Александр Алексеевич
+2025-06-30 04:33:58,099 - product_parser - INFO -    ИНН: 323508100624725
+2025-06-30 04:34:15,154 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:34:19,123 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:34:19,800 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:34:28,387 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 04:34:29,962 - seller_info_parser - ERROR - Ошибка в попытке 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:34:29,965 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 04:34:30,636 - seller_info_parser - ERROR - Ошибка в попытке 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:34:30,640 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 04:34:40,960 - seller_info_parser - ERROR - Ошибка в попытке 2: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:34:40,963 - seller_info_parser - INFO - Попытка 3 получить данные продавца
+2025-06-30 04:34:41,029 - seller_info_parser - INFO - Попытка 3 получить данные продавца
+2025-06-30 04:34:41,630 - seller_info_parser - ERROR - Ошибка в попытке 2: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:34:41,632 - seller_info_parser - INFO - Попытка 3 получить данные продавца
+2025-06-30 04:34:51,794 - seller_info_parser - ERROR - Ошибка в попытке 3: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:34:51,798 - product_parser - INFO - [61/108] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-igrovoy-kompyuter-intel-xeon-e5-2650v2-ram-64-gb-ssd-1024-gb-nvidia-geforce-rtx-4060-1722212038/?at=MZtvpvG2Mf3Kp75NHEE4q6BUjQMMmIrJKKoYtJvWg2V
+2025-06-30 04:34:51,798 - product_parser - INFO -    Товар: Системный блок Игровой компьютер (Intel Xeon E5-2650V2, RAM 64 ГБ, SSD 1024 ГБ, NVIDIA GeForce RTX 4060 (8 Гб), Windows 10 Pro), черный
+2025-06-30 04:34:51,799 - product_parser - INFO -    Продавец: NAVI COMPUTERS
+2025-06-30 04:34:51,799 - product_parser - INFO -    Компания: Не найдено
+2025-06-30 04:34:51,800 - product_parser - INFO -    ИНН: Не найдено
+2025-06-30 04:34:52,461 - seller_info_parser - ERROR - Ошибка в попытке 3: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:34:52,463 - product_parser - INFO - [62/108] УСПЕШНО: https://www.ozon.ru/product/ultra-kompyutery-sistemnyy-blok-office-classic-intel-core-i5-3470-ram-16-gb-ssd-480-gb-intel-1472144651/?at=gpt4v4nqOFAkMlDnio9gJ0MSQnKWprtOyx6nZImMx02q
+2025-06-30 04:34:52,463 - product_parser - INFO -    Товар: Ультра компьютеры Системный блок Office Classic (Intel Core i5-3470, RAM 16 ГБ, SSD 480 ГБ, Intel HD Graphics, Windows 10 Pro), черный
+2025-06-30 04:34:52,464 - product_parser - INFO -    Продавец: Ультра +
+2025-06-30 04:34:52,464 - product_parser - INFO -    Компания: Не найдено
+2025-06-30 04:34:52,464 - product_parser - INFO -    ИНН: Не найдено
+2025-06-30 04:34:53,317 - product_parser - INFO - [63/108] УСПЕШНО: https://www.ozon.ru/product/lenovo-sistemnyy-blok-kompyuter-pk-amd-pro-a8-8650b-ram-16-gb-ssd-240-gb-amd-radeon-r7-windows-10-1590382207/?at=w0tg5gXvJTgqZK10SYlKLVLc4mjZMnS1mDJE7f4nknl8
+2025-06-30 04:34:53,317 - product_parser - INFO -    Товар: Lenovo Системный блок Компьютер ПК (AMD PRO A8-8650B, RAM 16 ГБ, SSD 240 ГБ, AMD Radeon R7, Windows 10 Pro), черный
+2025-06-30 04:34:53,318 - product_parser - INFO -    Продавец: Simple Store PC
+2025-06-30 04:34:53,318 - product_parser - INFO -    Компания: Не найдено
+2025-06-30 04:34:53,319 - product_parser - INFO -    ИНН: Не найдено
+2025-06-30 04:35:15,280 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:35:15,563 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:35:15,610 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:35:26,148 - seller_info_parser - ERROR - Ошибка в попытке 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:35:26,151 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 04:35:26,410 - seller_info_parser - ERROR - Ошибка в попытке 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:35:26,414 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 04:35:26,444 - seller_info_parser - ERROR - Ошибка в попытке 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:35:26,447 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 04:35:36,981 - seller_info_parser - ERROR - Ошибка в попытке 2: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:35:36,983 - seller_info_parser - INFO - Попытка 3 получить данные продавца
+2025-06-30 04:35:37,258 - seller_info_parser - ERROR - Ошибка в попытке 2: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:35:37,260 - seller_info_parser - INFO - Попытка 3 получить данные продавца
+2025-06-30 04:35:37,281 - seller_info_parser - ERROR - Ошибка в попытке 2: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:35:37,282 - seller_info_parser - INFO - Попытка 3 получить данные продавца
+2025-06-30 04:35:47,817 - seller_info_parser - ERROR - Ошибка в попытке 3: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:35:47,821 - product_parser - INFO - [64/108] УСПЕШНО: https://www.ozon.ru/product/robotcomp-sistemnyy-blok-poseydon-3-0-v3-white-amd-ryzen-9-7900x-ram-32-gb-ssd-960-gb-hdd-2000-1726825982/?at=6WtZRZxPjfNnxmWMtEwvOOgiWjkKoNT6rpGoKhyoZ66n
+2025-06-30 04:35:47,821 - product_parser - INFO -    Товар: Robotcomp Системный блок Посейдон 3.0 V3 White (AMD Ryzen 9 7900X, RAM 32 ГБ, SSD 960 ГБ, HDD 2000 ГБ, NVIDIA GeForce RTX 5070 Ti (16 Гб), Windows 10 Pro), белый
+2025-06-30 04:35:47,821 - product_parser - INFO -    Продавец: ООО "Роботкомп Корп"
+2025-06-30 04:35:47,822 - product_parser - INFO -    Компания: Не найдено
+2025-06-30 04:35:47,822 - product_parser - INFO -    ИНН: Не найдено
+2025-06-30 04:35:48,091 - seller_info_parser - ERROR - Ошибка в попытке 3: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:35:48,094 - product_parser - INFO - [65/108] УСПЕШНО: https://www.ozon.ru/product/kompyuters-sistemnyy-blok-dlya-igr-i-ucheby-s-monitorom-22-intel-xeon-e3-1220-ram-8-gb-ssd-256-511316131/?at=ywtAGAE7quAO9DwqHEKG3KvU54D4Q7cVB87p8snVBwYq
+2025-06-30 04:35:48,095 - product_parser - INFO -    Товар: Компьютерс Системный блок Для игр и учебы с монитором 22" (Intel Xeon E3-1220, RAM 8 ГБ, SSD 256 ГБ, NVIDIA GeForce GTX 650 (1 Гб), Windows), черный матовый
+2025-06-30 04:35:48,096 - product_parser - INFO -    Продавец: КомпьютерS
+2025-06-30 04:35:48,096 - product_parser - INFO -    Компания: Не найдено
+2025-06-30 04:35:48,097 - product_parser - INFO -    ИНН: Не найдено
+2025-06-30 04:35:48,106 - seller_info_parser - ERROR - Ошибка в попытке 3: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:35:48,107 - product_parser - INFO - [66/108] УСПЕШНО: https://www.ozon.ru/product/roskomp-sistemnyy-blok-igrovoy-kompyuter-pk-intel-core-i7-12700f-ram-32-gb-ssd-2048-gb-2274803571/?at=DqtD7DQoNsx3BorZIVpE9ZOTVpm5zLtrWgXL3t2RkYpo
+2025-06-30 04:35:48,107 - product_parser - INFO -    Товар: Роскомп Системный блок Игровой компьютер ПК (Intel Core i7-12700F, RAM 32 ГБ, SSD 2048 ГБ, NVIDIA GeForce GTX 1650 (4 Гб), Windows 10 Pro), ПК, черный матовый
+2025-06-30 04:35:48,109 - product_parser - INFO -    Продавец: Техно Бизнес
+2025-06-30 04:35:48,110 - product_parser - INFO -    Компания: Не найдено
+2025-06-30 04:35:48,111 - product_parser - INFO -    ИНН: Не найдено
+2025-06-30 04:36:09,261 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:36:10,311 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:36:10,329 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:36:21,127 - product_parser - INFO - [67/108] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-kraken-amd-ryzen-5-5500-ram-16-gb-ssd-128-gb-hdd-500-gb-nvidia-geforce-rtx-3060-12-gb-2287143765/?at=oZt6A6JDjFz4Gpo1UOwB2AOHqgqql5TW7rkvASqmZWjk
+2025-06-30 04:36:21,129 - product_parser - INFO -    Товар: Системный блок KRAKEN (AMD Ryzen 5 5500, RAM 16 ГБ, SSD 128 ГБ, HDD 500 ГБ, NVIDIA GeForce RTX 3060 (12 Гб), Windows 11 Pro), KRKN-000010, прозрачный
+2025-06-30 04:36:21,129 - product_parser - INFO -    Продавец: KRAKEN
+2025-06-30 04:36:21,130 - product_parser - INFO -    Компания: ИП Шевель Елена Александровна
+2025-06-30 04:36:21,130 - product_parser - INFO -    ИНН: 325911200003297
+2025-06-30 04:36:22,768 - product_parser - INFO - [68/108] УСПЕШНО: https://www.ozon.ru/product/intel-sistemnyy-blok-amd-ryzen-5-2600-ram-32-gb-ssd-1000-gb-nvidia-geforce-rtx-3060-12-gb-windows-11-1778055725/?at=J8tgkgPB3T2M6p0ktAxRlX9fO8VJxRiM6yYMGHw06LKR
+2025-06-30 04:36:22,770 - product_parser - INFO -    Товар: Intel Системный блок (AMD Ryzen 5 2600, RAM 32 ГБ, SSD 1000 ГБ, NVIDIA GeForce RTX 3060 (12 Гб), Windows 11 Pro), разноцветный
+2025-06-30 04:36:22,771 - product_parser - INFO -    Продавец: relotech
+2025-06-30 04:36:22,773 - product_parser - INFO -    Компания: ИП Давыдов Владимир Олегович
+2025-06-30 04:36:22,775 - product_parser - INFO -    ИНН: 317344300018441
+2025-06-30 04:36:23,513 - product_parser - INFO - [69/108] УСПЕШНО: https://www.ozon.ru/product/sevengroup-sistemnyy-blok-igrovoy-kompyuter-pk-intel-xeon-e5-2650-ram-16-gb-ssd-512-gb-1768402755/?at=46tRZRGzMforAB6vFnxOXOCEW6yDAho0xRKPS07NrKA
+2025-06-30 04:36:23,514 - product_parser - INFO -    Товар: SevenGroup Системный блок Игровой компьютер ПК (Intel Xeon E5-2650, RAM 16 ГБ, SSD 512 ГБ, NVIDIA GeForce RTX 3050 (8 Гб), Windows 10 Pro), ПК, белый, прозрачный
+2025-06-30 04:36:23,514 - product_parser - INFO -    Продавец: Scetch
+2025-06-30 04:36:23,515 - product_parser - INFO -    Компания: ИП Савастеева Марина Андреевна
+2025-06-30 04:36:23,516 - product_parser - INFO -    ИНН: 323508100073711
+2025-06-30 04:36:37,354 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:36:42,869 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:36:43,743 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:36:50,644 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 04:36:53,720 - seller_info_parser - ERROR - Ошибка в попытке 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:36:53,722 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 04:36:54,580 - seller_info_parser - ERROR - Ошибка в попытке 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:36:54,581 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 04:37:03,267 - seller_info_parser - INFO - Попытка 3 получить данные продавца
+2025-06-30 04:37:04,574 - seller_info_parser - ERROR - Ошибка в попытке 2: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:37:04,577 - seller_info_parser - INFO - Попытка 3 получить данные продавца
+2025-06-30 04:37:05,418 - seller_info_parser - ERROR - Ошибка в попытке 2: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:37:05,421 - seller_info_parser - INFO - Попытка 3 получить данные продавца
+2025-06-30 04:37:15,391 - seller_info_parser - ERROR - Ошибка в попытке 3: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:37:15,393 - product_parser - INFO - [70/108] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-kraken-i5-12400f-1-intel-core-i5-12400f-ram-16-gb-ssd-128-gb-hdd-500-gb-nvidia-2287915801/?at=16tLrLK62FoK9A3pF8LrQ1zUGKMZY6IpBMkkPsLO0rLM
+2025-06-30 04:37:15,393 - product_parser - INFO -    Товар: Системный блок KRAKEN i5 12400f #1 (Intel Core i5-12400F, RAM 16 ГБ, SSD 128 ГБ, HDD 500 ГБ, NVIDIA GeForce RTX 2060 SUPER (8 Гб), Windows 11 Pro), KRKN-000020, прозрачный
+2025-06-30 04:37:15,394 - product_parser - INFO -    Продавец: KRAKEN
+2025-06-30 04:37:15,394 - product_parser - INFO -    Компания: Не найдено
+2025-06-30 04:37:15,394 - product_parser - INFO -    ИНН: Не найдено
+2025-06-30 04:37:15,524 - product_parser - INFO - [71/108] УСПЕШНО: https://www.ozon.ru/product/intel-sistemnyy-blok-pk-igrovoy-kompyuter-intel-core-i7-7700-ram-32-gb-ssd-512-gb-amd-radeon-rx-580-2094350166/?at=lRt6W6D10FjxqWZNTNPJlv2fE7gYJ2TwyJWEXcm2N1q4
+2025-06-30 04:37:15,524 - product_parser - INFO -    Товар: Intel Системный блок ПК Игровой компьютер (Intel Core i7-7700, RAM 32 ГБ, SSD 512 ГБ, AMD Radeon RX 580 (8 Гб), Windows 10 Pro), белый
+2025-06-30 04:37:15,526 - product_parser - INFO -    Продавец: ComPort
+2025-06-30 04:37:15,527 - product_parser - INFO -    Компания: Не найдено
+2025-06-30 04:37:15,528 - product_parser - INFO -    ИНН: Не найдено
+2025-06-30 04:37:16,313 - seller_info_parser - ERROR - Ошибка в попытке 3: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:37:16,324 - product_parser - INFO - [72/108] УСПЕШНО: https://www.ozon.ru/product/sevengroup-sistemnyy-blok-igrovoy-kompyuter-pk-amd-ryzen-5-2600-ram-32-gb-ssd-1024-gb-nvidia-geforce-1553830042/?at=LZtl0l5kyi559pxwHBqDwLwF6G5AmnCOrkEAxtE9EZ
+2025-06-30 04:37:16,327 - product_parser - INFO -    Товар: SevenGroup Системный блок Игровой компьютер ПК (AMD Ryzen 5 2600, RAM 32 ГБ, SSD 1024 ГБ, NVIDIA GeForce RTX 2060 SUPER (8 Гб), Windows 10 Pro), ПК, белый
+2025-06-30 04:37:16,329 - product_parser - INFO -    Продавец: Scetch
+2025-06-30 04:37:16,329 - product_parser - INFO -    Компания: Не найдено
+2025-06-30 04:37:16,329 - product_parser - INFO -    ИНН: Не найдено
+2025-06-30 04:37:36,366 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:37:37,695 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:37:37,780 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:37:47,215 - seller_info_parser - ERROR - Ошибка в попытке 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:37:47,217 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 04:37:48,534 - seller_info_parser - ERROR - Ошибка в попытке 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:37:48,538 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 04:37:48,623 - seller_info_parser - ERROR - Ошибка в попытке 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:37:48,626 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 04:37:58,054 - seller_info_parser - ERROR - Ошибка в попытке 2: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:37:58,058 - seller_info_parser - INFO - Попытка 3 получить данные продавца
+2025-06-30 04:37:59,415 - seller_info_parser - ERROR - Ошибка в попытке 2: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:37:59,417 - seller_info_parser - INFO - Попытка 3 получить данные продавца
+2025-06-30 04:37:59,470 - seller_info_parser - ERROR - Ошибка в попытке 2: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:37:59,473 - seller_info_parser - INFO - Попытка 3 получить данные продавца
+2025-06-30 04:38:08,891 - seller_info_parser - ERROR - Ошибка в попытке 3: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:38:08,893 - product_parser - INFO - [73/108] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-intel-xeon-e5-2690v3-ram-32-gb-ssd-512-gb-amd-radeon-rx-580-8-gb-windows-10-pro-belyy-1943640521/?at=XQtklk34VhMq8X22IXQgoO8UgB3lOKiwmA2YvInj7VqM
+2025-06-30 04:38:08,898 - product_parser - INFO -    Товар: Системный блок (Intel Xeon E5-2690V3, RAM 32 ГБ, SSD 512 ГБ, AMD Radeon RX 580 (8 Гб), Windows 10 Pro), белый
+2025-06-30 04:38:08,901 - product_parser - INFO -    Продавец: Магазин Техники M1
+2025-06-30 04:38:08,902 - product_parser - INFO -    Компания: Не найдено
+2025-06-30 04:38:08,903 - product_parser - INFO -    ИНН: Не найдено
+2025-06-30 04:38:10,270 - seller_info_parser - ERROR - Ошибка в попытке 3: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:38:10,274 - product_parser - INFO - [74/108] УСПЕШНО: https://www.ozon.ru/product/ultra-kompyutery-sistemnyy-blok-office-classic-intel-core-i5-2400-ram-16-gb-ssd-240-gb-intel-1215207887/?at=mqtkVkGpBhVxxvjlsG4LK4vtDWqojUQ7x5zMHm5ylJP
+2025-06-30 04:38:10,275 - product_parser - INFO -    Товар: Ультра компьютеры Системный блок Office Classic (Intel Core i5-2400, RAM 16 ГБ, SSD 240 ГБ, Intel HD Graphics, Windows 10 Pro), черный
+2025-06-30 04:38:10,275 - product_parser - INFO -    Продавец: Ультра +
+2025-06-30 04:38:10,276 - product_parser - INFO -    Компания: Не найдено
+2025-06-30 04:38:10,278 - product_parser - INFO -    ИНН: Не найдено
+2025-06-30 04:38:10,315 - seller_info_parser - ERROR - Ошибка в попытке 3: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:38:10,318 - product_parser - INFO - [75/108] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-igrovoy-kompyuter-intel-xeon-e5-2650v3-ram-32-gb-ssd-1024-gb-nvidia-geforce-rtx-4060-1678819684/?at=qQtJgJG1Kc3YKrY7C9Dmgqwul8VEv3F41ojwWS7BORlR
+2025-06-30 04:38:10,318 - product_parser - INFO -    Товар: Системный блок Игровой компьютер (Intel Xeon E5-2650V3, RAM 32 ГБ, SSD 1024 ГБ, NVIDIA GeForce RTX 4060 (8 Гб), Windows 10 Pro), черный
+2025-06-30 04:38:10,319 - product_parser - INFO -    Продавец: NAVI COMPUTERS
+2025-06-30 04:38:10,319 - product_parser - INFO -    Компания: Не найдено
+2025-06-30 04:38:10,319 - product_parser - INFO -    ИНН: Не найдено
+2025-06-30 04:38:30,527 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:38:32,258 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:38:32,402 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:38:41,349 - seller_info_parser - ERROR - Ошибка в попытке 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:38:41,351 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 04:38:43,093 - seller_info_parser - ERROR - Ошибка в попытке 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:38:43,095 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 04:38:43,225 - seller_info_parser - ERROR - Ошибка в попытке 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f4abfea5+79173]
+	GetHandleVerifier [0x0x7ff7f4abff00+79264]
+	(No symbol) [0x0x7ff7f4879e5a]
+	(No symbol) [0x0x7ff7f48d0586]
+	(No symbol) [0x0x7ff7f48d083c]
+	(No symbol) [0x0x7ff7f4924247]
+	(No symbol) [0x0x7ff7f48f89af]
+	(No symbol) [0x0x7ff7f492100d]
+	(No symbol) [0x0x7ff7f48f8743]
+	(No symbol) [0x0x7ff7f48c14c1]
+	(No symbol) [0x0x7ff7f48c2253]
+	GetHandleVerifier [0x0x7ff7f4d8a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f4d8472d+2981325]
+	GetHandleVerifier [0x0x7ff7f4da3380+3107360]
+	GetHandleVerifier [0x0x7ff7f4adaa2e+188622]
+	GetHandleVerifier [0x0x7ff7f4ae22bf+219487]
+	GetHandleVerifier [0x0x7ff7f4ac8df4+115860]
+	GetHandleVerifier [0x0x7ff7f4ac8fa9+116297]
+	GetHandleVerifier [0x0x7ff7f4aaf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 04:38:43,228 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 04:38:51,324 - product_parser - INFO - [76/108] УСПЕШНО: https://www.ozon.ru/product/gamer-lab-sistemnyy-blok-gamer-1-intel-xeon-e5-2670v2-ram-32-gb-ssd-512-gb-amd-radeon-rx-580-8-1567052203/?at=WPtN1Nv6RCznvlJkh3Ng1Xycgm5QYJSkkNwjzi134z9
+2025-06-30 04:38:51,324 - product_parser - INFO -    Товар: Gamer LAB Системный блок Gamer 1 (Intel Xeon E5-2670V2, RAM 32 ГБ, SSD 512 ГБ, AMD Radeon RX 580 (8 Гб), Windows 10 Pro), черный матовый
+2025-06-30 04:38:51,325 - product_parser - INFO -    Продавец: Gamer LAB
+2025-06-30 04:38:51,325 - product_parser - INFO -    Компания: ИП Щеглова Мария Андреевна
+2025-06-30 04:38:51,326 - product_parser - INFO -    ИНН: 323508100201382
+2025-06-30 04:38:55,461 - product_parser - INFO - [77/108] УСПЕШНО: https://www.ozon.ru/product/lenovo-sistemnyy-blok-kompyuter-thinkcentre-m79-sff-bez-nakopitelya-amd-pro-a8-8650b-ram-otsutstvuet-1627290520/?at=NOtwYw1ZDc8Eyn0Ac0ZRQgPf10D3DoHKgBB8tZEZZoR
+2025-06-30 04:38:55,462 - product_parser - INFO - [78/108] УСПЕШНО: https://www.ozon.ru/product/jetgame-sistemnyy-blok-igrovoy-kompyuter-intel-xeon-e5-2670v2-ram-16-gb-ssd-512-gb-nvidia-geforce-2223736606/?at=mqtkVkGpBhkBk41OU2O22nZUzMlZ7xF9LJ4yQf6mGYjj
+2025-06-30 04:38:55,465 - product_parser - INFO -    Товар: Lenovo Системный блок Компьютер Thinkcentre M79 SFF без накопителя (AMD PRO A8-8650B, RAM Отсутствует, AMD Radeon R7, Без ОС), черный
+2025-06-30 04:38:55,467 - product_parser - INFO -    Продавец: Техносэконд
+2025-06-30 04:38:55,466 - product_parser - INFO -    Товар: JetGame Системный блок Игровой компьютер (Intel Xeon E5-2670V2, RAM 16 ГБ, SSD 512 ГБ, NVIDIA GeForce RTX 3060 (12 Гб), Windows 10 Pro), черный
+2025-06-30 04:38:55,468 - product_parser - INFO -    Компания: ИП Платонов Максим Иванович
+2025-06-30 04:38:55,470 - product_parser - INFO -    Продавец: JetGame
+2025-06-30 04:38:55,472 - product_parser - INFO -    ИНН: 324330000036219
+2025-06-30 04:38:55,472 - product_parser - INFO -    Компания: ИП Курлов Александр Алексеевич
+2025-06-30 04:38:55,473 - product_parser - INFO -    ИНН: 323508100624725
+2025-06-30 04:39:03,592 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:39:07,746 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:39:09,285 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:39:11,264 - product_parser - INFO - [79/108] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-kompyuter-intel-xeon-e5-2650v2-ram-16-gb-ssd-512-gb-nvidia-geforce-gt-730-4-gb-1728646322/?at=qQtJgJG1KclB70z3tjAy7oPckB5X3Qi4nljrjir7prAY
+2025-06-30 04:39:11,264 - product_parser - INFO -    Товар: Системный блок Компьютер (Intel Xeon E5-2650V2, RAM 16 ГБ, SSD 512 ГБ, NVIDIA GeForce GT 730 (4 Гб), Windows 10 Pro), черный
+2025-06-30 04:39:11,265 - product_parser - INFO -    Продавец: ДомЛюкс
+2025-06-30 04:39:11,265 - product_parser - INFO -    Компания: ИП Букреев Вячеслав Дмитриевич
+2025-06-30 04:39:11,266 - product_parser - INFO -    ИНН: 324547600077071
+2025-06-30 04:39:12,059 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 04:39:12,964 - product_parser - INFO - [80/108] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-kompyuter-dlya-lyubyh-igr-intel-core-i5-14400f-ram-32-gb-ssd-1000-gb-nvidia-2246582253/?at=XQtklk34Vhx5BXWWSZ92GWjFWOLAO9hREBm4Pf7MAyn0
+2025-06-30 04:39:12,965 - product_parser - INFO -    Товар: Системный блок Компьютер для любых игр (Intel Core i5-14400F, RAM 32 ГБ, SSD 1000 ГБ, NVIDIA GeForce RTX 5060 Ti (8 Гб), Windows), черный
+2025-06-30 04:39:12,966 - product_parser - INFO -    Продавец: Hyper
+2025-06-30 04:39:12,967 - product_parser - INFO -    Компания: ИП Крупенин Денис Аркадьевич
+2025-06-30 04:39:12,967 - product_parser - INFO -    ИНН: 323246800081522
+2025-06-30 04:39:20,012 - seller_info_parser - INFO - Попытка 3 получить данные продавца
+2025-06-30 04:39:24,297 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:39:25,862 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:39:27,521 - product_parser - INFO - [81/108] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-moshchnyy-igrovoy-kompyuter-intel-xeon-e5-2670v2-ram-32-gb-ssd-250-gb-hdd-1000-gb-2269121386/?at=ywtAGAE7quzO45G8T05on9hVDYGy3TKozEDXhmG2rGK
+2025-06-30 04:39:27,522 - product_parser - INFO -    Товар: Системный блок Мощный игровой компьютер (Intel Xeon E5-2670V2, RAM 32 ГБ, SSD 250 ГБ, HDD 1000 ГБ, AMD Radeon RX 580 (8 Гб), Windows 10 Pro), черный
+2025-06-30 04:39:27,523 - product_parser - INFO -    Продавец: PERFECT PC
+2025-06-30 04:39:27,523 - product_parser - INFO -    Компания: Не найдено
+2025-06-30 04:39:27,524 - product_parser - INFO -    ИНН: Не найдено
+2025-06-30 04:39:27,868 - product_parser - INFO - [82/108] УСПЕШНО: https://www.ozon.ru/product/sevengroup-sistemnyy-blok-igrovoy-kompyuter-pk-amd-ryzen-5-5600-ram-32-gb-ssd-1024-gb-nvidia-1763129492/?at=qQtJgJG1Kc2xWlp4t9mXVw6hGANmwmfNyqrpMSw7rgno
+2025-06-30 04:39:27,870 - product_parser - INFO -    Товар: SevenGroup Системный блок Игровой компьютер ПК (AMD Ryzen 5 5600, RAM 32 ГБ, SSD 1024 ГБ, NVIDIA GeForce RTX 3070 (8 Гб), Windows 10 Pro), ПК, белый
+2025-06-30 04:39:27,870 - product_parser - INFO -    Продавец: Scetch
+2025-06-30 04:39:27,871 - product_parser - INFO -    Компания: ИП Савастеева Марина Андреевна
+2025-06-30 04:39:27,871 - product_parser - INFO -    ИНН: 323508100073711
+2025-06-30 04:39:31,822 - product_parser - INFO - [83/108] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-igrovoy-pk-amd-ryzen-5-5600-ram-32-gb-ssd-1024-gb-nvidia-geforce-rtx-4060-ti-8-gb-2317621519/?at=r2t4y4XrPF3OwrQDuPBkB4pu9m7RMkcYQrZBkIvL61Q2
+2025-06-30 04:39:31,828 - product_parser - INFO -    Товар: Системный блок Игровой пк (AMD Ryzen 5 5600, RAM 32 ГБ, SSD 1024 ГБ, NVIDIA GeForce RTX 4060 Ti (8 Гб), Windows 11 Pro), белый
+2025-06-30 04:39:31,831 - product_parser - INFO -    Продавец: MaxPC
+2025-06-30 04:39:31,833 - product_parser - INFO -    Компания: ИП Кутилов Максим Геннадьевич
+2025-06-30 04:39:31,836 - product_parser - INFO -    ИНН: 325774600374752
+2025-06-30 04:39:41,053 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:39:42,384 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:39:45,392 - product_parser - INFO - [84/108] УСПЕШНО: https://www.ozon.ru/product/iru-sistemnyy-blok-310h6s-intel-core-i3-12100-ram-16-gb-ssd-512-gb-intel-uhd-graphics-730-freedos-1861628806/?at=VvtzVz12NSN8O3Y0HBnz18ikmjJ4UnGGk61SOjEZYp
+2025-06-30 04:39:45,397 - product_parser - INFO -    Товар: iRU Системный блок 310H6S (Intel Core i3-12100, RAM 16 ГБ, SSD 512 ГБ, Intel UHD Graphics 730, FreeDOS), 2074830, черный
+2025-06-30 04:39:45,399 - product_parser - INFO -    Продавец: Позитроника
+2025-06-30 04:39:45,400 - product_parser - INFO -    Компания: ООО "РЕНТСОФТ"
+2025-06-30 04:39:45,419 - product_parser - INFO -    ИНН: 1097746578863
+2025-06-30 04:39:46,704 - product_parser - INFO - [85/108] УСПЕШНО: https://www.ozon.ru/product/acer-sistemnyy-blok-intel-pentium-g4500-ram-8-gb-ssd-120-gb-intel-hd-graphics-530-windows-10-1445800074/?at=NOtwYw1ZDcXYRGPnT1rl5Ygc6oj5kYUOGYM6QcMRAA22
+2025-06-30 04:39:46,707 - product_parser - INFO -    Товар: Acer Системный блок (Intel Pentium G4500, RAM 8 ГБ, SSD 120 ГБ, Intel HD Graphics 530, Windows 10 Pro), черный
+2025-06-30 04:39:46,715 - product_parser - INFO -    Продавец: Simple Store PC
+2025-06-30 04:39:46,716 - product_parser - INFO -    Компания: ИП Сенчихина Ангелина Евгеньевна
+2025-06-30 04:39:46,786 - product_parser - INFO -    ИНН: 323169000169536
+2025-06-30 04:39:51,239 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:39:55,932 - product_parser - INFO - [86/108] УСПЕШНО: https://www.ozon.ru/product/intel-sistemnyy-blok-kompyuter-intel-core-i5-2400-ram-8-gb-ssd-240-gb-intel-hd-graphics-windows-1897469168/?at=mqtkVkGpBhENzn41Ul1l7k6UqR23n0fmklOqPfjyvYkw
+2025-06-30 04:39:55,933 - product_parser - INFO -    Товар: Intel Системный блок Компьютер (Intel Core i5-2400, RAM 8 ГБ, SSD 240 ГБ, Intel HD Graphics, Windows 10 Pro), 52824, черный
+2025-06-30 04:39:55,933 - product_parser - INFO -    Продавец: Компьютерный магазин
+2025-06-30 04:39:55,935 - product_parser - INFO -    Компания: ИП Гетман Эмиль Рашидович
+2025-06-30 04:39:55,935 - product_parser - INFO -    ИНН: 324344300091641
+2025-06-30 04:40:02,847 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:40:04,176 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:40:06,688 - product_parser - INFO - [87/108] УСПЕШНО: https://www.ozon.ru/product/ultra-kompyutery-sistemnyy-blok-office-classic-intel-core-i5-2400-ram-16-gb-ssd-480-gb-intel-1215207875/?at=lRt6W6D10FAy6GAYhOn8XRvh8vxzBZUjA8j96c61yRj6
+2025-06-30 04:40:06,688 - product_parser - INFO -    Товар: Ультра компьютеры Системный блок Office Classic (Intel Core i5-2400, RAM 16 ГБ, SSD 480 ГБ, Intel HD Graphics, Windows 10 Pro), черный
+2025-06-30 04:40:06,689 - product_parser - INFO -    Продавец: Ультра +
+2025-06-30 04:40:06,692 - product_parser - INFO -    Компания: ИП Мотохов Константин Игоревич
+2025-06-30 04:40:06,693 - product_parser - INFO -    ИНН: 316784700283709
+2025-06-30 04:40:08,000 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:40:08,086 - product_parser - INFO - [88/108] УСПЕШНО: https://www.ozon.ru/product/jetgame-sistemnyy-blok-igrovoy-kompyuter-intel-core-i5-2400-ram-16-gb-ssd-512-gb-nvidia-geforce-gtx-1329571807/?at=ywtAGAE7quyVzjzvFVX0oK4sLV9Vp0f40zQDnurMyvkj
+2025-06-30 04:40:08,092 - product_parser - INFO -    Товар: JetGame Системный блок Игровой компьютер (Intel Core i5-2400, RAM 16 ГБ, SSD 512 ГБ, NVIDIA GeForce GTX 1050 Ti (4 Гб), Windows 10 Pro), черный
+2025-06-30 04:40:08,114 - product_parser - INFO -    Продавец: JetGame
+2025-06-30 04:40:08,116 - product_parser - INFO -    Компания: ИП Курлов Александр Алексеевич
+2025-06-30 04:40:08,117 - product_parser - INFO -    ИНН: 323508100624725
+2025-06-30 04:40:13,692 - product_parser - INFO - [89/108] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-intel-core-i5-14400f-ram-32-gb-ssd-1024-gb-nvidia-geforce-rtx-5060-8-gb-windows-2268472541/?at=Y7tjKjPDEhMPE5xvtgPypq7tENOzOMhPq2XKMIJk8NXx
+2025-06-30 04:40:13,693 - product_parser - INFO -    Товар: Системный блок (Intel Core i5-14400F, RAM 32 ГБ, SSD 1024 ГБ, NVIDIA GeForce RTX 5060 (8 Гб), Windows 10 Pro), 1222, черный
+2025-06-30 04:40:13,694 - product_parser - INFO -    Продавец: NOVA
+2025-06-30 04:40:13,695 - product_parser - INFO -    Компания: ИП Дудников Роман Олегович
+2025-06-30 04:40:13,695 - product_parser - INFO -    ИНН: 322366800050827
+2025-06-30 04:40:18,869 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:40:20,877 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:40:22,596 - product_parser - INFO - [90/108] УСПЕШНО: https://www.ozon.ru/product/yukoms-sistemnyy-blok-intel-xeon-e5-2650v2-ram-32-gb-ssd-256-gb-nvidia-geforce-gtx-1050-2-gb-2078702918/?at=XQtklk34Vh80oylXu6qGoxYIr162K7cKBoGNwTg9p5Jq
+2025-06-30 04:40:22,596 - product_parser - INFO -    Товар: ЮКОМС Системный блок (Intel Xeon E5-2650V2, RAM 32 ГБ, SSD 256 ГБ, NVIDIA GeForce GTX 1050 (2 Гб), Windows 10 Pro), белый
+2025-06-30 04:40:22,597 - product_parser - INFO -    Продавец: ЮКОМС - КОМПЬЮТЕРНЫЙ МАГАЗИН
+2025-06-30 04:40:22,597 - product_parser - INFO -    Компания: ИП Казаков Александр Павлович
+2025-06-30 04:40:22,598 - product_parser - INFO -    ИНН: 319774600474616
+2025-06-30 04:40:24,932 - product_parser - INFO - [91/108] УСПЕШНО: https://www.ozon.ru/product/intel-sistemnyy-blok-intel-core-i5-2400-ram-16-gb-ssd-480-gb-intel-hd-graphics-windows-10-1250368228/?at=VvtzVz12NSEkwRmkSO86B4MsXzVx2zuqWYP2VF0GGw6Y
+2025-06-30 04:40:24,934 - product_parser - INFO -    Товар: Intel Системный блок (Intel Core i5-2400, RAM 16 ГБ, SSD 480 ГБ, Intel HD Graphics, Windows 10 Pro), черный
+2025-06-30 04:40:24,938 - product_parser - INFO -    Продавец: relotech
+2025-06-30 04:40:24,943 - product_parser - INFO -    Компания: ИП Давыдов Владимир Олегович
+2025-06-30 04:40:24,945 - product_parser - INFO -    ИНН: 317344300018441
+2025-06-30 04:40:26,122 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:40:29,916 - product_parser - INFO - [92/108] УСПЕШНО: https://www.ozon.ru/product/sevengroup-sistemnyy-blok-igrovoy-pk-sistemnyy-blok-intel-xeon-e5-2650-ram-32-gb-ssd-512-gb-nvidia-2241587853/?at=k2toDoZk8FYmME4At7Y5LL6hwmZ7gxirx4qy9czyE5oR
+2025-06-30 04:40:29,920 - product_parser - INFO -    Товар: SevenGroup Системный блок Игровой ПК Системный блок (Intel Xeon E5-2650, RAM 32 ГБ, SSD 512 ГБ, NVIDIA GeForce GT 730 (4 Гб), Windows 10 Pro), ПК, черный
+2025-06-30 04:40:29,925 - product_parser - INFO -    Продавец: Scetch
+2025-06-30 04:40:29,928 - product_parser - INFO -    Компания: ИП Савастеева Марина Андреевна
+2025-06-30 04:40:29,932 - product_parser - INFO -    ИНН: 323508100073711
+2025-06-30 04:40:36,021 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:40:39,520 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:40:39,749 - product_parser - INFO - [93/108] УСПЕШНО: https://www.ozon.ru/product/o-kseon-sistemnyy-blok-intel-core-i7-7700-ram-32-gb-ssd-512-gb-nvidia-geforce-gtx-1660-super-6-gb-1664283734/?at=jYtZzZkYKfG34PK0IY7mr41FnM6QP2FkzGl71c2Momr8
+2025-06-30 04:40:39,752 - product_parser - INFO -    Товар: О Ксеон Системный блок (Intel Core i7-7700, RAM 32 ГБ, SSD 512 ГБ, NVIDIA GeForce GTX 1660 SUPER (6 Гб), Windows), черный
+2025-06-30 04:40:39,753 - product_parser - INFO -    Продавец: О! КСЕОН
+2025-06-30 04:40:39,754 - product_parser - INFO -    Компания: ИП Алексеев Руслан Султангусейнович
+2025-06-30 04:40:39,769 - product_parser - INFO -    ИНН: 324784700125699
+2025-06-30 04:40:44,404 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:40:44,995 - product_parser - INFO - [94/108] УСПЕШНО: https://www.ozon.ru/product/intel-sistemnyy-blok-amd-ryzen-5-5600g-ram-32-gb-ssd-1000-gb-amd-radeon-vega-7-windows-11-1516045817/?at=VvtzVz12NS2WpWwnHqn34L3hJnA43jcX80XKjt56LBgq
+2025-06-30 04:40:45,012 - product_parser - INFO -    Товар: Intel Системный блок (AMD Ryzen 5 5600G, RAM 32 ГБ, SSD 1000 ГБ, AMD Radeon Vega 7, Windows 11 Pro), черный
+2025-06-30 04:40:45,014 - product_parser - INFO -    Продавец: relotech
+2025-06-30 04:40:45,014 - product_parser - INFO -    Компания: ИП Давыдов Владимир Олегович
+2025-06-30 04:40:45,014 - product_parser - INFO -    ИНН: 317344300018441
+2025-06-30 04:40:48,944 - product_parser - INFO - [95/108] УСПЕШНО: https://www.ozon.ru/product/o-kseon-sistemnyy-blok-intel-core-i7-7700-ram-32-gb-ssd-1024-gb-amd-radeon-rx-580-8-gb-1721009451/?at=r2t4y4XrPFQXONE1H6jmjj3t3GonDck5k9GKhq8Mop8
+2025-06-30 04:40:48,946 - product_parser - INFO -    Товар: О Ксеон Системный блок (Intel Core i7-7700, RAM 32 ГБ, SSD 1024 ГБ, AMD Radeon RX 580 (8 Гб), Windows), черный
+2025-06-30 04:40:48,948 - product_parser - INFO -    Продавец: О! КСЕОН
+2025-06-30 04:40:48,951 - product_parser - INFO -    Компания: ИП Алексеев Руслан Султангусейнович
+2025-06-30 04:40:48,951 - product_parser - INFO -    ИНН: 324784700125699
+2025-06-30 04:40:57,135 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:40:57,469 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:41:00,824 - product_parser - INFO - [96/108] УСПЕШНО: https://www.ozon.ru/product/amd-sistemnyy-blok-amd-ryzen-7-5700x-ram-32-gb-ssd-1000-gb-nvidia-geforce-rtx-5070-12-gb-windows-11-2152911161/?at=oZt6A6JDjFpW1q8ZuX0MwLPsrrVMAnuB1BjwWFJjWZYN
+2025-06-30 04:41:00,824 - product_parser - INFO -    Товар: AMD Системный блок (AMD Ryzen 7 5700X, RAM 32 ГБ, SSD 1000 ГБ, NVIDIA GeForce RTX 5070 (12 Гб), Windows 11 Pro), белый
+2025-06-30 04:41:00,825 - product_parser - INFO -    Продавец: Компьютер Panda
+2025-06-30 04:41:00,825 - product_parser - INFO -    Компания: Wuhu SMIC Human Resources Co., Ltd.
+2025-06-30 04:41:00,825 - product_parser - INFO -    ИНН: Не найдено
+2025-06-30 04:41:01,659 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:41:05,365 - product_parser - INFO - [97/108] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-igrovoy-kompyuter-amd-ryzen-5-5600-ram-16-gb-ssd-512-gb-nvidia-geforce-rtx-4060-8-1769433039/?at=lRt6W6D10Fv6l0yQCj7o60XcrBRwNZSnog5XZuDDANn5
+2025-06-30 04:41:05,366 - product_parser - INFO -    Товар: Системный блок Игровой компьютер (AMD Ryzen 5 5600, RAM 16 ГБ, SSD 512 ГБ, NVIDIA GeForce RTX 4060 (8 Гб), Windows 10 Pro), черный матовый
+2025-06-30 04:41:05,367 - product_parser - INFO -    Продавец: ДомЛюкс
+2025-06-30 04:41:05,368 - product_parser - INFO -    Компания: ИП Букреев Вячеслав Дмитриевич
+2025-06-30 04:41:05,368 - product_parser - INFO -    ИНН: 324547600077071
+2025-06-30 04:41:06,497 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 04:41:13,568 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:41:15,725 - seller_info_parser - INFO - Попытка 3 получить данные продавца
+2025-06-30 04:41:17,069 - product_parser - INFO - [98/108] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-amd-ryzen-5-7500f-ram-32-gb-ssd-1024-gb-nvidia-geforce-rtx-5060-8-gb-windows-10-pro-2268472063/?at=z6tOXOvGQcM6j2p1urOVw8mhEqy5P9hyNPXYLSrQzxDP
+2025-06-30 04:41:17,072 - product_parser - INFO -    Товар: Системный блок (AMD Ryzen 5 7500F, RAM 32 ГБ, SSD 1024 ГБ, NVIDIA GeForce RTX 5060 (8 Гб), Windows 10 Pro), 1222, черный
+2025-06-30 04:41:17,073 - product_parser - INFO -    Продавец: NOVA
+2025-06-30 04:41:17,073 - product_parser - INFO -    Компания: ИП Дудников Роман Олегович
+2025-06-30 04:41:17,074 - product_parser - INFO -    ИНН: 322366800050827
+2025-06-30 04:41:22,652 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:41:23,534 - product_parser - INFO - [99/108] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-intel-core-i5-12400f-ram-32-gb-ssd-1024-gb-nvidia-geforce-rtx-4060-8-gb-windows-10-2247174275/?at=83tBmBxXDTXWp6R0TzOYO7yIOR9nAZFg72xJBczl2512
+2025-06-30 04:41:23,535 - product_parser - INFO -    Товар: Системный блок (Intel Core i5-12400F, RAM 32 ГБ, SSD 1024 ГБ, NVIDIA GeForce RTX 4060 (8 Гб), Windows 10 Pro), черный
+2025-06-30 04:41:23,537 - product_parser - INFO -    Продавец: ARGENTUM_PC
+2025-06-30 04:41:23,543 - product_parser - INFO -    Компания: Не найдено
+2025-06-30 04:41:23,545 - product_parser - INFO -    ИНН: Не найдено
+2025-06-30 04:41:26,735 - product_parser - INFO - [100/108] УСПЕШНО: https://www.ozon.ru/product/intel-sistemnyy-blok-intel-core-i5-3570-ram-16-gb-ssd-256-gb-intel-hd-graphics-2500-windows-10-1640239319/?at=99trJrPzLsKwnYKHZ7jNOgi5JYyPVuW799OocY8Kxvg
+2025-06-30 04:41:26,742 - product_parser - INFO -    Товар: Intel Системный блок (Intel Core i5-3570, RAM 16 ГБ, SSD 256 ГБ, Intel HD Graphics 2500, Windows 10 Pro), черный
+2025-06-30 04:41:26,742 - product_parser - INFO -    Продавец: NTStore
+2025-06-30 04:41:26,743 - product_parser - INFO -    Компания: ООО "ТНК"
+2025-06-30 04:41:26,743 - product_parser - INFO -    ИНН: 1235400038829
+2025-06-30 04:41:31,495 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:41:35,249 - product_parser - INFO - [101/108] УСПЕШНО: https://www.ozon.ru/product/treidcomputers-sistemnyy-blok-intel-core-i5-13400f-ram-32-gb-ssd-960-gb-nvidia-geforce-rtx-4060-8-gb-2224080217/?at=PjtJBJq08c8KGr5MS8WD932cWNmr02F7xWGv3hYDzwKK
+2025-06-30 04:41:35,251 - product_parser - INFO -    Товар: TREIDCOMPUTERS Системный блок (Intel Core i5-13400F, RAM 32 ГБ, SSD 960 ГБ, NVIDIA GeForce RTX 4060 (8 Гб), Windows 10 Pro), белый
+2025-06-30 04:41:35,253 - product_parser - INFO -    Продавец: TREIDCOMPUTERS
+2025-06-30 04:41:35,255 - product_parser - INFO -    Компания: ИП Буторин Илья Сергеевич
+2025-06-30 04:41:35,258 - product_parser - INFO -    ИНН: 319774600299562
+2025-06-30 04:41:36,766 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:41:40,911 - product_parser - INFO - [102/108] УСПЕШНО: https://www.ozon.ru/product/yukoms-sistemnyy-blok-intel-core-i5-12400f-ram-16-gb-ssd-512-gb-nvidia-geforce-gtx-1660-super-6-gb-1404849514/?at=WPtN1Nv6RC821Pg6U9DK6MDURGOzWvHWW1YW0Fo8LgpB
+2025-06-30 04:41:40,913 - product_parser - INFO -    Товар: ЮКОМС Системный блок (Intel Core i5-12400F, RAM 16 ГБ, SSD 512 ГБ, NVIDIA GeForce GTX 1660 SUPER (6 Гб), Windows 10 Pro), черный
+2025-06-30 04:41:40,913 - product_parser - INFO -    Продавец: ЮКОМС - КОМПЬЮТЕРНЫЙ МАГАЗИН
+2025-06-30 04:41:40,914 - product_parser - INFO -    Компания: ИП Казаков Александр Павлович
+2025-06-30 04:41:40,914 - product_parser - INFO -    ИНН: 319774600474616
+2025-06-30 04:41:41,725 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:41:45,462 - product_parser - INFO - [103/108] УСПЕШНО: https://www.ozon.ru/product/jetgame-sistemnyy-blok-igrovoy-kompyuter-amd-ryzen-5-3600-ram-16-gb-ssd-1024-gb-nvidia-geforce-2223077504/?at=EqtkwkKlVhKxpRD7f9pY5qxCBj2nRAHQPzprYsP522pW
+2025-06-30 04:41:45,464 - product_parser - INFO -    Товар: JetGame Системный блок Игровой компьютер (AMD Ryzen 5 3600, RAM 16 ГБ, SSD 1024 ГБ, NVIDIA GeForce RTX 3060 (12 Гб), Windows 10 Pro), черный
+2025-06-30 04:41:45,465 - product_parser - INFO -    Продавец: JetGame
+2025-06-30 04:41:45,466 - product_parser - INFO -    Компания: ИП Курлов Александр Алексеевич
+2025-06-30 04:41:45,466 - product_parser - INFO -    ИНН: 323508100624725
+2025-06-30 04:41:48,364 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:41:51,995 - product_parser - INFO - [104/108] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-ofisnyy-kompyuter-intel-core-i5-3470-ram-16-gb-ssd-512-gb-intel-hd-graphics-2000-1678821575/?at=46tRZRGzMf3jnmWAsG74xgWtEYzp8ETMJ9YvjfwDRMq0
+2025-06-30 04:41:51,995 - product_parser - INFO -    Товар: Системный блок Офисный компьютер (Intel Core i5-3470, RAM 16 ГБ, SSD 512 ГБ, Intel HD Graphics 2000, Windows 10 Pro), черный
+2025-06-30 04:41:51,996 - product_parser - INFO -    Продавец: NAVI COMPUTERS
+2025-06-30 04:41:51,997 - product_parser - INFO -    Компания: ИП Кузнецов Егор Сергеевич
+2025-06-30 04:41:51,998 - product_parser - INFO -    ИНН: 321547600104762
+2025-06-30 04:41:58,416 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:41:59,890 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:42:02,096 - product_parser - INFO - [105/108] УСПЕШНО: https://www.ozon.ru/product/lenovo-sistemnyy-blok-intel-core-i3-2100-ram-16-gb-ssd-120-gb-intel-hd-graphics-2000-windows-10-1429035420/?at=GRt2r2oBKcPJpO4kHVMroBVhqJqYkOCRBqzE7T2pZQ5x
+2025-06-30 04:42:02,100 - product_parser - INFO -    Товар: Lenovo Системный блок (Intel Core i3-2100, RAM 16 ГБ, SSD 120 ГБ, Intel HD Graphics 2000, Windows 10 Pro), черный
+2025-06-30 04:42:02,107 - product_parser - INFO -    Продавец: Simple Store PC
+2025-06-30 04:42:02,109 - product_parser - INFO -    Компания: ИП Сенчихина Ангелина Евгеньевна
+2025-06-30 04:42:02,110 - product_parser - INFO -    ИНН: 323169000169536
+2025-06-30 04:42:03,661 - product_parser - INFO - [106/108] УСПЕШНО: https://www.ozon.ru/product/monozone-sistemnyy-blok-intel-core-i5-3470-ram-16-gb-ssd-256-gb-intel-hd-graphics-windows-10-1825101676/?at=99trJrPzLs2VPmYJcx1w1R5C5o2ZBkUPWEnWlhrOEko8
+2025-06-30 04:42:03,662 - product_parser - INFO -    Товар: MonoZone Системный блок (Intel Core i5-3470, RAM 16 ГБ, SSD 256 ГБ, Intel HD Graphics, Windows 10 Pro), черный
+2025-06-30 04:42:03,664 - product_parser - INFO -    Продавец: Mono Store
+2025-06-30 04:42:03,664 - product_parser - INFO -    Компания: ИП Иванов Дмитрий Игоревич
+2025-06-30 04:42:03,665 - product_parser - INFO -    ИНН: 324774600876387
+2025-06-30 04:42:04,577 - product_parser - INFO - Воркер 3 завершил работу
+2025-06-30 04:42:05,848 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:42:09,610 - product_parser - INFO - [107/108] УСПЕШНО: https://www.ozon.ru/product/kompyuters-sistemnyy-blok-dlya-igr-i-ucheby-s-monitorom-20-intel-core-q8300-ram-4-gb-ssd-128-gb-550798603/?at=QktJnJmXMcrGJ2WkcNG5woSVQAX4VHWGX3EZiJvmJMp
+2025-06-30 04:42:09,611 - product_parser - INFO -    Товар: Компьютерс Системный блок Для игр и учебы с монитором 20" (Intel Core Q8300, RAM 4 ГБ, SSD 128 ГБ, NVIDIA GeForce GT 610 (1 Гб), Windows), черный
+2025-06-30 04:42:09,612 - product_parser - INFO -    Продавец: КомпьютерS
+2025-06-30 04:42:09,612 - product_parser - INFO -    Компания: ИП Степанов Иннокентий Юрьевич
+2025-06-30 04:42:09,612 - product_parser - INFO -    ИНН: 321723200036650
+2025-06-30 04:42:10,483 - product_parser - INFO - Воркер 1 завершил работу
+2025-06-30 04:42:14,416 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 04:42:17,938 - product_parser - INFO - [108/108] УСПЕШНО: https://www.ozon.ru/product/iru-sistemnyy-blok-710z7gp-intel-core-i7-12700f-ram-32-gb-ssd-1024-gb-nvidia-geforce-rtx-4070-1861629429/?at=OgtEDEoNzFl6W54psP58knJtNK9ANKI68ZGGviPVWnDJ
+2025-06-30 04:42:17,939 - product_parser - INFO -    Товар: iRU Системный блок 710Z7GP (Intel Core i7-12700F, RAM 32 ГБ, SSD 1024 ГБ, NVIDIA GeForce RTX 4070 SUPER (12 Гб), FreeDOS), 2075024, черный
+2025-06-30 04:42:17,940 - product_parser - INFO -    Продавец: Позитроника
+2025-06-30 04:42:17,940 - product_parser - INFO -    Компания: ООО "РЕНТСОФТ"
+2025-06-30 04:42:17,941 - product_parser - INFO -    ИНН: 1097746578863
+2025-06-30 04:42:18,806 - product_parser - INFO - Воркер 2 завершил работу
+2025-06-30 04:42:19,078 - excel_exporter - INFO - Результаты сохранены в results\sistemnye-bloki-15704_30.06.2025-04_24_18.xlsx
+2025-06-30 04:42:19,080 - product_parser - INFO - Обработка завершена успешно за 1080.82 секунд
+2025-06-30 04:42:19,082 - product_parser - INFO - Обработано товаров: 108
+2025-06-30 04:42:19,082 - product_parser - INFO - Успешно: 108
+2025-06-30 04:42:19,083 - product_parser - INFO - Закончились: 0
+2025-06-30 04:42:19,084 - product_parser - INFO - Ошибки: 0
+2025-06-30 04:42:19,091 - main - INFO - === ПАРСИНГ УСПЕШНО ЗАВЕРШЕН ===
+2025-06-30 04:42:19,092 - main - INFO - Отчет сохранен: C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\results\sistemnye-bloki-15704_30.06.2025-04_24_18.xlsx

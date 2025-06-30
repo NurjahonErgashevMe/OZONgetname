@@ -120,7 +120,7 @@ def run_parser_sync(url: str, user_id: int) -> str:
         parser = OzonProductParser(category_name)
         
         # Запускаем парсер ссылок
-        from src.link_parser.main_link_parser import OzonLinkParser
+        from src.parser.link_parser import OzonLinkParser
         link_parser = OzonLinkParser(url)
         
         success = link_parser.run()

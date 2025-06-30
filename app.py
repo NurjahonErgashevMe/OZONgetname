@@ -1,167 +1,69 @@
-import logging
-import re
-import os
-import sys
-from src.parser.link_parser import OzonLinkParser
-from src.parser.main_parser import OzonProductParser
-from src.config import *
+import tkinter as tk
+import queue
+from logs import LogManager
+from utils import Utils
+from bot import BotManager
+from tabs import TabManager
 
-def setup_logging():
-    """Настройка логирования"""
-    # Создаем директорию для логов если её нет
-    log_dir = os.path.dirname(LOG_FILE)
-    if log_dir and not os.path.exists(log_dir):
-        os.makedirs(log_dir)
-    
-    logging.basicConfig(
-        level=logging.INFO,
-        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-        handlers=[
-            logging.StreamHandler(),
-            logging.FileHandler(LOG_FILE, encoding='utf-8')
-        ]
-    )
+class TelegramBotApp:
+    def __init__(self):
+        self.root = tk.Tk()
+        self.log_queue = queue.Queue()
+        
+        # Инициализация компонентов
+        self.log_manager = LogManager(self.root, self.log_queue, None)  # log_text будет установлен позже
+        
+        # ВАЖНО: Настраиваем логирование СРАЗУ после создания LogManager
+        self.log_manager.setup_logging()
+        
+        self.utils = Utils(self.log_manager)
+        
+        # Создаем BotManager (теперь logger уже инициализирован)
+        self.bot_manager = BotManager(self.root, self.log_manager, self.utils)
+        
+        # Создаем TabManager, передавая ему BotManager для связи методов
+        self.tab_manager = TabManager(self.root, self.utils, self.log_manager, self.bot_manager)
+        
+        # Устанавливаем log_text из TabManager
+        self.log_manager.log_text = self.tab_manager.log_text
+        
+        # Связываем BotManager с элементами интерфейса TabManager
+        self.link_bot_manager_with_tabs()
 
-def read_links():
-    """Чтение ссылок из файла"""
-    try:
-        with open(LINKS_OUTPUT_FILE, 'r', encoding='utf-8') as f:
-            return [line.strip() for line in f if line.strip()]
-    except FileNotFoundError:
-        logging.error(f"Файл {LINKS_OUTPUT_FILE} не найден")
-        return []
-    except Exception as e:
-        logging.error(f"Ошибка чтения файла ссылок: {str(e)}")
-        return []
+        # Настройка пользовательского интерфейса
+        self.setup_ui()
 
-def validate_ozon_url(url):
-    """Проверяет, является ли ссылка валидным URL Ozon"""
-    # Обновленное регулярное выражение для поддержки всех поддоменов
-    if not re.search(r'([a-z]+\.)?ozon\.(ru|kz|com|by|uz)', url, re.IGNORECASE):
-        return False
-    if "/category/" not in url:
-        return False
-    return True
+        # Запускаем обновление логов
+        self.log_manager.update_logs()
 
-def get_category_from_url(url):
-    """Извлекает имя категории из URL"""
-    match = re.search(r'/category/([^/?]+)', url)
-    return match.group(1) if match else "unknown_category"
+    def link_bot_manager_with_tabs(self):
+        """Связывает BotManager с элементами интерфейса TabManager"""
+        # Передаем ссылки на кнопки и переменные статуса
+        self.bot_manager.start_btn = self.tab_manager.start_btn
+        self.bot_manager.stop_btn = self.tab_manager.stop_bot_btn
+        self.bot_manager.restart_btn = self.tab_manager.restart_btn
+        self.bot_manager.bot_status_var = self.tab_manager.bot_status_var
+        self.bot_manager.status_var = self.tab_manager.status_var
 
-def get_user_input():
-    """Получение ссылки от пользователя с валидацией"""
-    while True:
-        try:
-            target_url = input("\nВведите ссылку на категорию Ozon (или 'exit' для выхода): ")
-            target_url = target_url.strip()
-            
-            if target_url.lower() == 'exit':
-                print("Выход из программы...")
-                sys.exit(0)
-            
-            if not target_url:
-                print("Пожалуйста, введите ссылку!")
-                continue
-            
-            if not validate_ozon_url(target_url):
-                print("❌ Некорректная ссылка! Примеры правильных ссылок:")
-                print("   -category_was_predicted=true&deny_category_prediction=true&from_global=true&text=%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80")
-                continue
-            
-            category_name = get_category_from_url(target_url)
-            print(f"✅ Категория: {category_name}")
-            
-            return target_url, category_name
-            
-        except KeyboardInterrupt:
-            print("\n\nВыход из программы...")
-            sys.exit(0)
-        except Exception as e:
-            print(f"Ошибка: {str(e)}")
-            continue
+    def setup_ui(self):
+        """Настройка основного интерфейса приложения."""
+        # TabManager уже настроил весь интерфейс
+        pass
 
-def print_progress_header():
-    """Печать заголовка с информацией о настройках"""
-    print("\n" + "="*60)
-    print("           НАСТРОЙКИ ПАРСЕРА OZON")
-    print("="*60)
-    print(f"Целевое количество ссылок: {TOTAL_LINKS}")
-    print(f"Количество воркеров: {WORKER_COUNT}")
-    print(f"Файл логов: {LOG_FILE}")
-    print("="*60)
+    def run(self):
+        """Запуск приложения."""
+        self.root.title("OZON Parser Manager")
+        self.root.protocol("WM_DELETE_WINDOW", self.on_closing)
+        self.root.mainloop()
 
-def main():
-    """Основная функция"""
-    try:
-        setup_logging()
-        logger = logging.getLogger('main')
-        
-        print("🚀 ПАРСЕР OZON ЗАПУЩЕН")
-        print_progress_header()
-        
-        # Запрос ссылки у пользователя
-        target_url, category_name = get_user_input()
-        
-        # Этап 1: Парсинг ссылок
-        print(f"\n📡 ЭТАП 1: СБОР ССЫЛОК НА ТОВАРЫ")
-        print(f"Цель: собрать {TOTAL_LINKS} ссылок из категории '{category_name}'")
-        
-        logger.info("=== ЗАПУСК ПАРСЕРА OZON ===")
-        logger.info(f"Целевая категория: {target_url}")
-        logger.info(f"Целевое количество ссылок: {TOTAL_LINKS}")
-        
-        link_parser = OzonLinkParser(target_url)
-        success, product_urls = link_parser.run()
-        
-        if not success or not product_urls:
-            print("❌ Не удалось собрать ссылки. Завершение работы.")
-            logger.error("Не удалось собрать ссылки. Завершение работы.")
-            return 1
-        
-        print(f"✅ Собрано {len(product_urls)} ссылок на товары")
-        
-        # Этап 2: Парсинг товаров
-        print(f"\n🔍 ЭТАП 2: ПАРСИНГ ИНФОРМАЦИИ О ТОВАРАХ")
-        print(f"Количество товаров: {len(product_urls)}")
-        print(f"Количество воркеров: {WORKER_COUNT}")
-        print("Начинаем обработку...")
-        
-        logger.info("=== ЭТАП 2: ПАРСИНГ ТОВАРОВ ===")
-        logger.info(f"Количество товаров: {len(product_urls)}")
-        logger.info(f"Количество воркеров: {WORKER_COUNT}")
-        
-        product_parser = OzonProductParser(category_name)
-        
-        if product_parser.run(product_urls):
-            # Получаем сводку результатов
-            summary = product_parser.get_results_summary()
-            
-            print(f"\n🎉 ПАРСИНГ УСПЕШНО ЗАВЕРШЕН!")
-            print(f"📊 СТАТИСТИКА:")
-            print(f"   • Всего обработано: {summary['total']}")
-            print(f"   • Успешно: {summary['success']}")
-            print(f"   • Товар закончился: {summary['out_of_stock']}")
-            print(f"   • Ошибки: {summary['error']}")
-            print(f"📄 Отчет сохранен: {os.path.abspath(product_parser.excel_filename)}")
-            
-            logger.info("=== ПАРСИНГ УСПЕШНО ЗАВЕРШЕН ===")
-            logger.info(f"Отчет сохранен: {os.path.abspath(product_parser.excel_filename)}")
-            
-            return 0
-        else:
-            print("❌ ПАРСИНГ ЗАВЕРШЕН С ОШИБКАМИ")
-            logger.error("=== ПАРСИНГ ЗАВЕРШЕН С ОШИБКАМИ ===")
-            return 1
-            
-    except KeyboardInterrupt:
-        print("\n\n⚠️  Получен сигнал прерывания!")
-        logger.warning("Программа прервана пользователем")
-        return 1
-    except Exception as e:
-        print(f"\n❌ Критическая ошибка: {str(e)}")
-        logger.error(f"Критическая ошибка: {str(e)}", exc_info=True)
-        return 1
+    def on_closing(self):
+        """Закрытие приложения."""
+        if tk.messagebox.askokcancel("Выход", "Вы уверены, что хотите выйти?"):
+            # Останавливаем бота перед закрытием
+            if self.bot_manager.is_bot_running:
+                self.bot_manager.stop_bot()
+            self.root.destroy()
 
 if __name__ == "__main__":
-    exit_code = main()
-    sys.exit(exit_code)
+    app = TelegramBotApp()
+    app.run()

@@ -11,7 +11,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../.
 from aiogram import Bot, Dispatcher
 
 from .config import BOT_TOKEN
-from .handlers import register_handlers
+from .register_handlers import register_handlers
 from .logging_handler import setup_queue_logging
 from src.config import LOG_FILE
 

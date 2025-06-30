@@ -23,6 +23,11 @@ class PageParser:
         
         try:
             driver.get(url)
+            time.sleep(1)  # Даем время на загрузку
+            
+            # Проверка на ограничение доступа
+            if self._check_access_denied(driver, result):
+                return result
             
             # Проверка наличия товара
             if self._check_out_of_stock(driver, result):
@@ -48,6 +53,93 @@ class PageParser:
             self.logger.error(f"Ошибка при парсинге {url}: {str(e)}")
             
         return result
+
+    def _check_access_denied(self, driver, result):
+        """Проверка на ограничение доступа"""
+        try:
+            # Проверяем заголовок страницы
+            page_title = driver.title.lower()
+            if "доступ ограничен" in page_title or "access denied" in page_title:
+                result['status'] = "access_denied"
+                result['product'] = "Доступ ограничен"
+                result['seller'] = "Доступ ограничен"
+                return True
+            
+            # Проверяем наличие элементов с сообщением об ограничении доступа
+            access_denied_selectors = [
+                '//div[contains(text(), "Доступ ограничен")]',
+                '//div[contains(text(), "Access denied")]',
+                '//div[contains(text(), "доступ запрещен")]',
+                '//h1[contains(text(), "Доступ ограничен")]',
+                '//span[contains(text(), "Доступ ограничен")]',
+                '//*[contains(@class, "error") and contains(text(), "доступ")]',
+                '//*[contains(@class, "blocked")]',
+                '//div[contains(@class, "access-denied")]'
+            ]
+            
+            for selector in access_denied_selectors:
+                try:
+                    element = WebDriverWait(driver, 2).until(
+                        EC.presence_of_element_located((By.XPATH, selector))
+                    )
+                    if element and element.is_displayed():
+                        result['status'] = "access_denied"
+                        result['product'] = "Доступ ограничен"
+                        result['seller'] = "Доступ ограничен"
+                        return True
+                except TimeoutException:
+                    continue
+            
+            # Проверяем через JavaScript
+            access_denied_js = driver.execute_script("""
+                const bodyText = document.body.innerText.toLowerCase();
+                const accessDeniedKeywords = [
+                    'доступ ограничен',
+                    'access denied',
+                    'доступ запрещен',
+                    'страница недоступна',
+                    'access blocked'
+                ];
+                
+                for (let keyword of accessDeniedKeywords) {
+                    if (bodyText.includes(keyword)) {
+                        return true;
+                    }
+                }
+                return false;
+            """)
+            
+            if access_denied_js:
+                result['status'] = "access_denied"
+                result['product'] = "Доступ ограничен"
+                result['seller'] = "Доступ ограничен"
+                return True
+            
+            # Проверяем на наличие капчи или блокировки
+            captcha_selectors = [
+                '//div[contains(@class, "captcha")]',
+                '//form[contains(@class, "captcha")]',
+                '//*[contains(text(), "Captcha")]',
+                '//*[contains(text(), "Подтвердите")]'
+            ]
+            
+            for selector in captcha_selectors:
+                try:
+                    element = WebDriverWait(driver, 1).until(
+                        EC.presence_of_element_located((By.XPATH, selector))
+                    )
+                    if element and element.is_displayed():
+                        result['status'] = "access_denied"
+                        result['product'] = "Требуется подтверждение"
+                        result['seller'] = "Капча/Подтверждение"
+                        return True
+                except TimeoutException:
+                    continue
+            
+        except Exception as e:
+            self.logger.debug(f"Ошибка при проверке доступа: {str(e)}")
+        
+        return False
 
     def _check_out_of_stock(self, driver, result):
         """Проверка наличия товара"""

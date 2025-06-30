@@ -3812,3 +3812,95 @@ Stacktrace:
 2025-06-30 06:56:15,609 - src.bot.handlers - INFO - Файл успешно отправлен: results\product_links_30.06.2025-06_54_34.xlsx
 2025-06-30 06:56:15,833 - aiogram.event - INFO - Update id=36893504 is handled. Duration 101844 ms by bot id=7955956815
 2025-06-30 06:56:25,619 - aiogram.event - INFO - Update id=36893505 is handled. Duration 296 ms by bot id=7955956815
+2025-06-30 08:56:56,018 - TelegramBotApp - INFO - Попытка запуска бота...
+2025-06-30 08:57:56,990 - TelegramBotApp - INFO - Попытка запуска бота...
+2025-06-30 08:57:57,008 - TelegramBotApp - ERROR - Ошибка при запуске бота: 'NoneType' object has no attribute 'info'
+2025-06-30 09:15:26,594 - aiogram.dispatcher - INFO - Start polling
+2025-06-30 09:15:27,394 - aiogram.dispatcher - INFO - Run polling for bot @ozongetnamerbot id=7955956815 - 'ozongetnamer'
+2025-06-30 09:15:45,751 - aiogram.event - INFO - Update id=36893506 is handled. Duration 608 ms by bot id=7955956815
+2025-06-30 09:15:48,282 - aiogram.event - INFO - Update id=36893507 is handled. Duration 282 ms by bot id=7955956815
+2025-06-30 09:16:14,806 - excel_exporter - INFO - Файл результатов: results\sistemnye-bloki-15704_30.06.2025-09_16_14.xlsx
+2025-06-30 09:16:14,809 - product_parser - INFO - Инициализирован парсер для категории: sistemnye-bloki-15704
+2025-06-30 09:16:14,812 - src.bot.utils - ERROR - Ошибка в run_parser_sync: No module named 'src.link_parser'
+Traceback (most recent call last):
+  File "C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\src\bot\utils.py", line 123, in run_parser_sync
+    from src.link_parser.main_link_parser import OzonLinkParser
+ModuleNotFoundError: No module named 'src.link_parser'
+2025-06-30 09:16:14,819 - driver_manager - INFO - Все браузеры закрыты
+2025-06-30 09:16:14,820 - driver_manager - INFO - Очистка DriverManager завершена
+2025-06-30 09:16:14,988 - aiogram.event - INFO - Update id=36893508 is handled. Duration 875 ms by bot id=7955956815
+2025-06-30 09:16:56,819 - aiogram.event - INFO - Update id=36893509 is handled. Duration 688 ms by bot id=7955956815
+2025-06-30 09:16:58,765 - aiogram.event - INFO - Update id=36893510 is handled. Duration 312 ms by bot id=7955956815
+2025-06-30 09:17:02,525 - excel_exporter - INFO - Файл результатов: results\sistemnye-bloki-15704_30.06.2025-09_17_02.xlsx
+2025-06-30 09:17:02,526 - product_parser - INFO - Инициализирован парсер для категории: sistemnye-bloki-15704
+2025-06-30 09:17:02,529 - src.bot.utils - ERROR - Ошибка в run_parser_sync: No module named 'src.link_parser'
+Traceback (most recent call last):
+  File "C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\src\bot\utils.py", line 123, in run_parser_sync
+    from src.parser.ink_parser import OzonLinkParser
+ModuleNotFoundError: No module named 'src.link_parser'
+2025-06-30 09:17:02,535 - driver_manager - INFO - Все браузеры закрыты
+2025-06-30 09:17:02,544 - driver_manager - INFO - Очистка DriverManager завершена
+2025-06-30 09:17:02,908 - aiogram.event - INFO - Update id=36893511 is handled. Duration 797 ms by bot id=7955956815
+2025-06-30 09:17:59,497 - aiogram.dispatcher - INFO - Start polling
+2025-06-30 09:18:00,941 - aiogram.dispatcher - INFO - Run polling for bot @ozongetnamerbot id=7955956815 - 'ozongetnamer'
+2025-06-30 09:18:08,754 - aiogram.event - INFO - Update id=36893512 is handled. Duration 1420 ms by bot id=7955956815
+2025-06-30 09:18:09,890 - aiogram.event - INFO - Update id=36893513 is handled. Duration 202 ms by bot id=7955956815
+2025-06-30 09:18:14,776 - excel_exporter - INFO - Файл результатов: results\sistemnye-bloki-15704_30.06.2025-09_18_14.xlsx
+2025-06-30 09:18:14,778 - product_parser - INFO - Инициализирован парсер для категории: sistemnye-bloki-15704
+2025-06-30 09:18:14,781 - src.bot.utils - ERROR - Ошибка в run_parser_sync: No module named 'src.parser.ink_parser'
+Traceback (most recent call last):
+  File "C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\src\bot\utils.py", line 123, in run_parser_sync
+    from src.parser.ink_parser import OzonLinkParser
+ModuleNotFoundError: No module named 'src.parser.ink_parser'
+2025-06-30 09:18:14,788 - driver_manager - INFO - Все браузеры закрыты
+2025-06-30 09:18:14,792 - driver_manager - INFO - Очистка DriverManager завершена
+2025-06-30 09:18:14,939 - aiogram.event - INFO - Update id=36893514 is handled. Duration 391 ms by bot id=7955956815
+2025-06-30 09:19:20,129 - aiogram.dispatcher - INFO - Start polling
+2025-06-30 09:19:22,033 - aiogram.dispatcher - INFO - Run polling for bot @ozongetnamerbot id=7955956815 - 'ozongetnamer'
+2025-06-30 09:19:27,860 - aiogram.event - INFO - Update id=36893515 is handled. Duration 562 ms by bot id=7955956815
+2025-06-30 09:19:29,372 - aiogram.event - INFO - Update id=36893516 is handled. Duration 311 ms by bot id=7955956815
+2025-06-30 09:19:32,328 - excel_exporter - INFO - Файл результатов: results\sistemnye-bloki-15704_30.06.2025-09_19_32.xlsx
+2025-06-30 09:19:32,330 - product_parser - INFO - Инициализирован парсер для категории: sistemnye-bloki-15704
+2025-06-30 09:19:32,372 - link_parser - INFO - Категория: sistemnye-bloki-15704
+2025-06-30 09:19:38,158 - driver_manager - INFO - Создан новый браузер с selenium-stealth. Всего активных: 1
+2025-06-30 09:19:38,213 - link_parser - INFO - Браузер инициализирован через DriverManager
+2025-06-30 09:19:38,219 - link_parser - INFO - Загрузка страницы: https://www.ozon.ru/category/sistemnye-bloki-15704/?category_was_predicted=true&deny_category_prediction=true&from_global=true&text=%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80
+2025-06-30 09:19:56,426 - link_parser - ERROR - Ошибка загрузки страницы: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff750b1fea5+79173]
+	GetHandleVerifier [0x0x7ff750b1ff00+79264]
+	(No symbol) [0x0x7ff7508d9e5a]
+	(No symbol) [0x0x7ff750930586]
+	(No symbol) [0x0x7ff75093083c]
+	(No symbol) [0x0x7ff750984247]
+	(No symbol) [0x0x7ff7509589af]
+	(No symbol) [0x0x7ff75098100d]
+	(No symbol) [0x0x7ff750958743]
+	(No symbol) [0x0x7ff7509214c1]
+	(No symbol) [0x0x7ff750922253]
+	GetHandleVerifier [0x0x7ff750dea2dd+3004797]
+	GetHandleVerifier [0x0x7ff750de472d+2981325]
+	GetHandleVerifier [0x0x7ff750e03380+3107360]
+	GetHandleVerifier [0x0x7ff750b3aa2e+188622]
+	GetHandleVerifier [0x0x7ff750b422bf+219487]
+	GetHandleVerifier [0x0x7ff750b28df4+115860]
+	GetHandleVerifier [0x0x7ff750b28fa9+116297]
+	GetHandleVerifier [0x0x7ff750b0f558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 09:19:58,869 - link_parser - INFO - Браузер закрыт
+2025-06-30 09:19:58,875 - driver_manager - INFO - Все браузеры закрыты
+2025-06-30 09:19:58,880 - src.bot.utils - ERROR - Файл links.txt не найден
+2025-06-30 09:19:58,880 - driver_manager - INFO - Все браузеры закрыты
+2025-06-30 09:19:58,891 - driver_manager - INFO - Очистка DriverManager завершена
+2025-06-30 09:19:59,635 - aiogram.event - INFO - Update id=36893517 is handled. Duration 27484 ms by bot id=7955956815
+2025-06-30 09:20:16,269 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: Telegram server says ClientOSError: [WinError 1236] Подключение к сети было разорвано локальной системой
+2025-06-30 09:20:16,353 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7955956815)
+2025-06-30 09:20:17,455 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: Telegram server says ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2025-06-30 09:20:17,457 - aiogram.dispatcher - WARNING - Sleep for 1.492800 seconds and try again... (tryings = 1, bot id = 7955956815)
+2025-06-30 09:20:18,958 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: Telegram server says ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2025-06-30 09:20:18,975 - aiogram.dispatcher - WARNING - Sleep for 1.912599 seconds and try again... (tryings = 2, bot id = 7955956815)
+2025-06-30 09:20:32,977 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: Telegram server says ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2025-06-30 09:20:32,979 - aiogram.dispatcher - WARNING - Sleep for 2.532339 seconds and try again... (tryings = 3, bot id = 7955956815)
+2025-06-30 09:20:47,119 - aiogram.dispatcher - INFO - Connection established (tryings = 4, bot id = 7955956815)

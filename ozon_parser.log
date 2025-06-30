@@ -1943,3 +1943,1118 @@ Stacktrace:
 2025-06-30 04:42:19,084 - product_parser - INFO - РћС€РёР±РєРё: 0
 2025-06-30 04:42:19,091 - main - INFO - === РџРђР РЎРРќР“ РЈРЎРџР•РЁРќРћ Р—РђР’Р•Р РЁР•Рќ ===
 2025-06-30 04:42:19,092 - main - INFO - РћС‚С‡РµС‚ СЃРѕС…СЂР°РЅРµРЅ: C:\Users\nurja\OneDrive\Р Р°Р±РѕС‡РёР№ СЃС‚РѕР»\OZONgetname\results\sistemnye-bloki-15704_30.06.2025-04_24_18.xlsx
+2025-06-30 05:12:38,782 - telegram_bot - INFO - Запуск Telegram бота...
+2025-06-30 05:12:38,830 - aiogram.dispatcher - INFO - Start polling
+2025-06-30 05:12:39,583 - aiogram.dispatcher - INFO - Run polling for bot @ozongetnamerbot id=7955956815 - 'ozongetnamer'
+2025-06-30 05:12:50,345 - aiogram.event - INFO - Update id=36893449 is handled. Duration 547 ms by bot id=7955956815
+2025-06-30 05:12:52,837 - aiogram.event - INFO - Update id=36893450 is handled. Duration 204 ms by bot id=7955956815
+2025-06-30 05:13:02,688 - src.bot.utils - ERROR - Критическая ошибка парсера: No module named 'src.parser.product_parser'
+Traceback (most recent call last):
+  File "C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\src\bot\utils.py", line 64, in run_parser_sync
+    from src.parser.product_parser import OzonProductParser
+ModuleNotFoundError: No module named 'src.parser.product_parser'
+2025-06-30 05:13:02,822 - aiogram.event - INFO - Update id=36893451 is handled. Duration 1484 ms by bot id=7955956815
+2025-06-30 05:13:50,304 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-30 05:13:50,570 - telegram_bot - INFO - Бот остановлен
+2025-06-30 05:13:50,572 - aiogram.dispatcher - INFO - Polling stopped for bot @ozongetnamerbot id=7955956815 - 'ozongetnamer'
+2025-06-30 05:13:54,923 - telegram_bot - INFO - Запуск Telegram бота...
+2025-06-30 05:13:54,945 - aiogram.dispatcher - INFO - Start polling
+2025-06-30 05:13:55,551 - aiogram.dispatcher - INFO - Run polling for bot @ozongetnamerbot id=7955956815 - 'ozongetnamer'
+2025-06-30 05:13:58,311 - aiogram.event - INFO - Update id=36893452 is handled. Duration 547 ms by bot id=7955956815
+2025-06-30 05:14:02,399 - aiogram.event - INFO - Update id=36893453 is handled. Duration 156 ms by bot id=7955956815
+2025-06-30 05:14:05,189 - src.bot.utils - INFO - Начало парсинга ссылок для https://www.ozon.ru/category/sistemnye-bloki-15704/?category_was_predicted=true&deny_category_prediction=true&from_global=true&text=%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80
+2025-06-30 05:14:05,195 - link_parser - INFO - Категория: sistemnye-bloki-15704
+2025-06-30 05:14:06,838 - link_parser - INFO - Браузер инициализирован
+2025-06-30 05:14:06,840 - link_parser - INFO - Загрузка страницы: https://www.ozon.ru/category/sistemnye-bloki-15704/?category_was_predicted=true&deny_category_prediction=true&from_global=true&text=%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80
+2025-06-30 05:14:14,682 - link_parser - INFO - Страница успешно загружена
+2025-06-30 05:14:15,989 - link_parser - INFO - Найдено новых ссылок: 8
+2025-06-30 05:14:15,989 - link_parser - INFO - Начальное количество ссылок: 8/10
+2025-06-30 05:14:20,866 - link_parser - INFO - Найдено новых ссылок: 28
+2025-06-30 05:14:20,867 - link_parser - INFO - Всего ссылок: 36/10
+2025-06-30 05:14:20,880 - link_parser - INFO - Ссылки сохранены в файл: C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\links.txt
+2025-06-30 05:14:20,885 - link_parser - INFO - Успешно собрано 36 ссылок
+2025-06-30 05:14:21,398 - link_parser - INFO - Браузер закрыт
+2025-06-30 05:14:21,399 - src.bot.utils - INFO - Начало парсинга 36 товаров
+2025-06-30 05:14:21,400 - excel_exporter - INFO - Файл результатов: results\sistemnye-bloki-15704_30.06.2025-05_14_21.xlsx
+2025-06-30 05:14:21,400 - product_parser - INFO - Инициализирован парсер для категории: sistemnye-bloki-15704
+2025-06-30 05:14:21,401 - product_parser - INFO - Начало обработки 36 товаров
+2025-06-30 05:14:23,533 - driver_manager - INFO - Создан новый браузер. Всего активных: 1
+2025-06-30 05:14:23,541 - product_parser - INFO - Воркер 2 запущен
+2025-06-30 05:14:24,653 - driver_manager - INFO - Создан новый браузер. Всего активных: 2
+2025-06-30 05:14:24,656 - product_parser - INFO - Воркер 1 запущен
+2025-06-30 05:14:24,697 - driver_manager - INFO - Создан новый браузер. Всего активных: 3
+2025-06-30 05:14:24,723 - product_parser - INFO - Воркер 3 запущен
+2025-06-30 05:14:39,872 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:14:43,493 - product_parser - INFO - [1/36] УСПЕШНО: https://www.ozon.ru/product/treidcomputers-sistemnyy-blok-amd-ryzen-5-5600g-ram-32-gb-ssd-960-gb-amd-radeon-vega-7-windows-10-1940505582/?at=XQtklk7w1cDkOJRNU2oNxjqhE6qJMjFLm6w5Bc6MgD19
+2025-06-30 05:14:43,502 - product_parser - INFO -    Товар: TREIDCOMPUTERS Системный блок (AMD Ryzen 5 5600G, RAM 32 ГБ, SSD 960 ГБ, AMD Radeon Vega 7, Windows 10 Pro), темно-коричневый, черный
+2025-06-30 05:14:43,503 - product_parser - INFO -    Продавец: TREIDCOMPUTERS
+2025-06-30 05:14:43,504 - product_parser - INFO -    Компания: ИП Буторин Илья Сергеевич
+2025-06-30 05:14:43,504 - product_parser - INFO -    ИНН: 319774600299562
+2025-06-30 05:14:58,825 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:15:00,436 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:15:03,720 - product_parser - INFO - [2/36] УСПЕШНО: https://www.ozon.ru/product/intel-sistemnyy-blok-amd-ryzen-5-5600-ram-32-gb-ssd-1000-gb-nvidia-geforce-rtx-3060-12-gb-windows-11-1778081189/?at=nRtr4rp8zSGwjXY6cV7YpmnCYL6ApWF989LJco6qGlk
+2025-06-30 05:15:03,721 - product_parser - INFO -    Товар: Intel Системный блок (AMD Ryzen 5 5600, RAM 32 ГБ, SSD 1000 ГБ, NVIDIA GeForce RTX 3060 (12 Гб), Windows 11 Pro), разноцветный
+2025-06-30 05:15:03,722 - product_parser - INFO -    Продавец: relotech
+2025-06-30 05:15:03,722 - product_parser - INFO -    Компания: ИП Давыдов Владимир Олегович
+2025-06-30 05:15:03,723 - product_parser - INFO -    ИНН: 317344300018441
+2025-06-30 05:15:07,855 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:15:11,925 - product_parser - INFO - [3/36] УСПЕШНО: https://www.ozon.ru/product/treidcomputers-sistemnyy-blok-igrovoy-kompyuter-intel-core-i7-7700-ram-32-gb-ssd-960-gb-1922781186/?at=GRt2r2ZvmhlAz5rVF5mZ4MAFMxJRowHnVZqoPsEMOxE7
+2025-06-30 05:15:11,931 - product_parser - INFO -    Товар: TREIDCOMPUTERS Системный блок Игровой компьютер (Intel Core i7-7700, RAM 32 ГБ, SSD 960 ГБ, NVIDIA GeForce RTX 4060 (8 Гб), Windows 10 Pro), черный
+2025-06-30 05:15:11,933 - product_parser - INFO -    Продавец: TREIDCOMPUTERS
+2025-06-30 05:15:11,934 - product_parser - INFO -    Компания: ИП Буторин Илья Сергеевич
+2025-06-30 05:15:11,937 - product_parser - INFO -    ИНН: 319774600299562
+2025-06-30 05:15:12,629 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 05:15:18,540 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:15:27,787 - product_parser - INFO - [4/36] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-intel-xeon-e5-2690v3-ram-32-gb-ssd-512-gb-amd-radeon-rx-580-8-gb-windows-10-pro-belyy-1943640521/?at=08tYnY01KcP3vAq1t7YLrLlu72nQEJsVvW6V8tMMrgOA
+2025-06-30 05:15:27,789 - product_parser - INFO -    Товар: Системный блок (Intel Xeon E5-2690V3, RAM 32 ГБ, SSD 512 ГБ, AMD Radeon RX 580 (8 Гб), Windows 10 Pro), белый
+2025-06-30 05:15:27,789 - product_parser - INFO -    Продавец: Магазин Техники M1
+2025-06-30 05:15:27,790 - product_parser - INFO -    Компания: ИП Оздоева Изабелла Исмаиловна
+2025-06-30 05:15:27,791 - product_parser - INFO -    ИНН: 324060000016220
+2025-06-30 05:15:29,807 - seller_info_parser - INFO - Попытка 3 получить данные продавца
+2025-06-30 05:15:35,324 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:15:37,292 - product_parser - INFO - [5/36] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-amd-ryzen-5-7500f-ram-32-gb-ssd-1024-gb-nvidia-geforce-rtx-5060-8-gb-windows-11-2185192641/?at=WPtN1NwJ2frR2XXgsA0rrPMSrXPRMJhrjBA6Yf12J1N7
+2025-06-30 05:15:37,295 - product_parser - INFO -    Товар: Системный блок (AMD Ryzen 5 7500F, RAM 32 ГБ, SSD 1024 ГБ, NVIDIA GeForce RTX 5060 (8 Гб), Windows 11 Pro), черный
+2025-06-30 05:15:37,297 - product_parser - INFO -    Продавец: ZAR PC
+2025-06-30 05:15:37,299 - product_parser - INFO -    Компания: Не найдено
+2025-06-30 05:15:37,300 - product_parser - INFO -    ИНН: Не найдено
+2025-06-30 05:15:39,301 - product_parser - INFO - [6/36] УСПЕШНО: https://www.ozon.ru/product/bloody-sistemnyy-blok-bd-pc-cb76c2-amd-ryzen-5-7500f-ram-32-gb-ssd-1024-gb-nvidia-geforce-rtx-4060-8-1923001293/?at=NOtwYw54AcrDmA88h34KX6kcj47X6GfNl4Z72F7oGR84
+2025-06-30 05:15:39,303 - product_parser - INFO -    Товар: Bloody Системный блок BD-PC CB76C2 (AMD Ryzen 5 7500F, RAM 32 ГБ, SSD 1024 ГБ, NVIDIA GeForce RTX 4060 (8 Гб), Windows), 2086014, черный
+2025-06-30 05:15:39,305 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:15:39,306 - product_parser - INFO -    Продавец: Официальный магазин Bloody
+2025-06-30 05:15:39,308 - product_parser - INFO -    Компания: ООО "РЕНТСОФТ"
+2025-06-30 05:15:39,353 - product_parser - INFO -    ИНН: 1097746578863
+2025-06-30 05:15:43,923 - product_parser - INFO - [7/36] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-intel-core-i5-14400f-ram-32-gb-ssd-1024-gb-nvidia-geforce-rtx-5060-8-gb-windows-2268471231/?at=46tRZRAXysW4EV15SGXoPJ3ulRR75JUZxGZ9BCpZLvK5
+2025-06-30 05:15:43,924 - product_parser - INFO -    Товар: Системный блок (Intel Core i5-14400F, RAM 32 ГБ, SSD 1024 ГБ, NVIDIA GeForce RTX 5060 (8 Гб), Windows 10 Pro), 1222, белый
+2025-06-30 05:15:43,929 - product_parser - INFO -    Продавец: NOVA
+2025-06-30 05:15:43,929 - product_parser - INFO -    Компания: ИП Дудников Роман Олегович
+2025-06-30 05:15:43,929 - product_parser - INFO -    ИНН: 322366800050827
+2025-06-30 05:15:51,895 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:15:53,614 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:15:55,405 - product_parser - INFO - [8/36] УСПЕШНО: https://www.ozon.ru/product/robotcomp-sistemnyy-blok-feniks-amd-ryzen-9-9950x-ram-64-gb-ssd-4000-gb-nvidia-geforce-rtx-5080-2246607023/?at=r2t4y43gpsG4XEoAHrm31wru2DL8LmC9kWkVGc17Gx00
+2025-06-30 05:15:55,406 - product_parser - INFO -    Товар: Robotcomp Системный блок Феникс (AMD Ryzen 9 9950X, RAM 64 ГБ, SSD 4000 ГБ, NVIDIA GeForce RTX 5080 (16 Гб), Windows 11 Pro), черный
+2025-06-30 05:15:55,411 - product_parser - INFO -    Продавец: ООО "Роботкомп Корп"
+2025-06-30 05:15:55,419 - product_parser - INFO -    Компания: ООО "РОБОТКОМП КОРП"
+2025-06-30 05:15:55,423 - product_parser - INFO -    ИНН: 1155047011481
+2025-06-30 05:15:55,432 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:15:57,228 - product_parser - INFO - [9/36] УСПЕШНО: https://www.ozon.ru/product/treidcomputers-sistemnyy-blok-intel-core-i7-12700f-ram-32-gb-ssd-960-gb-nvidia-geforce-rtx-4060-8-gb-1922781204/?at=QktJnJ408c9gjxnwF9zJKVBhJj99V9HEol8N1c21011n
+2025-06-30 05:15:57,229 - product_parser - INFO -    Товар: TREIDCOMPUTERS Системный блок (Intel Core i7-12700F, RAM 32 ГБ, SSD 960 ГБ, NVIDIA GeForce RTX 4060 (8 Гб), Windows 10 Pro), черный
+2025-06-30 05:15:57,230 - product_parser - INFO -    Продавец: TREIDCOMPUTERS
+2025-06-30 05:15:57,230 - product_parser - INFO -    Компания: ИП Буторин Илья Сергеевич
+2025-06-30 05:15:57,230 - product_parser - INFO -    ИНН: 319774600299562
+2025-06-30 05:15:59,472 - product_parser - INFO - [10/36] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-amd-a8-8670e-ram-4-gb-amd-radeon-r7-bez-os-1-cherno-seryy-1707200180/?at=nRtr4rp8zS4kAAlAUDww68jtElkWZDFygNqkHLEl62y
+2025-06-30 05:15:59,473 - product_parser - INFO -    Товар: Системный блок (AMD A8 8670E, RAM 4 ГБ, AMD Radeon R7, Без ОС), 1, черно-серый
+2025-06-30 05:15:59,479 - product_parser - INFO -    Продавец: Compunity
+2025-06-30 05:15:59,482 - product_parser - INFO -    Компания: ИП Кротченко Михаил Владимирович
+2025-06-30 05:15:59,483 - product_parser - INFO -    ИНН: 318665800228612
+2025-06-30 05:16:08,651 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:16:12,149 - product_parser - INFO - [11/36] УСПЕШНО: https://www.ozon.ru/product/intel-sistemnyy-blok-intel-core-i5-2400-ram-16-gb-ssd-480-gb-nvidia-geforce-gt-730-4-gb-windows-10-1372069683/?at=mqtkVkLOZcZ7x8nlT27NVwXFVO976AsWwnEv1frJkQNk
+2025-06-30 05:16:12,149 - product_parser - INFO -    Товар: Intel Системный блок (Intel Core i5-2400, RAM 16 ГБ, SSD 480 ГБ, NVIDIA GeForce GT 730 (4 Гб), Windows 10 Pro), черный
+2025-06-30 05:16:12,150 - product_parser - INFO -    Продавец: relotech
+2025-06-30 05:16:12,151 - product_parser - INFO -    Компания: ИП Давыдов Владимир Олегович
+2025-06-30 05:16:12,151 - product_parser - INFO -    ИНН: 317344300018441
+2025-06-30 05:16:12,201 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:16:13,698 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:16:16,047 - product_parser - INFO - [12/36] УСПЕШНО: https://www.ozon.ru/product/lenovo-sistemnyy-blok-kompyuter-pk-amd-a10-6700-ram-otsutstvuet-amd-radeon-r7-freedos-chernyy-1644248201/?at=vQtrJr0QGSWERLmrIANJ7qBiy8ZZ9GSk1NO0qi6mYxvP
+2025-06-30 05:16:16,048 - product_parser - INFO -    Товар: Lenovo Системный блок Компьютер ПК (AMD A10-6700, RAM Отсутствует, AMD Radeon R7, FreeDOS), черный
+2025-06-30 05:16:16,049 - product_parser - INFO -    Продавец: Simple Store PC
+2025-06-30 05:16:16,050 - product_parser - INFO -    Компания: ИП Сенчихина Ангелина Евгеньевна
+2025-06-30 05:16:16,051 - product_parser - INFO -    ИНН: 323169000169536
+2025-06-30 05:16:17,352 - product_parser - INFO - [13/36] УСПЕШНО: https://www.ozon.ru/product/o-kseon-sistemnyy-blok-intel-core-i7-7700-ram-32-gb-ssd-512-gb-amd-radeon-rx-560-4-gb-1970282402/?at=DqtD7Dr41ivgOMmNu1oR3jMtN8ZBKxfgRNPjXC78BWAJ
+2025-06-30 05:16:17,353 - product_parser - INFO -    Товар: О Ксеон Системный блок (Intel Core i7-7700, RAM 32 ГБ, SSD 512 ГБ, AMD Radeon RX 560 (4 Гб), Windows), черный
+2025-06-30 05:16:17,353 - product_parser - INFO -    Продавец: О! КСЕОН
+2025-06-30 05:16:17,354 - product_parser - INFO -    Компания: ИП Алексеев Руслан Султангусейнович
+2025-06-30 05:16:17,355 - product_parser - INFO -    ИНН: 324784700125699
+2025-06-30 05:16:24,735 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:16:28,296 - product_parser - INFO - [14/36] УСПЕШНО: https://www.ozon.ru/product/robotcomp-sistemnyy-blok-feniks-white-amd-ryzen-9-9950x-ram-64-gb-ssd-4000-gb-nvidia-geforce-2278238527/?at=6WtZRZl5EiNyvnpxiO32zxWCP4mMyqTlL69XmU1EgVy1
+2025-06-30 05:16:28,298 - product_parser - INFO -    Товар: Robotcomp Системный блок Феникс White (AMD Ryzen 9 9950X, RAM 64 ГБ, SSD 4000 ГБ, NVIDIA GeForce RTX 5080 (16 Гб), Windows 11 Pro), белый
+2025-06-30 05:16:28,298 - product_parser - INFO -    Продавец: ООО "Роботкомп Корп"
+2025-06-30 05:16:28,299 - product_parser - INFO -    Компания: ООО "РОБОТКОМП КОРП"
+2025-06-30 05:16:28,299 - product_parser - INFO -    ИНН: 1155047011481
+2025-06-30 05:16:29,696 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:16:33,353 - product_parser - INFO - [15/36] УСПЕШНО: https://www.ozon.ru/product/robotcomp-sistemnyy-blok-m-16-v2-aqua-intel-core-i5-14400f-ram-32-gb-ssd-960-gb-nvidia-geforce-rtx-2229058173/?at=lRt6W6qQyuYrjXgquq6OnE9T0z7K98T6M8ME8hQGQN07
+2025-06-30 05:16:33,354 - product_parser - INFO -    Товар: Robotcomp Системный блок M-16 V2 Aqua (Intel Core i5-14400F, RAM 32 ГБ, SSD 960 ГБ, NVIDIA GeForce RTX 5060 (8 Гб), Windows 10 Pro), черный, прозрачный
+2025-06-30 05:16:33,355 - product_parser - INFO -    Продавец: ООО "Роботкомп Корп"
+2025-06-30 05:16:33,357 - product_parser - INFO -    Компания: ООО "РОБОТКОМП КОРП"
+2025-06-30 05:16:33,357 - product_parser - INFO -    ИНН: 1155047011481
+2025-06-30 05:16:39,228 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:16:40,520 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:16:44,038 - product_parser - INFO - [16/36] УСПЕШНО: https://www.ozon.ru/product/robotcomp-sistemnyy-blok-topol-m-v3-plus-white-intel-core-ultra-9-285k-ram-64-gb-ssd-4000-gb-2278230795/?at=BrtzxzJY1h0AEpYWHPvzAG6fj4PD6NuonKYyvu1g9ZNr
+2025-06-30 05:16:44,039 - product_parser - INFO -    Товар: Robotcomp Системный блок Тополь-М V3 Plus White (Intel Core Ultra 9 285K, RAM 64 ГБ, SSD 4000 ГБ, NVIDIA GeForce RTX 5080 (16 Гб), Windows 11 Pro), белый
+2025-06-30 05:16:44,040 - product_parser - INFO -    Продавец: ООО "Роботкомп Корп"
+2025-06-30 05:16:44,041 - product_parser - INFO -    Компания: ООО "РОБОТКОМП КОРП"
+2025-06-30 05:16:44,041 - product_parser - INFO -    ИНН: 1155047011481
+2025-06-30 05:16:45,550 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:16:49,037 - product_parser - INFO - [17/36] УСПЕШНО: https://www.ozon.ru/product/robotcomp-sistemnyy-blok-feniks-plus-amd-ryzen-9-9950x-ram-128-gb-ssd-4000-gb-nvidia-geforce-2246607844/?at=w0tg5gZB7cQW8W9Gu0JXZ7Qc0BZ2oNikVooGpc0AABM
+2025-06-30 05:16:49,038 - product_parser - INFO -    Товар: Robotcomp Системный блок Феникс Plus (AMD Ryzen 9 9950X, RAM 128 ГБ, SSD 4000 ГБ, NVIDIA GeForce RTX 5080 (16 Гб), Windows 11 Pro), черный
+2025-06-30 05:16:49,039 - product_parser - INFO -    Продавец: ООО "Роботкомп Корп"
+2025-06-30 05:16:49,040 - product_parser - INFO -    Компания: ООО "РОБОТКОМП КОРП"
+2025-06-30 05:16:49,041 - product_parser - INFO -    ИНН: 1155047011481
+2025-06-30 05:16:50,167 - seller_info_parser - ERROR - Ошибка в попытке 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff64f06fea5+79173]
+	GetHandleVerifier [0x0x7ff64f06ff00+79264]
+	(No symbol) [0x0x7ff64ee29e5a]
+	(No symbol) [0x0x7ff64ee80586]
+	(No symbol) [0x0x7ff64ee8083c]
+	(No symbol) [0x0x7ff64eed4247]
+	(No symbol) [0x0x7ff64eea89af]
+	(No symbol) [0x0x7ff64eed100d]
+	(No symbol) [0x0x7ff64eea8743]
+	(No symbol) [0x0x7ff64ee714c1]
+	(No symbol) [0x0x7ff64ee72253]
+	GetHandleVerifier [0x0x7ff64f33a2dd+3004797]
+	GetHandleVerifier [0x0x7ff64f33472d+2981325]
+	GetHandleVerifier [0x0x7ff64f353380+3107360]
+	GetHandleVerifier [0x0x7ff64f08aa2e+188622]
+	GetHandleVerifier [0x0x7ff64f0922bf+219487]
+	GetHandleVerifier [0x0x7ff64f078df4+115860]
+	GetHandleVerifier [0x0x7ff64f078fa9+116297]
+	GetHandleVerifier [0x0x7ff64f05f558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 05:16:50,180 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 05:16:56,176 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:16:59,625 - product_parser - INFO - [18/36] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-kompyuter-intel-xeon-e5-2650v2-ram-32-gb-ssd-512-gb-nvidia-geforce-gt-730-4-gb-1678819651/?at=x6tPpPqYyTW8zXNmtwgNMKKU6nVoOXu7vRyq3i2Z1g3g
+2025-06-30 05:16:59,625 - product_parser - INFO -    Товар: Системный блок Компьютер (Intel Xeon E5-2650V2, RAM 32 ГБ, SSD 512 ГБ, NVIDIA GeForce GT 730 (4 Гб), Windows 10 Pro), черный
+2025-06-30 05:16:59,625 - product_parser - INFO -    Продавец: NAVI COMPUTERS
+2025-06-30 05:16:59,625 - product_parser - INFO -    Компания: ИП Кузнецов Егор Сергеевич
+2025-06-30 05:16:59,627 - product_parser - INFO -    ИНН: 321547600104762
+2025-06-30 05:17:01,159 - seller_info_parser - ERROR - Ошибка в попытке 2: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff64f06fea5+79173]
+	GetHandleVerifier [0x0x7ff64f06ff00+79264]
+	(No symbol) [0x0x7ff64ee29e5a]
+	(No symbol) [0x0x7ff64ee80586]
+	(No symbol) [0x0x7ff64ee8083c]
+	(No symbol) [0x0x7ff64eed4247]
+	(No symbol) [0x0x7ff64eea89af]
+	(No symbol) [0x0x7ff64eed100d]
+	(No symbol) [0x0x7ff64eea8743]
+	(No symbol) [0x0x7ff64ee714c1]
+	(No symbol) [0x0x7ff64ee72253]
+	GetHandleVerifier [0x0x7ff64f33a2dd+3004797]
+	GetHandleVerifier [0x0x7ff64f33472d+2981325]
+	GetHandleVerifier [0x0x7ff64f353380+3107360]
+	GetHandleVerifier [0x0x7ff64f08aa2e+188622]
+	GetHandleVerifier [0x0x7ff64f0922bf+219487]
+	GetHandleVerifier [0x0x7ff64f078df4+115860]
+	GetHandleVerifier [0x0x7ff64f078fa9+116297]
+	GetHandleVerifier [0x0x7ff64f05f558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 05:17:01,165 - seller_info_parser - INFO - Попытка 3 получить данные продавца
+2025-06-30 05:17:01,297 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:17:04,925 - product_parser - INFO - [19/36] УСПЕШНО: https://www.ozon.ru/product/robotcomp-sistemnyy-blok-m-16-v3-plus-aqua-intel-core-i5-14400f-ram-64-gb-ssd-960-gb-nvidia-2229058233/?at=6WtZRZl5Ei1rJQvYh9YnXzyT4vlM3guj6JK2McYA7Ag0
+2025-06-30 05:17:04,926 - product_parser - INFO -    Товар: Robotcomp Системный блок M-16 V3 Plus Aqua (Intel Core i5-14400F, RAM 64 ГБ, SSD 960 ГБ, NVIDIA GeForce RTX 5060 (8 Гб), Windows 10 Pro), черный, прозрачный
+2025-06-30 05:17:04,927 - product_parser - INFO -    Продавец: ООО "Роботкомп Корп"
+2025-06-30 05:17:04,928 - product_parser - INFO -    Компания: ООО "РОБОТКОМП КОРП"
+2025-06-30 05:17:04,928 - product_parser - INFO -    ИНН: 1155047011481
+2025-06-30 05:17:11,572 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:17:11,787 - seller_info_parser - ERROR - Ошибка в попытке 3: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff64f06fea5+79173]
+	GetHandleVerifier [0x0x7ff64f06ff00+79264]
+	(No symbol) [0x0x7ff64ee29e5a]
+	(No symbol) [0x0x7ff64ee80586]
+	(No symbol) [0x0x7ff64ee8083c]
+	(No symbol) [0x0x7ff64eed4247]
+	(No symbol) [0x0x7ff64eea89af]
+	(No symbol) [0x0x7ff64eed100d]
+	(No symbol) [0x0x7ff64eea8743]
+	(No symbol) [0x0x7ff64ee714c1]
+	(No symbol) [0x0x7ff64ee72253]
+	GetHandleVerifier [0x0x7ff64f33a2dd+3004797]
+	GetHandleVerifier [0x0x7ff64f33472d+2981325]
+	GetHandleVerifier [0x0x7ff64f353380+3107360]
+	GetHandleVerifier [0x0x7ff64f08aa2e+188622]
+	GetHandleVerifier [0x0x7ff64f0922bf+219487]
+	GetHandleVerifier [0x0x7ff64f078df4+115860]
+	GetHandleVerifier [0x0x7ff64f078fa9+116297]
+	GetHandleVerifier [0x0x7ff64f05f558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 05:17:11,795 - product_parser - INFO - [20/36] УСПЕШНО: https://www.ozon.ru/product/trade-electronics-sistemnyy-blok-intel-core-i7-7700-ram-32-gb-ssd-1024-gb-amd-radeon-rx-580-8-gb-2009635132/?at=EqtkwkoEmckJWynmTAg5PVkInzJ5G8U2K7AqWcG9W05Y
+2025-06-30 05:17:11,796 - product_parser - INFO -    Товар: TRADE Electronics Системный блок (Intel Core i7-7700, RAM 32 ГБ, SSD 1024 ГБ, AMD Radeon RX 580 (8 Гб), Windows 10 Pro), черный
+2025-06-30 05:17:11,797 - product_parser - INFO -    Продавец: «TRADE Electronics»
+2025-06-30 05:17:11,798 - product_parser - INFO -    Компания: Не найдено
+2025-06-30 05:17:11,799 - product_parser - INFO -    ИНН: Не найдено
+2025-06-30 05:17:15,074 - product_parser - INFO - [21/36] УСПЕШНО: https://www.ozon.ru/product/acer-sistemnyy-blok-acer-2610-veriton-3-2100-intel-core-i3-2100-ram-4-gb-intel-graphics-bez-os-2157493460/?at=Z8tX1XnJESJl6QJMt6GPDz0fAJq9YYhOr1Xj4t7nR9MV
+2025-06-30 05:17:15,075 - product_parser - INFO -    Товар: Acer Системный блок acer 2610 veriton 3-2100 (Intel Core i3-2100, RAM 4 ГБ, Intel Graphics, Без ОС), 1, черный
+2025-06-30 05:17:15,075 - product_parser - INFO -    Продавец: Compunity
+2025-06-30 05:17:15,075 - product_parser - INFO -    Компания: ИП Кротченко Михаил Владимирович
+2025-06-30 05:17:15,075 - product_parser - INFO -    ИНН: 318665800228612
+2025-06-30 05:17:17,015 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:17:20,801 - product_parser - INFO - [22/36] УСПЕШНО: https://www.ozon.ru/product/robotcomp-sistemnyy-blok-grad-3-0-v3-white-intel-core-i7-13700kf-ram-32-gb-ssd-960-gb-hdd-2000-gb-1391137229/?at=oZt6A6pOMu9BQR7jHYqAgm8FL8yZN3H9orypBh9ODYYp
+2025-06-30 05:17:20,801 - product_parser - INFO -    Товар: Robotcomp Системный блок Град 3.0 V3 White (Intel Core i7-13700KF, RAM 32 ГБ, SSD 960 ГБ, HDD 2000 ГБ, NVIDIA GeForce RTX 5070 (12 Гб), Windows 10 Pro), белый
+2025-06-30 05:17:20,802 - product_parser - INFO -    Продавец: ООО "Роботкомп Корп"
+2025-06-30 05:17:20,802 - product_parser - INFO -    Компания: ООО "РОБОТКОМП КОРП"
+2025-06-30 05:17:20,802 - product_parser - INFO -    ИНН: 1155047011481
+2025-06-30 05:17:25,481 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:17:29,326 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:17:29,733 - product_parser - INFO - [23/36] УСПЕШНО: https://www.ozon.ru/product/treidcomputers-sistemnyy-blok-igrovoy-kompyuter-intel-core-i5-10400f-ram-32-gb-ssd-960-gb-2224310920/?at=83tBmB8olFyK4lpnigAjRAxc7B9zpvcy3mE06t0xpmgw
+2025-06-30 05:17:29,734 - product_parser - INFO -    Товар: TREIDCOMPUTERS Системный блок Игровой компьютер (Intel Core i5-10400F, RAM 32 ГБ, SSD 960 ГБ, NVIDIA GeForce RTX 4060 (8 Гб), Windows 10 Pro), белый
+2025-06-30 05:17:29,734 - product_parser - INFO -    Продавец: TREIDCOMPUTERS
+2025-06-30 05:17:29,734 - product_parser - INFO -    Компания: ИП Буторин Илья Сергеевич
+2025-06-30 05:17:29,734 - product_parser - INFO -    ИНН: 319774600299562
+2025-06-30 05:17:33,382 - product_parser - INFO - [24/36] УСПЕШНО: https://www.ozon.ru/product/it-baza-sistemnyy-blok-intel-i3-2100-ram-8gb-ssd-240gb-windows-10-pro-intel-core-i3-2100-ram-8-1044578885/?at=LZtl0lM6Auq9VYnZI38nP9mcPOPl3wfG1y636HrqZwoB
+2025-06-30 05:17:33,383 - product_parser - INFO -    Товар: IT-BAZA Системный блок Intel i3-2100, RAM 8ГБ , SSD 240ГБ, Windows 10 Pro (Intel Core i3-2100, RAM 8 ГБ, SSD 240 ГБ, Intel HD Graphics 2000, Windows 10 Pro), черный, черно-серый
+2025-06-30 05:17:33,395 - product_parser - INFO -    Продавец: IT-BAZA
+2025-06-30 05:17:33,398 - product_parser - INFO -    Компания: ООО АЙТИ БАЗА
+2025-06-30 05:17:33,402 - product_parser - INFO -    ИНН: 1225600004035
+2025-06-30 05:17:34,663 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:17:38,464 - product_parser - INFO - [25/36] УСПЕШНО: https://www.ozon.ru/product/intel-sistemnyy-blok-intel-core-i5-4460-ram-16-gb-ssd-480-gb-intel-hd-graphics-windows-10-1374623635/?at=w0tg5gZB7c14lD9mSKWwq1VflDYVBNCOnG99puABMyZo
+2025-06-30 05:17:38,464 - product_parser - INFO -    Товар: Intel Системный блок (Intel Core i5-4460, RAM 16 ГБ, SSD 480 ГБ, Intel HD Graphics, Windows 10 Pro), черный
+2025-06-30 05:17:38,465 - product_parser - INFO -    Продавец: relotech
+2025-06-30 05:17:38,465 - product_parser - INFO -    Компания: ИП Давыдов Владимир Олегович
+2025-06-30 05:17:38,465 - product_parser - INFO -    ИНН: 317344300018441
+2025-06-30 05:17:43,592 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:17:47,071 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:17:47,226 - product_parser - INFO - [26/36] УСПЕШНО: https://www.ozon.ru/product/intel-sistemnyy-blok-kompyuter-pk-intel-core-i3-4130-ram-8-gb-ssd-240-gb-intel-hd-graphics-1771435264/?at=nRtr4rp8zSJNzVG4fEN9q0XsKDP9JH9NO2gvcpj2Y9L
+2025-06-30 05:17:47,227 - product_parser - INFO -    Товар: Intel Системный блок Компьютер ПК (Intel Core i3-4130, RAM 8 ГБ, SSD 240 ГБ, Intel HD Graphics, Windows 10 Pro), черный, черный матовый
+2025-06-30 05:17:47,227 - product_parser - INFO -    Продавец: Simple Store PC
+2025-06-30 05:17:47,228 - product_parser - INFO -    Компания: ИП Сенчихина Ангелина Евгеньевна
+2025-06-30 05:17:47,229 - product_parser - INFO -    ИНН: 323169000169536
+2025-06-30 05:17:50,202 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:17:50,705 - product_parser - INFO - [27/36] УСПЕШНО: https://www.ozon.ru/product/intel-sistemnyy-blok-intel-core-i7-2600-ram-16-gb-ssd-1000-gb-intel-hd-graphics-windows-10-1375422912/?at=99trJrVGvSqn7X8wIWXRB29t2m9A1kuwVgwKPunQAoZ5
+2025-06-30 05:17:50,706 - product_parser - INFO -    Товар: Intel Системный блок (Intel Core i7-2600, RAM 16 ГБ, SSD 1000 ГБ, Intel HD Graphics, Windows 10 Pro), черный
+2025-06-30 05:17:50,706 - product_parser - INFO -    Продавец: relotech
+2025-06-30 05:17:50,706 - product_parser - INFO -    Компания: ИП Давыдов Владимир Олегович
+2025-06-30 05:17:50,706 - product_parser - INFO -    ИНН: 317344300018441
+2025-06-30 05:17:53,692 - product_parser - INFO - [28/36] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-amd-ryzen-5-5600-ram-32-gb-ssd-1024-gb-nvidia-geforce-rtx-4060-8-gb-windows-10-pro-2268472126/?at=28t0L0oMvIEjDA10tmowRvqT0p26YLu61VG9AUAQxP60
+2025-06-30 05:17:53,693 - product_parser - INFO -    Товар: Системный блок (AMD Ryzen 5 5600, RAM 32 ГБ, SSD 1024 ГБ, NVIDIA GeForce RTX 4060 (8 Гб), Windows 10 Pro), 1222, черный
+2025-06-30 05:17:53,694 - product_parser - INFO -    Продавец: NOVA
+2025-06-30 05:17:53,694 - product_parser - INFO -    Компания: ИП Дудников Роман Олегович
+2025-06-30 05:17:53,694 - product_parser - INFO -    ИНН: 322366800050827
+2025-06-30 05:18:00,004 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:18:03,190 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:18:07,335 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:18:10,805 - product_parser - INFO - [29/36] УСПЕШНО: https://www.ozon.ru/product/lenovo-sistemnyy-blok-kompyuter-pk-amd-a10-6700-ram-16-gb-ssd-240-gb-amd-radeon-r7-windows-10-2042778498/?at=PjtJBJApOcj5J6YpUK92P8yUrVAvMrUJGLvjXtl4gYWp
+2025-06-30 05:18:10,805 - product_parser - INFO -    Товар: Lenovo Системный блок Компьютер ПК (AMD A10-6700, RAM 16 ГБ, SSD 240 ГБ, AMD Radeon R7, Windows 10 Pro), черный
+2025-06-30 05:18:10,805 - product_parser - INFO -    Продавец: Simple Store PC
+2025-06-30 05:18:10,806 - product_parser - INFO -    Компания: ИП Сенчихина Ангелина Евгеньевна
+2025-06-30 05:18:10,806 - product_parser - INFO -    ИНН: 323169000169536
+2025-06-30 05:18:13,412 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 05:18:16,337 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 05:18:22,616 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:18:26,041 - product_parser - INFO - [30/36] УСПЕШНО: https://www.ozon.ru/product/robotcomp-sistemnyy-blok-feniks-plus-white-amd-ryzen-9-9950x-ram-128-gb-ssd-4000-gb-nvidia-geforce-2278238050/?at=LZtl0lM6AuBKgZgvUoyDlMjcR0yzrnCVy3OBOFW0NnPB
+2025-06-30 05:18:26,042 - product_parser - INFO -    Товар: Robotcomp Системный блок Феникс Plus White (AMD Ryzen 9 9950X, RAM 128 ГБ, SSD 4000 ГБ, NVIDIA GeForce RTX 5080 (16 Гб), Windows 11 Pro), белый
+2025-06-30 05:18:26,042 - product_parser - INFO -    Продавец: ООО "Роботкомп Корп"
+2025-06-30 05:18:26,043 - product_parser - INFO -    Компания: ООО "РОБОТКОМП КОРП"
+2025-06-30 05:18:26,043 - product_parser - INFO -    ИНН: 1155047011481
+2025-06-30 05:18:26,527 - seller_info_parser - INFO - Попытка 3 получить данные продавца
+2025-06-30 05:18:27,771 - seller_info_parser - INFO - Попытка 3 получить данные продавца
+2025-06-30 05:18:35,239 - product_parser - INFO - [31/36] УСПЕШНО: https://www.ozon.ru/product/robotcomp-sistemnyy-blok-topol-m-v3-white-intel-core-ultra-9-285k-ram-32-gb-ssd-4000-gb-2278237697/?at=RltywyP2JcZq8q7NhBnQMQrhOoj18rT5BZLYxTl0k45l
+2025-06-30 05:18:35,239 - product_parser - INFO -    Товар: Robotcomp Системный блок Тополь-М V3 White (Intel Core Ultra 9 285K, RAM 32 ГБ, SSD 4000 ГБ, NVIDIA GeForce RTX 5080 (16 Гб), Windows 11 Pro), белый
+2025-06-30 05:18:35,240 - product_parser - INFO -    Продавец: ООО "Роботкомп Корп"
+2025-06-30 05:18:35,240 - product_parser - INFO -    Компания: ООО "РОБОТКОМП КОРП"
+2025-06-30 05:18:35,240 - product_parser - INFO -    ИНН: 1155047011481
+2025-06-30 05:18:36,324 - product_parser - INFO - [32/36] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-kompyuter-intel-core-i7-2600-ram-16-gb-ssd-512-gb-nvidia-geforce-gtx-1050-ti-4-gb-1678819795/?at=LZtl0lM6AurRkMwYI13Xx8DH2nPQA6i5kmWlYUy82K5Q
+2025-06-30 05:18:36,324 - product_parser - INFO -    Товар: Системный блок Компьютер (Intel Core i7-2600, RAM 16 ГБ, SSD 512 ГБ, NVIDIA GeForce GTX 1050 Ti (4 Гб), Windows 10 Pro), черный
+2025-06-30 05:18:36,325 - product_parser - INFO -    Продавец: NAVI COMPUTERS
+2025-06-30 05:18:36,326 - product_parser - INFO -    Компания: ИП Кузнецов Егор Сергеевич
+2025-06-30 05:18:36,326 - product_parser - INFO -    ИНН: 321547600104762
+2025-06-30 05:18:46,597 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:18:49,484 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:18:49,784 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:18:57,974 - product_parser - INFO - [33/36] УСПЕШНО: https://www.ozon.ru/product/lenovo-sistemnyy-blok-kompyuter-pk-amd-pro-a8-8650b-ram-16-gb-ssd-120-gb-amd-radeon-r7-windows-10-1590381111/?at=qQtJgJ6qDcqPPM3yhWN8NrlCmBOO1nFyVnpV6Fqv6m3N
+2025-06-30 05:18:57,974 - product_parser - INFO -    Товар: Lenovo Системный блок Компьютер ПК (AMD PRO A8-8650B, RAM 16 ГБ, SSD 120 ГБ, AMD Radeon R7, Windows 10 Pro), черный
+2025-06-30 05:18:57,976 - product_parser - INFO -    Продавец: Simple Store PC
+2025-06-30 05:18:57,976 - product_parser - INFO -    Компания: ИП Сенчихина Ангелина Евгеньевна
+2025-06-30 05:18:57,976 - product_parser - INFO -    ИНН: 323169000169536
+2025-06-30 05:18:58,379 - product_parser - INFO - [34/36] УСПЕШНО: https://www.ozon.ru/product/jetgame-sistemnyy-blok-intel-xeon-e5-2650v3-ram-32-gb-ssd-1024-gb-amd-radeon-rx-580-8-gb-windows-10-1827034357/?at=gpt4v45MrsVn5B90umqGRmyT45v2EOF0QVNGGfzLlDNW
+2025-06-30 05:18:58,380 - product_parser - INFO -    Товар: JetGame Системный блок (Intel Xeon E5-2650V3, RAM 32 ГБ, SSD 1024 ГБ, AMD Radeon RX 580 (8 Гб), Windows 10 Pro), черный
+2025-06-30 05:18:58,381 - product_parser - INFO -    Продавец: JetGame
+2025-06-30 05:18:58,381 - product_parser - INFO -    Компания: ИП Курлов Александр Алексеевич
+2025-06-30 05:18:58,381 - product_parser - INFO -    ИНН: 323508100624725
+2025-06-30 05:18:59,206 - product_parser - INFO - Воркер 3 завершил работу
+2025-06-30 05:19:02,408 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 05:19:10,456 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:19:12,012 - seller_info_parser - INFO - Попытка 3 получить данные продавца
+2025-06-30 05:19:20,589 - product_parser - INFO - [35/36] УСПЕШНО: https://www.ozon.ru/product/sevengroup-sistemnyy-blok-igrovoy-kompyuter-pk-amd-ryzen-5-5600-ram-32-gb-ssd-1024-gb-amd-radeon-rx-1553830051/?at=vQtrJr0QGSwyqY4xck31xj8HkyE0JGtDOYzO3ixELkOG
+2025-06-30 05:19:20,590 - product_parser - INFO -    Товар: SevenGroup Системный блок Игровой компьютер ПК (AMD Ryzen 5 5600, RAM 32 ГБ, SSD 1024 ГБ, AMD Radeon RX 580 (8 Гб), Windows 10 Pro), ПК, белый
+2025-06-30 05:19:20,591 - product_parser - INFO -    Продавец: Scetch
+2025-06-30 05:19:20,591 - product_parser - INFO -    Компания: ИП Савастеева Марина Андреевна
+2025-06-30 05:19:20,592 - product_parser - INFO -    ИНН: 323508100073711
+2025-06-30 05:19:21,419 - product_parser - INFO - Воркер 1 завершил работу
+2025-06-30 05:19:23,707 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 05:19:35,819 - seller_info_parser - INFO - Попытка 3 получить данные продавца
+2025-06-30 05:19:39,542 - product_parser - INFO - [36/36] УСПЕШНО: https://www.ozon.ru/product/iru-sistemnyy-blok-310h6s-intel-core-i3-12100-ram-16-gb-ssd-512-gb-intel-uhd-graphics-730-freedos-1861628806/?at=BrtzxzJY1hOywKRGhPPVW88c5ALO3Pi1B2NxJurVXPW0
+2025-06-30 05:19:39,543 - product_parser - INFO -    Товар: iRU Системный блок 310H6S (Intel Core i3-12100, RAM 16 ГБ, SSD 512 ГБ, Intel UHD Graphics 730, FreeDOS), 2074830, черный
+2025-06-30 05:19:39,545 - product_parser - INFO -    Продавец: Позитроника
+2025-06-30 05:19:39,546 - product_parser - INFO -    Компания: ООО "РЕНТСОФТ"
+2025-06-30 05:19:39,552 - product_parser - INFO -    ИНН: 1097746578863
+2025-06-30 05:19:40,454 - product_parser - INFO - Воркер 2 завершил работу
+2025-06-30 05:19:40,612 - excel_exporter - INFO - Результаты сохранены в results\sistemnye-bloki-15704_30.06.2025-05_14_21.xlsx
+2025-06-30 05:19:40,616 - product_parser - INFO - Обработка завершена успешно за 319.22 секунд
+2025-06-30 05:19:40,617 - product_parser - INFO - Обработано товаров: 36
+2025-06-30 05:19:40,618 - product_parser - INFO - Успешно: 36
+2025-06-30 05:19:40,619 - product_parser - INFO - Закончились: 0
+2025-06-30 05:19:40,620 - product_parser - INFO - Ошибки: 0
+2025-06-30 05:19:40,621 - src.bot.utils - INFO - Файл результатов создан: results\sistemnye-bloki-15704_6089511983_30.06.2025-05_14_21.xlsx
+2025-06-30 05:19:41,232 - src.bot.handlers - ERROR - Ошибка при обработке URL: HTTP Client says - ClientOSError: [Errno 2] Can not write request body for https://api.telegram.org/bot7955956815:AAGHbwGJ6G32GRP0-dpq7cUiVgTL2PUnPR8/sendDocument
+Traceback (most recent call last):
+  File "C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\venv\Lib\site-packages\aiohttp\client_reqrep.py", line 658, in write_bytes
+    await self.body.write(writer)
+  File "C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\venv\Lib\site-packages\aiohttp\multipart.py", line 1008, in write
+    await part.write(writer)
+  File "C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\venv\Lib\site-packages\aiohttp\payload.py", line 494, in write
+    chunk = await self._iter.__anext__()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\venv\Lib\site-packages\aiogram\types\input_file.py", line 103, in read
+    async with aiofiles.open(self.path, "rb") as f:
+  File "C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\venv\Lib\site-packages\aiofiles\base.py", line 63, in __aenter__
+    return await self
+           ^^^^^^^^^^
+  File "C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\venv\Lib\site-packages\aiofiles\base.py", line 59, in __await__
+    self._obj = yield from self._coro.__await__()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\venv\Lib\site-packages\aiofiles\threadpool\__init__.py", line 92, in _open
+    f = await loop.run_in_executor(executor, cb)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nurja\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'results\\sistemnye-bloki-15704_6089511983_30.06.2025-05_14_21.xlsx'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    async with session.post(
+  File "C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\venv\Lib\site-packages\aiohttp\client.py", line 1425, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\venv\Lib\site-packages\aiohttp\client.py", line 730, in _request
+    await resp.start(conn)
+  File "C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\venv\Lib\site-packages\aiohttp\client_reqrep.py", line 1059, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\venv\Lib\site-packages\aiohttp\streams.py", line 672, in read
+    await self._waiter
+aiohttp.client_exceptions.ClientOSError: [Errno 2] Can not write request body for https://api.telegram.org/bot7955956815:AAGHbwGJ6G32GRP0-dpq7cUiVgTL2PUnPR8/sendDocument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\src\bot\handlers.py", line 105, in process_url
+    await message.answer_document(FSInputFile(file_path))
+  File "C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\venv\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\venv\Lib\site-packages\aiogram\client\bot.py", line 478, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 184, in make_request
+    raise TelegramNetworkError(method=method, message=f"{type(e).__name__}: {e}")
+aiogram.exceptions.TelegramNetworkError: HTTP Client says - ClientOSError: [Errno 2] Can not write request body for https://api.telegram.org/bot7955956815:AAGHbwGJ6G32GRP0-dpq7cUiVgTL2PUnPR8/sendDocument
+2025-06-30 05:19:41,790 - aiogram.event - INFO - Update id=36893454 is handled. Duration 338407 ms by bot id=7955956815
+2025-06-30 05:23:09,864 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-30 05:23:10,135 - telegram_bot - INFO - Бот остановлен
+2025-06-30 05:23:10,145 - aiogram.dispatcher - INFO - Polling stopped for bot @ozongetnamerbot id=7955956815 - 'ozongetnamer'
+2025-06-30 05:23:10,184 - uc - INFO - ensuring close
+2025-06-30 05:23:10,185 - uc - INFO - ensuring close
+2025-06-30 05:23:10,189 - uc - INFO - ensuring close
+2025-06-30 05:23:10,190 - uc - INFO - ensuring close
+2025-06-30 05:25:19,879 - telegram_bot - INFO - Запуск Telegram бота...
+2025-06-30 05:25:19,898 - aiogram.dispatcher - INFO - Start polling
+2025-06-30 05:25:20,602 - aiogram.dispatcher - INFO - Run polling for bot @ozongetnamerbot id=7955956815 - 'ozongetnamer'
+2025-06-30 05:25:25,352 - aiogram.event - INFO - Update id=36893455 is handled. Duration 530 ms by bot id=7955956815
+2025-06-30 05:25:29,312 - aiogram.event - INFO - Update id=36893456 is handled. Duration 141 ms by bot id=7955956815
+2025-06-30 05:25:35,915 - src.bot.utils - INFO - Начало парсинга ссылок для https://www.ozon.ru/category/sistemnye-bloki-15704/?category_was_predicted=true&deny_category_prediction=true&from_global=true&text=%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80
+2025-06-30 05:25:35,916 - link_parser - INFO - Категория: sistemnye-bloki-15704
+2025-06-30 05:25:37,385 - link_parser - INFO - Браузер инициализирован
+2025-06-30 05:25:37,393 - link_parser - INFO - Загрузка страницы: https://www.ozon.ru/category/sistemnye-bloki-15704/?category_was_predicted=true&deny_category_prediction=true&from_global=true&text=%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80
+2025-06-30 05:25:43,631 - link_parser - INFO - Страница успешно загружена
+2025-06-30 05:25:44,245 - link_parser - INFO - Найдено новых ссылок: 8
+2025-06-30 05:25:44,247 - link_parser - INFO - Начальное количество ссылок: 8/10
+2025-06-30 05:25:53,693 - link_parser - INFO - Найдено новых ссылок: 28
+2025-06-30 05:25:53,694 - link_parser - INFO - Всего ссылок: 36/10
+2025-06-30 05:25:53,716 - link_parser - INFO - Ссылки сохранены в файл: C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\links.txt
+2025-06-30 05:25:53,718 - link_parser - INFO - Успешно собрано 36 ссылок
+2025-06-30 05:25:54,329 - link_parser - INFO - Браузер закрыт
+2025-06-30 05:25:54,333 - src.bot.utils - INFO - Начало парсинга 36 товаров
+2025-06-30 05:25:54,334 - excel_exporter - INFO - Файл результатов: results\sistemnye-bloki-15704_30.06.2025-05_25_54.xlsx
+2025-06-30 05:25:54,335 - product_parser - INFO - Инициализирован парсер для категории: sistemnye-bloki-15704
+2025-06-30 05:25:54,336 - product_parser - INFO - Начало обработки 36 товаров
+2025-06-30 05:25:56,041 - driver_manager - INFO - Создан новый браузер. Всего активных: 1
+2025-06-30 05:25:56,172 - product_parser - INFO - Воркер 1 запущен
+2025-06-30 05:25:57,850 - driver_manager - INFO - Создан новый браузер. Всего активных: 2
+2025-06-30 05:25:57,851 - product_parser - INFO - Воркер 3 запущен
+2025-06-30 05:25:59,582 - driver_manager - INFO - Создан новый браузер. Всего активных: 3
+2025-06-30 05:25:59,583 - product_parser - INFO - Воркер 2 запущен
+2025-06-30 05:26:33,326 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:26:33,911 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:26:41,574 - product_parser - INFO - [1/36] УСПЕШНО: https://www.ozon.ru/product/treidcomputers-sistemnyy-blok-intel-core-i7-12700f-ram-32-gb-ssd-960-gb-nvidia-geforce-rtx-4060-8-gb-1922781204/?at=QktJnJ408c7pB64DcP3zvgVT01plLxc58OXQ0UkNGZnG
+2025-06-30 05:26:41,576 - product_parser - INFO -    Товар: TREIDCOMPUTERS Системный блок (Intel Core i7-12700F, RAM 32 ГБ, SSD 960 ГБ, NVIDIA GeForce RTX 4060 (8 Гб), Windows 10 Pro), черный
+2025-06-30 05:26:41,577 - product_parser - INFO -    Продавец: TREIDCOMPUTERS
+2025-06-30 05:26:41,578 - product_parser - INFO -    Компания: ИП Буторин Илья Сергеевич
+2025-06-30 05:26:41,579 - product_parser - INFO -    ИНН: 319774600299562
+2025-06-30 05:26:41,635 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:26:44,420 - product_parser - INFO - [2/36] УСПЕШНО: https://www.ozon.ru/product/treidcomputers-sistemnyy-blok-amd-ryzen-5-5600g-ram-32-gb-ssd-960-gb-amd-radeon-vega-7-windows-10-1940505582/?at=K8tZQZxVliXAg41mskjkBM6UmnO1JZun97yWZcXL2Y4X
+2025-06-30 05:26:44,420 - product_parser - INFO -    Товар: TREIDCOMPUTERS Системный блок (AMD Ryzen 5 5600G, RAM 32 ГБ, SSD 960 ГБ, AMD Radeon Vega 7, Windows 10 Pro), темно-коричневый, черный
+2025-06-30 05:26:44,421 - product_parser - INFO -    Продавец: TREIDCOMPUTERS
+2025-06-30 05:26:44,421 - product_parser - INFO -    Компания: ИП Буторин Илья Сергеевич
+2025-06-30 05:26:44,421 - product_parser - INFO -    ИНН: 319774600299562
+2025-06-30 05:26:45,487 - product_parser - INFO - [3/36] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-intel-core-i5-14400f-ram-32-gb-ssd-1024-gb-nvidia-geforce-rtx-5060-8-gb-windows-2268471231/?at=28t0L0oMvIEBlyQJtWvYV33tWnAM1mFvpoOvmHzQlYjo
+2025-06-30 05:26:45,488 - product_parser - INFO -    Товар: Системный блок (Intel Core i5-14400F, RAM 32 ГБ, SSD 1024 ГБ, NVIDIA GeForce RTX 5060 (8 Гб), Windows 10 Pro), 1222, белый
+2025-06-30 05:26:45,491 - product_parser - INFO -    Продавец: NOVA
+2025-06-30 05:26:45,491 - product_parser - INFO -    Компания: ИП Дудников Роман Олегович
+2025-06-30 05:26:45,492 - product_parser - INFO -    ИНН: 322366800050827
+2025-06-30 05:26:58,374 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:27:02,538 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:27:06,011 - product_parser - INFO - [4/36] УСПЕШНО: https://www.ozon.ru/product/jetgame-sistemnyy-blok-intel-xeon-e5-2650v3-ram-32-gb-ssd-1024-gb-amd-radeon-rx-580-8-gb-windows-10-1827034357/?at=K8tZQZxVliXXGB6mI3Q4yOoImZ20MCJxyRVBUWE1Bxo
+2025-06-30 05:27:06,012 - product_parser - INFO -    Товар: JetGame Системный блок (Intel Xeon E5-2650V3, RAM 32 ГБ, SSD 1024 ГБ, AMD Radeon RX 580 (8 Гб), Windows 10 Pro), черный
+2025-06-30 05:27:06,012 - product_parser - INFO -    Продавец: JetGame
+2025-06-30 05:27:06,013 - product_parser - INFO -    Компания: ИП Курлов Александр Алексеевич
+2025-06-30 05:27:06,013 - product_parser - INFO -    ИНН: 323508100624725
+2025-06-30 05:27:07,823 - product_parser - INFO - [5/36] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-intel-xeon-e5-2690v3-ram-32-gb-ssd-512-gb-amd-radeon-rx-580-8-gb-windows-10-pro-belyy-1943640521/?at=BrtzxzJY1hn6Nk34uVvjDqYin2ND8DtNAw97oImKq7no
+2025-06-30 05:27:07,825 - product_parser - INFO -    Товар: Системный блок (Intel Xeon E5-2690V3, RAM 32 ГБ, SSD 512 ГБ, AMD Radeon RX 580 (8 Гб), Windows 10 Pro), белый
+2025-06-30 05:27:07,827 - product_parser - INFO -    Продавец: Магазин Техники M1
+2025-06-30 05:27:07,828 - product_parser - INFO -    Компания: ИП Оздоева Изабелла Исмаиловна
+2025-06-30 05:27:07,828 - product_parser - INFO -    ИНН: 324060000016220
+2025-06-30 05:27:13,531 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:27:17,777 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:27:20,305 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:27:21,772 - product_parser - INFO - [6/36] УСПЕШНО: https://www.ozon.ru/product/robotcomp-sistemnyy-blok-m-16-v3-plus-aqua-intel-core-i5-14400f-ram-64-gb-ssd-960-gb-nvidia-2229058233/?at=36tWjWYnwFDKq9DJu93g9G3f6rENw1sYWVkgMIxyxzmx
+2025-06-30 05:27:21,772 - product_parser - INFO -    Товар: Robotcomp Системный блок M-16 V3 Plus Aqua (Intel Core i5-14400F, RAM 64 ГБ, SSD 960 ГБ, NVIDIA GeForce RTX 5060 (8 Гб), Windows 10 Pro), черный, прозрачный
+2025-06-30 05:27:21,773 - product_parser - INFO -    Продавец: ООО "Роботкомп Корп"
+2025-06-30 05:27:21,774 - product_parser - INFO -    Компания: ООО "РОБОТКОМП КОРП"
+2025-06-30 05:27:21,781 - product_parser - INFO -    ИНН: 1155047011481
+2025-06-30 05:27:23,582 - product_parser - INFO - [7/36] УСПЕШНО: https://www.ozon.ru/product/bloody-sistemnyy-blok-bd-pc-cb76c2-amd-ryzen-5-7500f-ram-32-gb-ssd-1024-gb-nvidia-geforce-rtx-4060-8-1923001293/?at=LZtl0lM6Auy52ROqHx8709yfroQBW8UJ7kr6xSJGQ8jA
+2025-06-30 05:27:23,583 - product_parser - INFO -    Товар: Bloody Системный блок BD-PC CB76C2 (AMD Ryzen 5 7500F, RAM 32 ГБ, SSD 1024 ГБ, NVIDIA GeForce RTX 4060 (8 Гб), Windows), 2086014, черный
+2025-06-30 05:27:23,583 - product_parser - INFO -    Продавец: Официальный магазин Bloody
+2025-06-30 05:27:23,583 - product_parser - INFO -    Компания: ООО "РЕНТСОФТ"
+2025-06-30 05:27:23,584 - product_parser - INFO -    ИНН: 1097746578863
+2025-06-30 05:27:24,975 - product_parser - INFO - [8/36] УСПЕШНО: https://www.ozon.ru/product/treidcomputers-sistemnyy-blok-igrovoy-kompyuter-intel-core-i7-7700-ram-32-gb-ssd-960-gb-1922781186/?at=EqtkwkoEmcXK64MvCg4XYglcAQAZWrClAq2lVszoXYPk
+2025-06-30 05:27:24,976 - product_parser - INFO -    Товар: TREIDCOMPUTERS Системный блок Игровой компьютер (Intel Core i7-7700, RAM 32 ГБ, SSD 960 ГБ, NVIDIA GeForce RTX 4060 (8 Гб), Windows 10 Pro), черный
+2025-06-30 05:27:24,978 - product_parser - INFO -    Продавец: TREIDCOMPUTERS
+2025-06-30 05:27:24,979 - product_parser - INFO -    Компания: ИП Буторин Илья Сергеевич
+2025-06-30 05:27:24,980 - product_parser - INFO -    ИНН: 319774600299562
+2025-06-30 05:27:35,653 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:27:35,707 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:27:37,748 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:27:39,117 - product_parser - INFO - [9/36] УСПЕШНО: https://www.ozon.ru/product/robotcomp-sistemnyy-blok-feniks-plus-amd-ryzen-9-9950x-ram-128-gb-ssd-4000-gb-nvidia-geforce-2246607844/?at=pZtpgpEYGi0Q1BL0uW90DM3fOkBDZQCy1R1lwS5pwPLy
+2025-06-30 05:27:39,117 - product_parser - INFO -    Товар: Robotcomp Системный блок Феникс Plus (AMD Ryzen 9 9950X, RAM 128 ГБ, SSD 4000 ГБ, NVIDIA GeForce RTX 5080 (16 Гб), Windows 11 Pro), черный
+2025-06-30 05:27:39,118 - product_parser - INFO -    Продавец: ООО "Роботкомп Корп"
+2025-06-30 05:27:39,118 - product_parser - INFO -    Компания: ООО "РОБОТКОМП КОРП"
+2025-06-30 05:27:39,118 - product_parser - INFO -    ИНН: 1155047011481
+2025-06-30 05:27:39,303 - product_parser - INFO - [10/36] УСПЕШНО: https://www.ozon.ru/product/lenovo-sistemnyy-blok-kompyuter-pk-amd-pro-a8-8650b-ram-16-gb-ssd-120-gb-amd-radeon-r7-windows-10-1590381111/?at=83tBmB8olFAxqMmJtAAy8N0FOlW8znc7oxLw6fwD9j1D
+2025-06-30 05:27:39,304 - product_parser - INFO -    Товар: Lenovo Системный блок Компьютер ПК (AMD PRO A8-8650B, RAM 16 ГБ, SSD 120 ГБ, AMD Radeon R7, Windows 10 Pro), черный
+2025-06-30 05:27:39,305 - product_parser - INFO -    Продавец: Simple Store PC
+2025-06-30 05:27:39,305 - product_parser - INFO -    Компания: ИП Сенчихина Ангелина Евгеньевна
+2025-06-30 05:27:39,305 - product_parser - INFO -    ИНН: 323169000169536
+2025-06-30 05:27:41,773 - product_parser - INFO - [11/36] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-amd-a8-8670e-ram-4-gb-amd-radeon-r7-bez-os-1-cherno-seryy-1707200180/?at=pZtpgpEYGiXy9D1LfJ816gmFnvDW5LSpJ0XJ7iRE8lB8
+2025-06-30 05:27:41,776 - product_parser - INFO -    Товар: Системный блок (AMD A8 8670E, RAM 4 ГБ, AMD Radeon R7, Без ОС), 1, черно-серый
+2025-06-30 05:27:41,777 - product_parser - INFO -    Продавец: Compunity
+2025-06-30 05:27:41,778 - product_parser - INFO -    Компания: ИП Кротченко Михаил Владимирович
+2025-06-30 05:27:41,779 - product_parser - INFO -    ИНН: 318665800228612
+2025-06-30 05:27:51,402 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:27:51,851 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:27:54,947 - product_parser - INFO - [12/36] УСПЕШНО: https://www.ozon.ru/product/robotcomp-sistemnyy-blok-m-16-v2-aqua-intel-core-i5-14400f-ram-32-gb-ssd-960-gb-nvidia-geforce-rtx-2229058173/?at=ywtAGAmxgcv9L1vAh8NypmJFly5QZJhMlqkB4HmEoBVk
+2025-06-30 05:27:54,948 - product_parser - INFO -    Товар: Robotcomp Системный блок M-16 V2 Aqua (Intel Core i5-14400F, RAM 32 ГБ, SSD 960 ГБ, NVIDIA GeForce RTX 5060 (8 Гб), Windows 10 Pro), черный, прозрачный
+2025-06-30 05:27:54,948 - product_parser - INFO -    Продавец: ООО "Роботкомп Корп"
+2025-06-30 05:27:54,948 - product_parser - INFO -    Компания: ООО "РОБОТКОМП КОРП"
+2025-06-30 05:27:54,949 - product_parser - INFO -    ИНН: 1155047011481
+2025-06-30 05:27:55,067 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:27:55,359 - product_parser - INFO - [13/36] УСПЕШНО: https://www.ozon.ru/product/robotcomp-sistemnyy-blok-grad-3-0-v3-white-intel-core-i7-13700kf-ram-32-gb-ssd-960-gb-hdd-2000-gb-1391137229/?at=mqtkVkLOZcE92Zm0SMW6QqgsXOm4wjHm6nRYgh5Eyoj9
+2025-06-30 05:27:55,359 - product_parser - INFO -    Товар: Robotcomp Системный блок Град 3.0 V3 White (Intel Core i7-13700KF, RAM 32 ГБ, SSD 960 ГБ, HDD 2000 ГБ, NVIDIA GeForce RTX 5070 (12 Гб), Windows 10 Pro), белый
+2025-06-30 05:27:55,360 - product_parser - INFO -    Продавец: ООО "Роботкомп Корп"
+2025-06-30 05:27:55,360 - product_parser - INFO -    Компания: ООО "РОБОТКОМП КОРП"
+2025-06-30 05:27:55,361 - product_parser - INFO -    ИНН: 1155047011481
+2025-06-30 05:27:58,912 - product_parser - INFO - [14/36] УСПЕШНО: https://www.ozon.ru/product/robotcomp-sistemnyy-blok-topol-m-v3-white-intel-core-ultra-9-285k-ram-32-gb-ssd-4000-gb-2278237697/?at=vQtrJr0QGSnzzV03IzxWx3ys9vWwxKHyRWygDuAkpLx3
+2025-06-30 05:27:58,913 - product_parser - INFO -    Товар: Robotcomp Системный блок Тополь-М V3 White (Intel Core Ultra 9 285K, RAM 32 ГБ, SSD 4000 ГБ, NVIDIA GeForce RTX 5080 (16 Гб), Windows 11 Pro), белый
+2025-06-30 05:27:58,914 - product_parser - INFO -    Продавец: ООО "Роботкомп Корп"
+2025-06-30 05:27:58,914 - product_parser - INFO -    Компания: ООО "РОБОТКОМП КОРП"
+2025-06-30 05:27:58,915 - product_parser - INFO -    ИНН: 1155047011481
+2025-06-30 05:28:07,417 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:28:07,417 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:28:10,910 - product_parser - INFO - [15/36] УСПЕШНО: https://www.ozon.ru/product/acer-sistemnyy-blok-acer-2610-veriton-3-2100-intel-core-i3-2100-ram-4-gb-intel-graphics-bez-os-2157493460/?at=GRt2r2ZvmhBwD6wgsmvgQw8HNJ0J2RfGjPK3Gu1pWgAM
+2025-06-30 05:28:10,911 - product_parser - INFO -    Товар: Acer Системный блок acer 2610 veriton 3-2100 (Intel Core i3-2100, RAM 4 ГБ, Intel Graphics, Без ОС), 1, черный
+2025-06-30 05:28:10,912 - product_parser - INFO -    Продавец: Compunity
+2025-06-30 05:28:10,912 - product_parser - INFO -    Компания: ИП Кротченко Михаил Владимирович
+2025-06-30 05:28:10,912 - product_parser - INFO -    ИНН: 318665800228612
+2025-06-30 05:28:10,915 - product_parser - INFO - [16/36] УСПЕШНО: https://www.ozon.ru/product/robotcomp-sistemnyy-blok-feniks-white-amd-ryzen-9-9950x-ram-64-gb-ssd-4000-gb-nvidia-geforce-2278238527/?at=qQtJgJ6qDcYlk920f08p04Lt47ZplzcgX2j4whG39AQg
+2025-06-30 05:28:10,917 - product_parser - INFO -    Товар: Robotcomp Системный блок Феникс White (AMD Ryzen 9 9950X, RAM 64 ГБ, SSD 4000 ГБ, NVIDIA GeForce RTX 5080 (16 Гб), Windows 11 Pro), белый
+2025-06-30 05:28:10,918 - product_parser - INFO -    Продавец: ООО "Роботкомп Корп"
+2025-06-30 05:28:10,919 - product_parser - INFO -    Компания: ООО "РОБОТКОМП КОРП"
+2025-06-30 05:28:10,919 - product_parser - INFO -    ИНН: 1155047011481
+2025-06-30 05:28:12,099 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:28:22,560 - product_parser - INFO - [17/36] УСПЕШНО: https://www.ozon.ru/product/lenovo-sistemnyy-blok-kompyuter-pk-amd-a10-6700-ram-otsutstvuet-amd-radeon-r7-freedos-chernyy-1644248201/?at=A6tGxGJkgcklnkwNUlr0kr1HGjwAEQCg5VWmkfkK5gK7
+2025-06-30 05:28:22,561 - product_parser - INFO -    Товар: Lenovo Системный блок Компьютер ПК (AMD A10-6700, RAM Отсутствует, AMD Radeon R7, FreeDOS), черный
+2025-06-30 05:28:22,561 - product_parser - INFO -    Продавец: Simple Store PC
+2025-06-30 05:28:22,561 - product_parser - INFO -    Компания: ИП Сенчихина Ангелина Евгеньевна
+2025-06-30 05:28:22,562 - product_parser - INFO -    ИНН: 323169000169536
+2025-06-30 05:28:30,188 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:28:34,638 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:28:34,708 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:28:40,177 - product_parser - INFO - [18/36] УСПЕШНО: https://www.ozon.ru/product/sevengroup-sistemnyy-blok-igrovoy-kompyuter-pk-amd-ryzen-5-5600-ram-32-gb-ssd-1024-gb-amd-radeon-rx-1553830051/?at=w0tg5gZB7c1D40yrfNLPvggTX0kExNUoG8onBio5Z5wn
+2025-06-30 05:28:40,178 - product_parser - INFO -    Товар: SevenGroup Системный блок Игровой компьютер ПК (AMD Ryzen 5 5600, RAM 32 ГБ, SSD 1024 ГБ, AMD Radeon RX 580 (8 Гб), Windows 10 Pro), ПК, белый
+2025-06-30 05:28:40,179 - product_parser - INFO -    Продавец: Scetch
+2025-06-30 05:28:40,179 - product_parser - INFO -    Компания: ИП Савастеева Марина Андреевна
+2025-06-30 05:28:40,179 - product_parser - INFO -    ИНН: 323508100073711
+2025-06-30 05:28:43,143 - product_parser - INFO - [19/36] УСПЕШНО: https://www.ozon.ru/product/robotcomp-sistemnyy-blok-feniks-amd-ryzen-9-9950x-ram-64-gb-ssd-4000-gb-nvidia-geforce-rtx-5080-2246607023/?at=J8tgkgLNRcv6krrMSlKoNADf9RN6zPC3QNZlQHjW5KoM
+2025-06-30 05:28:43,144 - product_parser - INFO -    Товар: Robotcomp Системный блок Феникс (AMD Ryzen 9 9950X, RAM 64 ГБ, SSD 4000 ГБ, NVIDIA GeForce RTX 5080 (16 Гб), Windows 11 Pro), черный
+2025-06-30 05:28:43,145 - product_parser - INFO -    Продавец: ООО "Роботкомп Корп"
+2025-06-30 05:28:43,146 - product_parser - INFO -    Компания: ООО "РОБОТКОМП КОРП"
+2025-06-30 05:28:43,147 - product_parser - INFO -    ИНН: 1155047011481
+2025-06-30 05:28:43,161 - product_parser - INFO - [20/36] УСПЕШНО: https://www.ozon.ru/product/intel-sistemnyy-blok-intel-core-i5-4460-ram-16-gb-ssd-480-gb-intel-hd-graphics-windows-10-1374623635/?at=J8tgkgLNRcGoW9M1tQqBRgxiAoqy2wiPvK6EyhEwM1Zm
+2025-06-30 05:28:43,163 - product_parser - INFO -    Товар: Intel Системный блок (Intel Core i5-4460, RAM 16 ГБ, SSD 480 ГБ, Intel HD Graphics, Windows 10 Pro), черный
+2025-06-30 05:28:43,164 - product_parser - INFO -    Продавец: relotech
+2025-06-30 05:28:43,165 - product_parser - INFO -    Компания: ИП Давыдов Владимир Олегович
+2025-06-30 05:28:43,165 - product_parser - INFO -    ИНН: 317344300018441
+2025-06-30 05:28:52,077 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:28:55,926 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:29:00,551 - product_parser - INFO - [21/36] УСПЕШНО: https://www.ozon.ru/product/robotcomp-sistemnyy-blok-feniks-plus-white-amd-ryzen-9-9950x-ram-128-gb-ssd-4000-gb-nvidia-geforce-2278238050/?at=QktJnJ408c9mWm7PTWlP4L2UBvXDrlIzEkPJBhpKmjgO
+2025-06-30 05:29:00,553 - product_parser - INFO -    Товар: Robotcomp Системный блок Феникс Plus White (AMD Ryzen 9 9950X, RAM 128 ГБ, SSD 4000 ГБ, NVIDIA GeForce RTX 5080 (16 Гб), Windows 11 Pro), белый
+2025-06-30 05:29:00,553 - product_parser - INFO -    Продавец: ООО "Роботкомп Корп"
+2025-06-30 05:29:00,553 - product_parser - INFO -    Компания: ООО "РОБОТКОМП КОРП"
+2025-06-30 05:29:00,555 - product_parser - INFO -    ИНН: 1155047011481
+2025-06-30 05:29:03,559 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:29:08,860 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 05:29:09,103 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-30 05:29:09,380 - telegram_bot - INFO - Бот остановлен
+2025-06-30 05:29:09,390 - aiogram.dispatcher - INFO - Polling stopped for bot @ozongetnamerbot id=7955956815 - 'ozongetnamer'
+2025-06-30 05:29:09,393 - aiogram.event - INFO - Update id=36893457 is not handled. Duration 215062 ms by bot id=7955956815
+2025-06-30 05:29:13,232 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001A31C1964D0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/695099b2671006f294a50eb100b45113/element
+2025-06-30 05:29:13,277 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001A31C15BD50>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/54483c030fdf4751856ea3a345932fe1/element
+2025-06-30 05:29:13,414 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001A31C179250>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/5bc2b5629498a3521d9564cfd70afa23/element
+2025-06-30 05:29:17,334 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001A31C180550>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/695099b2671006f294a50eb100b45113/element
+2025-06-30 05:29:17,396 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001A31C179D90>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/54483c030fdf4751856ea3a345932fe1/element
+2025-06-30 05:29:17,612 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001A31C179610>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/5bc2b5629498a3521d9564cfd70afa23/element
+2025-06-30 05:29:21,918 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001A31C190910>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/695099b2671006f294a50eb100b45113/element
+2025-06-30 05:29:22,196 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001A31C191290>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/54483c030fdf4751856ea3a345932fe1/element
+2025-06-30 05:29:22,414 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001A31C191C10>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/5bc2b5629498a3521d9564cfd70afa23/element
+2025-06-30 05:29:26,233 - seller_info_parser - ERROR - Ошибка в попытке 1: HTTPConnectionPool(host='localhost', port=60147): Max retries exceeded with url: /session/695099b2671006f294a50eb100b45113/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001A31C192650>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+2025-06-30 05:29:26,235 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 05:29:26,574 - seller_info_parser - ERROR - Ошибка в попытке 2: HTTPConnectionPool(host='localhost', port=60163): Max retries exceeded with url: /session/5bc2b5629498a3521d9564cfd70afa23/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001A31C193950>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+2025-06-30 05:29:26,577 - seller_info_parser - INFO - Попытка 3 получить данные продавца
+2025-06-30 05:29:26,742 - page_parser - ERROR - Ошибка при парсинге https://www.ozon.ru/product/auroralabs-sistemnyy-blok-intel-core-i5-4570-ram-16-gb-ssd-512-gb-intel-hd-graphics-4600-windows-1838758187/?at=jYtZzZ1W2iGYkWGksQD327CwE93z3frKvZWjIqNKJ3L: HTTPConnectionPool(host='localhost', port=60136): Max retries exceeded with url: /session/54483c030fdf4751856ea3a345932fe1/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001A31C192FD0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+2025-06-30 05:29:26,748 - product_parser - INFO - [22/36] ОШИБКА: https://www.ozon.ru/product/auroralabs-sistemnyy-blok-intel-core-i5-4570-ram-16-gb-ssd-512-gb-intel-hd-graphics-4600-windows-1838758187/?at=jYtZzZ1W2iGYkWGksQD327CwE93z3frKvZWjIqNKJ3L
+2025-06-30 05:29:26,751 - product_parser - INFO -    Товар: AURORALABS Системный блок (Intel Core i5-4570, RAM 16 ГБ, SSD 512 ГБ, Intel HD Graphics 4600, Windows 10 Pro), черный матовый
+2025-06-30 05:29:26,756 - product_parser - INFO -    Продавец: Ошибка: HTTPConnectionPool(host='localhost', port=60136): Max retries exceeded with url: /session/54483c030fdf4751856ea3a345932fe1/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001A31C192FD0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+2025-06-30 05:29:26,757 - product_parser - INFO -    Компания: Не найдено
+2025-06-30 05:29:26,758 - product_parser - INFO -    ИНН: Не найдено
+2025-06-30 05:29:37,356 - telegram_bot - INFO - Запуск Telegram бота...
+2025-06-30 05:29:37,376 - aiogram.dispatcher - INFO - Start polling
+2025-06-30 05:29:37,943 - aiogram.dispatcher - INFO - Run polling for bot @ozongetnamerbot id=7955956815 - 'ozongetnamer'
+2025-06-30 05:29:38,675 - aiogram.event - INFO - Update id=36893458 is handled. Duration 530 ms by bot id=7955956815
+2025-06-30 05:29:40,319 - aiogram.event - INFO - Update id=36893459 is handled. Duration 125 ms by bot id=7955956815
+2025-06-30 05:29:54,194 - src.bot.utils - INFO - Начало парсинга ссылок для https://www.ozon.ru/category/sistemnye-bloki-15704/?category_was_predicted=true&deny_category_prediction=true&from_global=true&text=%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80
+2025-06-30 05:29:54,195 - link_parser - INFO - Категория: sistemnye-bloki-15704
+2025-06-30 05:29:56,626 - link_parser - INFO - Браузер инициализирован
+2025-06-30 05:29:56,627 - link_parser - INFO - Загрузка страницы: https://www.ozon.ru/category/sistemnye-bloki-15704/?category_was_predicted=true&deny_category_prediction=true&from_global=true&text=%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80
+2025-06-30 05:30:07,886 - link_parser - INFO - Страница успешно загружена
+2025-06-30 05:30:08,356 - link_parser - INFO - Найдено новых ссылок: 12
+2025-06-30 05:30:08,357 - link_parser - INFO - Начальное количество ссылок: 12/10
+2025-06-30 05:30:08,359 - link_parser - INFO - Ссылки сохранены в файл: C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\links.txt
+2025-06-30 05:30:08,360 - link_parser - INFO - Успешно собрано 10 ссылок
+2025-06-30 05:30:08,918 - link_parser - INFO - Браузер закрыт
+2025-06-30 05:30:08,928 - src.bot.utils - INFO - Начало парсинга 12 товаров
+2025-06-30 05:30:08,929 - excel_exporter - INFO - Файл результатов: results\sistemnye-bloki-15704_30.06.2025-05_30_08.xlsx
+2025-06-30 05:30:08,930 - product_parser - INFO - Инициализирован парсер для категории: sistemnye-bloki-15704
+2025-06-30 05:30:08,930 - product_parser - INFO - Начало обработки 12 товаров
+2025-06-30 05:30:10,189 - driver_manager - INFO - Создан новый браузер. Всего активных: 1
+2025-06-30 05:30:10,198 - product_parser - INFO - Воркер 1 запущен
+2025-06-30 05:30:12,599 - driver_manager - INFO - Создан новый браузер. Всего активных: 2
+2025-06-30 05:30:12,615 - product_parser - INFO - Воркер 3 запущен
+2025-06-30 05:30:13,282 - driver_manager - INFO - Создан новый браузер. Всего активных: 3
+2025-06-30 05:30:13,283 - product_parser - INFO - Воркер 2 запущен
+2025-06-30 05:30:25,776 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:30:29,863 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:30:30,771 - product_parser - INFO - [1/12] УСПЕШНО: https://www.ozon.ru/product/treidcomputers-sistemnyy-blok-amd-ryzen-5-5600g-ram-32-gb-ssd-960-gb-amd-radeon-vega-7-windows-10-1940505582/?at=XQtklk7w1cmoBwWrtR09gWOt5rGr5DSqZPYN5fJ0P0QV
+2025-06-30 05:30:30,771 - product_parser - INFO -    Товар: TREIDCOMPUTERS Системный блок (AMD Ryzen 5 5600G, RAM 32 ГБ, SSD 960 ГБ, AMD Radeon Vega 7, Windows 10 Pro), темно-коричневый, черный
+2025-06-30 05:30:30,772 - product_parser - INFO -    Продавец: TREIDCOMPUTERS
+2025-06-30 05:30:30,772 - product_parser - INFO -    Компания: ИП Буторин Илья Сергеевич
+2025-06-30 05:30:30,773 - product_parser - INFO -    ИНН: 319774600299562
+2025-06-30 05:30:35,923 - product_parser - INFO - [2/12] УСПЕШНО: https://www.ozon.ru/product/robotcomp-sistemnyy-blok-m-16-v3-plus-aqua-intel-core-i5-14400f-ram-64-gb-ssd-960-gb-nvidia-2229058233/?at=PjtJBJApOc7rQv0Gf35kYQRFKqKn3yFBlX0yJTPGrx6z
+2025-06-30 05:30:35,925 - product_parser - INFO -    Товар: Robotcomp Системный блок M-16 V3 Plus Aqua (Intel Core i5-14400F, RAM 64 ГБ, SSD 960 ГБ, NVIDIA GeForce RTX 5060 (8 Гб), Windows 10 Pro), черный, прозрачный
+2025-06-30 05:30:35,925 - product_parser - INFO -    Продавец: ООО "Роботкомп Корп"
+2025-06-30 05:30:35,926 - product_parser - INFO -    Компания: ООО "РОБОТКОМП КОРП"
+2025-06-30 05:30:35,926 - product_parser - INFO -    ИНН: 1155047011481
+2025-06-30 05:30:51,279 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:30:54,609 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:30:58,583 - product_parser - INFO - [3/12] УСПЕШНО: https://www.ozon.ru/product/iru-sistemnyy-blok-310h6s-intel-core-i3-12100-ram-16-gb-ssd-512-gb-intel-uhd-graphics-730-freedos-1861628806/?at=r2t4y43gpsxBPw8ycQPnQp0H2Z7Xl0HwJOK09cKqyOg5
+2025-06-30 05:30:58,586 - product_parser - INFO -    Товар: iRU Системный блок 310H6S (Intel Core i3-12100, RAM 16 ГБ, SSD 512 ГБ, Intel UHD Graphics 730, FreeDOS), 2074830, черный
+2025-06-30 05:30:58,587 - product_parser - INFO -    Продавец: Позитроника
+2025-06-30 05:30:58,587 - product_parser - INFO -    Компания: ООО "РЕНТСОФТ"
+2025-06-30 05:30:58,588 - product_parser - INFO -    ИНН: 1097746578863
+2025-06-30 05:31:05,757 - product_parser - INFO - [4/12] УСПЕШНО: https://www.ozon.ru/product/auroralabs-sistemnyy-blok-intel-core-i5-4570-ram-16-gb-ssd-512-gb-intel-hd-graphics-4600-windows-1838758187/?at=EqtkwkoEmcygXqQ1izVXB4YSVXGJVYCjJvo21S9YmNjq
+2025-06-30 05:31:05,763 - product_parser - INFO -    Товар: AURORALABS Системный блок (Intel Core i5-4570, RAM 16 ГБ, SSD 512 ГБ, Intel HD Graphics 4600, Windows 10 Pro), черный матовый
+2025-06-30 05:31:05,772 - product_parser - INFO -    Продавец: AURORALABS
+2025-06-30 05:31:05,775 - product_parser - INFO -    Компания: ИП Ульянов Илья Андреевич
+2025-06-30 05:31:05,781 - product_parser - INFO -    ИНН: 319112100019031
+2025-06-30 05:31:09,657 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:31:16,730 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:31:17,194 - product_parser - INFO - [5/12] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-amd-ryzen-5-5600-ram-32-gb-ssd-1024-gb-nvidia-geforce-rtx-4060-8-gb-windows-10-pro-2268472126/?at=k2toDo3x7IJAwgOAI15w9j5tzA4J9XC142JNyI5GX1ZK
+2025-06-30 05:31:17,195 - product_parser - INFO -    Товар: Системный блок (AMD Ryzen 5 5600, RAM 32 ГБ, SSD 1024 ГБ, NVIDIA GeForce RTX 4060 (8 Гб), Windows 10 Pro), 1222, черный
+2025-06-30 05:31:17,196 - product_parser - INFO -    Продавец: NOVA
+2025-06-30 05:31:17,196 - product_parser - INFO -    Компания: ИП Дудников Роман Олегович
+2025-06-30 05:31:17,197 - product_parser - INFO -    ИНН: 322366800050827
+2025-06-30 05:31:21,243 - product_parser - INFO - [6/12] УСПЕШНО: https://www.ozon.ru/product/treidcomputers-sistemnyy-blok-intel-core-i7-12700f-ram-32-gb-ssd-960-gb-nvidia-geforce-rtx-4060-8-gb-1922781204/?at=6WtZRZl5Eipoxl9LhZnmq8viQY1yBGsZn06VGUv7KK9w
+2025-06-30 05:31:21,244 - product_parser - INFO -    Товар: TREIDCOMPUTERS Системный блок (Intel Core i7-12700F, RAM 32 ГБ, SSD 960 ГБ, NVIDIA GeForce RTX 4060 (8 Гб), Windows 10 Pro), черный
+2025-06-30 05:31:21,245 - product_parser - INFO -    Продавец: TREIDCOMPUTERS
+2025-06-30 05:31:21,246 - product_parser - INFO -    Компания: ИП Буторин Илья Сергеевич
+2025-06-30 05:31:21,247 - product_parser - INFO -    ИНН: 319774600299562
+2025-06-30 05:31:28,589 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:31:29,778 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:31:33,485 - product_parser - INFO - [7/12] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-intel-xeon-e5-2690v3-ram-32-gb-ssd-512-gb-amd-radeon-rx-580-8-gb-windows-10-pro-belyy-1943640521/?at=r2t4y43gpsP6GGQquj9EOYDij94pPIMBzXDqtRpVAmD
+2025-06-30 05:31:33,487 - product_parser - INFO -    Товар: Системный блок (Intel Xeon E5-2690V3, RAM 32 ГБ, SSD 512 ГБ, AMD Radeon RX 580 (8 Гб), Windows 10 Pro), белый
+2025-06-30 05:31:33,488 - product_parser - INFO -    Продавец: Магазин Техники M1
+2025-06-30 05:31:33,489 - product_parser - INFO -    Компания: ИП Оздоева Изабелла Исмаиловна
+2025-06-30 05:31:33,490 - product_parser - INFO -    ИНН: 324060000016220
+2025-06-30 05:31:35,180 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:31:38,776 - product_parser - INFO - [8/12] УСПЕШНО: https://www.ozon.ru/product/treidcomputers-sistemnyy-blok-igrovoy-kompyuter-intel-core-i7-7700-ram-32-gb-ssd-960-gb-1922781186/?at=k2toDo3x7IVmL8A5cqqj4JYhJkWj93hnmOOX3uDVxQ4N
+2025-06-30 05:31:38,777 - product_parser - INFO -    Товар: TREIDCOMPUTERS Системный блок Игровой компьютер (Intel Core i7-7700, RAM 32 ГБ, SSD 960 ГБ, NVIDIA GeForce RTX 4060 (8 Гб), Windows 10 Pro), черный
+2025-06-30 05:31:38,778 - product_parser - INFO -    Продавец: TREIDCOMPUTERS
+2025-06-30 05:31:38,779 - product_parser - INFO -    Компания: ИП Буторин Илья Сергеевич
+2025-06-30 05:31:38,779 - product_parser - INFO -    ИНН: 319774600299562
+2025-06-30 05:31:39,554 - seller_info_parser - ERROR - Ошибка в попытке 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff68911fea5+79173]
+	GetHandleVerifier [0x0x7ff68911ff00+79264]
+	(No symbol) [0x0x7ff688ed9e5a]
+	(No symbol) [0x0x7ff688f30586]
+	(No symbol) [0x0x7ff688f3083c]
+	(No symbol) [0x0x7ff688f84247]
+	(No symbol) [0x0x7ff688f589af]
+	(No symbol) [0x0x7ff688f8100d]
+	(No symbol) [0x0x7ff688f58743]
+	(No symbol) [0x0x7ff688f214c1]
+	(No symbol) [0x0x7ff688f22253]
+	GetHandleVerifier [0x0x7ff6893ea2dd+3004797]
+	GetHandleVerifier [0x0x7ff6893e472d+2981325]
+	GetHandleVerifier [0x0x7ff689403380+3107360]
+	GetHandleVerifier [0x0x7ff68913aa2e+188622]
+	GetHandleVerifier [0x0x7ff6891422bf+219487]
+	GetHandleVerifier [0x0x7ff689128df4+115860]
+	GetHandleVerifier [0x0x7ff689128fa9+116297]
+	GetHandleVerifier [0x0x7ff68910f558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 05:31:39,557 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 05:31:50,509 - seller_info_parser - ERROR - Ошибка в попытке 2: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff68911fea5+79173]
+	GetHandleVerifier [0x0x7ff68911ff00+79264]
+	(No symbol) [0x0x7ff688ed9e5a]
+	(No symbol) [0x0x7ff688f30586]
+	(No symbol) [0x0x7ff688f3083c]
+	(No symbol) [0x0x7ff688f84247]
+	(No symbol) [0x0x7ff688f589af]
+	(No symbol) [0x0x7ff688f8100d]
+	(No symbol) [0x0x7ff688f58743]
+	(No symbol) [0x0x7ff688f214c1]
+	(No symbol) [0x0x7ff688f22253]
+	GetHandleVerifier [0x0x7ff6893ea2dd+3004797]
+	GetHandleVerifier [0x0x7ff6893e472d+2981325]
+	GetHandleVerifier [0x0x7ff689403380+3107360]
+	GetHandleVerifier [0x0x7ff68913aa2e+188622]
+	GetHandleVerifier [0x0x7ff6891422bf+219487]
+	GetHandleVerifier [0x0x7ff689128df4+115860]
+	GetHandleVerifier [0x0x7ff689128fa9+116297]
+	GetHandleVerifier [0x0x7ff68910f558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 05:31:50,511 - seller_info_parser - INFO - Попытка 3 получить данные продавца
+2025-06-30 05:32:02,361 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:32:08,642 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:32:09,774 - product_parser - INFO - [9/12] УСПЕШНО: https://www.ozon.ru/product/jetgame-sistemnyy-blok-intel-xeon-e5-2650v3-ram-32-gb-ssd-1024-gb-amd-radeon-rx-580-8-gb-windows-10-1827034357/?at=vQtrJr0QGS0M3rqKhyKp1rAtjyozOWU33pRp1UZnZG3o
+2025-06-30 05:32:09,775 - product_parser - INFO -    Товар: JetGame Системный блок (Intel Xeon E5-2650V3, RAM 32 ГБ, SSD 1024 ГБ, AMD Radeon RX 580 (8 Гб), Windows 10 Pro), черный
+2025-06-30 05:32:09,776 - product_parser - INFO -    Продавец: JetGame
+2025-06-30 05:32:09,776 - product_parser - INFO -    Компания: ИП Курлов Александр Алексеевич
+2025-06-30 05:32:09,777 - product_parser - INFO -    ИНН: 323508100624725
+2025-06-30 05:32:11,036 - product_parser - INFO - [10/12] УСПЕШНО: https://www.ozon.ru/product/robotcomp-sistemnyy-blok-m-16-v1-aqua-white-intel-core-i5-14400f-ram-32-gb-ssd-960-gb-nvidia-geforce-2246017617/?at=NOtwYw54AcWQNyJMf1xmL0YhpZKRV0SnxQzRWH2V8WAr
+2025-06-30 05:32:11,041 - product_parser - INFO -    Товар: Robotcomp Системный блок M-16 V1 Aqua White (Intel Core i5-14400F, RAM 32 ГБ, SSD 960 ГБ, NVIDIA GeForce RTX 5060 (8 Гб), ), белый, прозрачный
+2025-06-30 05:32:11,041 - product_parser - INFO -    Продавец: ООО "Роботкомп Корп"
+2025-06-30 05:32:11,042 - product_parser - INFO -    Компания: ООО "РОБОТКОМП КОРП"
+2025-06-30 05:32:11,042 - product_parser - INFO -    ИНН: 1155047011481
+2025-06-30 05:32:11,873 - product_parser - INFO - Воркер 1 завершил работу
+2025-06-30 05:32:12,572 - product_parser - INFO - [11/12] УСПЕШНО: https://www.ozon.ru/product/bloody-sistemnyy-blok-bd-pc-cb76c2-amd-ryzen-5-7500f-ram-32-gb-ssd-1024-gb-nvidia-geforce-rtx-4060-8-1923001293/?at=36tWjWYnwF2P1mxXSOVjWgET0B00DvHvzZpxyiq9DAz9
+2025-06-30 05:32:12,574 - product_parser - INFO -    Товар: Bloody Системный блок BD-PC CB76C2 (AMD Ryzen 5 7500F, RAM 32 ГБ, SSD 1024 ГБ, NVIDIA GeForce RTX 4060 (8 Гб), Windows), 2086014, черный
+2025-06-30 05:32:12,576 - product_parser - INFO -    Продавец: Официальный магазин Bloody
+2025-06-30 05:32:12,577 - product_parser - INFO -    Компания: ООО "РЕНТСОФТ"
+2025-06-30 05:32:12,577 - product_parser - INFO -    ИНН: 1097746578863
+2025-06-30 05:32:13,622 - product_parser - INFO - Воркер 2 завершил работу
+2025-06-30 05:32:30,843 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:32:35,011 - product_parser - INFO - [12/12] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-intel-core-i5-14400f-ram-32-gb-ssd-1024-gb-nvidia-geforce-rtx-5060-8-gb-windows-2268471231/?at=J8tgkgLNRcWGqX27S3jEQRpFQm06oDiJl0o13ikWgOBR
+2025-06-30 05:32:35,013 - product_parser - INFO -    Товар: Системный блок (Intel Core i5-14400F, RAM 32 ГБ, SSD 1024 ГБ, NVIDIA GeForce RTX 5060 (8 Гб), Windows 10 Pro), 1222, белый
+2025-06-30 05:32:35,014 - product_parser - INFO -    Продавец: NOVA
+2025-06-30 05:32:35,018 - product_parser - INFO -    Компания: ИП Дудников Роман Олегович
+2025-06-30 05:32:35,019 - product_parser - INFO -    ИНН: 322366800050827
+2025-06-30 05:32:35,842 - product_parser - INFO - Воркер 3 завершил работу
+2025-06-30 05:32:35,906 - excel_exporter - INFO - Результаты сохранены в results\sistemnye-bloki-15704_30.06.2025-05_30_08.xlsx
+2025-06-30 05:32:35,907 - product_parser - INFO - Обработка завершена успешно за 146.98 секунд
+2025-06-30 05:32:35,907 - product_parser - INFO - Обработано товаров: 12
+2025-06-30 05:32:35,908 - product_parser - INFO - Успешно: 12
+2025-06-30 05:32:35,909 - product_parser - INFO - Закончились: 0
+2025-06-30 05:32:35,909 - product_parser - INFO - Ошибки: 0
+2025-06-30 05:32:35,909 - src.bot.utils - INFO - Файл результатов создан: results\sistemnye-bloki-15704_6089511983_30.06.2025-05_30_08.xlsx
+2025-06-30 05:32:36,484 - src.bot.handlers - ERROR - Ошибка при обработке URL: HTTP Client says - ClientOSError: [Errno 2] Can not write request body for https://api.telegram.org/bot7955956815:AAGHbwGJ6G32GRP0-dpq7cUiVgTL2PUnPR8/sendDocument
+Traceback (most recent call last):
+  File "C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\venv\Lib\site-packages\aiohttp\client_reqrep.py", line 658, in write_bytes
+    await self.body.write(writer)
+  File "C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\venv\Lib\site-packages\aiohttp\multipart.py", line 1008, in write
+    await part.write(writer)
+  File "C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\venv\Lib\site-packages\aiohttp\payload.py", line 494, in write
+    chunk = await self._iter.__anext__()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\venv\Lib\site-packages\aiogram\types\input_file.py", line 103, in read
+    async with aiofiles.open(self.path, "rb") as f:
+  File "C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\venv\Lib\site-packages\aiofiles\base.py", line 63, in __aenter__
+    return await self
+           ^^^^^^^^^^
+  File "C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\venv\Lib\site-packages\aiofiles\base.py", line 59, in __await__
+    self._obj = yield from self._coro.__await__()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\venv\Lib\site-packages\aiofiles\threadpool\__init__.py", line 92, in _open
+    f = await loop.run_in_executor(executor, cb)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nurja\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'results\\sistemnye-bloki-15704_6089511983_30.06.2025-05_30_08.xlsx'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    async with session.post(
+  File "C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\venv\Lib\site-packages\aiohttp\client.py", line 1425, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\venv\Lib\site-packages\aiohttp\client.py", line 730, in _request
+    await resp.start(conn)
+  File "C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\venv\Lib\site-packages\aiohttp\client_reqrep.py", line 1059, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\venv\Lib\site-packages\aiohttp\streams.py", line 672, in read
+    await self._waiter
+aiohttp.client_exceptions.ClientOSError: [Errno 2] Can not write request body for https://api.telegram.org/bot7955956815:AAGHbwGJ6G32GRP0-dpq7cUiVgTL2PUnPR8/sendDocument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\src\bot\handlers.py", line 105, in process_url
+    await message.answer_document(FSInputFile(file_path))
+  File "C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\venv\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\venv\Lib\site-packages\aiogram\client\bot.py", line 478, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 184, in make_request
+    raise TelegramNetworkError(method=method, message=f"{type(e).__name__}: {e}")
+aiogram.exceptions.TelegramNetworkError: HTTP Client says - ClientOSError: [Errno 2] Can not write request body for https://api.telegram.org/bot7955956815:AAGHbwGJ6G32GRP0-dpq7cUiVgTL2PUnPR8/sendDocument
+2025-06-30 05:32:36,642 - aiogram.event - INFO - Update id=36893460 is handled. Duration 163906 ms by bot id=7955956815
+2025-06-30 05:34:19,715 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-30 05:34:19,984 - telegram_bot - INFO - Бот остановлен
+2025-06-30 05:34:19,999 - aiogram.dispatcher - INFO - Polling stopped for bot @ozongetnamerbot id=7955956815 - 'ozongetnamer'
+2025-06-30 05:34:20,041 - uc - INFO - ensuring close
+2025-06-30 05:34:20,043 - uc - INFO - ensuring close
+2025-06-30 05:34:20,044 - uc - INFO - ensuring close
+2025-06-30 05:34:20,049 - uc - INFO - ensuring close
+2025-06-30 05:36:13,259 - telegram_bot - INFO - Запуск Telegram бота...
+2025-06-30 05:36:13,288 - aiogram.dispatcher - INFO - Start polling
+2025-06-30 05:36:14,174 - aiogram.dispatcher - INFO - Run polling for bot @ozongetnamerbot id=7955956815 - 'ozongetnamer'
+2025-06-30 05:36:14,848 - aiogram.event - INFO - Update id=36893461 is handled. Duration 547 ms by bot id=7955956815
+2025-06-30 05:36:17,788 - aiogram.event - INFO - Update id=36893462 is handled. Duration 157 ms by bot id=7955956815
+2025-06-30 05:36:23,420 - src.bot.utils - INFO - Начало парсинга ссылок для https://www.ozon.ru/category/sistemnye-bloki-15704/?category_was_predicted=true&deny_category_prediction=true&from_global=true&text=%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80
+2025-06-30 05:36:23,421 - link_parser - INFO - Категория: sistemnye-bloki-15704
+2025-06-30 05:36:24,793 - link_parser - INFO - Браузер инициализирован
+2025-06-30 05:36:24,831 - link_parser - INFO - Загрузка страницы: https://www.ozon.ru/category/sistemnye-bloki-15704/?category_was_predicted=true&deny_category_prediction=true&from_global=true&text=%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80
+2025-06-30 05:36:33,332 - link_parser - INFO - Страница успешно загружена
+2025-06-30 05:36:33,814 - link_parser - INFO - Найдено новых ссылок: 12
+2025-06-30 05:36:33,816 - link_parser - INFO - Начальное количество ссылок: 12/6
+2025-06-30 05:36:33,820 - link_parser - INFO - Ссылки сохранены в файл: C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\links.txt
+2025-06-30 05:36:33,821 - link_parser - INFO - Успешно собрано 6 ссылок
+2025-06-30 05:36:34,406 - link_parser - INFO - Браузер закрыт
+2025-06-30 05:36:34,410 - src.bot.utils - INFO - Начало парсинга 6 товаров
+2025-06-30 05:36:34,411 - excel_exporter - INFO - Файл результатов: results\sistemnye-bloki-15704_30.06.2025-05_36_34.xlsx
+2025-06-30 05:36:34,414 - product_parser - INFO - Инициализирован парсер для категории: sistemnye-bloki-15704
+2025-06-30 05:36:34,415 - product_parser - INFO - Начало обработки 6 товаров
+2025-06-30 05:36:36,038 - driver_manager - INFO - Создан новый браузер. Всего активных: 1
+2025-06-30 05:36:36,066 - product_parser - INFO - Воркер 1 запущен
+2025-06-30 05:36:36,846 - driver_manager - INFO - Создан новый браузер. Всего активных: 2
+2025-06-30 05:36:36,869 - product_parser - INFO - Воркер 2 запущен
+2025-06-30 05:36:37,941 - driver_manager - INFO - Создан новый браузер. Всего активных: 3
+2025-06-30 05:36:37,944 - product_parser - INFO - Воркер 3 запущен
+2025-06-30 05:36:59,823 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:37:06,210 - product_parser - INFO - [1/6] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-amd-ryzen-5-5600-ram-32-gb-ssd-1024-gb-nvidia-geforce-rtx-4060-8-gb-windows-10-pro-2268472126/?at=z6tOXON53c26wQMoi7zRPJVcK16gg3TZBwW8oHV65Ay1
+2025-06-30 05:37:06,211 - product_parser - INFO -    Товар: Системный блок (AMD Ryzen 5 5600, RAM 32 ГБ, SSD 1024 ГБ, NVIDIA GeForce RTX 4060 (8 Гб), Windows 10 Pro), 1222, черный
+2025-06-30 05:37:06,213 - product_parser - INFO -    Продавец: NOVA
+2025-06-30 05:37:06,213 - product_parser - INFO -    Компания: ИП Дудников Роман Олегович
+2025-06-30 05:37:06,214 - product_parser - INFO -    ИНН: 322366800050827
+2025-06-30 05:37:12,587 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:37:14,076 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:37:21,221 - product_parser - INFO - [2/6] УСПЕШНО: https://www.ozon.ru/product/robotcomp-sistemnyy-blok-m-16-v1-aqua-white-intel-core-i5-14400f-ram-32-gb-ssd-960-gb-nvidia-geforce-2246017617/?at=GRt2r2ZvmhkrzAZQiQ3zByXF0RXrzWtlEVyQCmLm5Lr
+2025-06-30 05:37:21,222 - product_parser - INFO -    Товар: Robotcomp Системный блок M-16 V1 Aqua White (Intel Core i5-14400F, RAM 32 ГБ, SSD 960 ГБ, NVIDIA GeForce RTX 5060 (8 Гб), ), белый, прозрачный
+2025-06-30 05:37:21,223 - product_parser - INFO -    Продавец: ООО "Роботкомп Корп"
+2025-06-30 05:37:21,224 - product_parser - INFO -    Компания: ООО "РОБОТКОМП КОРП"
+2025-06-30 05:37:21,224 - product_parser - INFO -    ИНН: 1155047011481
+2025-06-30 05:37:28,403 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 05:37:28,852 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:37:40,320 - product_parser - INFO - [3/6] УСПЕШНО: https://www.ozon.ru/product/treidcomputers-sistemnyy-blok-intel-core-i7-12700f-ram-32-gb-ssd-960-gb-nvidia-geforce-rtx-4060-8-gb-1922781204/?at=pZtpgpEYGi5wvKmVcO68z88fn7X04FYYNJQupPp0Az
+2025-06-30 05:37:40,321 - product_parser - INFO -    Товар: TREIDCOMPUTERS Системный блок (Intel Core i7-12700F, RAM 32 ГБ, SSD 960 ГБ, NVIDIA GeForce RTX 4060 (8 Гб), Windows 10 Pro), черный
+2025-06-30 05:37:40,324 - product_parser - INFO -    Продавец: TREIDCOMPUTERS
+2025-06-30 05:37:40,325 - product_parser - INFO -    Компания: ИП Буторин Илья Сергеевич
+2025-06-30 05:37:40,326 - product_parser - INFO -    ИНН: 319774600299562
+2025-06-30 05:37:41,127 - seller_info_parser - INFO - Попытка 3 получить данные продавца
+2025-06-30 05:37:43,115 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:37:48,204 - product_parser - INFO - [4/6] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-intel-core-i5-14400f-ram-32-gb-ssd-1024-gb-nvidia-geforce-rtx-5060-8-gb-windows-2268471231/?at=gpt4v45Mrs6W4Yzmun8Nvwzf5M7zJjhD36rjRFnBNrG4
+2025-06-30 05:37:48,205 - product_parser - INFO -    Товар: Системный блок (Intel Core i5-14400F, RAM 32 ГБ, SSD 1024 ГБ, NVIDIA GeForce RTX 5060 (8 Гб), Windows 10 Pro), 1222, белый
+2025-06-30 05:37:48,206 - product_parser - INFO -    Продавец: NOVA
+2025-06-30 05:37:48,207 - product_parser - INFO -    Компания: ИП Дудников Роман Олегович
+2025-06-30 05:37:48,208 - product_parser - INFO -    ИНН: 322366800050827
+2025-06-30 05:37:49,037 - product_parser - INFO - Воркер 1 завершил работу
+2025-06-30 05:37:49,056 - product_parser - INFO - [5/6] УСПЕШНО: https://www.ozon.ru/product/iru-sistemnyy-blok-intel-core-i3-13100-ram-16-gb-ssd-1024-gb-intel-uhd-graphics-730-freedos-chernyy-1867612496/?at=k2toDo3x7IlK8ZTM8EmoYFJv3xvDukAJvJrhGg1WLz
+2025-06-30 05:37:49,057 - product_parser - INFO -    Товар: iRU Системный блок (Intel Core i3-13100, RAM 16 ГБ, SSD 1024 ГБ, Intel UHD Graphics 730, FreeDOS), черный
+2025-06-30 05:37:49,057 - product_parser - INFO -    Продавец: Ситилинк Доставка
+2025-06-30 05:37:49,057 - product_parser - INFO -    Компания: ООО "СИТИЛИНК"
+2025-06-30 05:37:49,058 - product_parser - INFO -    ИНН: 1147746461422
+2025-06-30 05:37:49,891 - product_parser - INFO - Воркер 2 завершил работу
+2025-06-30 05:37:54,844 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:37:58,319 - product_parser - INFO - [6/6] УСПЕШНО: https://www.ozon.ru/product/bloody-sistemnyy-blok-bd-pc-cb76c2-amd-ryzen-5-7500f-ram-32-gb-ssd-1024-gb-nvidia-geforce-rtx-4060-8-1923001293/?at=x6tPpPqYyTgGlzx6ujO2mx8S2yPqVMtqnmLvKu9ErxgP
+2025-06-30 05:37:58,320 - product_parser - INFO -    Товар: Bloody Системный блок BD-PC CB76C2 (AMD Ryzen 5 7500F, RAM 32 ГБ, SSD 1024 ГБ, NVIDIA GeForce RTX 4060 (8 Гб), Windows), 2086014, черный
+2025-06-30 05:37:58,320 - product_parser - INFO -    Продавец: Официальный магазин Bloody
+2025-06-30 05:37:58,321 - product_parser - INFO -    Компания: ООО "РЕНТСОФТ"
+2025-06-30 05:37:58,321 - product_parser - INFO -    ИНН: 1097746578863
+2025-06-30 05:37:59,151 - product_parser - INFO - Воркер 3 завершил работу
+2025-06-30 05:37:59,204 - excel_exporter - INFO - Результаты сохранены в results\sistemnye-bloki-15704_30.06.2025-05_36_34.xlsx
+2025-06-30 05:37:59,205 - product_parser - INFO - Обработка завершена успешно за 84.79 секунд
+2025-06-30 05:37:59,206 - product_parser - INFO - Обработано товаров: 6
+2025-06-30 05:37:59,207 - product_parser - INFO - Успешно: 6
+2025-06-30 05:37:59,207 - product_parser - INFO - Закончились: 0
+2025-06-30 05:37:59,207 - product_parser - INFO - Ошибки: 0
+2025-06-30 05:37:59,207 - src.bot.utils - INFO - Файл результатов создан: results\sistemnye-bloki-15704_6089511983_30.06.2025-05_36_34.xlsx
+2025-06-30 05:37:59,482 - aiogram.event - INFO - Update id=36893463 is handled. Duration 97609 ms by bot id=7955956815
+2025-06-30 05:44:24,632 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-30 05:44:24,907 - telegram_bot - INFO - Бот остановлен
+2025-06-30 05:44:24,913 - aiogram.dispatcher - INFO - Polling stopped for bot @ozongetnamerbot id=7955956815 - 'ozongetnamer'
+2025-06-30 05:44:24,956 - uc - INFO - ensuring close
+2025-06-30 05:44:24,960 - uc - INFO - ensuring close
+2025-06-30 05:44:24,963 - uc - INFO - ensuring close
+2025-06-30 05:44:24,966 - uc - INFO - ensuring close
+2025-06-30 05:44:32,260 - telegram_bot - INFO - Запуск Telegram бота...
+2025-06-30 05:44:32,323 - aiogram.dispatcher - INFO - Start polling
+2025-06-30 05:44:33,176 - aiogram.dispatcher - INFO - Run polling for bot @ozongetnamerbot id=7955956815 - 'ozongetnamer'
+2025-06-30 05:44:34,078 - aiogram.event - INFO - Update id=36893464 is handled. Duration 704 ms by bot id=7955956815
+2025-06-30 05:44:35,574 - aiogram.event - INFO - Update id=36893465 is handled. Duration 140 ms by bot id=7955956815
+2025-06-30 05:44:43,456 - src.bot.utils - INFO - Начало парсинга ссылок для https://www.ozon.ru/category/sistemnye-bloki-15704/?category_was_predicted=true&deny_category_prediction=true&from_global=true&text=%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80
+2025-06-30 05:44:43,457 - link_parser - INFO - Категория: sistemnye-bloki-15704
+2025-06-30 05:44:45,105 - link_parser - INFO - Браузер инициализирован
+2025-06-30 05:44:45,107 - link_parser - INFO - Загрузка страницы: https://www.ozon.ru/category/sistemnye-bloki-15704/?category_was_predicted=true&deny_category_prediction=true&from_global=true&text=%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80
+2025-06-30 05:44:54,925 - link_parser - INFO - Страница успешно загружена
+2025-06-30 05:44:55,900 - link_parser - INFO - Найдено новых ссылок: 8
+2025-06-30 05:44:55,902 - link_parser - INFO - Начальное количество ссылок: 8/3
+2025-06-30 05:44:55,904 - link_parser - INFO - Ссылки сохранены в файл: C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\links.txt
+2025-06-30 05:44:55,906 - link_parser - INFO - Успешно собрано 3 ссылок
+2025-06-30 05:44:56,425 - link_parser - INFO - Браузер закрыт
+2025-06-30 05:44:56,426 - src.bot.utils - INFO - Начало парсинга 3 товаров
+2025-06-30 05:44:56,427 - excel_exporter - INFO - Файл результатов: results\sistemnye-bloki-15704_30.06.2025-05_44_56.xlsx
+2025-06-30 05:44:56,429 - product_parser - INFO - Инициализирован парсер для категории: sistemnye-bloki-15704
+2025-06-30 05:44:56,429 - product_parser - INFO - Начало обработки 3 товаров
+2025-06-30 05:44:59,975 - driver_manager - INFO - Создан новый браузер. Всего активных: 1
+2025-06-30 05:44:59,981 - product_parser - INFO - Воркер 3 запущен
+2025-06-30 05:45:00,446 - driver_manager - INFO - Создан новый браузер. Всего активных: 2
+2025-06-30 05:45:00,447 - product_parser - INFO - Воркер 1 запущен
+2025-06-30 05:45:01,228 - driver_manager - INFO - Создан новый браузер. Всего активных: 3
+2025-06-30 05:45:01,230 - product_parser - INFO - Воркер 2 запущен
+2025-06-30 05:45:25,242 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:45:33,006 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:45:34,942 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:45:35,887 - seller_info_parser - ERROR - Ошибка в попытке 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6d10cfea5+79173]
+	GetHandleVerifier [0x0x7ff6d10cff00+79264]
+	(No symbol) [0x0x7ff6d0e89e5a]
+	(No symbol) [0x0x7ff6d0ee0586]
+	(No symbol) [0x0x7ff6d0ee083c]
+	(No symbol) [0x0x7ff6d0f34247]
+	(No symbol) [0x0x7ff6d0f089af]
+	(No symbol) [0x0x7ff6d0f3100d]
+	(No symbol) [0x0x7ff6d0f08743]
+	(No symbol) [0x0x7ff6d0ed14c1]
+	(No symbol) [0x0x7ff6d0ed2253]
+	GetHandleVerifier [0x0x7ff6d139a2dd+3004797]
+	GetHandleVerifier [0x0x7ff6d139472d+2981325]
+	GetHandleVerifier [0x0x7ff6d13b3380+3107360]
+	GetHandleVerifier [0x0x7ff6d10eaa2e+188622]
+	GetHandleVerifier [0x0x7ff6d10f22bf+219487]
+	GetHandleVerifier [0x0x7ff6d10d8df4+115860]
+	GetHandleVerifier [0x0x7ff6d10d8fa9+116297]
+	GetHandleVerifier [0x0x7ff6d10bf558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 05:45:35,892 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 05:45:45,159 - product_parser - INFO - [1/3] УСПЕШНО: https://www.ozon.ru/product/bloody-sistemnyy-blok-bd-pc-cb76c2-amd-ryzen-5-7500f-ram-32-gb-ssd-1024-gb-nvidia-geforce-rtx-4060-8-1923001293/?at=NOtwYw54AcJvJl7XI6mNqnCAExXM3TWqYmDMhNP1Ro5
+2025-06-30 05:45:45,161 - product_parser - INFO -    Товар: Bloody Системный блок BD-PC CB76C2 (AMD Ryzen 5 7500F, RAM 32 ГБ, SSD 1024 ГБ, NVIDIA GeForce RTX 4060 (8 Гб), Windows), 2086014, черный
+2025-06-30 05:45:45,163 - product_parser - INFO -    Продавец: Официальный магазин Bloody
+2025-06-30 05:45:45,164 - product_parser - INFO -    Компания: ООО "РЕНТСОФТ"
+2025-06-30 05:45:45,165 - product_parser - INFO -    ИНН: 1097746578863
+2025-06-30 05:45:46,004 - product_parser - INFO - Воркер 2 завершил работу
+2025-06-30 05:45:48,583 - product_parser - INFO - [2/3] УСПЕШНО: https://www.ozon.ru/product/treidcomputers-sistemnyy-blok-intel-core-i7-12700f-ram-32-gb-ssd-960-gb-nvidia-geforce-rtx-4060-8-gb-1922781204/?at=08tYnY01KcLXRlrRcYAMXgKh0o0NjpSNNY8P5tj4B6WA
+2025-06-30 05:45:48,584 - product_parser - INFO -    Товар: TREIDCOMPUTERS Системный блок (Intel Core i7-12700F, RAM 32 ГБ, SSD 960 ГБ, NVIDIA GeForce RTX 4060 (8 Гб), Windows 10 Pro), черный
+2025-06-30 05:45:48,585 - product_parser - INFO -    Продавец: TREIDCOMPUTERS
+2025-06-30 05:45:48,585 - product_parser - INFO -    Компания: ИП Буторин Илья Сергеевич
+2025-06-30 05:45:48,587 - product_parser - INFO -    ИНН: 319774600299562
+2025-06-30 05:45:49,432 - product_parser - INFO - Воркер 1 завершил работу
+2025-06-30 05:45:51,010 - product_parser - INFO - [3/3] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-intel-core-i5-14400f-ram-32-gb-ssd-1024-gb-nvidia-geforce-rtx-5060-8-gb-windows-2268471231/?at=BrtzxzJY1hrZVPwqIzOMJpRtnxQPoLCAA9PAXSyJYo6n
+2025-06-30 05:45:51,011 - product_parser - INFO -    Товар: Системный блок (Intel Core i5-14400F, RAM 32 ГБ, SSD 1024 ГБ, NVIDIA GeForce RTX 5060 (8 Гб), Windows 10 Pro), 1222, белый
+2025-06-30 05:45:51,011 - product_parser - INFO -    Продавец: NOVA
+2025-06-30 05:45:51,011 - product_parser - INFO -    Компания: ИП Дудников Роман Олегович
+2025-06-30 05:45:51,011 - product_parser - INFO -    ИНН: 322366800050827
+2025-06-30 05:45:51,910 - product_parser - INFO - Воркер 3 завершил работу
+2025-06-30 05:45:51,985 - excel_exporter - INFO - Результаты сохранены в results\sistemnye-bloki-15704_30.06.2025-05_44_56.xlsx
+2025-06-30 05:45:51,987 - product_parser - INFO - Обработка завершена успешно за 55.56 секунд
+2025-06-30 05:45:51,988 - product_parser - INFO - Обработано товаров: 3
+2025-06-30 05:45:51,989 - product_parser - INFO - Успешно: 3
+2025-06-30 05:45:51,990 - product_parser - INFO - Закончились: 0
+2025-06-30 05:45:51,990 - product_parser - INFO - Ошибки: 0
+2025-06-30 05:45:51,990 - src.bot.utils - INFO - Файл результатов создан: results\sistemnye-bloki-15704_30.06.2025-05_44_56.xlsx
+2025-06-30 05:45:53,780 - src.bot.handlers - INFO - Файл успешно отправлен: results\sistemnye-bloki-15704_30.06.2025-05_44_56.xlsx
+2025-06-30 05:45:53,782 - aiogram.event - INFO - Update id=36893466 is handled. Duration 71968 ms by bot id=7955956815
+2025-06-30 05:46:09,860 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-30 05:46:10,110 - telegram_bot - INFO - Бот остановлен
+2025-06-30 05:46:10,114 - aiogram.dispatcher - INFO - Polling stopped for bot @ozongetnamerbot id=7955956815 - 'ozongetnamer'
+2025-06-30 05:46:10,143 - uc - INFO - ensuring close
+2025-06-30 05:46:10,144 - uc - INFO - ensuring close
+2025-06-30 05:46:10,145 - uc - INFO - ensuring close
+2025-06-30 05:46:10,146 - uc - INFO - ensuring close
+2025-06-30 05:49:46,005 - telegram_bot - INFO - Запуск Telegram бота...
+2025-06-30 05:49:46,026 - aiogram.dispatcher - INFO - Start polling
+2025-06-30 05:49:46,715 - aiogram.dispatcher - INFO - Run polling for bot @ozongetnamerbot id=7955956815 - 'ozongetnamer'
+2025-06-30 05:49:52,024 - aiogram.event - INFO - Update id=36893467 is handled. Duration 531 ms by bot id=7955956815
+2025-06-30 05:49:53,740 - aiogram.event - INFO - Update id=36893468 is handled. Duration 155 ms by bot id=7955956815
+2025-06-30 05:50:00,060 - src.bot.utils - INFO - Начало парсинга ссылок для https://www.ozon.ru/category/sistemnye-bloki-15704/?category_was_predicted=true&deny_category_prediction=true&from_global=true&text=%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80
+2025-06-30 05:50:00,067 - link_parser - INFO - Категория: sistemnye-bloki-15704
+2025-06-30 05:50:01,510 - link_parser - INFO - Браузер инициализирован
+2025-06-30 05:50:01,511 - link_parser - INFO - Загрузка страницы: https://www.ozon.ru/category/sistemnye-bloki-15704/?category_was_predicted=true&deny_category_prediction=true&from_global=true&text=%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80
+2025-06-30 05:50:06,854 - link_parser - INFO - Страница успешно загружена
+2025-06-30 05:50:07,435 - link_parser - INFO - Найдено новых ссылок: 8
+2025-06-30 05:50:07,436 - link_parser - INFO - Начальное количество ссылок: 8/3
+2025-06-30 05:50:07,437 - link_parser - INFO - Ссылки сохранены в файл: C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\links.txt
+2025-06-30 05:50:07,438 - link_parser - INFO - Успешно собрано 3 ссылок
+2025-06-30 05:50:07,952 - link_parser - INFO - Браузер закрыт
+2025-06-30 05:50:07,953 - src.bot.utils - INFO - Начало парсинга 3 товаров
+2025-06-30 05:50:07,954 - excel_exporter - INFO - Файл результатов: results\sistemnye-bloki-15704_30.06.2025-05_50_07.xlsx
+2025-06-30 05:50:07,956 - product_parser - INFO - Инициализирован парсер для категории: sistemnye-bloki-15704
+2025-06-30 05:50:07,957 - product_parser - INFO - Начало обработки 3 товаров
+2025-06-30 05:50:09,158 - driver_manager - INFO - Создан новый браузер. Всего активных: 1
+2025-06-30 05:50:09,160 - product_parser - INFO - Воркер 1 запущен
+2025-06-30 05:50:09,954 - driver_manager - INFO - Создан новый браузер. Всего активных: 2
+2025-06-30 05:50:09,966 - product_parser - INFO - Воркер 2 запущен
+2025-06-30 05:50:11,069 - driver_manager - INFO - Создан новый браузер. Всего активных: 3
+2025-06-30 05:50:11,076 - product_parser - INFO - Воркер 3 запущен
+2025-06-30 05:50:42,053 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:50:42,190 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:50:47,642 - product_parser - INFO - [1/3] УСПЕШНО: https://www.ozon.ru/product/treidcomputers-sistemnyy-blok-igrovoy-kompyuter-intel-core-i7-7700-ram-32-gb-ssd-960-gb-1922781186/?at=LZtl0lM6AuP4Xr19ux8XQK9FrvB87Bu4wMxYAtxpl82M
+2025-06-30 05:50:47,642 - product_parser - INFO -    Товар: TREIDCOMPUTERS Системный блок Игровой компьютер (Intel Core i7-7700, RAM 32 ГБ, SSD 960 ГБ, NVIDIA GeForce RTX 4060 (8 Гб), Windows 10 Pro), черный
+2025-06-30 05:50:47,643 - product_parser - INFO -    Продавец: TREIDCOMPUTERS
+2025-06-30 05:50:47,643 - product_parser - INFO -    Компания: ИП Буторин Илья Сергеевич
+2025-06-30 05:50:47,644 - product_parser - INFO -    ИНН: 319774600299562
+2025-06-30 05:50:48,651 - product_parser - INFO - Воркер 3 завершил работу
+2025-06-30 05:50:48,809 - product_parser - INFO - [2/3] УСПЕШНО: https://www.ozon.ru/product/treidcomputers-sistemnyy-blok-intel-core-i7-12700f-ram-32-gb-ssd-960-gb-nvidia-geforce-rtx-4060-8-gb-1922781204/?at=6WtZRZl5Eiyvqv3snAx6M8tYNWkY9Sp1QnmpIXB4XOx
+2025-06-30 05:50:48,810 - product_parser - INFO -    Товар: TREIDCOMPUTERS Системный блок (Intel Core i7-12700F, RAM 32 ГБ, SSD 960 ГБ, NVIDIA GeForce RTX 4060 (8 Гб), Windows 10 Pro), черный
+2025-06-30 05:50:48,811 - product_parser - INFO -    Продавец: TREIDCOMPUTERS
+2025-06-30 05:50:48,814 - product_parser - INFO -    Компания: ИП Буторин Илья Сергеевич
+2025-06-30 05:50:48,815 - product_parser - INFO -    ИНН: 319774600299562
+2025-06-30 05:50:48,821 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:50:49,623 - product_parser - INFO - Воркер 1 завершил работу
+2025-06-30 05:50:52,587 - product_parser - INFO - [3/3] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-intel-xeon-e5-2690v3-ram-32-gb-ssd-512-gb-amd-radeon-rx-580-8-gb-windows-10-pro-belyy-1943640521/?at=16tLrLwV1i5NMzR0SvPQYzWh2xYR5xFnwgzNXulQRQGm
+2025-06-30 05:50:52,587 - product_parser - INFO -    Товар: Системный блок (Intel Xeon E5-2690V3, RAM 32 ГБ, SSD 512 ГБ, AMD Radeon RX 580 (8 Гб), Windows 10 Pro), белый
+2025-06-30 05:50:52,589 - product_parser - INFO -    Продавец: Магазин Техники M1
+2025-06-30 05:50:52,590 - product_parser - INFO -    Компания: ИП Оздоева Изабелла Исмаиловна
+2025-06-30 05:50:52,591 - product_parser - INFO -    ИНН: 324060000016220
+2025-06-30 05:50:53,436 - product_parser - INFO - Воркер 2 завершил работу
+2025-06-30 05:50:53,603 - excel_exporter - INFO - Результаты сохранены в results\sistemnye-bloki-15704_30.06.2025-05_50_07.xlsx
+2025-06-30 05:50:53,604 - product_parser - INFO - Обработка завершена успешно за 45.65 секунд
+2025-06-30 05:50:53,605 - product_parser - INFO - Обработано товаров: 3
+2025-06-30 05:50:53,606 - product_parser - INFO - Успешно: 3
+2025-06-30 05:50:53,606 - product_parser - INFO - Закончились: 0
+2025-06-30 05:50:53,607 - product_parser - INFO - Ошибки: 0
+2025-06-30 05:50:53,607 - src.bot.utils - INFO - Файл результатов создан: results\sistemnye-bloki-15704_30.06.2025-05_50_07.xlsx
+2025-06-30 05:50:54,139 - src.bot.handlers - INFO - Файл успешно отправлен: results\sistemnye-bloki-15704_30.06.2025-05_50_07.xlsx
+2025-06-30 05:50:54,141 - src.bot.handlers - INFO - Файл links.txt не найден в директории: results
+2025-06-30 05:50:54,141 - aiogram.event - INFO - Update id=36893469 is handled. Duration 55734 ms by bot id=7955956815
+2025-06-30 05:54:36,343 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-30 05:54:36,609 - telegram_bot - INFO - Бот остановлен
+2025-06-30 05:54:36,612 - aiogram.dispatcher - INFO - Polling stopped for bot @ozongetnamerbot id=7955956815 - 'ozongetnamer'
+2025-06-30 05:54:36,645 - uc - INFO - ensuring close
+2025-06-30 05:54:36,645 - uc - INFO - ensuring close
+2025-06-30 05:54:36,645 - uc - INFO - ensuring close
+2025-06-30 05:54:36,646 - uc - INFO - ensuring close
+2025-06-30 05:54:43,151 - telegram_bot - INFO - Запуск Telegram бота...
+2025-06-30 05:54:43,169 - aiogram.dispatcher - INFO - Start polling
+2025-06-30 05:54:43,748 - aiogram.dispatcher - INFO - Run polling for bot @ozongetnamerbot id=7955956815 - 'ozongetnamer'
+2025-06-30 05:54:52,909 - aiogram.event - INFO - Update id=36893470 is handled. Duration 547 ms by bot id=7955956815
+2025-06-30 05:54:54,388 - aiogram.event - INFO - Update id=36893471 is handled. Duration 125 ms by bot id=7955956815
+2025-06-30 05:54:59,276 - src.bot.utils - INFO - Начало парсинга ссылок для https://www.ozon.ru/category/sistemnye-bloki-15704/?category_was_predicted=true&deny_category_prediction=true&from_global=true&text=%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80
+2025-06-30 05:54:59,278 - link_parser - INFO - Категория: sistemnye-bloki-15704
+2025-06-30 05:55:00,689 - link_parser - INFO - Браузер инициализирован
+2025-06-30 05:55:00,690 - link_parser - INFO - Загрузка страницы: https://www.ozon.ru/category/sistemnye-bloki-15704/?category_was_predicted=true&deny_category_prediction=true&from_global=true&text=%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80
+2025-06-30 05:55:07,055 - link_parser - INFO - Страница успешно загружена
+2025-06-30 05:55:07,543 - link_parser - INFO - Найдено новых ссылок: 8
+2025-06-30 05:55:07,545 - link_parser - INFO - Начальное количество ссылок: 8/3
+2025-06-30 05:55:07,546 - link_parser - INFO - Ссылки сохранены в файл: C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\links.txt
+2025-06-30 05:55:07,547 - link_parser - INFO - Успешно собрано 3 ссылок
+2025-06-30 05:55:08,122 - link_parser - INFO - Браузер закрыт
+2025-06-30 05:55:08,123 - src.bot.utils - INFO - Начало парсинга 3 товаров
+2025-06-30 05:55:08,124 - excel_exporter - INFO - Файл результатов: results\sistemnye-bloki-15704_30.06.2025-05_55_08.xlsx
+2025-06-30 05:55:08,125 - product_parser - INFO - Инициализирован парсер для категории: sistemnye-bloki-15704
+2025-06-30 05:55:08,127 - product_parser - INFO - Начало обработки 3 товаров
+2025-06-30 05:55:09,428 - driver_manager - INFO - Создан новый браузер. Всего активных: 1
+2025-06-30 05:55:09,439 - product_parser - INFO - Воркер 1 запущен
+2025-06-30 05:55:10,135 - driver_manager - INFO - Создан новый браузер. Всего активных: 2
+2025-06-30 05:55:10,140 - product_parser - INFO - Воркер 2 запущен
+2025-06-30 05:55:11,388 - driver_manager - INFO - Создан новый браузер. Всего активных: 3
+2025-06-30 05:55:11,389 - product_parser - INFO - Воркер 3 запущен
+2025-06-30 05:55:24,806 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:55:28,349 - product_parser - INFO - [1/3] УСПЕШНО: https://www.ozon.ru/product/auroralabs-sistemnyy-blok-intel-core-i5-4570-ram-16-gb-ssd-512-gb-intel-hd-graphics-4600-windows-1838758187/?at=A6tGxGJkgcYR9VwVIPQMgk6hQYEpRziVZZx7Pt0D98p1
+2025-06-30 05:55:28,351 - product_parser - INFO -    Товар: AURORALABS Системный блок (Intel Core i5-4570, RAM 16 ГБ, SSD 512 ГБ, Intel HD Graphics 4600, Windows 10 Pro), черный матовый
+2025-06-30 05:55:28,352 - product_parser - INFO -    Продавец: AURORALABS
+2025-06-30 05:55:28,353 - product_parser - INFO -    Компания: ИП Ульянов Илья Андреевич
+2025-06-30 05:55:28,354 - product_parser - INFO -    ИНН: 319112100019031
+2025-06-30 05:55:29,177 - product_parser - INFO - Воркер 3 завершил работу
+2025-06-30 05:55:35,370 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:55:37,764 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 05:55:38,927 - product_parser - INFO - [2/3] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-intel-core-i5-14400f-ram-32-gb-ssd-1024-gb-nvidia-geforce-rtx-5060-8-gb-windows-2268471231/?at=K8tZQZxVlikg4nwzsmA9zlIQB3x6WUOVROGPhyMojpq
+2025-06-30 05:55:38,928 - product_parser - INFO -    Товар: Системный блок (Intel Core i5-14400F, RAM 32 ГБ, SSD 1024 ГБ, NVIDIA GeForce RTX 5060 (8 Гб), Windows 10 Pro), 1222, белый
+2025-06-30 05:55:38,929 - product_parser - INFO -    Продавец: NOVA
+2025-06-30 05:55:38,929 - product_parser - INFO -    Компания: ИП Дудников Роман Олегович
+2025-06-30 05:55:38,930 - product_parser - INFO -    ИНН: 322366800050827
+2025-06-30 05:55:39,748 - product_parser - INFO - Воркер 2 завершил работу
+2025-06-30 05:55:44,260 - product_parser - INFO - [3/3] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-intel-xeon-e5-2690v3-ram-32-gb-ssd-512-gb-amd-radeon-rx-580-8-gb-windows-10-pro-belyy-1943640521/?at=MZtvpvVNgi2lNnQyi1ygL40Fozl6gXUJpp4N6CJD1qpN
+2025-06-30 05:55:44,260 - product_parser - INFO -    Товар: Системный блок (Intel Xeon E5-2690V3, RAM 32 ГБ, SSD 512 ГБ, AMD Radeon RX 580 (8 Гб), Windows 10 Pro), белый
+2025-06-30 05:55:44,261 - product_parser - INFO -    Продавец: Магазин Техники M1
+2025-06-30 05:55:44,261 - product_parser - INFO -    Компания: ИП Оздоева Изабелла Исмаиловна
+2025-06-30 05:55:44,261 - product_parser - INFO -    ИНН: 324060000016220
+2025-06-30 05:55:45,160 - product_parser - INFO - Воркер 1 завершил работу
+2025-06-30 05:55:45,214 - excel_exporter - INFO - Результаты сохранены в results\sistemnye-bloki-15704_30.06.2025-05_55_08.xlsx
+2025-06-30 05:55:45,215 - product_parser - INFO - Обработка завершена успешно за 37.09 секунд
+2025-06-30 05:55:45,216 - product_parser - INFO - Обработано товаров: 3
+2025-06-30 05:55:45,217 - product_parser - INFO - Успешно: 3
+2025-06-30 05:55:45,218 - product_parser - INFO - Закончились: 0
+2025-06-30 05:55:45,219 - product_parser - INFO - Ошибки: 0
+2025-06-30 05:55:45,219 - src.bot.utils - INFO - Файл результатов создан: results\sistemnye-bloki-15704_30.06.2025-05_55_08.xlsx
+2025-06-30 05:55:45,763 - src.bot.handlers - INFO - Файл успешно отправлен: results\sistemnye-bloki-15704_30.06.2025-05_55_08.xlsx
+2025-06-30 05:55:46,092 - src.bot.handlers - INFO - Файл успешно отправлен: C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\links.txt
+2025-06-30 05:55:46,093 - aiogram.event - INFO - Update id=36893472 is handled. Duration 48500 ms by bot id=7955956815
+2025-06-30 05:55:50,273 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-30 05:55:50,552 - telegram_bot - INFO - Бот остановлен
+2025-06-30 05:55:50,557 - aiogram.dispatcher - INFO - Polling stopped for bot @ozongetnamerbot id=7955956815 - 'ozongetnamer'
+2025-06-30 05:55:50,579 - uc - INFO - ensuring close
+2025-06-30 05:55:50,580 - uc - INFO - ensuring close
+2025-06-30 05:55:50,583 - uc - INFO - ensuring close
+2025-06-30 05:55:50,584 - uc - INFO - ensuring close

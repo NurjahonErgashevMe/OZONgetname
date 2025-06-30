@@ -84,7 +84,7 @@ class OzonLinkParser:
     def save_links(self):
         try:
             with open(LINKS_OUTPUT_FILE, "w", encoding="utf-8") as f:
-                f.write("\n".join(self.ordered_links))
+                f.write("\n".join(self.ordered_links[:TOTAL_LINKS]))
             self.logger.info(f"Ссылки сохранены в файл: {os.path.abspath(LINKS_OUTPUT_FILE)}")
         except Exception as e:
             self.logger.error(f"Ошибка сохранения ссылок: {str(e)}")
@@ -105,7 +105,7 @@ class OzonLinkParser:
                 
                 if self.collect_links():
                     current_count = len(self.ordered_links)
-                    self.logger.info(f"Всего ссылок: {current_count}/{TOTAL_LINKS}")
+                    self.logger.info(f"Всего ссылок: {current_count[:TOTAL_LINKS]}/{TOTAL_LINKS}")
                 
                 # Проверяем, не достигли ли мы конца страницы
                 new_scroll_height = self.driver.execute_script("return document.body.scrollHeight")
@@ -116,7 +116,7 @@ class OzonLinkParser:
                     break
             
             # Финализация
-            final_count = len(self.ordered_links)
+            final_count = len(self.ordered_links[:TOTAL_LINKS])
             self.save_links()
             
             if final_count < TOTAL_LINKS:
@@ -124,7 +124,7 @@ class OzonLinkParser:
             else:
                 self.logger.info(f"Успешно собрано {final_count} ссылок")
                 
-            return True, self.ordered_links
+            return True, self.ordered_links[:TOTAL_LINKS]
                 
         except Exception as e:
             self.logger.critical(f"Критическая ошибка: {str(e)}")

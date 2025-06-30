@@ -94,7 +94,7 @@ class ExcelExporter:
                         cell.fill = row_fill
             
             # Настройки столбцов (ширина)
-            column_widths = [60, 40, 30, 35, 20]  # Ссылка, Товар, Продавец, Компания, ИНН
+            column_widths = [60, 40, 30, 35, 75]  # Ссылка, Товар, Продавец, Компания, ИНН
             for col_num, width in enumerate(column_widths, 1):
                 col_letter = get_column_letter(col_num)
                 ws.column_dimensions[col_letter].width = width

@@ -210,7 +210,6 @@ async def cmd_parse(message: types.Message, state: FSMContext):
         "Введите ссылку на категорию Ozon:\n\n"
         "Примеры:\n"
         "- https://www.ozon.ru/category/sistemnye-bloki-15704/\n"
-        "- https://uz.ozon.com/category/kompyuternye-i-ofisnye-kresla-38450/",
         reply_markup=types.ReplyKeyboardRemove()
     )
 

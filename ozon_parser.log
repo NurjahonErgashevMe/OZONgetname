@@ -3699,3 +3699,116 @@ Stacktrace:
 2025-06-30 06:45:48,322 - driver_manager - INFO - Очистка DriverManager завершена
 2025-06-30 06:45:48,998 - src.bot.handlers - INFO - Файл успешно отправлен: results\product_links_30.06.2025-06_44_33.xlsx
 2025-06-30 06:45:49,000 - aiogram.event - INFO - Update id=36893501 is handled. Duration 76015 ms by bot id=7955956815
+2025-06-30 06:48:50,422 - src.bot.utils - INFO - Файл удален: results\product_links_30.06.2025-06_43_21.xlsx
+2025-06-30 06:50:49,012 - src.bot.utils - INFO - Файл удален: results\product_links_30.06.2025-06_44_33.xlsx
+2025-06-30 06:54:11,514 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-30 06:54:11,522 - telegram_bot - INFO - Бот остановлен
+2025-06-30 06:54:11,530 - aiogram.dispatcher - INFO - Polling stopped for bot @ozongetnamerbot id=7955956815 - 'ozongetnamer'
+2025-06-30 06:54:18,694 - telegram_bot - INFO - Запуск Telegram бота...
+2025-06-30 06:54:18,730 - aiogram.dispatcher - INFO - Start polling
+2025-06-30 06:54:20,505 - aiogram.dispatcher - INFO - Run polling for bot @ozongetnamerbot id=7955956815 - 'ozongetnamer'
+2025-06-30 06:54:25,081 - aiogram.event - INFO - Update id=36893502 is handled. Duration 797 ms by bot id=7955956815
+2025-06-30 06:54:26,901 - aiogram.event - INFO - Update id=36893503 is handled. Duration 282 ms by bot id=7955956815
+2025-06-30 06:54:34,188 - excel_exporter - INFO - Файл результатов: results\product_links_30.06.2025-06_54_34.xlsx
+2025-06-30 06:54:34,190 - product_parser - INFO - Инициализирован парсер для категории: product_links
+2025-06-30 06:54:34,194 - product_parser - INFO - Начало обработки 1 товаров
+2025-06-30 06:54:40,107 - driver_manager - INFO - Создан новый браузер с selenium-stealth. Всего активных: 1
+2025-06-30 06:54:40,112 - product_parser - INFO - Воркер 1 запущен
+2025-06-30 06:54:40,396 - driver_manager - INFO - Создан новый браузер с selenium-stealth. Всего активных: 2
+2025-06-30 06:54:40,398 - product_parser - INFO - Воркер 2 запущен
+2025-06-30 06:54:40,410 - driver_manager - INFO - Создан новый браузер с selenium-stealth. Всего активных: 3
+2025-06-30 06:54:40,412 - product_parser - INFO - Воркер 3 запущен
+2025-06-30 06:54:48,108 - product_parser - INFO - Воркер 2 завершил работу
+2025-06-30 06:54:48,445 - product_parser - INFO - Воркер 3 завершил работу
+2025-06-30 06:55:39,555 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 06:55:50,588 - seller_info_parser - ERROR - Ошибка в попытке 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff76984fea5+79173]
+	GetHandleVerifier [0x0x7ff76984ff00+79264]
+	(No symbol) [0x0x7ff769609e5a]
+	(No symbol) [0x0x7ff769660586]
+	(No symbol) [0x0x7ff76966083c]
+	(No symbol) [0x0x7ff7696b4247]
+	(No symbol) [0x0x7ff7696889af]
+	(No symbol) [0x0x7ff7696b100d]
+	(No symbol) [0x0x7ff769688743]
+	(No symbol) [0x0x7ff7696514c1]
+	(No symbol) [0x0x7ff769652253]
+	GetHandleVerifier [0x0x7ff769b1a2dd+3004797]
+	GetHandleVerifier [0x0x7ff769b1472d+2981325]
+	GetHandleVerifier [0x0x7ff769b33380+3107360]
+	GetHandleVerifier [0x0x7ff76986aa2e+188622]
+	GetHandleVerifier [0x0x7ff7698722bf+219487]
+	GetHandleVerifier [0x0x7ff769858df4+115860]
+	GetHandleVerifier [0x0x7ff769858fa9+116297]
+	GetHandleVerifier [0x0x7ff76983f558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 06:55:50,591 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 06:56:01,494 - seller_info_parser - ERROR - Ошибка в попытке 2: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff76984fea5+79173]
+	GetHandleVerifier [0x0x7ff76984ff00+79264]
+	(No symbol) [0x0x7ff769609e5a]
+	(No symbol) [0x0x7ff769660586]
+	(No symbol) [0x0x7ff76966083c]
+	(No symbol) [0x0x7ff7696b4247]
+	(No symbol) [0x0x7ff7696889af]
+	(No symbol) [0x0x7ff7696b100d]
+	(No symbol) [0x0x7ff769688743]
+	(No symbol) [0x0x7ff7696514c1]
+	(No symbol) [0x0x7ff769652253]
+	GetHandleVerifier [0x0x7ff769b1a2dd+3004797]
+	GetHandleVerifier [0x0x7ff769b1472d+2981325]
+	GetHandleVerifier [0x0x7ff769b33380+3107360]
+	GetHandleVerifier [0x0x7ff76986aa2e+188622]
+	GetHandleVerifier [0x0x7ff7698722bf+219487]
+	GetHandleVerifier [0x0x7ff769858df4+115860]
+	GetHandleVerifier [0x0x7ff769858fa9+116297]
+	GetHandleVerifier [0x0x7ff76983f558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 06:56:01,496 - seller_info_parser - INFO - Попытка 3 получить данные продавца
+2025-06-30 06:56:12,053 - seller_info_parser - ERROR - Ошибка в попытке 3: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff76984fea5+79173]
+	GetHandleVerifier [0x0x7ff76984ff00+79264]
+	(No symbol) [0x0x7ff769609e5a]
+	(No symbol) [0x0x7ff769660586]
+	(No symbol) [0x0x7ff76966083c]
+	(No symbol) [0x0x7ff7696b4247]
+	(No symbol) [0x0x7ff7696889af]
+	(No symbol) [0x0x7ff7696b100d]
+	(No symbol) [0x0x7ff769688743]
+	(No symbol) [0x0x7ff7696514c1]
+	(No symbol) [0x0x7ff769652253]
+	GetHandleVerifier [0x0x7ff769b1a2dd+3004797]
+	GetHandleVerifier [0x0x7ff769b1472d+2981325]
+	GetHandleVerifier [0x0x7ff769b33380+3107360]
+	GetHandleVerifier [0x0x7ff76986aa2e+188622]
+	GetHandleVerifier [0x0x7ff7698722bf+219487]
+	GetHandleVerifier [0x0x7ff769858df4+115860]
+	GetHandleVerifier [0x0x7ff769858fa9+116297]
+	GetHandleVerifier [0x0x7ff76983f558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 06:56:12,061 - product_parser - INFO - [1/1] УСПЕШНО: https://www.ozon.ru/product/treidcomputers-sistemnyy-blok-amd-ryzen-5-5600g-ram-32-gb-ssd-960-gb-amd-radeon-vega-7-windows-10-1940505582/?at=99trJroX8fE3OKp7Hxz2MDgU9ROznMU9x16KyhY374jr
+2025-06-30 06:56:12,062 - product_parser - INFO -    Товар: Доступ ограничен
+2025-06-30 06:56:12,063 - product_parser - INFO -    Продавец: Продавец не найден
+2025-06-30 06:56:12,064 - product_parser - INFO -    Компания: Не найдено
+2025-06-30 06:56:12,065 - product_parser - INFO -    ИНН: Не найдено
+2025-06-30 06:56:14,865 - product_parser - INFO - Воркер 1 завершил работу
+2025-06-30 06:56:14,920 - excel_exporter - INFO - Результаты сохранены в results\product_links_30.06.2025-06_54_34.xlsx
+2025-06-30 06:56:14,921 - product_parser - INFO - Обработка завершена успешно за 100.73 секунд
+2025-06-30 06:56:14,921 - product_parser - INFO - Обработано товаров: 1
+2025-06-30 06:56:14,923 - product_parser - INFO - Успешно: 1
+2025-06-30 06:56:14,923 - product_parser - INFO - Закончились: 0
+2025-06-30 06:56:14,923 - product_parser - INFO - Ошибки: 0
+2025-06-30 06:56:14,925 - driver_manager - INFO - Все браузеры закрыты
+2025-06-30 06:56:14,925 - driver_manager - INFO - Очистка DriverManager завершена
+2025-06-30 06:56:15,609 - src.bot.handlers - INFO - Файл успешно отправлен: results\product_links_30.06.2025-06_54_34.xlsx
+2025-06-30 06:56:15,833 - aiogram.event - INFO - Update id=36893504 is handled. Duration 101844 ms by bot id=7955956815
+2025-06-30 06:56:25,619 - aiogram.event - INFO - Update id=36893505 is handled. Duration 296 ms by bot id=7955956815

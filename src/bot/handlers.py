@@ -35,6 +35,22 @@ class BotHandlers:
     def __init__(self, bot: Bot):
         self.bot = bot
     
+    def _get_main_menu_keyboard(self):
+        """Возвращает основную клавиатуру меню"""
+        kb = [
+            [KeyboardButton(text=KEYBOARD_BUTTONS['parse'])],
+            [KeyboardButton(text=KEYBOARD_BUTTONS['parse_products'])]
+        ]
+        return ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True)
+    
+    def _get_post_parsing_menu_keyboard(self):
+        """Возвращает клавиатуру с действиями после парсинга"""
+        kb = [
+            [KeyboardButton(text="🔄 Новый парсинг"), KeyboardButton(text="📊 Парсить товары")],
+            [KeyboardButton(text="ℹ️ Помощь"), KeyboardButton(text="🏠 Главное меню")]
+        ]
+        return ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True)
+    
     async def cmd_start(self, message: types.Message):
         """
         Обработчик команды /start
@@ -46,12 +62,7 @@ class BotHandlers:
             await message.answer(BOT_MESSAGES['access_denied'])
             return
         
-        kb = [
-            [KeyboardButton(text=KEYBOARD_BUTTONS['parse'])],
-            [KeyboardButton(text=KEYBOARD_BUTTONS['parse_products'])]
-        ]
-        keyboard = ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True)
-        
+        keyboard = self._get_main_menu_keyboard()
         await message.answer(BOT_MESSAGES['welcome'], reply_markup=keyboard)
     
     async def cmd_parse(self, message: types.Message, state: FSMContext):
@@ -89,6 +100,45 @@ class BotHandlers:
             BOT_MESSAGES['parse_products_request'],
             reply_markup=ReplyKeyboardRemove()
         )
+    
+    async def handle_menu_actions(self, message: types.Message, state: FSMContext):
+        """
+        Обработчик действий из меню после парсинга
+        
+        Args:
+            message: Сообщение пользователя
+            state: Состояние FSM
+        """
+        if not check_access(message.from_user.id):
+            await message.answer(BOT_MESSAGES['access_denied'])
+            return
+        
+        text = message.text.lower()
+        
+        if text == "🔄 новый парсинг":
+            await self.cmd_parse(message, state)
+        elif text == "📊 парсить товары":
+            await self.cmd_parse_products(message, state)
+        elif text == "ℹ️ помощь":
+            help_text = (
+                "🤖 <b>Помощь по использованию бота</b>\n\n"
+                "📋 <b>Доступные команды:</b>\n"
+                "• <b>Парсить категорию</b> - парсинг товаров из категории Ozon\n"
+                "• <b>Парсить товары</b> - парсинг конкретных товаров по ссылкам\n\n"
+                "🔗 <b>Форматы ссылок:</b>\n"
+                "• Для категорий: ссылки на категории Ozon\n"
+                "• Для товаров: по одной ссылке на строку\n\n"
+                "📊 <b>Результаты:</b>\n"
+                "• Excel файл с данными о товарах\n"
+                "• Файл со ссылками (при парсинге категорий)\n\n"
+                "⚠️ <b>Ограничения:</b>\n"
+                "• Максимальный размер файла: 50MB\n"
+                "• Большие файлы автоматически сжимаются"
+            )
+            await message.answer(help_text, parse_mode="HTML")
+        elif text == "🏠 главное меню":
+            keyboard = self._get_main_menu_keyboard()
+            await message.answer("🏠 Главное меню", reply_markup=keyboard)
     
     async def process_url(self, message: types.Message, state: FSMContext):
         """
@@ -136,6 +186,9 @@ class BotHandlers:
             
             # Ищем и отправляем links.txt
             await self._send_links_file(message, file_path)
+            
+            # Показываем меню с действиями после парсинга
+            await self._show_post_parsing_menu(message)
                 
         except Exception as e:
             logger.exception(f"Ошибка при обработке URL: {e}")
@@ -194,6 +247,9 @@ class BotHandlers:
             
             # Отправляем файл с результатами
             await self._send_parsing_results(message, file_path)
+            
+            # Показываем меню с действиями после парсинга
+            await self._show_post_parsing_menu(message)
                 
         except Exception as e:
             logger.exception(f"Ошибка при обработке ссылок на товары: {e}")
@@ -204,6 +260,24 @@ class BotHandlers:
                 await log_task
             except asyncio.CancelledError:
                 pass
+    
+    async def _show_post_parsing_menu(self, message: types.Message):
+        """
+        Показывает меню с действиями после завершения парсинга
+        
+        Args:
+            message: Сообщение для ответа
+        """
+        keyboard = self._get_post_parsing_menu_keyboard()
+        menu_text = (
+            "🎉 <b>Парсинг успешно завершен!</b>\n\n"
+            "💡 <b>Что хотите сделать дальше?</b>\n"
+            "• 🔄 <b>Новый парсинг</b> - парсить другую категорию\n"
+            "• 📊 <b>Парсить товары</b> - парсить конкретные товары\n"
+            "• ℹ️ <b>Помощь</b> - получить справку\n"
+            "• 🏠 <b>Главное меню</b> - вернуться к началу"
+        )
+        await message.answer(menu_text, reply_markup=keyboard, parse_mode="HTML")
     
     async def _send_parsing_results(self, message: types.Message, file_path: str):
         """
@@ -367,6 +441,17 @@ def register_handlers(dp, bot: Bot):
     dp.message.register(
         handlers.cmd_parse_products, 
         F.text.lower() == KEYBOARD_BUTTONS['parse_products'].lower()
+    )
+    
+    # Обработчик действий из меню после парсинга
+    dp.message.register(
+        handlers.handle_menu_actions,
+        F.text.in_([
+            "🔄 Новый парсинг",
+            "📊 Парсить товары", 
+            "ℹ️ Помощь",
+            "🏠 Главное меню"
+        ])
     )
     
     # Обработчик URL для категории

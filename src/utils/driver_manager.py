@@ -1,32 +1,52 @@
-import undetected_chromedriver as uc
+from selenium import webdriver
+from selenium_stealth import stealth
 import logging
-from src.config import CHROMEDRIVER_PATH
 
 class DriverManager:
     def __init__(self):
         self.drivers = []
         self.logger = logging.getLogger('driver_manager')
-
-    def create_driver(self):
-        """Создание нового экземпляра браузера"""
-        options = uc.ChromeOptions()
+        
+    def create_driver(self,headless=True):
+        """Создание нового экземпляра браузера с selenium-stealth"""
+        options = webdriver.ChromeOptions()
+                
+        # Основные опции для производительности и обхода детектирования
         options.add_argument('--disable-gpu')
         options.add_argument('--no-sandbox')
         options.add_argument('--disable-dev-shm-usage')
+        options.add_argument('--disable-blink-features=AutomationControlled')
         options.add_argument('--blink-settings=imagesEnabled=false')
         
-        prefs = {'profile.default_content_setting_values': {'images': 2, 'javascript': 1}}
+        if headless:
+            options.add_argument('--headless=new')
+        
+        # Отключение изображений и настройка JavaScript
+        prefs = {
+            'profile.default_content_setting_values': {
+                'images': 2,  # Отключить изображения
+                'javascript': 1  # Включить JavaScript
+            }
+        }
         options.add_experimental_option('prefs', prefs)
         
-        driver = uc.Chrome(
-            options=options,
-            driver_executable_path=CHROMEDRIVER_PATH,
-            headless=False,
-            use_subprocess=True
+        # Создание драйвера с системным chromedriver
+        driver = webdriver.Chrome(options=options)
+        
+        # Применение stealth настроек
+        stealth(
+            driver,
+            languages=["ru-RU", "ru", "en-US", "en"],
+            vendor="Google Inc.",
+            platform="Win32",
+            webgl_vendor="Intel Inc.",
+            renderer="Intel Iris OpenGL Engine",
+            fix_hairline=True,
+            webdriver=False
         )
         
         self.drivers.append(driver)
-        self.logger.info(f"Создан новый браузер. Всего активных: {len(self.drivers)}")
+        self.logger.info(f"Создан новый браузер с selenium-stealth. Всего активных: {len(self.drivers)}")
         return driver
 
     def close_all_drivers(self):
@@ -34,8 +54,8 @@ class DriverManager:
         for driver in self.drivers:
             try:
                 driver.quit()
-            except:
-                pass
+            except Exception as e:
+                self.logger.warning(f"Ошибка при закрытии драйвера: {str(e)}")
         self.drivers.clear()
         self.logger.info("Все браузеры закрыты")
 
@@ -43,3 +63,9 @@ class DriverManager:
         """Удаление драйвера из списка"""
         if driver in self.drivers:
             self.drivers.remove(driver)
+            self.logger.debug(f"Драйвер удален из списка. Осталось активных: {len(self.drivers)}")
+
+    def cleanup(self):
+        """Очистка ресурсов"""
+        self.close_all_drivers()
+        self.logger.info("Очистка DriverManager завершена")

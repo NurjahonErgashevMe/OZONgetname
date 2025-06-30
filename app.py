@@ -65,8 +65,7 @@ def get_user_input():
             
             if not validate_ozon_url(target_url):
                 print("❌ Некорректная ссылка! Примеры правильных ссылок:")
-                print("   - https://www.ozon.ru/category/sistemnye-bloki-15704/")
-                print("   - https://uz.ozon.com/category/kompyuternye-i-ofisnye-kresla-38450/")
+                print("   -category_was_predicted=true&deny_category_prediction=true&from_global=true&text=%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80")
                 continue
             
             category_name = get_category_from_url(target_url)

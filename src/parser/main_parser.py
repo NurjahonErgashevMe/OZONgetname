@@ -79,8 +79,8 @@ class OzonProductParser:
         try:
             driver.quit()
             self.driver_manager.remove_driver(driver)
-        except:
-            pass
+        except Exception as e:
+            self.logger.warning(f"Ошибка при закрытии драйвера в воркере {worker_id}: {str(e)}")
         
         self.logger.info(f"Воркер {worker_id} завершил работу")
 
@@ -166,5 +166,5 @@ class OzonProductParser:
         try:
             if hasattr(self, 'driver_manager'):
                 self.driver_manager.cleanup()
-        except:
+        except Exception as e:
             pass

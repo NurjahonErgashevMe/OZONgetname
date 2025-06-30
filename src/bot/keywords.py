@@ -32,8 +32,7 @@ BOT_MESSAGES = {
     'parse_request': (
         "Введите ссылку на категорию Ozon:\n\n"
         "Примеры:\n"
-        "- https://www.ozon.ru/category/sistemnye-bloki-15704/\n"
-        "- https://uz.ozon.com/category/kompyuternye-i-ofisnye-kresla-38450/"
+        "- https://www.ozon.ru/category/sistemnye-bloki-15704/?category_was_predicted=true&deny_category_prediction=true&from_global=true&text=%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80\n"
     ),
     'access_denied': "⛔ Вам доступ к боту ограничен",
     'invalid_url': "❌ Некорректный URL! Используйте ссылку на категорию Ozon.",

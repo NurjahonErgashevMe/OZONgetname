@@ -3058,3 +3058,243 @@ Stacktrace:
 2025-06-30 05:55:50,580 - uc - INFO - ensuring close
 2025-06-30 05:55:50,583 - uc - INFO - ensuring close
 2025-06-30 05:55:50,584 - uc - INFO - ensuring close
+2025-06-30 06:09:24,431 - telegram_bot - INFO - Запуск Telegram бота...
+2025-06-30 06:09:24,465 - aiogram.dispatcher - INFO - Start polling
+2025-06-30 06:09:25,227 - aiogram.dispatcher - INFO - Run polling for bot @ozongetnamerbot id=7955956815 - 'ozongetnamer'
+2025-06-30 06:09:28,489 - aiogram.event - INFO - Update id=36893473 is handled. Duration 687 ms by bot id=7955956815
+2025-06-30 06:09:31,274 - aiogram.event - INFO - Update id=36893474 is handled. Duration 702 ms by bot id=7955956815
+2025-06-30 06:09:55,285 - src.bot.utils - INFO - Начало парсинга ссылок для https://www.ozon.ru/category/sistemnye-bloki-15704/?category_was_predicted=true&deny_category_prediction=true&from_global=true&text=%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80
+2025-06-30 06:09:55,336 - link_parser - INFO - Категория: sistemnye-bloki-15704
+2025-06-30 06:10:00,888 - driver_manager - INFO - Создан новый браузер с selenium-stealth. Всего активных: 1
+2025-06-30 06:10:00,983 - link_parser - INFO - Браузер инициализирован через DriverManager
+2025-06-30 06:10:00,985 - link_parser - INFO - Загрузка страницы: https://www.ozon.ru/category/sistemnye-bloki-15704/?category_was_predicted=true&deny_category_prediction=true&from_global=true&text=%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80
+2025-06-30 06:10:08,675 - link_parser - INFO - Страница успешно загружена
+2025-06-30 06:10:11,618 - link_parser - INFO - Найдено новых ссылок: 8
+2025-06-30 06:10:11,622 - link_parser - INFO - Начальное количество ссылок: 8/3
+2025-06-30 06:10:11,629 - link_parser - INFO - Сохранено 3 ссылок в файл: C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\links.txt
+2025-06-30 06:10:11,644 - link_parser - INFO - Успешно собрано 3 ссылок
+2025-06-30 06:10:16,370 - link_parser - INFO - Браузер закрыт
+2025-06-30 06:10:16,371 - driver_manager - INFO - Все браузеры закрыты
+2025-06-30 06:10:16,373 - src.bot.utils - INFO - Начало парсинга 3 товаров
+2025-06-30 06:10:16,375 - excel_exporter - INFO - Файл результатов: results\sistemnye-bloki-15704_30.06.2025-06_10_16.xlsx
+2025-06-30 06:10:16,378 - product_parser - INFO - Инициализирован парсер для категории: sistemnye-bloki-15704
+2025-06-30 06:10:16,389 - product_parser - INFO - Начало обработки 3 товаров
+2025-06-30 06:10:19,933 - driver_manager - INFO - Создан новый браузер с selenium-stealth. Всего активных: 1
+2025-06-30 06:10:19,935 - product_parser - INFO - Воркер 1 запущен
+2025-06-30 06:10:20,450 - driver_manager - INFO - Создан новый браузер с selenium-stealth. Всего активных: 2
+2025-06-30 06:10:20,451 - product_parser - INFO - Воркер 2 запущен
+2025-06-30 06:10:22,189 - driver_manager - INFO - Создан новый браузер с selenium-stealth. Всего активных: 3
+2025-06-30 06:10:22,190 - product_parser - INFO - Воркер 3 запущен
+2025-06-30 06:10:44,913 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 06:10:58,552 - product_parser - INFO - [1/3] УСПЕШНО: https://www.ozon.ru/product/sistemnyy-blok-intel-core-i5-14400f-ram-32-gb-ssd-1024-gb-nvidia-geforce-rtx-5060-8-gb-windows-2268471231/?at=qQtJgJm39c2lEyDZUm1REODCrDqW9Bf7Kz4v1sOkrM1k
+2025-06-30 06:10:58,553 - product_parser - INFO -    Товар: Системный блок (Intel Core i5-14400F, RAM 32 ГБ, SSD 1024 ГБ, NVIDIA GeForce RTX 5060 (8 Гб), Windows 10 Pro), 1222, белый
+2025-06-30 06:10:58,555 - product_parser - INFO -    Продавец: NOVA
+2025-06-30 06:10:58,556 - product_parser - INFO -    Компания: ИП Дудников Роман Олегович
+2025-06-30 06:10:58,557 - product_parser - INFO -    ИНН: 322366800050827
+2025-06-30 06:11:08,916 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 06:11:09,368 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 06:11:16,620 - product_parser - INFO - [2/3] УСПЕШНО: https://www.ozon.ru/product/jetgame-sistemnyy-blok-intel-xeon-e5-2650v3-ram-32-gb-ssd-1024-gb-amd-radeon-rx-580-8-gb-windows-10-1827034357/?at=36tWjWLlZcPn31BOSMVR1B4cYnBPoyfkJRWgxc6Rg69Q
+2025-06-30 06:11:16,621 - product_parser - INFO - [3/3] УСПЕШНО: https://www.ozon.ru/product/intel-sistemnyy-blok-kompyuter-pk-intel-core-i5-8400-ram-16-gb-ssd-960-gb-intel-hd-graphics-1995161774/?at=Rltywy71NuQkG75Pc6lM224HxX556mi3VDQgDSvA3Qpq
+2025-06-30 06:11:16,630 - product_parser - INFO -    Товар: JetGame Системный блок (Intel Xeon E5-2650V3, RAM 32 ГБ, SSD 1024 ГБ, AMD Radeon RX 580 (8 Гб), Windows 10 Pro), черный
+2025-06-30 06:11:16,630 - product_parser - INFO -    Товар: Intel Системный блок Компьютер ПК (Intel Core i5-8400, RAM 16 ГБ, SSD 960 ГБ, Intel HD Graphics, Windows 10 Pro), черный, черный матовый
+2025-06-30 06:11:16,632 - product_parser - INFO -    Продавец: JetGame
+2025-06-30 06:11:16,633 - product_parser - INFO -    Продавец: Simple Store PC
+2025-06-30 06:11:16,633 - product_parser - INFO -    Компания: ИП Курлов Александр Алексеевич
+2025-06-30 06:11:16,633 - product_parser - INFO -    Компания: ИП Сенчихина Ангелина Евгеньевна
+2025-06-30 06:11:16,634 - product_parser - INFO -    ИНН: 323508100624725
+2025-06-30 06:11:16,635 - product_parser - INFO -    ИНН: 323169000169536
+2025-06-30 06:11:18,173 - product_parser - INFO - Воркер 1 завершил работу
+2025-06-30 06:11:19,419 - product_parser - INFO - Воркер 3 завершил работу
+2025-06-30 06:11:19,419 - product_parser - INFO - Воркер 2 завершил работу
+2025-06-30 06:11:19,477 - excel_exporter - INFO - Результаты сохранены в results\sistemnye-bloki-15704_30.06.2025-06_10_16.xlsx
+2025-06-30 06:11:19,478 - product_parser - INFO - Обработка завершена успешно за 63.09 секунд
+2025-06-30 06:11:19,478 - product_parser - INFO - Обработано товаров: 3
+2025-06-30 06:11:19,479 - product_parser - INFO - Успешно: 3
+2025-06-30 06:11:19,479 - product_parser - INFO - Закончились: 0
+2025-06-30 06:11:19,480 - product_parser - INFO - Ошибки: 0
+2025-06-30 06:11:19,480 - src.bot.utils - INFO - Файл результатов создан: results\sistemnye-bloki-15704_30.06.2025-06_10_16.xlsx
+2025-06-30 06:11:19,480 - driver_manager - INFO - Все браузеры закрыты
+2025-06-30 06:11:19,481 - driver_manager - INFO - Очистка DriverManager завершена
+2025-06-30 06:11:19,994 - src.bot.handlers - INFO - Файл успешно отправлен: results\sistemnye-bloki-15704_30.06.2025-06_10_16.xlsx
+2025-06-30 06:11:20,319 - src.bot.handlers - INFO - Файл успешно отправлен: C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\links.txt
+2025-06-30 06:11:20,322 - aiogram.event - INFO - Update id=36893475 is handled. Duration 87156 ms by bot id=7955956815
+2025-06-30 06:11:30,315 - src.bot.utils - INFO - Файл удален: C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\links.txt
+2025-06-30 06:11:31,647 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-30 06:11:31,648 - telegram_bot - INFO - Бот остановлен
+2025-06-30 06:11:31,650 - aiogram.dispatcher - INFO - Polling stopped for bot @ozongetnamerbot id=7955956815 - 'ozongetnamer'
+2025-06-30 06:11:40,183 - telegram_bot - INFO - Запуск Telegram бота...
+2025-06-30 06:11:40,207 - aiogram.dispatcher - INFO - Start polling
+2025-06-30 06:11:40,800 - aiogram.dispatcher - INFO - Run polling for bot @ozongetnamerbot id=7955956815 - 'ozongetnamer'
+2025-06-30 06:11:48,576 - aiogram.event - INFO - Update id=36893476 is handled. Duration 579 ms by bot id=7955956815
+2025-06-30 06:11:50,089 - aiogram.event - INFO - Update id=36893477 is handled. Duration 344 ms by bot id=7955956815
+2025-06-30 06:11:53,696 - src.bot.utils - INFO - Начало парсинга ссылок для https://www.ozon.ru/category/sistemnye-bloki-15704/?category_was_predicted=true&deny_category_prediction=true&from_global=true&text=%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80
+2025-06-30 06:11:53,697 - link_parser - INFO - Категория: sistemnye-bloki-15704
+2025-06-30 06:11:55,857 - driver_manager - INFO - Создан новый браузер с selenium-stealth. Всего активных: 1
+2025-06-30 06:11:55,899 - link_parser - INFO - Браузер инициализирован через DriverManager
+2025-06-30 06:11:55,902 - link_parser - INFO - Загрузка страницы: https://www.ozon.ru/category/sistemnye-bloki-15704/?category_was_predicted=true&deny_category_prediction=true&from_global=true&text=%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80
+2025-06-30 06:12:14,116 - link_parser - ERROR - Ошибка загрузки страницы: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff77dd9fea5+79173]
+	GetHandleVerifier [0x0x7ff77dd9ff00+79264]
+	(No symbol) [0x0x7ff77db59e5a]
+	(No symbol) [0x0x7ff77dbb0586]
+	(No symbol) [0x0x7ff77dbb083c]
+	(No symbol) [0x0x7ff77dc04247]
+	(No symbol) [0x0x7ff77dbd89af]
+	(No symbol) [0x0x7ff77dc0100d]
+	(No symbol) [0x0x7ff77dbd8743]
+	(No symbol) [0x0x7ff77dba14c1]
+	(No symbol) [0x0x7ff77dba2253]
+	GetHandleVerifier [0x0x7ff77e06a2dd+3004797]
+	GetHandleVerifier [0x0x7ff77e06472d+2981325]
+	GetHandleVerifier [0x0x7ff77e083380+3107360]
+	GetHandleVerifier [0x0x7ff77ddbaa2e+188622]
+	GetHandleVerifier [0x0x7ff77ddc22bf+219487]
+	GetHandleVerifier [0x0x7ff77dda8df4+115860]
+	GetHandleVerifier [0x0x7ff77dda8fa9+116297]
+	GetHandleVerifier [0x0x7ff77dd8f558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 06:12:17,411 - link_parser - INFO - Браузер закрыт
+2025-06-30 06:12:17,416 - driver_manager - INFO - Все браузеры закрыты
+2025-06-30 06:12:17,416 - src.bot.utils - ERROR - Не удалось собрать ссылки
+2025-06-30 06:12:18,123 - aiogram.event - INFO - Update id=36893478 is handled. Duration 25342 ms by bot id=7955956815
+2025-06-30 06:14:04,372 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-30 06:14:04,376 - telegram_bot - INFO - Бот остановлен
+2025-06-30 06:14:04,379 - aiogram.dispatcher - INFO - Polling stopped for bot @ozongetnamerbot id=7955956815 - 'ozongetnamer'
+2025-06-30 06:14:08,727 - telegram_bot - INFO - Запуск Telegram бота...
+2025-06-30 06:14:08,776 - aiogram.dispatcher - INFO - Start polling
+2025-06-30 06:14:09,360 - aiogram.dispatcher - INFO - Run polling for bot @ozongetnamerbot id=7955956815 - 'ozongetnamer'
+2025-06-30 06:14:12,491 - aiogram.event - INFO - Update id=36893479 is handled. Duration 562 ms by bot id=7955956815
+2025-06-30 06:14:13,975 - aiogram.event - INFO - Update id=36893480 is handled. Duration 280 ms by bot id=7955956815
+2025-06-30 06:14:17,727 - src.bot.utils - INFO - Начало парсинга ссылок для https://www.ozon.ru/category/sistemnye-bloki-15704/?category_was_predicted=true&deny_category_prediction=true&from_global=true&text=%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80
+2025-06-30 06:14:17,729 - link_parser - INFO - Категория: sistemnye-bloki-15704
+2025-06-30 06:14:20,085 - driver_manager - INFO - Создан новый браузер с selenium-stealth. Всего активных: 1
+2025-06-30 06:14:20,125 - link_parser - INFO - Браузер инициализирован через DriverManager
+2025-06-30 06:14:20,125 - link_parser - INFO - Загрузка страницы: https://www.ozon.ru/category/sistemnye-bloki-15704/?category_was_predicted=true&deny_category_prediction=true&from_global=true&text=%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80
+2025-06-30 06:14:25,455 - link_parser - INFO - Страница успешно загружена
+2025-06-30 06:14:26,018 - link_parser - INFO - Найдено новых ссылок: 8
+2025-06-30 06:14:26,019 - link_parser - INFO - Начальное количество ссылок: 8/3
+2025-06-30 06:14:26,022 - link_parser - INFO - Сохранено 3 ссылок в файл: C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\links.txt
+2025-06-30 06:14:26,028 - link_parser - INFO - Успешно собрано 3 ссылок
+2025-06-30 06:14:28,572 - link_parser - INFO - Браузер закрыт
+2025-06-30 06:14:28,574 - driver_manager - INFO - Все браузеры закрыты
+2025-06-30 06:14:28,575 - src.bot.utils - INFO - Начало парсинга 3 товаров
+2025-06-30 06:14:28,576 - excel_exporter - INFO - Файл результатов: results\sistemnye-bloki-15704_30.06.2025-06_14_28.xlsx
+2025-06-30 06:14:28,577 - product_parser - INFO - Инициализирован парсер для категории: sistemnye-bloki-15704
+2025-06-30 06:14:28,578 - product_parser - INFO - Начало обработки 3 товаров
+2025-06-30 06:14:30,472 - driver_manager - INFO - Создан новый браузер с selenium-stealth. Всего активных: 1
+2025-06-30 06:14:30,472 - product_parser - INFO - Воркер 1 запущен
+2025-06-30 06:14:31,510 - driver_manager - INFO - Создан новый браузер с selenium-stealth. Всего активных: 2
+2025-06-30 06:14:31,511 - product_parser - INFO - Воркер 2 запущен
+2025-06-30 06:14:33,309 - driver_manager - INFO - Создан новый браузер с selenium-stealth. Всего активных: 3
+2025-06-30 06:14:33,310 - product_parser - INFO - Воркер 3 запущен
+2025-06-30 06:15:13,722 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 06:15:31,645 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 06:15:41,035 - product_parser - INFO - [1/3] УСПЕШНО: https://www.ozon.ru/product/treidcomputers-sistemnyy-blok-amd-ryzen-5-5600g-ram-32-gb-ssd-960-gb-amd-radeon-vega-7-windows-10-1940505582/?at=99trJroX8fE3OKp7Hxz2MDgU9ROznMU9x16KyhY374jr
+2025-06-30 06:15:41,047 - product_parser - INFO -    Товар: TREIDCOMPUTERS Системный блок (AMD Ryzen 5 5600G, RAM 32 ГБ, SSD 960 ГБ, AMD Radeon Vega 7, Windows 10 Pro), темно-коричневый, черный
+2025-06-30 06:15:41,050 - product_parser - INFO -    Продавец: TREIDCOMPUTERS
+2025-06-30 06:15:41,050 - product_parser - INFO -    Компания: ИП Буторин Илья Сергеевич
+2025-06-30 06:15:41,052 - product_parser - INFO -    ИНН: 319774600299562
+2025-06-30 06:15:48,534 - product_parser - INFO - [2/3] УСПЕШНО: https://www.ozon.ru/product/treidcomputers-sistemnyy-blok-intel-core-i7-12700f-ram-32-gb-ssd-960-gb-nvidia-geforce-rtx-4060-8-gb-1922781204/?at=x6tPpPrVZHl8NXRESYKvlmOFEGlPW3f1EpP1Kh3M9jpX
+2025-06-30 06:15:48,546 - product_parser - INFO -    Товар: TREIDCOMPUTERS Системный блок (Intel Core i7-12700F, RAM 32 ГБ, SSD 960 ГБ, NVIDIA GeForce RTX 4060 (8 Гб), Windows 10 Pro), черный
+2025-06-30 06:15:48,550 - product_parser - INFO -    Продавец: TREIDCOMPUTERS
+2025-06-30 06:15:48,557 - product_parser - INFO -    Компания: ИП Буторин Илья Сергеевич
+2025-06-30 06:15:48,557 - product_parser - INFO -    ИНН: 319774600299562
+2025-06-30 06:15:50,751 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 06:15:56,292 - product_parser - INFO - Воркер 3 завершил работу
+2025-06-30 06:15:56,771 - product_parser - INFO - Воркер 1 завершил работу
+2025-06-30 06:16:01,377 - seller_info_parser - ERROR - Ошибка в попытке 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f8a4fea5+79173]
+	GetHandleVerifier [0x0x7ff7f8a4ff00+79264]
+	(No symbol) [0x0x7ff7f8809e5a]
+	(No symbol) [0x0x7ff7f8860586]
+	(No symbol) [0x0x7ff7f886083c]
+	(No symbol) [0x0x7ff7f88b4247]
+	(No symbol) [0x0x7ff7f88889af]
+	(No symbol) [0x0x7ff7f88b100d]
+	(No symbol) [0x0x7ff7f8888743]
+	(No symbol) [0x0x7ff7f88514c1]
+	(No symbol) [0x0x7ff7f8852253]
+	GetHandleVerifier [0x0x7ff7f8d1a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f8d1472d+2981325]
+	GetHandleVerifier [0x0x7ff7f8d33380+3107360]
+	GetHandleVerifier [0x0x7ff7f8a6aa2e+188622]
+	GetHandleVerifier [0x0x7ff7f8a722bf+219487]
+	GetHandleVerifier [0x0x7ff7f8a58df4+115860]
+	GetHandleVerifier [0x0x7ff7f8a58fa9+116297]
+	GetHandleVerifier [0x0x7ff7f8a3f558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 06:16:01,381 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 06:16:12,288 - seller_info_parser - ERROR - Ошибка в попытке 2: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f8a4fea5+79173]
+	GetHandleVerifier [0x0x7ff7f8a4ff00+79264]
+	(No symbol) [0x0x7ff7f8809e5a]
+	(No symbol) [0x0x7ff7f8860586]
+	(No symbol) [0x0x7ff7f886083c]
+	(No symbol) [0x0x7ff7f88b4247]
+	(No symbol) [0x0x7ff7f88889af]
+	(No symbol) [0x0x7ff7f88b100d]
+	(No symbol) [0x0x7ff7f8888743]
+	(No symbol) [0x0x7ff7f88514c1]
+	(No symbol) [0x0x7ff7f8852253]
+	GetHandleVerifier [0x0x7ff7f8d1a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f8d1472d+2981325]
+	GetHandleVerifier [0x0x7ff7f8d33380+3107360]
+	GetHandleVerifier [0x0x7ff7f8a6aa2e+188622]
+	GetHandleVerifier [0x0x7ff7f8a722bf+219487]
+	GetHandleVerifier [0x0x7ff7f8a58df4+115860]
+	GetHandleVerifier [0x0x7ff7f8a58fa9+116297]
+	GetHandleVerifier [0x0x7ff7f8a3f558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 06:16:12,295 - seller_info_parser - INFO - Попытка 3 получить данные продавца
+2025-06-30 06:16:22,988 - seller_info_parser - ERROR - Ошибка в попытке 3: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7f8a4fea5+79173]
+	GetHandleVerifier [0x0x7ff7f8a4ff00+79264]
+	(No symbol) [0x0x7ff7f8809e5a]
+	(No symbol) [0x0x7ff7f8860586]
+	(No symbol) [0x0x7ff7f886083c]
+	(No symbol) [0x0x7ff7f88b4247]
+	(No symbol) [0x0x7ff7f88889af]
+	(No symbol) [0x0x7ff7f88b100d]
+	(No symbol) [0x0x7ff7f8888743]
+	(No symbol) [0x0x7ff7f88514c1]
+	(No symbol) [0x0x7ff7f8852253]
+	GetHandleVerifier [0x0x7ff7f8d1a2dd+3004797]
+	GetHandleVerifier [0x0x7ff7f8d1472d+2981325]
+	GetHandleVerifier [0x0x7ff7f8d33380+3107360]
+	GetHandleVerifier [0x0x7ff7f8a6aa2e+188622]
+	GetHandleVerifier [0x0x7ff7f8a722bf+219487]
+	GetHandleVerifier [0x0x7ff7f8a58df4+115860]
+	GetHandleVerifier [0x0x7ff7f8a58fa9+116297]
+	GetHandleVerifier [0x0x7ff7f8a3f558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 06:16:23,000 - product_parser - INFO - [3/3] УСПЕШНО: https://www.ozon.ru/product/iru-sistemnyy-blok-310sc-intel-core-i7-12700-ram-32-gb-ssd-1024-gb-intel-uhd-graphics-770-windows-1767344909/?at=mqtkVkE3vFRW82lGSqGyQEAiD54rpC1KjxV3CLNy7K0
+2025-06-30 06:16:23,002 - product_parser - INFO -    Товар: Доступ ограничен
+2025-06-30 06:16:23,020 - product_parser - INFO -    Продавец: Продавец не найден
+2025-06-30 06:16:23,023 - product_parser - INFO -    Компания: Не найдено
+2025-06-30 06:16:23,085 - product_parser - INFO -    ИНН: Не найдено
+2025-06-30 06:16:29,042 - product_parser - INFO - Воркер 2 завершил работу
+2025-06-30 06:16:29,138 - excel_exporter - INFO - Результаты сохранены в results\sistemnye-bloki-15704_30.06.2025-06_14_28.xlsx
+2025-06-30 06:16:29,148 - product_parser - INFO - Обработка завершена успешно за 120.57 секунд
+2025-06-30 06:16:29,154 - product_parser - INFO - Обработано товаров: 3
+2025-06-30 06:16:29,156 - product_parser - INFO - Успешно: 3
+2025-06-30 06:16:29,167 - product_parser - INFO - Закончились: 0
+2025-06-30 06:16:29,168 - product_parser - INFO - Ошибки: 0
+2025-06-30 06:16:29,185 - src.bot.utils - INFO - Файл результатов создан: results\sistemnye-bloki-15704_30.06.2025-06_14_28.xlsx
+2025-06-30 06:16:29,201 - driver_manager - INFO - Все браузеры закрыты
+2025-06-30 06:16:29,205 - driver_manager - INFO - Очистка DriverManager завершена
+2025-06-30 06:16:29,806 - src.bot.handlers - INFO - Файл успешно отправлен: results\sistemnye-bloki-15704_30.06.2025-06_14_28.xlsx
+2025-06-30 06:16:30,119 - src.bot.handlers - INFO - Файл успешно отправлен: C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\links.txt
+2025-06-30 06:16:30,153 - aiogram.event - INFO - Update id=36893481 is handled. Duration 133782 ms by bot id=7955956815
+2025-06-30 06:16:40,172 - src.bot.utils - INFO - Файл удален: C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\links.txt

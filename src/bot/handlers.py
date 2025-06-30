@@ -14,7 +14,14 @@ from aiogram.exceptions import TelegramNetworkError, TelegramBadRequest
 from .config import TELEGRAM_CHAT_ID
 from .states import ParserState
 from .keywords import BOT_MESSAGES, KEYBOARD_BUTTONS
-from .utils import check_access, validate_ozon_url, run_parser_sync, cleanup_file
+from .utils import (
+    check_access, 
+    validate_ozon_url, 
+    validate_product_links,
+    run_parser_sync, 
+    run_product_parser_sync,
+    cleanup_file
+)
 from .logging_handler import LogUpdater
 from .file_utils import validate_file_for_telegram, compress_file
 from src.config import LINKS_OUTPUT_FILE
@@ -39,7 +46,10 @@ class BotHandlers:
             await message.answer(BOT_MESSAGES['access_denied'])
             return
         
-        kb = [[KeyboardButton(text=KEYBOARD_BUTTONS['parse'])]]
+        kb = [
+            [KeyboardButton(text=KEYBOARD_BUTTONS['parse'])],
+            [KeyboardButton(text=KEYBOARD_BUTTONS['parse_products'])]
+        ]
         keyboard = ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True)
         
         await message.answer(BOT_MESSAGES['welcome'], reply_markup=keyboard)
@@ -62,9 +72,27 @@ class BotHandlers:
             reply_markup=ReplyKeyboardRemove()
         )
     
+    async def cmd_parse_products(self, message: types.Message, state: FSMContext):
+        """
+        Обработчик команды /parse_products
+        
+        Args:
+            message: Сообщение пользователя
+            state: Состояние FSM
+        """
+        if not check_access(message.from_user.id):
+            await message.answer(BOT_MESSAGES['access_denied'])
+            return
+        
+        await state.set_state(ParserState.waiting_product_links)
+        await message.answer(
+            BOT_MESSAGES['parse_products_request'],
+            reply_markup=ReplyKeyboardRemove()
+        )
+    
     async def process_url(self, message: types.Message, state: FSMContext):
         """
-        Обработчик URL для парсинга
+        Обработчик URL для парсинга категории
         
         Args:
             message: Сообщение с URL
@@ -90,7 +118,7 @@ class BotHandlers:
         log_task = asyncio.create_task(log_updater.start(message.chat.id))
         
         try:
-            # Запускаем парсер в отдельном потоке
+            # Запускаем парсер категории в отдельном потоке
             loop = asyncio.get_running_loop()
             file_path = await loop.run_in_executor(
                 None, 
@@ -103,48 +131,12 @@ class BotHandlers:
                 await message.answer(BOT_MESSAGES['parsing_error'])
                 return
             
-            # Отправляем файл с обработкой ошибок
-            filename = os.path.basename(file_path)
-            await message.answer(f"✅ Парсинг завершен!\n📄 Файл: {filename}")
-            
-            print(file_path , 'file_path')
-            # Проверяем возможность отправки файла
-            can_send, reason, size_mb = validate_file_for_telegram(file_path)
-            
-            
-            if not can_send:
-                if "слишком большой" in reason:
-                    # Пытаемся сжать файл
-                    await message.answer(f"📦 Файл большой ({size_mb:.1f}MB), сжимаю...")
-                    zip_path = compress_file(file_path)
-                    
-                    if zip_path:
-                        can_send_zip, reason_zip, size_zip_mb = validate_file_for_telegram(zip_path)
-                        if can_send_zip:
-                            await message.answer(f"📤 Отправляю сжатый файл ({size_zip_mb:.1f}MB)...")
-                            await self._send_document_with_retry(message, zip_path, max_retries=3)
-                            asyncio.create_task(cleanup_file(zip_path))
-                        else:
-                            await message.answer(f"❌ Даже сжатый файл слишком большой ({size_zip_mb:.1f}MB)")
-                    else:
-                        await message.answer("❌ Не удалось сжать файл")
-                else:
-                    await message.answer(f"❌ {reason}")
-            else:
-                # Файл можно отправить как есть
-                await message.answer(f"📤 Отправляю файл ({size_mb:.1f}MB)...")
-                await self._send_document_with_retry(message, file_path, max_retries=3)
+            # Отправляем основной файл
+            await self._send_parsing_results(message, file_path)
             
             # Ищем и отправляем links.txt
             await self._send_links_file(message, file_path)
                 
-            # except Exception as e:
-            #     logger.error(f"Ошибка при отправке файла: {e}")
-            #     await message.answer(BOT_MESSAGES['file_send_error'])
-            # finally:
-            #     # Планируем удаление файла
-            #     asyncio.create_task(cleanup_file(file_path))
-        
         except Exception as e:
             logger.exception(f"Ошибка при обработке URL: {e}")
             await message.answer(BOT_MESSAGES['parsing_error'])
@@ -154,6 +146,105 @@ class BotHandlers:
                 await log_task
             except asyncio.CancelledError:
                 pass
+    
+    async def process_product_links(self, message: types.Message, state: FSMContext):
+        """
+        Обработчик ссылок на товары для парсинга
+        
+        Args:
+            message: Сообщение со ссылками
+            state: Состояние FSM
+        """
+        if not check_access(message.from_user.id):
+            await message.answer(BOT_MESSAGES['access_denied'])
+            return
+        
+        text = message.text.strip()
+        
+        # Валидация ссылок
+        is_valid, error_key, valid_links = validate_product_links(text)
+        if not is_valid:
+            await message.answer(BOT_MESSAGES[error_key])
+            return
+        
+        await state.clear()
+        await message.answer(
+            f"🚀 Парсинг товаров запущен...\n"
+            f"📦 Найдено {len(valid_links)} валидных ссылок\n"
+            f"📊 Следите за обновлениями в реальном времени"
+        )
+        
+        # Запускаем обновление логов
+        log_updater = LogUpdater(self.bot)
+        log_task = asyncio.create_task(log_updater.start(message.chat.id))
+        
+        try:
+            # Запускаем парсер товаров в отдельном потоке
+            loop = asyncio.get_running_loop()
+            file_path = await loop.run_in_executor(
+                None, 
+                run_product_parser_sync, 
+                valid_links, 
+                message.from_user.id
+            )
+            
+            if not file_path:
+                await message.answer(BOT_MESSAGES['parsing_error'])
+                return
+            
+            # Отправляем файл с результатами
+            await self._send_parsing_results(message, file_path)
+                
+        except Exception as e:
+            logger.exception(f"Ошибка при обработке ссылок на товары: {e}")
+            await message.answer(BOT_MESSAGES['parsing_error'])
+        finally:
+            log_task.cancel()
+            try:
+                await log_task
+            except asyncio.CancelledError:
+                pass
+    
+    async def _send_parsing_results(self, message: types.Message, file_path: str):
+        """
+        Отправляет результаты парсинга
+        
+        Args:
+            message: Сообщение для ответа
+            file_path: Путь к файлу с результатами
+        """
+        # Отправляем файл с обработкой ошибок
+        filename = os.path.basename(file_path)
+        await message.answer(f"✅ Парсинг завершен!\n📄 Файл: {filename}")
+        
+        # Проверяем возможность отправки файла
+        can_send, reason, size_mb = validate_file_for_telegram(file_path)
+        
+        if not can_send:
+            if "слишком большой" in reason:
+                # Пытаемся сжать файл
+                await message.answer(f"📦 Файл большой ({size_mb:.1f}MB), сжимаю...")
+                zip_path = compress_file(file_path)
+                
+                if zip_path:
+                    can_send_zip, reason_zip, size_zip_mb = validate_file_for_telegram(zip_path)
+                    if can_send_zip:
+                        await message.answer(f"📤 Отправляю сжатый файл ({size_zip_mb:.1f}MB)...")
+                        await self._send_document_with_retry(message, zip_path, max_retries=3)
+                        asyncio.create_task(cleanup_file(zip_path))
+                    else:
+                        await message.answer(f"❌ Даже сжатый файл слишком большой ({size_zip_mb:.1f}MB)")
+                else:
+                    await message.answer("❌ Не удалось сжать файл")
+            else:
+                await message.answer(f"❌ {reason}")
+        else:
+            # Файл можно отправить как есть
+            await message.answer(f"📤 Отправляю файл ({size_mb:.1f}MB)...")
+            await self._send_document_with_retry(message, file_path, max_retries=3)
+        
+        # Планируем удаление файла
+        asyncio.create_task(cleanup_file(file_path))
 
     async def _send_links_file(self, message: types.Message, main_file_path: str):
         """
@@ -180,7 +271,7 @@ class BotHandlers:
                 else:
                     await message.answer(f"❌ Файл links.txt {reason}")
             else:
-                logger.info(f"Файл {LINKS_OUTPUT_FILE} не найден в директории: {dir_path}")
+                logger.info(f"Файл {LINKS_OUTPUT_FILE} не найден")
                 
         except Exception as e:
             logger.error(f"Ошибка при отправке файла links.txt: {e}")
@@ -264,15 +355,25 @@ def register_handlers(dp, bot: Bot):
     # Команда /start
     dp.message.register(handlers.cmd_start, Command("start"))
     
-    # Команда /parse и кнопка "Парсить"
+    # Команда /parse и кнопка "Парсить категорию"
     dp.message.register(handlers.cmd_parse, Command("parse"))
     dp.message.register(
         handlers.cmd_parse, 
         F.text.lower() == KEYBOARD_BUTTONS['parse'].lower()
     )
     
-    # Обработчик URL
+    # Команда /parse_products и кнопка "Парсить товары"
+    dp.message.register(handlers.cmd_parse_products, Command("parse_products"))
+    dp.message.register(
+        handlers.cmd_parse_products, 
+        F.text.lower() == KEYBOARD_BUTTONS['parse_products'].lower()
+    )
+    
+    # Обработчик URL для категории
     dp.message.register(handlers.process_url, ParserState.waiting_url)
+    
+    # Обработчик ссылок на товары
+    dp.message.register(handlers.process_product_links, ParserState.waiting_product_links)
     
     # Фильтр для неавторизованных пользователей
     dp.message.register(

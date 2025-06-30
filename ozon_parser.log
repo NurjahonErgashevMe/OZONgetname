@@ -3298,3 +3298,404 @@ Stacktrace:
 2025-06-30 06:16:30,119 - src.bot.handlers - INFO - Файл успешно отправлен: C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\links.txt
 2025-06-30 06:16:30,153 - aiogram.event - INFO - Update id=36893481 is handled. Duration 133782 ms by bot id=7955956815
 2025-06-30 06:16:40,172 - src.bot.utils - INFO - Файл удален: C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\links.txt
+2025-06-30 06:28:56,577 - telegram_bot - INFO - Запуск Telegram бота...
+2025-06-30 06:28:56,630 - aiogram.dispatcher - INFO - Start polling
+2025-06-30 06:28:58,068 - aiogram.dispatcher - INFO - Run polling for bot @ozongetnamerbot id=7955956815 - 'ozongetnamer'
+2025-06-30 06:28:59,066 - aiogram.event - INFO - Update id=36893482 is handled. Duration 828 ms by bot id=7955956815
+2025-06-30 06:29:01,482 - aiogram.event - INFO - Update id=36893483 is handled. Duration 327 ms by bot id=7955956815
+2025-06-30 06:29:07,175 - src.bot.logging_handler - ERROR - Ошибка обновления логов: name 'SIGNIFICANT_LOG_KEYWORDS' is not defined
+2025-06-30 06:29:07,176 - excel_exporter - INFO - Файл результатов: results\product_links_30.06.2025-06_29_07.xlsx
+2025-06-30 06:29:07,180 - product_parser - INFO - Инициализирован парсер для категории: product_links
+2025-06-30 06:29:07,181 - product_parser - INFO - Начало обработки 3 товаров
+2025-06-30 06:29:10,135 - driver_manager - INFO - Создан новый браузер с selenium-stealth. Всего активных: 1
+2025-06-30 06:29:10,136 - product_parser - INFO - Воркер 1 запущен
+2025-06-30 06:29:10,393 - driver_manager - INFO - Создан новый браузер с selenium-stealth. Всего активных: 2
+2025-06-30 06:29:10,394 - product_parser - INFO - Воркер 2 запущен
+2025-06-30 06:29:12,146 - driver_manager - INFO - Создан новый браузер с selenium-stealth. Всего активных: 3
+2025-06-30 06:29:12,147 - product_parser - INFO - Воркер 3 запущен
+2025-06-30 06:29:12,185 - src.bot.logging_handler - ERROR - Ошибка обновления логов: name 'SIGNIFICANT_LOG_KEYWORDS' is not defined
+2025-06-30 06:29:17,894 - src.bot.logging_handler - ERROR - Ошибка обновления логов: name 'SIGNIFICANT_LOG_KEYWORDS' is not defined
+2025-06-30 06:29:29,559 - src.bot.logging_handler - ERROR - Ошибка обновления логов: name 'SIGNIFICANT_LOG_KEYWORDS' is not defined
+2025-06-30 06:29:35,202 - src.bot.logging_handler - ERROR - Ошибка обновления логов: name 'SIGNIFICANT_LOG_KEYWORDS' is not defined
+2025-06-30 06:29:42,590 - src.bot.logging_handler - ERROR - Ошибка обновления логов: name 'SIGNIFICANT_LOG_KEYWORDS' is not defined
+2025-06-30 06:29:48,011 - src.bot.logging_handler - ERROR - Ошибка обновления логов: name 'SIGNIFICANT_LOG_KEYWORDS' is not defined
+2025-06-30 06:29:54,051 - src.bot.logging_handler - ERROR - Ошибка обновления логов: name 'SIGNIFICANT_LOG_KEYWORDS' is not defined
+2025-06-30 06:29:58,735 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 06:29:58,777 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 06:30:04,701 - src.bot.logging_handler - ERROR - Ошибка обновления логов: name 'SIGNIFICANT_LOG_KEYWORDS' is not defined
+2025-06-30 06:30:10,829 - src.bot.logging_handler - ERROR - Ошибка обновления логов: name 'SIGNIFICANT_LOG_KEYWORDS' is not defined
+2025-06-30 06:30:16,282 - src.bot.logging_handler - ERROR - Ошибка обновления логов: name 'SIGNIFICANT_LOG_KEYWORDS' is not defined
+2025-06-30 06:30:17,247 - product_parser - INFO - [1/3] УСПЕШНО: https://www.ozon.ru/product/treidcomputers-sistemnyy-blok-intel-core-i7-12700f-ram-32-gb-ssd-960-gb-nvidia-geforce-rtx-4060-8-gb-1922781204/?at=x6tPpPrVZHl8NXRESYKvlmOFEGlPW3f1EpP1Kh3M9jpX
+2025-06-30 06:30:17,304 - product_parser - INFO -    Товар: TREIDCOMPUTERS Системный блок (Intel Core i7-12700F, RAM 32 ГБ, SSD 960 ГБ, NVIDIA GeForce RTX 4060 (8 Гб), Windows 10 Pro), черный
+2025-06-30 06:30:17,316 - product_parser - INFO -    Продавец: TREIDCOMPUTERS
+2025-06-30 06:30:17,323 - product_parser - INFO -    Компания: ИП Буторин Илья Сергеевич
+2025-06-30 06:30:17,389 - product_parser - INFO -    ИНН: 319774600299562
+2025-06-30 06:30:20,901 - product_parser - INFO - [2/3] УСПЕШНО: https://www.ozon.ru/product/iru-sistemnyy-blok-310sc-intel-core-i7-12700-ram-32-gb-ssd-1024-gb-intel-uhd-graphics-770-windows-1767344909/?at=mqtkVkE3vFRW82lGSqGyQEAiD54rpC1KjxV3CLNy7K0
+2025-06-30 06:30:20,930 - product_parser - INFO -    Товар: iRU Системный блок 310SC (Intel Core i7-12700, RAM 32 ГБ, SSD 1024 ГБ, Intel UHD Graphics 770, Windows 11 Pro), 2017895, черный
+2025-06-30 06:30:20,931 - product_parser - INFO -    Продавец: Ситилинк Доставка
+2025-06-30 06:30:20,932 - product_parser - INFO -    Компания: ООО "СИТИЛИНК"
+2025-06-30 06:30:20,958 - product_parser - INFO -    ИНН: 1147746461422
+2025-06-30 06:30:21,301 - src.bot.logging_handler - ERROR - Ошибка обновления логов: name 'SIGNIFICANT_LOG_KEYWORDS' is not defined
+2025-06-30 06:30:22,525 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-30 06:30:22,528 - telegram_bot - INFO - Бот остановлен
+2025-06-30 06:30:22,546 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None)': /session/9482ea735094c9a0cb9822e979f4e703
+2025-06-30 06:30:22,558 - aiogram.dispatcher - INFO - Polling stopped for bot @ozongetnamerbot id=7955956815 - 'ozongetnamer'
+2025-06-30 06:30:22,565 - aiogram.event - INFO - Update id=36893484 is not handled. Duration 75719 ms by bot id=7955956815
+2025-06-30 06:30:22,991 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None)': /session/7fddb79acd76b5c972dbaab2a2c9cb54
+2025-06-30 06:32:55,350 - telegram_bot - INFO - Запуск Telegram бота...
+2025-06-30 06:32:55,370 - aiogram.dispatcher - INFO - Start polling
+2025-06-30 06:32:57,256 - aiogram.dispatcher - INFO - Run polling for bot @ozongetnamerbot id=7955956815 - 'ozongetnamer'
+2025-06-30 06:33:03,214 - aiogram.event - INFO - Update id=36893485 is handled. Duration 1125 ms by bot id=7955956815
+2025-06-30 06:33:04,758 - aiogram.event - INFO - Update id=36893486 is handled. Duration 125 ms by bot id=7955956815
+2025-06-30 06:33:09,408 - excel_exporter - INFO - Файл результатов: results\product_links_30.06.2025-06_33_09.xlsx
+2025-06-30 06:33:09,410 - product_parser - INFO - Инициализирован парсер для категории: product_links
+2025-06-30 06:33:09,416 - product_parser - INFO - Начало обработки 3 товаров
+2025-06-30 06:33:12,016 - driver_manager - INFO - Создан новый браузер с selenium-stealth. Всего активных: 1
+2025-06-30 06:33:12,017 - product_parser - INFO - Воркер 1 запущен
+2025-06-30 06:33:12,158 - driver_manager - INFO - Создан новый браузер с selenium-stealth. Всего активных: 2
+2025-06-30 06:33:12,159 - product_parser - INFO - Воркер 2 запущен
+2025-06-30 06:33:13,454 - driver_manager - INFO - Создан новый браузер с selenium-stealth. Всего активных: 3
+2025-06-30 06:33:13,454 - product_parser - INFO - Воркер 3 запущен
+2025-06-30 06:33:41,554 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 06:33:51,019 - product_parser - INFO - [1/3] УСПЕШНО: https://www.ozon.ru/product/treidcomputers-sistemnyy-blok-amd-ryzen-5-5600g-ram-32-gb-ssd-960-gb-amd-radeon-vega-7-windows-10-1940505582/?at=99trJroX8fE3OKp7Hxz2MDgU9ROznMU9x16KyhY374jr
+2025-06-30 06:33:51,020 - product_parser - INFO -    Товар: TREIDCOMPUTERS Системный блок (AMD Ryzen 5 5600G, RAM 32 ГБ, SSD 960 ГБ, AMD Radeon Vega 7, Windows 10 Pro), темно-коричневый, черный
+2025-06-30 06:33:51,021 - product_parser - INFO -    Продавец: TREIDCOMPUTERS
+2025-06-30 06:33:51,021 - product_parser - INFO -    Компания: ИП Буторин Илья Сергеевич
+2025-06-30 06:33:51,023 - product_parser - INFO -    ИНН: 319774600299562
+2025-06-30 06:33:54,932 - product_parser - INFO - Воркер 1 завершил работу
+2025-06-30 06:34:16,463 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 06:34:18,578 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 06:34:27,144 - seller_info_parser - ERROR - Ошибка в попытке 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff67df7fea5+79173]
+	GetHandleVerifier [0x0x7ff67df7ff00+79264]
+	(No symbol) [0x0x7ff67dd39e5a]
+	(No symbol) [0x0x7ff67dd90586]
+	(No symbol) [0x0x7ff67dd9083c]
+	(No symbol) [0x0x7ff67dde4247]
+	(No symbol) [0x0x7ff67ddb89af]
+	(No symbol) [0x0x7ff67dde100d]
+	(No symbol) [0x0x7ff67ddb8743]
+	(No symbol) [0x0x7ff67dd814c1]
+	(No symbol) [0x0x7ff67dd82253]
+	GetHandleVerifier [0x0x7ff67e24a2dd+3004797]
+	GetHandleVerifier [0x0x7ff67e24472d+2981325]
+	GetHandleVerifier [0x0x7ff67e263380+3107360]
+	GetHandleVerifier [0x0x7ff67df9aa2e+188622]
+	GetHandleVerifier [0x0x7ff67dfa22bf+219487]
+	GetHandleVerifier [0x0x7ff67df88df4+115860]
+	GetHandleVerifier [0x0x7ff67df88fa9+116297]
+	GetHandleVerifier [0x0x7ff67df6f558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 06:34:27,148 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 06:34:29,233 - seller_info_parser - ERROR - Ошибка в попытке 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff67df7fea5+79173]
+	GetHandleVerifier [0x0x7ff67df7ff00+79264]
+	(No symbol) [0x0x7ff67dd39e5a]
+	(No symbol) [0x0x7ff67dd90586]
+	(No symbol) [0x0x7ff67dd9083c]
+	(No symbol) [0x0x7ff67dde4247]
+	(No symbol) [0x0x7ff67ddb89af]
+	(No symbol) [0x0x7ff67dde100d]
+	(No symbol) [0x0x7ff67ddb8743]
+	(No symbol) [0x0x7ff67dd814c1]
+	(No symbol) [0x0x7ff67dd82253]
+	GetHandleVerifier [0x0x7ff67e24a2dd+3004797]
+	GetHandleVerifier [0x0x7ff67e24472d+2981325]
+	GetHandleVerifier [0x0x7ff67e263380+3107360]
+	GetHandleVerifier [0x0x7ff67df9aa2e+188622]
+	GetHandleVerifier [0x0x7ff67dfa22bf+219487]
+	GetHandleVerifier [0x0x7ff67df88df4+115860]
+	GetHandleVerifier [0x0x7ff67df88fa9+116297]
+	GetHandleVerifier [0x0x7ff67df6f558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 06:34:29,240 - seller_info_parser - INFO - Попытка 2 получить данные продавца
+2025-06-30 06:34:37,711 - seller_info_parser - ERROR - Ошибка в попытке 2: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff67df7fea5+79173]
+	GetHandleVerifier [0x0x7ff67df7ff00+79264]
+	(No symbol) [0x0x7ff67dd39e5a]
+	(No symbol) [0x0x7ff67dd90586]
+	(No symbol) [0x0x7ff67dd9083c]
+	(No symbol) [0x0x7ff67dde4247]
+	(No symbol) [0x0x7ff67ddb89af]
+	(No symbol) [0x0x7ff67dde100d]
+	(No symbol) [0x0x7ff67ddb8743]
+	(No symbol) [0x0x7ff67dd814c1]
+	(No symbol) [0x0x7ff67dd82253]
+	GetHandleVerifier [0x0x7ff67e24a2dd+3004797]
+	GetHandleVerifier [0x0x7ff67e24472d+2981325]
+	GetHandleVerifier [0x0x7ff67e263380+3107360]
+	GetHandleVerifier [0x0x7ff67df9aa2e+188622]
+	GetHandleVerifier [0x0x7ff67dfa22bf+219487]
+	GetHandleVerifier [0x0x7ff67df88df4+115860]
+	GetHandleVerifier [0x0x7ff67df88fa9+116297]
+	GetHandleVerifier [0x0x7ff67df6f558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 06:34:37,715 - seller_info_parser - INFO - Попытка 3 получить данные продавца
+2025-06-30 06:34:40,168 - seller_info_parser - ERROR - Ошибка в попытке 2: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff67df7fea5+79173]
+	GetHandleVerifier [0x0x7ff67df7ff00+79264]
+	(No symbol) [0x0x7ff67dd39e5a]
+	(No symbol) [0x0x7ff67dd90586]
+	(No symbol) [0x0x7ff67dd9083c]
+	(No symbol) [0x0x7ff67dde4247]
+	(No symbol) [0x0x7ff67ddb89af]
+	(No symbol) [0x0x7ff67dde100d]
+	(No symbol) [0x0x7ff67ddb8743]
+	(No symbol) [0x0x7ff67dd814c1]
+	(No symbol) [0x0x7ff67dd82253]
+	GetHandleVerifier [0x0x7ff67e24a2dd+3004797]
+	GetHandleVerifier [0x0x7ff67e24472d+2981325]
+	GetHandleVerifier [0x0x7ff67e263380+3107360]
+	GetHandleVerifier [0x0x7ff67df9aa2e+188622]
+	GetHandleVerifier [0x0x7ff67dfa22bf+219487]
+	GetHandleVerifier [0x0x7ff67df88df4+115860]
+	GetHandleVerifier [0x0x7ff67df88fa9+116297]
+	GetHandleVerifier [0x0x7ff67df6f558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 06:34:40,178 - seller_info_parser - INFO - Попытка 3 получить данные продавца
+2025-06-30 06:34:48,660 - seller_info_parser - ERROR - Ошибка в попытке 3: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff67df7fea5+79173]
+	GetHandleVerifier [0x0x7ff67df7ff00+79264]
+	(No symbol) [0x0x7ff67dd39e5a]
+	(No symbol) [0x0x7ff67dd90586]
+	(No symbol) [0x0x7ff67dd9083c]
+	(No symbol) [0x0x7ff67dde4247]
+	(No symbol) [0x0x7ff67ddb89af]
+	(No symbol) [0x0x7ff67dde100d]
+	(No symbol) [0x0x7ff67ddb8743]
+	(No symbol) [0x0x7ff67dd814c1]
+	(No symbol) [0x0x7ff67dd82253]
+	GetHandleVerifier [0x0x7ff67e24a2dd+3004797]
+	GetHandleVerifier [0x0x7ff67e24472d+2981325]
+	GetHandleVerifier [0x0x7ff67e263380+3107360]
+	GetHandleVerifier [0x0x7ff67df9aa2e+188622]
+	GetHandleVerifier [0x0x7ff67dfa22bf+219487]
+	GetHandleVerifier [0x0x7ff67df88df4+115860]
+	GetHandleVerifier [0x0x7ff67df88fa9+116297]
+	GetHandleVerifier [0x0x7ff67df6f558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 06:34:48,664 - product_parser - INFO - [2/3] УСПЕШНО: https://www.ozon.ru/product/iru-sistemnyy-blok-310sc-intel-core-i7-12700-ram-32-gb-ssd-1024-gb-intel-uhd-graphics-770-windows-1767344909/?at=mqtkVkE3vFRW82lGSqGyQEAiD54rpC1KjxV3CLNy7K0
+2025-06-30 06:34:48,665 - product_parser - INFO -    Товар: Доступ ограничен
+2025-06-30 06:34:48,666 - product_parser - INFO -    Продавец: Продавец не найден
+2025-06-30 06:34:48,666 - product_parser - INFO -    Компания: Не найдено
+2025-06-30 06:34:48,671 - product_parser - INFO -    ИНН: Не найдено
+2025-06-30 06:34:50,744 - seller_info_parser - ERROR - Ошибка в попытке 3: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff67df7fea5+79173]
+	GetHandleVerifier [0x0x7ff67df7ff00+79264]
+	(No symbol) [0x0x7ff67dd39e5a]
+	(No symbol) [0x0x7ff67dd90586]
+	(No symbol) [0x0x7ff67dd9083c]
+	(No symbol) [0x0x7ff67dde4247]
+	(No symbol) [0x0x7ff67ddb89af]
+	(No symbol) [0x0x7ff67dde100d]
+	(No symbol) [0x0x7ff67ddb8743]
+	(No symbol) [0x0x7ff67dd814c1]
+	(No symbol) [0x0x7ff67dd82253]
+	GetHandleVerifier [0x0x7ff67e24a2dd+3004797]
+	GetHandleVerifier [0x0x7ff67e24472d+2981325]
+	GetHandleVerifier [0x0x7ff67e263380+3107360]
+	GetHandleVerifier [0x0x7ff67df9aa2e+188622]
+	GetHandleVerifier [0x0x7ff67dfa22bf+219487]
+	GetHandleVerifier [0x0x7ff67df88df4+115860]
+	GetHandleVerifier [0x0x7ff67df88fa9+116297]
+	GetHandleVerifier [0x0x7ff67df6f558+11256]
+	BaseThreadInitThunk [0x0x7ffc6cb07374+20]
+	RtlUserThreadStart [0x0x7ffc6ce9cc91+33]
+
+2025-06-30 06:34:50,748 - product_parser - INFO - [3/3] УСПЕШНО: https://www.ozon.ru/product/treidcomputers-sistemnyy-blok-intel-core-i7-12700f-ram-32-gb-ssd-960-gb-nvidia-geforce-rtx-4060-8-gb-1922781204/?at=x6tPpPrVZHl8NXRESYKvlmOFEGlPW3f1EpP1Kh3M9jpX
+2025-06-30 06:34:50,749 - product_parser - INFO -    Товар: Доступ ограничен
+2025-06-30 06:34:50,750 - product_parser - INFO -    Продавец: Продавец не найден
+2025-06-30 06:34:50,750 - product_parser - INFO -    Компания: Не найдено
+2025-06-30 06:34:50,751 - product_parser - INFO -    ИНН: Не найдено
+2025-06-30 06:34:51,507 - product_parser - INFO - Воркер 2 завершил работу
+2025-06-30 06:34:52,608 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-30 06:34:52,610 - telegram_bot - INFO - Бот остановлен
+2025-06-30 06:34:52,611 - aiogram.dispatcher - INFO - Polling stopped for bot @ozongetnamerbot id=7955956815 - 'ozongetnamer'
+2025-06-30 06:34:52,612 - aiogram.event - INFO - Update id=36893487 is not handled. Duration 103530 ms by bot id=7955956815
+2025-06-30 06:34:54,855 - product_parser - INFO - Воркер 3 завершил работу
+2025-06-30 06:34:54,965 - excel_exporter - INFO - Результаты сохранены в results\product_links_30.06.2025-06_33_09.xlsx
+2025-06-30 06:34:54,966 - product_parser - INFO - Обработка завершена успешно за 105.55 секунд
+2025-06-30 06:34:54,966 - product_parser - INFO - Обработано товаров: 3
+2025-06-30 06:34:54,966 - product_parser - INFO - Успешно: 3
+2025-06-30 06:34:54,966 - product_parser - INFO - Закончились: 0
+2025-06-30 06:34:54,967 - product_parser - INFO - Ошибки: 0
+2025-06-30 06:34:54,967 - driver_manager - INFO - Все браузеры закрыты
+2025-06-30 06:34:54,967 - driver_manager - INFO - Очистка DriverManager завершена
+2025-06-30 06:35:49,682 - telegram_bot - INFO - Запуск Telegram бота...
+2025-06-30 06:35:49,804 - aiogram.dispatcher - INFO - Start polling
+2025-06-30 06:35:50,713 - aiogram.dispatcher - INFO - Run polling for bot @ozongetnamerbot id=7955956815 - 'ozongetnamer'
+2025-06-30 06:36:05,979 - aiogram.event - INFO - Update id=36893488 is handled. Duration 546 ms by bot id=7955956815
+2025-06-30 06:36:07,400 - aiogram.event - INFO - Update id=36893489 is handled. Duration 327 ms by bot id=7955956815
+2025-06-30 06:36:11,565 - excel_exporter - INFO - Файл результатов: results\product_links_30.06.2025-06_36_11.xlsx
+2025-06-30 06:36:11,568 - product_parser - INFO - Инициализирован парсер для категории: product_links
+2025-06-30 06:36:11,571 - product_parser - INFO - Начало обработки 3 товаров
+2025-06-30 06:36:14,498 - driver_manager - INFO - Создан новый браузер с selenium-stealth. Всего активных: 1
+2025-06-30 06:36:14,500 - product_parser - INFO - Воркер 1 запущен
+2025-06-30 06:36:14,594 - driver_manager - INFO - Создан новый браузер с selenium-stealth. Всего активных: 2
+2025-06-30 06:36:14,595 - product_parser - INFO - Воркер 2 запущен
+2025-06-30 06:36:16,279 - driver_manager - INFO - Создан новый браузер с selenium-stealth. Всего активных: 3
+2025-06-30 06:36:16,280 - product_parser - INFO - Воркер 3 запущен
+2025-06-30 06:37:08,849 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 06:37:16,380 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 06:37:16,413 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 06:37:19,664 - product_parser - INFO - [1/3] УСПЕШНО: https://www.ozon.ru/product/treidcomputers-sistemnyy-blok-amd-ryzen-5-5600g-ram-32-gb-ssd-960-gb-amd-radeon-vega-7-windows-10-1940505582/?at=99trJroX8fE3OKp7Hxz2MDgU9ROznMU9x16KyhY374jr
+2025-06-30 06:37:19,665 - product_parser - INFO -    Товар: TREIDCOMPUTERS Системный блок (AMD Ryzen 5 5600G, RAM 32 ГБ, SSD 960 ГБ, AMD Radeon Vega 7, Windows 10 Pro), темно-коричневый, черный
+2025-06-30 06:37:19,667 - product_parser - INFO -    Продавец: TREIDCOMPUTERS
+2025-06-30 06:37:19,671 - product_parser - INFO -    Компания: ИП Буторин Илья Сергеевич
+2025-06-30 06:37:19,673 - product_parser - INFO -    ИНН: 319774600299562
+2025-06-30 06:37:20,922 - product_parser - INFO - [2/3] УСПЕШНО: https://www.ozon.ru/product/iru-sistemnyy-blok-310sc-intel-core-i7-12700-ram-32-gb-ssd-1024-gb-intel-uhd-graphics-770-windows-1767344909/?at=mqtkVkE3vFRW82lGSqGyQEAiD54rpC1KjxV3CLNy7K0
+2025-06-30 06:37:20,925 - product_parser - INFO -    Товар: iRU Системный блок 310SC (Intel Core i7-12700, RAM 32 ГБ, SSD 1024 ГБ, Intel UHD Graphics 770, Windows 11 Pro), 2017895, черный
+2025-06-30 06:37:20,927 - product_parser - INFO -    Продавец: Ситилинк Доставка
+2025-06-30 06:37:20,928 - product_parser - INFO -    Компания: ООО "СИТИЛИНК"
+2025-06-30 06:37:20,929 - product_parser - INFO -    ИНН: 1147746461422
+2025-06-30 06:37:20,975 - product_parser - INFO - [3/3] УСПЕШНО: https://www.ozon.ru/product/treidcomputers-sistemnyy-blok-intel-core-i7-12700f-ram-32-gb-ssd-960-gb-nvidia-geforce-rtx-4060-8-gb-1922781204/?at=x6tPpPrVZHl8NXRESYKvlmOFEGlPW3f1EpP1Kh3M9jpX
+2025-06-30 06:37:20,977 - product_parser - INFO -    Товар: TREIDCOMPUTERS Системный блок (Intel Core i7-12700F, RAM 32 ГБ, SSD 960 ГБ, NVIDIA GeForce RTX 4060 (8 Гб), Windows 10 Pro), черный
+2025-06-30 06:37:20,978 - product_parser - INFO -    Продавец: TREIDCOMPUTERS
+2025-06-30 06:37:20,979 - product_parser - INFO -    Компания: ИП Буторин Илья Сергеевич
+2025-06-30 06:37:20,980 - product_parser - INFO -    ИНН: 319774600299562
+2025-06-30 06:37:24,019 - product_parser - INFO - Воркер 1 завершил работу
+2025-06-30 06:37:24,080 - product_parser - INFO - Воркер 3 завершил работу
+2025-06-30 06:37:24,142 - product_parser - INFO - Воркер 2 завершил работу
+2025-06-30 06:37:24,229 - excel_exporter - INFO - Результаты сохранены в results\product_links_30.06.2025-06_36_11.xlsx
+2025-06-30 06:37:24,238 - product_parser - INFO - Обработка завершена успешно за 72.67 секунд
+2025-06-30 06:37:24,247 - product_parser - INFO - Обработано товаров: 3
+2025-06-30 06:37:24,255 - product_parser - INFO - Успешно: 3
+2025-06-30 06:37:24,258 - product_parser - INFO - Закончились: 0
+2025-06-30 06:37:24,270 - product_parser - INFO - Ошибки: 0
+2025-06-30 06:37:24,273 - driver_manager - INFO - Все браузеры закрыты
+2025-06-30 06:37:24,274 - driver_manager - INFO - Очистка DriverManager завершена
+2025-06-30 06:37:25,057 - src.bot.handlers - INFO - Файл успешно отправлен: results\product_links_30.06.2025-06_36_11.xlsx
+2025-06-30 06:37:25,062 - aiogram.event - INFO - Update id=36893490 is handled. Duration 73672 ms by bot id=7955956815
+2025-06-30 06:38:06,257 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: Telegram server says ClientOSError: [WinError 1236] Подключение к сети было разорвано локальной системой
+2025-06-30 06:38:06,405 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7955956815)
+2025-06-30 06:38:07,428 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: Telegram server says ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2025-06-30 06:38:07,435 - aiogram.dispatcher - WARNING - Sleep for 1.316294 seconds and try again... (tryings = 1, bot id = 7955956815)
+2025-06-30 06:38:08,775 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: Telegram server says ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2025-06-30 06:38:08,777 - aiogram.dispatcher - WARNING - Sleep for 1.752527 seconds and try again... (tryings = 2, bot id = 7955956815)
+2025-06-30 06:38:23,533 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: Telegram server says ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2025-06-30 06:38:23,536 - aiogram.dispatcher - WARNING - Sleep for 2.240900 seconds and try again... (tryings = 3, bot id = 7955956815)
+2025-06-30 06:38:25,790 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: Telegram server says ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2025-06-30 06:38:25,792 - aiogram.dispatcher - WARNING - Sleep for 2.890392 seconds and try again... (tryings = 4, bot id = 7955956815)
+2025-06-30 06:38:41,016 - aiogram.dispatcher - INFO - Connection established (tryings = 5, bot id = 7955956815)
+2025-06-30 06:41:10,723 - aiogram.event - INFO - Update id=36893491 is handled. Duration 17015 ms by bot id=7955956815
+2025-06-30 06:41:53,425 - aiogram.event - INFO - Update id=36893492 is handled. Duration 11422 ms by bot id=7955956815
+2025-06-30 06:41:56,467 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: Telegram server says ClientOSError: [WinError 1236] Подключение к сети было разорвано локальной системой
+2025-06-30 06:41:56,577 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7955956815)
+2025-06-30 06:41:57,909 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: Telegram server says ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2025-06-30 06:41:57,915 - aiogram.dispatcher - WARNING - Sleep for 1.076574 seconds and try again... (tryings = 1, bot id = 7955956815)
+2025-06-30 06:41:58,999 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: Telegram server says ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2025-06-30 06:41:59,007 - aiogram.dispatcher - WARNING - Sleep for 1.349244 seconds and try again... (tryings = 2, bot id = 7955956815)
+2025-06-30 06:42:00,557 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: Telegram server says ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2025-06-30 06:42:00,570 - aiogram.dispatcher - WARNING - Sleep for 1.834064 seconds and try again... (tryings = 3, bot id = 7955956815)
+2025-06-30 06:42:14,516 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: Telegram server says ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2025-06-30 06:42:14,541 - aiogram.dispatcher - WARNING - Sleep for 2.575718 seconds and try again... (tryings = 4, bot id = 7955956815)
+2025-06-30 06:42:25,083 - src.bot.utils - INFO - Файл удален: results\product_links_30.06.2025-06_36_11.xlsx
+2025-06-30 06:42:28,041 - aiogram.dispatcher - INFO - Connection established (tryings = 5, bot id = 7955956815)
+2025-06-30 06:42:38,363 - aiogram.event - INFO - Update id=36893493 is handled. Duration 843 ms by bot id=7955956815
+2025-06-30 06:42:52,657 - aiogram.event - INFO - Update id=36893494 is handled. Duration 437 ms by bot id=7955956815
+2025-06-30 06:42:56,775 - excel_exporter - INFO - Файл результатов: results\product_links_30.06.2025-06_42_56.xlsx
+2025-06-30 06:42:56,781 - product_parser - INFO - Инициализирован парсер для категории: product_links
+2025-06-30 06:42:56,782 - product_parser - INFO - Начало обработки 3 товаров
+2025-06-30 06:43:00,656 - driver_manager - INFO - Создан новый браузер с selenium-stealth. Всего активных: 1
+2025-06-30 06:43:00,657 - product_parser - INFO - Воркер 1 запущен
+2025-06-30 06:43:02,144 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-30 06:43:02,197 - telegram_bot - INFO - Бот остановлен
+2025-06-30 06:43:02,214 - aiogram.event - INFO - Update id=36893495 is not handled. Duration 5922 ms by bot id=7955956815
+2025-06-30 06:43:02,289 - aiogram.dispatcher - INFO - Polling stopped for bot @ozongetnamerbot id=7955956815 - 'ozongetnamer'
+2025-06-30 06:43:03,747 - page_parser - ERROR - Ошибка при парсинге https://www.ozon.ru/product/treidcomputers-sistemnyy-blok-amd-ryzen-5-5600g-ram-32-gb-ssd-960-gb-amd-radeon-vega-7-windows-10-1940505582/?at=99trJroX8fE3OKp7Hxz2MDgU9ROznMU9x16KyhY374jr: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+2025-06-30 06:43:03,749 - product_parser - INFO - [1/3] ОШИБКА: https://www.ozon.ru/product/treidcomputers-sistemnyy-blok-amd-ryzen-5-5600g-ram-32-gb-ssd-960-gb-amd-radeon-vega-7-windows-10-1940505582/?at=99trJroX8fE3OKp7Hxz2MDgU9ROznMU9x16KyhY374jr
+2025-06-30 06:43:03,749 - product_parser - INFO -    Товар: Not Found
+2025-06-30 06:43:03,751 - product_parser - INFO -    Продавец: Ошибка: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+2025-06-30 06:43:03,753 - product_parser - INFO -    Компания: Не найдено
+2025-06-30 06:43:03,754 - product_parser - INFO -    ИНН: Не найдено
+2025-06-30 06:43:12,814 - telegram_bot - INFO - Запуск Telegram бота...
+2025-06-30 06:43:12,911 - aiogram.dispatcher - INFO - Start polling
+2025-06-30 06:43:14,110 - aiogram.dispatcher - INFO - Run polling for bot @ozongetnamerbot id=7955956815 - 'ozongetnamer'
+2025-06-30 06:43:16,033 - aiogram.event - INFO - Update id=36893496 is handled. Duration 859 ms by bot id=7955956815
+2025-06-30 06:43:20,061 - aiogram.event - INFO - Update id=36893497 is handled. Duration 297 ms by bot id=7955956815
+2025-06-30 06:43:21,781 - excel_exporter - INFO - Файл результатов: results\product_links_30.06.2025-06_43_21.xlsx
+2025-06-30 06:43:21,782 - product_parser - INFO - Инициализирован парсер для категории: product_links
+2025-06-30 06:43:21,783 - product_parser - INFO - Начало обработки 1 товаров
+2025-06-30 06:43:24,661 - driver_manager - INFO - Создан новый браузер с selenium-stealth. Всего активных: 1
+2025-06-30 06:43:24,663 - product_parser - INFO - Воркер 1 запущен
+2025-06-30 06:43:26,476 - driver_manager - INFO - Создан новый браузер с selenium-stealth. Всего активных: 2
+2025-06-30 06:43:26,477 - product_parser - INFO - Воркер 2 запущен
+2025-06-30 06:43:26,545 - driver_manager - INFO - Создан новый браузер с selenium-stealth. Всего активных: 3
+2025-06-30 06:43:26,546 - product_parser - INFO - Воркер 3 запущен
+2025-06-30 06:43:32,342 - product_parser - INFO - Воркер 3 завершил работу
+2025-06-30 06:43:32,511 - product_parser - INFO - Воркер 2 завершил работу
+2025-06-30 06:43:42,103 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 06:43:45,916 - product_parser - INFO - [1/1] УСПЕШНО: https://www.ozon.ru/product/treidcomputers-sistemnyy-blok-amd-ryzen-5-5600g-ram-32-gb-ssd-960-gb-amd-radeon-vega-7-windows-10-1940505582/?at=99trJroX8fE3OKp7Hxz2MDgU9ROznMU9x16KyhY374jr
+2025-06-30 06:43:45,918 - product_parser - INFO -    Товар: TREIDCOMPUTERS Системный блок (AMD Ryzen 5 5600G, RAM 32 ГБ, SSD 960 ГБ, AMD Radeon Vega 7, Windows 10 Pro), темно-коричневый, черный
+2025-06-30 06:43:45,922 - product_parser - INFO -    Продавец: TREIDCOMPUTERS
+2025-06-30 06:43:45,923 - product_parser - INFO -    Компания: ИП Буторин Илья Сергеевич
+2025-06-30 06:43:45,924 - product_parser - INFO -    ИНН: 319774600299562
+2025-06-30 06:43:48,601 - product_parser - INFO - Воркер 1 завершил работу
+2025-06-30 06:43:48,781 - excel_exporter - INFO - Результаты сохранены в results\product_links_30.06.2025-06_43_21.xlsx
+2025-06-30 06:43:48,792 - product_parser - INFO - Обработка завершена успешно за 27.01 секунд
+2025-06-30 06:43:48,794 - product_parser - INFO - Обработано товаров: 1
+2025-06-30 06:43:48,797 - product_parser - INFO - Успешно: 1
+2025-06-30 06:43:48,808 - product_parser - INFO - Закончились: 0
+2025-06-30 06:43:48,809 - product_parser - INFO - Ошибки: 0
+2025-06-30 06:43:48,811 - driver_manager - INFO - Все браузеры закрыты
+2025-06-30 06:43:48,812 - driver_manager - INFO - Очистка DriverManager завершена
+2025-06-30 06:43:50,406 - src.bot.handlers - INFO - Файл успешно отправлен: results\product_links_30.06.2025-06_43_21.xlsx
+2025-06-30 06:43:50,407 - aiogram.event - INFO - Update id=36893498 is handled. Duration 28937 ms by bot id=7955956815
+2025-06-30 06:44:25,769 - aiogram.event - INFO - Update id=36893499 is handled. Duration 1609 ms by bot id=7955956815
+2025-06-30 06:44:27,717 - aiogram.event - INFO - Update id=36893500 is handled. Duration 687 ms by bot id=7955956815
+2025-06-30 06:44:33,565 - excel_exporter - INFO - Файл результатов: results\product_links_30.06.2025-06_44_33.xlsx
+2025-06-30 06:44:33,567 - product_parser - INFO - Инициализирован парсер для категории: product_links
+2025-06-30 06:44:33,568 - product_parser - INFO - Начало обработки 3 товаров
+2025-06-30 06:44:36,318 - driver_manager - INFO - Создан новый браузер с selenium-stealth. Всего активных: 1
+2025-06-30 06:44:36,318 - product_parser - INFO - Воркер 1 запущен
+2025-06-30 06:44:36,641 - driver_manager - INFO - Создан новый браузер с selenium-stealth. Всего активных: 2
+2025-06-30 06:44:36,642 - product_parser - INFO - Воркер 2 запущен
+2025-06-30 06:44:38,305 - driver_manager - INFO - Создан новый браузер с selenium-stealth. Всего активных: 3
+2025-06-30 06:44:38,306 - product_parser - INFO - Воркер 3 запущен
+2025-06-30 06:45:06,780 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 06:45:25,781 - product_parser - INFO - [1/3] УСПЕШНО: https://www.ozon.ru/product/treidcomputers-sistemnyy-blok-amd-ryzen-5-5600g-ram-32-gb-ssd-960-gb-amd-radeon-vega-7-windows-10-1940505582/?at=99trJroX8fE3OKp7Hxz2MDgU9ROznMU9x16KyhY374jr
+2025-06-30 06:45:25,790 - product_parser - INFO -    Товар: TREIDCOMPUTERS Системный блок (AMD Ryzen 5 5600G, RAM 32 ГБ, SSD 960 ГБ, AMD Radeon Vega 7, Windows 10 Pro), темно-коричневый, черный
+2025-06-30 06:45:25,793 - product_parser - INFO -    Продавец: TREIDCOMPUTERS
+2025-06-30 06:45:25,795 - product_parser - INFO -    Компания: ИП Буторин Илья Сергеевич
+2025-06-30 06:45:25,796 - product_parser - INFO -    ИНН: 319774600299562
+2025-06-30 06:45:25,866 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 06:45:36,704 - seller_info_parser - INFO - Попытка 1 получить данные продавца
+2025-06-30 06:45:42,458 - product_parser - INFO - [2/3] УСПЕШНО: https://www.ozon.ru/product/iru-sistemnyy-blok-310sc-intel-core-i7-12700-ram-32-gb-ssd-1024-gb-intel-uhd-graphics-770-windows-1767344909/?at=mqtkVkE3vFRW82lGSqGyQEAiD54rpC1KjxV3CLNy7K0
+2025-06-30 06:45:42,460 - product_parser - INFO -    Товар: iRU Системный блок 310SC (Intel Core i7-12700, RAM 32 ГБ, SSD 1024 ГБ, Intel UHD Graphics 770, Windows 11 Pro), 2017895, черный
+2025-06-30 06:45:42,461 - product_parser - INFO -    Продавец: Ситилинк Доставка
+2025-06-30 06:45:42,462 - product_parser - INFO -    Компания: ООО "СИТИЛИНК"
+2025-06-30 06:45:42,463 - product_parser - INFO -    ИНН: 1147746461422
+2025-06-30 06:45:45,573 - product_parser - INFO - [3/3] УСПЕШНО: https://www.ozon.ru/product/treidcomputers-sistemnyy-blok-intel-core-i7-12700f-ram-32-gb-ssd-960-gb-nvidia-geforce-rtx-4060-8-gb-1922781204/?at=x6tPpPrVZHl8NXRESYKvlmOFEGlPW3f1EpP1Kh3M9jpX
+2025-06-30 06:45:45,585 - product_parser - INFO -    Товар: TREIDCOMPUTERS Системный блок (Intel Core i7-12700F, RAM 32 ГБ, SSD 960 ГБ, NVIDIA GeForce RTX 4060 (8 Гб), Windows 10 Pro), черный
+2025-06-30 06:45:45,586 - product_parser - INFO -    Продавец: TREIDCOMPUTERS
+2025-06-30 06:45:45,586 - product_parser - INFO -    Компания: ИП Буторин Илья Сергеевич
+2025-06-30 06:45:45,587 - product_parser - INFO -    ИНН: 319774600299562
+2025-06-30 06:45:47,304 - product_parser - INFO - Воркер 1 завершил работу
+2025-06-30 06:45:47,335 - product_parser - INFO - Воркер 2 завершил работу
+2025-06-30 06:45:48,289 - product_parser - INFO - Воркер 3 завершил работу
+2025-06-30 06:45:48,314 - excel_exporter - INFO - Результаты сохранены в results\product_links_30.06.2025-06_44_33.xlsx
+2025-06-30 06:45:48,317 - product_parser - INFO - Обработка завершена успешно за 74.75 секунд
+2025-06-30 06:45:48,317 - product_parser - INFO - Обработано товаров: 3
+2025-06-30 06:45:48,318 - product_parser - INFO - Успешно: 3
+2025-06-30 06:45:48,319 - product_parser - INFO - Закончились: 0
+2025-06-30 06:45:48,320 - product_parser - INFO - Ошибки: 0
+2025-06-30 06:45:48,321 - driver_manager - INFO - Все браузеры закрыты
+2025-06-30 06:45:48,322 - driver_manager - INFO - Очистка DriverManager завершена
+2025-06-30 06:45:48,998 - src.bot.handlers - INFO - Файл успешно отправлен: results\product_links_30.06.2025-06_44_33.xlsx
+2025-06-30 06:45:49,000 - aiogram.event - INFO - Update id=36893501 is handled. Duration 76015 ms by bot id=7955956815

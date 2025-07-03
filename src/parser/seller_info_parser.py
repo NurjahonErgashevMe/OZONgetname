@@ -4,340 +4,322 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
-from selenium.common.exceptions import TimeoutException, NoSuchElementException
+from selenium.common.exceptions import TimeoutException
 
 class SellerInfoParser:
     def __init__(self):
         self.logger = logging.getLogger('seller_info_parser')
-        self.max_attempts = 5
-        self.visited_products = set()
 
-    def get_seller_details(self, driver, seller_url=None):
-        """Получение детальной информации о продавце с повторными попытками"""
-        seller_details = {'company_name': 'Не найдено', 'inn': 'Не найдено'}
+    def get_company_name(self, driver):
+        """Получение названия компании с улучшенной логикой загрузки"""
+        max_attempts = 5
         
-        for attempt in range(self.max_attempts):
-            self.logger.info(f"=== ПОПЫТКА {attempt + 1} из {self.max_attempts} получить данные продавца ===")
+        for attempt in range(max_attempts):
+            self.logger.info(f"Попытка {attempt + 1} из {max_attempts} получить название компании")
             
             try:
-                # Если это не первая попытка - обновляем страницу
-                if attempt > 0:
-                    self.logger.info("Обновляем страницу перед повторной попыткой...")
-                    driver.refresh()
-                    time.sleep(3)  # Ждем загрузки страницы
-                    self.logger.info("Страница обновлена, ждем загрузки контента...")
-                
-                # Активируем контент скроллом
-                self.logger.info("Прокручиваем страницу для активации контента...")
-                driver.execute_script("window.scrollTo(0, 600);")
-                time.sleep(1)
-                
-                # Ищем секцию с продавцом
-                self.logger.info("Ищем секцию с информацией о продавце...")
-                seller_section = WebDriverWait(driver, 15).until(
-                    EC.presence_of_element_located((By.CSS_SELECTOR, 'div[data-widget="webCurrentSeller"]'))
-                )
-                self.logger.info("✓ Секция продавца найдена!")
-                
-                # Дополнительный скролл к секции
-                self.logger.info("Прокручиваем к секции продавца...")
-                driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", seller_section)
-                time.sleep(1.5)
-                
-                # Ищем кнопку с информацией
-                self.logger.info("Ищем кнопку с информацией о продавце...")
-                info_button = self._find_info_button(seller_section)
-                
-                if info_button:
-                    self.logger.info("✓ Кнопка информации найдена!")
-                    tooltip_data = self._get_tooltip_data(driver, info_button, attempt + 1)
-                    
-                    if tooltip_data and (tooltip_data.get('company_name') != 'Не найдено' or tooltip_data.get('inn') != 'Не найдено'):
-                        self.logger.info(f"✓ Успешно получены данные продавца: {tooltip_data}")
-                        seller_details.update(tooltip_data)
-                        break
-                    else:
-                        self.logger.warning("Данные из тултипа не получены или пустые")
-                else:
-                    self.logger.warning("✗ Кнопка информации не найдена")
-                
-                # Если не получилось и есть еще попытки
-                if attempt < self.max_attempts - 1:
-                    self.logger.info(f"Попытка {attempt + 1} неуспешна, готовимся к следующей...")
-                    time.sleep(2)
-                    
-            except Exception as e:
-                self.logger.error(f"✗ Ошибка в попытке {attempt + 1}: {str(e)}")
-                if attempt < self.max_attempts - 1:
-                    self.logger.info("Ждем перед следующей попыткой...")
-                    time.sleep(3)
-        
-        if seller_details['company_name'] == 'Не найдено' and seller_details['inn'] == 'Не найдено':
-            self.logger.error(f"✗ После {self.max_attempts} попыток данные продавца не найдены")
-        else:
-            self.logger.info(f"✓ Итоговые данные продавца: {seller_details}")
-            
-        return seller_details
-
-    def _find_info_button(self, seller_section):
-        """Поиск кнопки с информацией о продавце"""
-        button_selectors = [
-            'div.ea20-a.k9j_27.n7j_27 button.ga20-a',
-            'button.ga20-a[aria-label=""]',
-            'div[data-widget="webCurrentSeller"] button[aria-label=""]',
-            'button.ga20-a',
-            'button[class*="ga20"]',
-            'button[aria-label=""]',
-            'button svg',
-            'button[class*="button"]',
-            '*[role="button"]'
-        ]
-        
-        self.logger.info(f"Проверяем {len(button_selectors)} различных селекторов кнопок...")
-        
-        for i, selector in enumerate(button_selectors, 1):
-            try:
-                self.logger.debug(f"Селектор {i}: {selector}")
-                buttons = seller_section.find_elements(By.CSS_SELECTOR, selector)
-                self.logger.debug(f"Найдено {len(buttons)} элементов по селектору {i}")
-                
-                for j, button in enumerate(buttons):
-                    try:
-                        if button and button.is_displayed() and button.is_enabled():
-                            self.logger.debug(f"Проверяем кнопку {j+1} на соответствие критериям...")
-                            if self._is_info_button(button):
-                                self.logger.info(f"✓ Найдена подходящая кнопка по селектору {i}, элемент {j+1}")
-                                return button
-                    except Exception as e:
-                        self.logger.debug(f"Ошибка при проверке кнопки {j+1}: {str(e)}")
+                # Шаг 1: Дождаться загрузки основного контента страницы
+                if not self._wait_for_page_content(driver):
+                    self.logger.warning("Не удалось дождаться загрузки основного контента")
+                    if attempt < max_attempts - 1:
+                        time.sleep(2)
                         continue
-                        
+                
+                # Шаг 2: Скролл к элементу paginator для загрузки секции продавца
+                self._scroll_to_paginator(driver)
+                
+                # Шаг 3: Дождаться загрузки секции продавца
+                seller_section = self._wait_for_seller_section(driver)
+                if not seller_section:
+                    self.logger.warning("Секция продавца не найдена")
+                    if attempt < max_attempts - 1:
+                        time.sleep(2)
+                        continue
+                
+                # Шаг 4: Найти кнопку тултипа
+                tooltip_button = self._find_tooltip_button(seller_section)
+                if not tooltip_button:
+                    self.logger.warning("Кнопка тултипа не найдена")
+                    # Пробуем получить имя продавца как запасной вариант
+                    seller_name = self._get_seller_name_fallback(seller_section)
+                    if seller_name:
+                        return seller_name
+                    if attempt < max_attempts - 1:
+                        time.sleep(2)
+                        continue
+                
+                # Шаг 5: Получить данные из тултипа
+                company_name = self._get_company_from_tooltip(driver, tooltip_button)
+                if company_name and company_name != "Не найдено":
+                    self.logger.info(f"✓ Успешно получено название компании: {company_name}")
+                    return company_name
+                
+                # Если получили "Не найдено", продолжаем попытки
+                if attempt < max_attempts - 1:
+                    self.logger.warning("Название компании не найдено, повторяем попытку...")
+                    time.sleep(2)
+                    continue
+                
+                return "Не найдено"                
             except Exception as e:
-                self.logger.debug(f"Ошибка с селектором {i}: {str(e)}")
-                continue
+                self.logger.error(f"Ошибка в попытке {attempt + 1}: {str(e)}")
+                if attempt < max_attempts - 1:
+                    time.sleep(2)  # Пауза между попытками
                 
-        self.logger.warning("Подходящая кнопка не найдена ни по одному селектору")
-        return None
+        self.logger.error("Не удалось получить информацию о компании")
+        return "Не найдено"
 
-    def _is_info_button(self, button):
-        """Проверка, является ли кнопка кнопкой информации"""
+    def _wait_for_page_content(self, driver):
+        """Ожидание загрузки основного контента страницы"""
         try:
-            # Проверяем наличие SVG иконки
-            try:
-                icon = button.find_element(By.TAG_NAME, 'svg')
-                if icon:
-                    self.logger.debug("Кнопка содержит SVG иконку")
-                    return True
-            except:
-                pass
-            
-            # Проверяем размер кнопки (кнопки информации обычно маленькие)
-            size = button.size
-            self.logger.debug(f"Размер кнопки: {size}")
-            if size['width'] <= 50 and size['height'] <= 50:
-                self.logger.debug("Кнопка подходит по размеру")
-                return True
-            
-            # Проверяем атрибуты
-            class_attr = button.get_attribute('class') or ''
-            aria_label = button.get_attribute('aria-label') or ''
-            
-            if 'info' in class_attr.lower() or aria_label == '':
-                self.logger.debug("Кнопка подходит по атрибутам")
-                return True
-                
+            # Ждем загрузки главного контейнера товара
+            WebDriverWait(driver, 15).until(
+                EC.presence_of_element_located((By.CSS_SELECTOR, 'div[data-widget="webPdpGrid"]'))
+            )
+            self.logger.info("Основной контент страницы загружен")
+            return True
+        except TimeoutException:
+            self.logger.error("Таймаут при ожидании загрузки основного контента")
             return False
+
+    def _scroll_to_paginator(self, driver):
+        """Скролл к элементу paginator для загрузки секции продавца"""
+        try:
+            # Ищем элемент paginator
+            paginator_element = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.CSS_SELECTOR, 'div[data-widget="paginator"]'))
+            )
+            
+            # Скроллим к элементу paginator, оставляя 20% сверху
+            driver.execute_script("""
+                const paginator = arguments[0];
+                const rect = paginator.getBoundingClientRect();
+                const viewportHeight = window.innerHeight;
+                const scrollTop = window.pageYOffset + rect.top - (viewportHeight * 0.2);
+                
+                window.scrollTo({
+                    top: Math.max(0, scrollTop),
+                    behavior: 'smooth'
+                });
+            """, paginator_element)
+            
+            time.sleep(2)  # Даем время на загрузку контента
+            self.logger.info("Выполнен скролл к элементу paginator")
+            
+        except TimeoutException:
+            self.logger.warning("Элемент paginator не найден, пробуем альтернативный скролл")
+            # Альтернативный скролл вниз страницы
+            driver.execute_script("""
+                window.scrollTo({
+                    top: document.body.scrollHeight * 0.7,
+                    behavior: 'smooth'
+                });
+            """)
+            time.sleep(2)
+            
         except Exception as e:
-            self.logger.debug(f"Ошибка при проверке кнопки: {str(e)}")
-            return False
+            self.logger.warning(f"Ошибка при скролле к paginator: {str(e)}")
 
-    def _get_tooltip_data(self, driver, info_button, attempt_num):
-        """Получение данных из тултипа с детальным логированием"""
+    def _wait_for_seller_section(self, driver):
+        """Ожидание загрузки секции продавца"""
         try:
-            self.logger.info(f"--- Начинаем получение данных из тултипа (попытка {attempt_num}) ---")
+            # Ждем появления секции продавца
+            seller_section = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.CSS_SELECTOR, 'div[data-widget="webCurrentSeller"]'))
+            )
             
-            # Скроллим к кнопке
-            self.logger.info("Прокручиваем к кнопке информации...")
-            driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", info_button)
-            time.sleep(1)
+            # Дополнительно ждем, пока секция станет видимой
+            WebDriverWait(driver, 5).until(
+                EC.visibility_of(seller_section)
+            )
             
-            # Запоминаем количество порталов до клика
-            portals_before = len(driver.find_elements(By.CSS_SELECTOR, 'body .vue-portal-target'))
-            self.logger.info(f"Количество порталов до клика: {portals_before}")
+            self.logger.info("Секция продавца загружена")
+            return seller_section
             
-            # Пробуем разные способы взаимодействия с кнопкой
-            interaction_methods = [
-                self._click_with_actions,
-                self._click_with_javascript,
-                self._hover_and_click
+        except TimeoutException:
+            self.logger.error("Таймаут при ожидании загрузки секции продавца")
+            return None
+
+    def _find_tooltip_button(self, seller_section):
+        """Улучшенный поиск кнопки тултипа"""
+        try:
+            # Ищем кнопку рядом с ссылкой на продавца
+            # Сначала находим ссылку на продавца
+            seller_link = seller_section.find_element(By.CSS_SELECTOR, 'a[title][href*="/seller/"]')
+            
+            # Ищем кнопку с SVG рядом с ссылкой
+            parent_container = seller_link.find_element(By.XPATH, './parent::*/parent::*')
+            
+            # Различные селекторы для кнопки тултипа
+            tooltip_selectors = [
+                'button[aria-label=""] svg',
+                'button svg',
+                'button[class*="ga5_3_1-a"]',
+                'button[aria-label=""]'
             ]
             
-            for method_num, method in enumerate(interaction_methods, 1):
+            for selector in tooltip_selectors:
                 try:
-                    self.logger.info(f"Пробуем способ взаимодействия {method_num}: {method.__name__}")
-                    method(driver, info_button)
-                    
-                    # Ждем появления тултипа
-                    self.logger.info("Ожидаем появление тултипа...")
-                    tooltip = self._wait_for_tooltip(driver, portals_before, method_num)
-                    
-                    if tooltip:
-                        self.logger.info("✓ Тултип найден! Парсим содержимое...")
-                        parsed_data = self._parse_tooltip_content(tooltip)
-                        if parsed_data:
-                            self.logger.info(f"✓ Данные успешно извлечены: {parsed_data}")
-                            return parsed_data
-                        else:
-                            self.logger.warning("Парсинг тултипа не дал результатов")
-                    else:
-                        self.logger.warning(f"Тултип не появился после способа {method_num}")
+                    buttons = parent_container.find_elements(By.CSS_SELECTOR, selector)
+                    for button in buttons:
+                        # Если это SVG, получаем родительскую кнопку
+                        if button.tag_name == 'svg':
+                            button = button.find_element(By.XPATH, './parent::button')
                         
-                    # Небольшая пауза между попытками
-                    time.sleep(1)
-                    
-                except Exception as e:
-                    self.logger.warning(f"Ошибка в способе {method_num}: {str(e)}")
+                        if button and button.is_displayed() and button.is_enabled():
+                            # Проверяем, что кнопка небольшого размера (характерно для кнопок тултипа)
+                            size = button.size
+                            if size['width'] <= 50 and size['height'] <= 50:
+                                self.logger.info("Найдена кнопка тултипа")
+                                return button
+                except:
                     continue
-                    
-            self.logger.error("Все способы взаимодействия с кнопкой исчерпаны")
+            
+            self.logger.warning("Кнопка тултипа не найдена")
             return None
-                
+            
         except Exception as e:
-            self.logger.error(f"Общая ошибка при получении тултипа: {str(e)}")
+            self.logger.error(f"Ошибка при поиске кнопки тултипа: {str(e)}")
             return None
 
-    def _click_with_actions(self, driver, button):
-        """Клик через ActionChains"""
-        self.logger.debug("Выполняем клик через ActionChains...")
-        actions = ActionChains(driver)
-        actions.move_to_element(button).click().perform()
-        time.sleep(1.5)
-
-    def _click_with_javascript(self, driver, button):
-        """Клик через JavaScript"""
-        self.logger.debug("Выполняем клик через JavaScript...")
-        driver.execute_script("arguments[0].click();", button)
-        time.sleep(1.5)
-
-    def _hover_and_click(self, driver, button):
-        """Наведение курсора и клик"""
-        self.logger.debug("Наводим курсор и кликаем...")
-        actions = ActionChains(driver)
-        actions.move_to_element(button).pause(0.5).click().perform()
-        time.sleep(1.5)
-
-    def _wait_for_tooltip(self, driver, initial_count, method_num):
-        """Ожидание появления тултипа с улучшенным логированием"""
-        max_wait = 5
-        elapsed = 0
-        check_interval = 0.3
+    def _get_company_from_tooltip(self, driver, tooltip_button):
+        """Получение названия компании из тултипа с дополнительными попытками"""
+        max_tooltip_attempts = 3
         
-        self.logger.info(f"Ждем появления тултипа (макс. {max_wait}с, способ {method_num})...")
-        
-        while elapsed < max_wait:
+        for attempt in range(max_tooltip_attempts):
             try:
-                current_portals = driver.find_elements(By.CSS_SELECTOR, 'body .vue-portal-target')
-                new_portals_count = len(current_portals)
+                self.logger.info(f"Попытка {attempt + 1} получить данные из тултипа")
                 
-                if new_portals_count > initial_count:
-                    self.logger.info(f"Обнаружены новые порталы: {new_portals_count} (было {initial_count})")
-                    
-                    for i, portal in enumerate(current_portals):
-                        try:
-                            if portal.is_displayed():
-                                text = portal.text.strip()
-                                self.logger.debug(f"Проверяем портал {i+1}, текст: '{text[:100]}...'")
-                                
-                                if self._looks_like_seller_info(text):
-                                    self.logger.info(f"✓ Найден тултип с информацией о продавце в портале {i+1}")
-                                    return portal
-                        except Exception as e:
-                            self.logger.debug(f"Ошибка при проверке портала {i+1}: {str(e)}")
-                            continue
+                # Скроллим к кнопке
+                driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", tooltip_button)
+                time.sleep(1)
                 
-                time.sleep(check_interval)
-                elapsed += check_interval
+                # Кликаем на кнопку
+                ActionChains(driver).move_to_element(tooltip_button).click().perform()
+                time.sleep(1.5)
                 
-                if elapsed % 1 == 0:  # Логируем каждую секунду
-                    self.logger.debug(f"Прошло {elapsed:.1f}с, порталов: {new_portals_count}")
+                # Ждем появления тултипа
+                tooltip = self._wait_for_tooltip(driver)
+                
+                if tooltip:
+                    company_name = self._parse_tooltip_content(tooltip.text)
+                    if company_name:
+                        # Закрываем тултип (кликаем в другое место)
+                        driver.execute_script("document.body.click();")
+                        return company_name
+                
+                # Если не получилось, пробуем еще раз другим способом
+                driver.execute_script("arguments[0].click();", tooltip_button)
+                time.sleep(1.5)
+                
+                tooltip = self._wait_for_tooltip(driver)
+                if tooltip:
+                    company_name = self._parse_tooltip_content(tooltip.text)
+                    if company_name:
+                        driver.execute_script("document.body.click();")
+                        return company_name
+                
+                # Закрываем тултип перед следующей попыткой
+                driver.execute_script("document.body.click();")
+                time.sleep(1)
                 
             except Exception as e:
-                self.logger.debug(f"Ошибка при ожидании тултипа: {str(e)}")
-                time.sleep(check_interval)
-                elapsed += check_interval
-                
-        self.logger.warning(f"Тултип не появился за {max_wait}с")
+                self.logger.error(f"Ошибка в попытке {attempt + 1} получения данных из тултипа: {str(e)}")
+                if attempt < max_tooltip_attempts - 1:
+                    time.sleep(1)
+        
         return None
 
-    def _parse_tooltip_content(self, tooltip):
-        """Парсинг содержимого тултипа с детальным логированием"""
-        seller_details = {}
-        
+    def _wait_for_tooltip(self, driver):
+        """Ожидание появления тултипа"""
         try:
-            text_content = tooltip.text.strip()
-            self.logger.info(f"Содержимое тултипа: '{text_content}'")
+            # Ждем появления тултипа в элементе vue-portal-target
+            for _ in range(15):  # Ждем до 4.5 секунд
+                portals = driver.find_elements(By.CSS_SELECTOR, '.vue-portal-target')
+                for portal in portals:
+                    if portal.is_displayed() and portal.text.strip():
+                        # Проверяем, что содержимое похоже на информацию о компании
+                        if self._is_company_tooltip(portal.text):
+                            self.logger.info("Найден тултип с информацией о компании")
+                            return portal
+                time.sleep(0.3)
             
-            lines = [line.strip() for line in text_content.split('\n') if line.strip()]
-            self.logger.info(f"Строки для анализа ({len(lines)}): {lines}")
+            self.logger.warning("Тултип не найден")
+            return None
             
-            for i, line in enumerate(lines, 1):
-                self.logger.debug(f"Анализируем строку {i}: '{line}'")
-                
-                if self._is_company_name(line):
-                    self.logger.info(f"✓ Найдено название компании: '{line}'")
-                    seller_details['company_name'] = line
-                elif self._is_inn(line):
-                    self.logger.info(f"✓ Найден ИНН/ОГРН: '{line}'")
-                    seller_details['inn'] = line
-                else:
-                    self.logger.debug(f"Строка не распознана как важная информация")
-                    
         except Exception as e:
-            self.logger.error(f"Ошибка при парсинге тултипа: {str(e)}")
-            
-        if not seller_details:
-            self.logger.warning("Из тултипа не удалось извлечь информацию о продавце")
-        else:
-            self.logger.info(f"Извлеченная информация: {seller_details}")
-            
-        return seller_details
+            self.logger.error(f"Ошибка при ожидании тултипа: {str(e)}")
+            return None
 
-    def _looks_like_seller_info(self, text):
-        """Проверка, похож ли текст на информацию о продавце"""
+    def _is_company_tooltip(self, text):
+        """Проверка, содержит ли тултип информацию о компании"""
         if not text or len(text.strip()) < 5:
             return False
-            
-        seller_keywords = [
-            'ИП', 'ООО', 'АО', 'ЗАО', 'ПАО', 'Ltd', 'LLC', 'Inc', 'ОАО'
-        ]
+        
+        # Ключевые слова для компаний
+        company_keywords = ['ООО', 'ИП', 'АО', 'ЗАО', 'ПАО', 'ОАО', 'Ltd', 'LLC', 'Inc']
+        
+        # Проверяем наличие ключевых слов
+        has_keywords = any(keyword in text.upper() for keyword in company_keywords)
         
         # Проверяем наличие длинных чисел (ИНН/ОГРН)
-        has_long_number = any(len(''.join(filter(str.isdigit, word))) >= 10 for word in text.split())
+        numbers = ''.join(filter(str.isdigit, text))
+        has_long_number = len(numbers) >= 10
         
-        # Проверяем ключевые слова
-        has_keywords = any(keyword.lower() in text.lower() for keyword in seller_keywords)
+        # Проверяем наличие фразы "Режим работы"
+        has_work_schedule = 'режим работы' in text.lower()
         
-        result = has_long_number or has_keywords
-        self.logger.debug(f"Текст '{text[:50]}...' {'ПОХОЖ' if result else 'НЕ ПОХОЖ'} на информацию о продавце")
-        
-        return result
+        return has_keywords or has_long_number or has_work_schedule
 
-    def _is_company_name(self, text):
-        """Проверка, является ли текст названием компании"""
-        company_indicators = ['ИП', 'ООО', 'АО', 'ЗАО', 'ПАО', 'Ltd', 'LLC', 'Inc', 'ОАО']
-        return any(indicator in text for indicator in company_indicators)
-
-    def _is_inn(self, text):
-        """Проверка, является ли текст ИНН или ОГРН"""
-        digits_only = ''.join(filter(str.isdigit, text))
-        valid_lengths = [10, 12, 13, 15]
+    def _parse_tooltip_content(self, text):
+        """Парсинг содержимого тултипа для извлечения названия компании"""
+        if not text:
+            return None
         
-        if len(digits_only) in valid_lengths and len(digits_only) / len(text) > 0.8:
-            return True
+        lines = [line.strip() for line in text.split('\n') if line.strip()]
         
-        return False
+        # Ищем строку с названием компании
+        for line in lines:
+            # Проверяем, содержит ли строка организационно-правовую форму
+            if self._is_company_name_line(line):
+                # Очищаем от лишних символов
+                cleaned_name = line.strip(' "')
+                self.logger.info(f"Найдено название компании: {cleaned_name}")
+                return cleaned_name
+        
+        # Если не найдено явного названия, возвращаем первую строку (часто это название)
+        if lines:
+            first_line = lines[0].strip(' "')
+            if len(first_line) > 3 and not first_line.isdigit():
+                return first_line
+        
+        return None
 
-    def reset_for_new_seller(self):
-        """Сброс состояния для нового продавца"""
-        self.visited_products.clear()
-        self.logger.info("Состояние парсера сброшено для нового продавца")
+    def _is_company_name_line(self, line):
+        """Проверка, является ли строка названием компании"""
+        company_indicators = ['ООО', 'ИП', 'АО', 'ЗАО', 'ПАО', 'ОАО', 'Ltd', 'LLC', 'Inc']
+        line_upper = line.upper()
+        
+        # Проверяем наличие организационно-правовой формы
+        for indicator in company_indicators:
+            if indicator in line_upper:
+                return True
+        
+        # Дополнительная проверка: строка не должна быть числом и должна быть достаточно длинной
+        return len(line) > 5 and not line.isdigit() and not line.replace(' ', '').isdigit()
+
+    def _get_seller_name_fallback(self, seller_section):
+        """Получение имени продавца как запасной вариант"""
+        try:
+            # Ищем ссылку на продавца
+            seller_link = seller_section.find_element(By.CSS_SELECTOR, 'a[title][href*="/seller/"]')
+            seller_name = seller_link.text.strip()
+            
+            if seller_name and len(seller_name) > 2:
+                self.logger.info(f"Получено имя продавца: {seller_name}")
+                return seller_name
+            
+        except Exception as e:
+            self.logger.debug(f"Ошибка при получении имени продавца: {str(e)}")
+        
+        return None

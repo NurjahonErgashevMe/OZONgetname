@@ -12,69 +12,150 @@ class PageParser:
         self.seller_info_parser = SellerInfoParser()
 
     def parse_page(self, driver, url):
-        """Парсинг страницы товара"""
+        """Парсинг страницы товара с повторными попытками"""
+        max_attempts = 5
+        
+        for attempt in range(max_attempts):
+            self.logger.info(f"Попытка парсинга {attempt + 1} из {max_attempts}")
+            
+            result = self._parse_page_attempt(driver, url, attempt)
+            
+            # Проверяем, нужно ли повторить попытку
+            if self._should_retry_parsing(result):
+                self.logger.warning(f"Попытка {attempt + 1} неуспешна. Данные не найдены: "
+                                  f"товар='{result['product_name']}', компания='{result['company_name']}'")
+                
+                if attempt < max_attempts - 1:  # Не перезагружаем на последней попытке
+                    self.logger.info("Перезагружаем страницу для повторной попытки...")
+                    self._reload_page(driver, url)
+                    time.sleep(3)  # Даем время на загрузку
+                    continue
+            else:
+                self.logger.info("Парсинг успешно завершен")
+                return result
+        
+        # Если все попытки неуспешны, возвращаем последний результат
+        self.logger.error(f"Не удалось получить все данные после {max_attempts} попыток")
+        return result
+
+    def _parse_page_attempt(self, driver, url, attempt_num):
+        """Одна попытка парсинга страницы"""
         result = {
-            'product': 'Not Found',
-            'seller': 'Not Found',
+            'product_name': 'Не найдено',
             'company_name': 'Не найдено',
-            'inn': 'Не найдено',
             'status': 'success'
         }
         
         try:
-            driver.get(url)
-            time.sleep(1)  # Даем время на загрузку
+            self.logger.info(f"Начинаем парсинг страницы: {url}")
+            
+            # Переходим на страницу только в первой попытке
+            if attempt_num == 0:
+                driver.get(url)
+            
+            # Ждем начальной загрузки страницы
+            time.sleep(2)
             
             # Проверка на ограничение доступа
-            if self._check_access_denied(driver, result):
+            if self._check_access_denied(driver):
+                result['status'] = 'access_denied'
+                result['product_name'] = 'Доступ ограничен'
+                result['company_name'] = 'Доступ ограничен'
                 return result
             
             # Проверка наличия товара
-            if self._check_out_of_stock(driver, result):
+            if self._check_out_of_stock(driver):
+                result['status'] = 'out_of_stock'
+                result['product_name'] = self._get_out_of_stock_product_name(driver)
+                result['company_name'] = self._get_out_of_stock_company_name(driver)
                 return result
             
             # Парсинг названия товара
-            result['product'] = self._get_product_name(driver)
+            product_name = self._get_product_name(driver)
+            result['product_name'] = product_name
+            self.logger.info(f"Получено название товара: {product_name}")
             
-            # Скролл для активации контента
-            driver.execute_script("window.scrollTo(0, 600);")
-            time.sleep(0.5)
-            
-            # Парсинг продавца
-            result['seller'] = self._get_seller_name(driver)
-            
-            # Получение детальной информации о продавце
-            seller_details = self.seller_info_parser.get_seller_details(driver)
-            result.update(seller_details)
+            # Получение информации о компании
+            company_info = self.seller_info_parser.get_company_name(driver)
+            result['company_name'] = company_info
+            self.logger.info(f"Получена информация о компании: {company_info}")
             
         except Exception as e:
-            result['status'] = "error"
-            result['seller'] = f"Ошибка: {str(e)}"
+            result['status'] = 'error'
+            result['product_name'] = f"Ошибка: {str(e)}"
+            result['company_name'] = "Не найдено"
             self.logger.error(f"Ошибка при парсинге {url}: {str(e)}")
             
         return result
 
-    def _check_access_denied(self, driver, result):
+    def _should_retry_parsing(self, result):
+        """Проверяет, нужно ли повторить парсинг"""
+        # Не повторяем парсинг при ошибках доступа
+        if result['status'] in ['access_denied', 'error']:
+            return False
+        
+        # Проверяем, найдены ли необходимые данные
+        product_not_found = (
+            result['product_name'] == 'Не найдено' or 
+            result['product_name'] == 'Название не найдено' or
+            result['product_name'].startswith('Ошибка:')
+        )
+        
+        company_not_found = (
+            result['company_name'] == 'Не найдено' or
+            result['company_name'] == 'Компания не найдена'
+        )
+        
+        return product_not_found or company_not_found
+
+    def _reload_page(self, driver, url):
+        """Перезагрузка страницы с улучшенной логикой"""
+        try:
+            self.logger.info("Перезагружаем страницу...")
+            driver.refresh()
+            time.sleep(2)
+            
+            # Проверяем, что страница загрузилась корректно
+            WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.TAG_NAME, 'body'))
+            )
+            
+            # Дополнительная проверка загрузки основного контента
+            try:
+                WebDriverWait(driver, 5).until(
+                    EC.presence_of_element_located((By.CSS_SELECTOR, 'div[data-widget="webProductHeading"], div[data-widget="webOutOfStock"]'))
+                )
+            except TimeoutException:
+                self.logger.warning("Основной контент не загрузился после перезагрузки")
+            
+        except Exception as e:
+            self.logger.error(f"Ошибка при перезагрузке страницы: {str(e)}")
+            # Если перезагрузка не удалась, пробуем загрузить URL заново
+            try:
+                driver.get(url)
+                time.sleep(3)
+            except Exception as e2:
+                self.logger.error(f"Ошибка при загрузке URL: {str(e2)}")
+
+    def _check_access_denied(self, driver):
         """Проверка на ограничение доступа"""
         try:
             # Проверяем заголовок страницы
             page_title = driver.title.lower()
             if "доступ ограничен" in page_title or "access denied" in page_title:
-                result['status'] = "access_denied"
-                result['product'] = "Доступ ограничен"
-                result['seller'] = "Доступ ограничен"
+                return True
+            
+            # Проверяем URL на редирект
+            current_url = driver.current_url.lower()
+            if "blocked" in current_url or "denied" in current_url:
                 return True
             
             # Проверяем наличие элементов с сообщением об ограничении доступа
             access_denied_selectors = [
                 '//div[contains(text(), "Доступ ограничен")]',
                 '//div[contains(text(), "Access denied")]',
-                '//div[contains(text(), "доступ запрещен")]',
                 '//h1[contains(text(), "Доступ ограничен")]',
-                '//span[contains(text(), "Доступ ограничен")]',
-                '//*[contains(@class, "error") and contains(text(), "доступ")]',
-                '//*[contains(@class, "blocked")]',
-                '//div[contains(@class, "access-denied")]'
+                '//div[contains(@class, "error") and contains(text(), "403")]'
             ]
             
             for selector in access_denied_selectors:
@@ -83,78 +164,24 @@ class PageParser:
                         EC.presence_of_element_located((By.XPATH, selector))
                     )
                     if element and element.is_displayed():
-                        result['status'] = "access_denied"
-                        result['product'] = "Доступ ограничен"
-                        result['seller'] = "Доступ ограничен"
                         return True
                 except TimeoutException:
                     continue
             
-            # Проверяем через JavaScript
-            access_denied_js = driver.execute_script("""
-                const bodyText = document.body.innerText.toLowerCase();
-                const accessDeniedKeywords = [
-                    'доступ ограничен',
-                    'access denied',
-                    'доступ запрещен',
-                    'страница недоступна',
-                    'access blocked'
-                ];
-                
-                for (let keyword of accessDeniedKeywords) {
-                    if (bodyText.includes(keyword)) {
-                        return true;
-                    }
-                }
-                return false;
-            """)
-            
-            if access_denied_js:
-                result['status'] = "access_denied"
-                result['product'] = "Доступ ограничен"
-                result['seller'] = "Доступ ограничен"
-                return True
-            
-            # Проверяем на наличие капчи или блокировки
-            captcha_selectors = [
-                '//div[contains(@class, "captcha")]',
-                '//form[contains(@class, "captcha")]',
-                '//*[contains(text(), "Captcha")]',
-                '//*[contains(text(), "Подтвердите")]'
-            ]
-            
-            for selector in captcha_selectors:
-                try:
-                    element = WebDriverWait(driver, 1).until(
-                        EC.presence_of_element_located((By.XPATH, selector))
-                    )
-                    if element and element.is_displayed():
-                        result['status'] = "access_denied"
-                        result['product'] = "Требуется подтверждение"
-                        result['seller'] = "Капча/Подтверждение"
-                        return True
-                except TimeoutException:
-                    continue
+            return False
             
         except Exception as e:
             self.logger.debug(f"Ошибка при проверке доступа: {str(e)}")
-        
-        return False
+            return False
 
-    def _check_out_of_stock(self, driver, result):
+    def _check_out_of_stock(self, driver):
         """Проверка наличия товара"""
         try:
             WebDriverWait(driver, 5).until(
                 EC.visibility_of_element_located((By.XPATH, '//div[@data-widget="webOutOfStock"]'))
             )
-            result['status'] = "out_of_stock"
-            
-            # Парсинг для отсутствующего товара
-            result['product'] = self._get_out_of_stock_product_name(driver)
-            result['seller'] = self._get_out_of_stock_seller_name(driver)
-            
+            self.logger.info("Товар отсутствует в продаже")
             return True
-            
         except TimeoutException:
             return False
 
@@ -162,143 +189,103 @@ class PageParser:
         """Получение названия отсутствующего товара"""
         selectors = [
             '//div[@data-widget="webOutOfStock"]//p[contains(@class, "yl6_27")]',
-            '//div[@data-widget="webOutOfStock"]//p[contains(text(), "Intel") or contains(text(), "Системный")]'
+            '//div[@data-widget="webOutOfStock"]//p',
+            '//div[@data-widget="webOutOfStock"]//h1'
         ]
         
         for selector in selectors:
             try:
                 element = driver.find_element(By.XPATH, selector)
-                return element.text.strip()
+                text = element.text.strip()
+                if text and len(text) > 3:
+                    return text
             except:
                 continue
         
         return "Название не найдено"
 
-    def _get_out_of_stock_seller_name(self, driver):
-        """Получение названия продавца для отсутствующего товара"""
+    def _get_out_of_stock_company_name(self, driver):
+        """Получение названия компании для отсутствующего товара"""
         try:
-            element = driver.find_element(
-                By.XPATH, 
-                '//div[@data-widget="webOutOfStock"]//a[contains(@href, "/seller/")]'
-            )
-            return element.text.strip()
+            # Для товаров отсутствующих в продаже тоже пробуем получить информацию о компании
+            return self.seller_info_parser.get_company_name(driver)
         except:
-            return "Продавец не найден"
+            return "Компания не найдена"
 
     def _get_product_name(self, driver):
-        """Получение названия товара"""
-        # Основные селекторы для названия товара
-        selectors = [
-            '//div[@data-widget="webProductHeading"]//h1',
-            '//div[@data-widget="webProductHeading"]//*[contains(@class, "m9p_27")]',
-            '//h1[@data-widget="webProductHeading"]'
-        ]
-        
-        for selector in selectors:
-            try:
-                element = WebDriverWait(driver, 10).until(
-                    EC.visibility_of_element_located((By.XPATH, selector))
-                )
-                return element.text.strip()
-            except TimeoutException:
-                continue
-        
-        # Альтернативные способы получения названия
+        """Получение названия товара с улучшенной логикой"""
         try:
-            container = WebDriverWait(driver, 5).until(
-                EC.presence_of_element_located((By.XPATH, '//div[contains(@class, "p9m_27")]'))
+            # Сначала ждем загрузки основного контента
+            WebDriverWait(driver, 15).until(
+                EC.presence_of_element_located((By.CSS_SELECTOR, 'div[data-widget="webProductHeading"]'))
             )
-            element = container.find_element(By.TAG_NAME, 'h1')
-            return element.text.strip()
-        except:
-            pass
-        
-        # JavaScript способ
-        try:
-            product_js = driver.execute_script("""
-                const widget = document.querySelector('div[data-widget="webProductHeading"]');
-                if (widget) {
-                    const h1 = widget.querySelector('h1');
-                    if (h1) return h1.innerText.trim();
-                    return widget.innerText.trim();
-                }
-                
-                const classElement = document.querySelector('.m9p_27, .tsHeadline');
-                if (classElement) return classElement.innerText.trim();
-                
-                return document.title.split('|')[0].trim();
-            """)
             
-            if product_js:
-                return product_js
-        except:
-            pass
-        
-        return "Название не найдено"
-
-    def _get_seller_name(self, driver):
-        """Получение названия продавца"""
-        # Попытка скролла к webPdpGrid для активации виджета продавца
-        try:
-            grid_element = WebDriverWait(driver, 2).until(
-                EC.presence_of_element_located((By.XPATH, '//div[@data-widget="webPdpGrid"]'))
-            )
-            # Скролл к элементу с отступом 25px сверху
-            driver.execute_script(
-                "const rect = arguments[0].getBoundingClientRect();"
-                "window.scrollTo(0, rect.top + window.pageYOffset - 25);",
-                grid_element
-            )
-            time.sleep(0.3)  # Краткая пауза для стабилизации
-        except TimeoutException:
-            self.logger.debug("Элемент webPdpGrid не найден - скролл пропущен")
-        except Exception as e:
-            self.logger.debug(f"Ошибка при скролле к webPdpGrid: {str(e)}")
-        
-        # Основной селектор
-        try:
-            element = WebDriverWait(driver, 5).until(
-                EC.visibility_of_element_located((
-                    By.XPATH, 
-                    '//div[@data-widget="webCurrentSeller"]//a[contains(@class, "s1k_27") and @title] | '
-                    '//a[contains(@href, "/seller/") and @title]'
-                ))
-            )
-            return element.text.strip()
-        except TimeoutException:
-            pass
-        
-        # Альтернативные селекторы
-        seller_locators = [
-            (By.XPATH, '//div[@data-widget="webCurrentSeller"]//a[@title]'),
-            (By.CSS_SELECTOR, 'div[data-widget="webCurrentSeller"] a.s1k_27'),
-            (By.XPATH, '//a[contains(@class, "s1k_27") and @title]'),
-            (By.XPATH, '//a[contains(@href, "/seller/")]')
-        ]
-        
-        for locator in seller_locators:
-            try:
-                element = WebDriverWait(driver, 2).until(
-                    EC.visibility_of_element_located(locator)
-                )
-                return element.text.strip()
-            except TimeoutException:
-                continue
-        
-        # JavaScript способ
-        try:
-            seller_js = driver.execute_script("""
-                const sellerElement = 
-                    document.querySelector('div[data-widget="webCurrentSeller"] a.s1k_27[title]') ||
-                    document.querySelector('div[data-widget="webCurrentSeller"] a[title]') ||
-                    document.querySelector('a.s1k_27[title]') ||
-                    document.querySelector('a[href*="/seller/"][title]');
-                return sellerElement ? sellerElement.textContent.trim() : '';
-            """)
+            # Основные селекторы для названия товара
+            selectors = [
+                '//div[@data-widget="webProductHeading"]//h1',
+                '//div[@data-widget="webProductHeading"]//*[contains(@class, "m9p_27")]',
+                '//h1[@data-widget="webProductHeading"]'
+            ]
             
-            if seller_js:
-                return seller_js
+            for selector in selectors:
+                try:
+                    element = WebDriverWait(driver, 5).until(
+                        EC.visibility_of_element_located((By.XPATH, selector))
+                    )
+                    text = element.text.strip()
+                    if text and len(text) > 3:
+                        return text
+                except TimeoutException:
+                    continue
+            
+            # Альтернативные способы получения названия
+            alternative_selectors = [
+                'h1[data-widget="webProductHeading"]',
+                'div[data-widget="webProductHeading"] h1',
+                '.m9p_27',
+                '.tsHeadline'
+            ]
+            
+            for selector in alternative_selectors:
+                try:
+                    element = driver.find_element(By.CSS_SELECTOR, selector)
+                    text = element.text.strip()
+                    if text and len(text) > 3:
+                        return text
+                except:
+                    continue
+            
+            # JavaScript способ как последний resort
+            try:
+                product_js = driver.execute_script("""
+                    const widget = document.querySelector('div[data-widget="webProductHeading"]');
+                    if (widget) {
+                        const h1 = widget.querySelector('h1');
+                        if (h1) return h1.innerText.trim();
+                        
+                        const spans = widget.querySelectorAll('span');
+                        for (let span of spans) {
+                            if (span.innerText.trim().length > 10) {
+                                return span.innerText.trim();
+                            }
+                        }
+                        return widget.innerText.trim();
+                    }
+                    
+                    const classElement = document.querySelector('.m9p_27, .tsHeadline');
+                    if (classElement) return classElement.innerText.trim();
+                    
+                    const title = document.title.split('|')[0].trim();
+                    return title.length > 3 ? title : null;
+                """)
+                
+                if product_js and len(product_js) > 3:
+                    return product_js
+            except Exception as e:
+                self.logger.debug(f"Ошибка при получении названия через JavaScript: {str(e)}")
+            
+            return "Название не найдено"
+            
         except Exception as e:
-            self.logger.debug(f"JS-поиск продавца не удался: {str(e)}")
-        
-        return "Продавец не найден"
+            self.logger.error(f"Ошибка при получении названия товара: {str(e)}")
+            return "Название не найдено"

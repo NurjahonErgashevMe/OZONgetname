@@ -107,50 +107,30 @@ def validate_product_links(text: str) -> Tuple[bool, str, List[str]]:
 def run_parser_sync(url: str, user_id: int) -> str:
     """
     Синхронная функция для запуска парсера категории
-    
-    Args:
-        url: URL категории для парсинга
-        user_id: ID пользователя
-        
-    Returns:
-        str: Путь к созданному файлу или None при ошибке
     """
     try:
         category_name = get_category_name(url)
         parser = OzonProductParser(category_name)
-        
-        # Запускаем парсер ссылок
+
+        # Сбор ссылок
         from src.parser.link_parser import OzonLinkParser
         link_parser = OzonLinkParser(url)
-        
-        success = link_parser.run()
-        if not success:
-            logger.error("Ошибка при парсинге ссылок")
+        success, links = link_parser.run()
+        if not success or not links:
+            logger.error("Ошибка при парсинге ссылок или ссылки не найдены")
             return None
-        
-        # Читаем ссылки из файла
-        from src.config import LINKS_OUTPUT_FILE
-        if not os.path.exists(LINKS_OUTPUT_FILE):
-            logger.error(f"Файл {LINKS_OUTPUT_FILE} не найден")
-            return None
-        
-        with open(LINKS_OUTPUT_FILE, 'r', encoding='utf-8') as f:
-            urls = [line.strip() for line in f.readlines() if line.strip()]
-        
-        if not urls:
-            logger.error("Не найдено URL для парсинга")
-            return None
-        
+
         # Запускаем парсер товаров
-        success = parser.run(urls)
+        success = parser.run(links)
         if success:
             return parser.excel_filename
         else:
             return None
-            
+
     except Exception as e:
         logger.exception(f"Ошибка в run_parser_sync: {e}")
         return None
+
 
 
 def run_product_parser_sync(links: List[str], user_id: int) -> str:

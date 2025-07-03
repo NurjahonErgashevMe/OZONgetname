@@ -90,10 +90,11 @@ class PageParser:
 
     def _should_retry_parsing(self, result):
         """Проверяет, нужно ли повторить парсинг"""
-        # Не повторяем парсинг при ошибках доступа
+
+        # Всегда пробуем повторно, если доступ ограничен или произошла ошибка
         if result['status'] in ['access_denied', 'error']:
-            return False
-        
+            return True
+
         # Проверяем, найдены ли необходимые данные
         product_not_found = (
             result['product_name'] == 'Не найдено' or 
@@ -107,6 +108,7 @@ class PageParser:
         )
         
         return product_not_found or company_not_found
+
 
     def _reload_page(self, driver, url):
         """Перезагрузка страницы с улучшенной логикой"""

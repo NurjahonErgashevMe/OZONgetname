@@ -15712,3 +15712,436 @@ aiogram.exceptions.TelegramNetworkError: Telegram server says ClientConnectorErr
 2025-07-04 02:56:18,174 - seller_info_parser - INFO - ✓ Успешно получено название компании: ИП Курлов Александр Алексеевич
 2025-07-04 02:56:18,175 - page_parser - INFO - Получена информация о компании: ИП Курлов Александр Алексеевич
 2025-07-04 02:56:18,175 - page_parser - INFO - Парсинг успешно завершен
+2025-07-04 02:56:18,176 - product_parser - INFO - [22/22] Обработано: https://www.ozon.ru/product/jetgame-sistemnyy-blok-intel-xeon-e5-2650v3-ram-32-gb-ssd-1024-gb-amd-radeon-rx-580-8-gb-windows-10-1827034357/?at=w0tg5ZkWnI80DErXtYZmrQjcyrWBYwsOgVoZNFY371Eq
+2025-07-04 02:56:18,176 - product_parser - INFO -    Товар: JetGame Системный блок (Intel Xeon E5-2650V3, RAM 32 ГБ, SSD 1024 ГБ, AMD Radeon RX 580 (8 Гб), Windows 10 Pro), черный
+2025-07-04 02:56:18,176 - product_parser - INFO -    Компания: ИП Курлов Александр Алексеевич
+2025-07-04 02:56:20,906 - product_parser - INFO - Воркер 1 завершил работу
+2025-07-04 02:56:20,955 - excel_exporter - INFO - Результаты сохранены в results\product_links_04.07.2025-02_53_43.xlsx
+2025-07-04 02:56:20,955 - product_parser - INFO - Обработка завершена успешно за 157.04 секунд
+2025-07-04 02:56:20,955 - product_parser - INFO - Обработано товаров: 22
+2025-07-04 02:56:20,956 - product_parser - INFO - Файл сохранен: results\product_links_04.07.2025-02_53_43.xlsx
+2025-07-04 02:56:20,956 - driver_manager - INFO - Все браузеры закрыты
+2025-07-04 02:56:20,956 - driver_manager - INFO - Очистка DriverManager завершена
+2025-07-04 02:56:21,937 - src.bot.handlers - INFO - Файл успешно отправлен: results\product_links_04.07.2025-02_53_43.xlsx
+2025-07-04 02:56:22,242 - aiogram.event - INFO - Update id=36893664 is handled. Duration 158468 ms by bot id=7955956815
+2025-07-04 03:00:08,459 - root - INFO - Система логирования инициализирована
+2025-07-04 03:00:10,837 - root - INFO - Загрузка конфигурации из C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\config.txt
+2025-07-04 03:00:11,925 - root - INFO - Конфигурация загружена из файла
+2025-07-04 03:00:14,237 - root - INFO - Попытка запуска бота...
+2025-07-04 03:00:14,238 - root - INFO - Загрузка конфигурации из C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\config.txt
+2025-07-04 03:00:14,266 - root - INFO - Загрузка конфигурации из C:\Users\nurja\OneDrive\Рабочий стол\OZONgetname\config.txt
+2025-07-04 03:00:14,286 - root - INFO - Telegram бот инициализирован
+2025-07-04 03:00:14,286 - aiogram.dispatcher - INFO - Start polling
+2025-07-04 03:00:14,865 - aiogram.dispatcher - INFO - Run polling for bot @ozongetnamerbot id=7955956815 - 'ozongetnamer'
+2025-07-04 03:00:16,276 - root - INFO - Бот успешно запущен и готов к работе
+2025-07-04 03:00:17,703 - aiogram.event - INFO - Update id=36893666 is handled. Duration 593 ms by bot id=7955956815
+2025-07-04 03:00:19,845 - aiogram.event - INFO - Update id=36893667 is handled. Duration 188 ms by bot id=7955956815
+2025-07-04 03:00:24,836 - excel_exporter - INFO - Файл результатов: results\product_links_04.07.2025-03_00_24.xlsx
+2025-07-04 03:00:24,837 - product_parser - INFO - Инициализирован парсер для категории: product_links
+2025-07-04 03:00:24,837 - product_parser - INFO - Начало обработки 13 товаров
+2025-07-04 03:00:24,976 - selenium.webdriver.common.selenium_manager - WARNING - The chromedriver version (137.0.7151.68) detected in PATH at C:\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (138.0.7204.49); currently, chromedriver 138.0.7204.92 is recommended for chrome 138.*, so it is advised to delete the driver in PATH and retry
+2025-07-04 03:00:26,268 - selenium.webdriver.common.selenium_manager - WARNING - The chromedriver version (137.0.7151.68) detected in PATH at C:\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (138.0.7204.49); currently, chromedriver 138.0.7204.92 is recommended for chrome 138.*, so it is advised to delete the driver in PATH and retry
+2025-07-04 03:00:26,614 - driver_manager - INFO - Создан новый браузер с selenium-stealth. Всего активных: 1
+2025-07-04 03:00:26,616 - product_parser - INFO - Воркер 1 запущен
+2025-07-04 03:00:26,616 - page_parser - INFO - Попытка парсинга 1 из 5
+2025-07-04 03:00:26,616 - page_parser - INFO - Начинаем парсинг страницы: https://www.ozon.ru/product/roskomp-sistemnyy-blok-igrovoy-kompyuter-pk-intel-core-i7-12700f-ram-32-gb-ssd-2048-gb-2274803571/?at=r2t4y37GOi5vvZ73FglmzlKu4Gn3mOIkMjn05TXAJnER
+2025-07-04 03:00:27,403 - selenium.webdriver.common.selenium_manager - WARNING - The chromedriver version (137.0.7151.68) detected in PATH at C:\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (138.0.7204.49); currently, chromedriver 138.0.7204.92 is recommended for chrome 138.*, so it is advised to delete the driver in PATH and retry
+2025-07-04 03:00:27,671 - driver_manager - INFO - Создан новый браузер с selenium-stealth. Всего активных: 2
+2025-07-04 03:00:27,671 - product_parser - INFO - Воркер 2 запущен
+2025-07-04 03:00:27,671 - page_parser - INFO - Попытка парсинга 1 из 5
+2025-07-04 03:00:27,672 - page_parser - INFO - Начинаем парсинг страницы: https://www.ozon.ru/product/acer-sistemnyy-blok-acer-2610-veriton-3-2100-intel-core-i3-2100-ram-4-gb-intel-graphics-bez-os-2157493460/?at=LZtl0MVZ2c0N14VnsAvZn3AixmMmVOt5BvGr6t7rQ0gL
+2025-07-04 03:00:28,084 - selenium.webdriver.common.selenium_manager - WARNING - The chromedriver version (137.0.7151.68) detected in PATH at C:\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (138.0.7204.49); currently, chromedriver 138.0.7204.92 is recommended for chrome 138.*, so it is advised to delete the driver in PATH and retry
+2025-07-04 03:00:28,780 - driver_manager - INFO - Создан новый браузер с selenium-stealth. Всего активных: 3
+2025-07-04 03:00:28,780 - product_parser - INFO - Воркер 3 запущен
+2025-07-04 03:00:28,780 - page_parser - INFO - Попытка парсинга 1 из 5
+2025-07-04 03:00:28,780 - page_parser - INFO - Начинаем парсинг страницы: https://www.ozon.ru/product/jetgame-sistemnyy-blok-igrovoy-kompyuter-intel-xeon-e5-2650v3-ram-32-gb-ssd-1024-gb-amd-radeon-1874945342/?at=lRt6WqmvlC9NPGXwFPDoxoWC56lDXquExyyARtV5z5wB
+2025-07-04 03:00:29,531 - selenium.webdriver.common.selenium_manager - WARNING - The chromedriver version (137.0.7151.68) detected in PATH at C:\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (138.0.7204.49); currently, chromedriver 138.0.7204.92 is recommended for chrome 138.*, so it is advised to delete the driver in PATH and retry
+2025-07-04 03:00:29,941 - driver_manager - INFO - Создан новый браузер с selenium-stealth. Всего активных: 4
+2025-07-04 03:00:29,941 - product_parser - INFO - Воркер 4 запущен
+2025-07-04 03:00:29,941 - page_parser - INFO - Попытка парсинга 1 из 5
+2025-07-04 03:00:29,941 - page_parser - INFO - Начинаем парсинг страницы: https://www.ozon.ru/product/intel-sistemnyy-blok-kompyuter-pk-intel-core-i3-4130-ram-8-gb-ssd-240-gb-intel-hd-graphics-1771435264/?at=gpt4v5K7JiV7z3ZDilBJwZoCnnWVzVT8xJDqLiBn475E
+2025-07-04 03:00:34,114 - driver_manager - INFO - Создан новый браузер с selenium-stealth. Всего активных: 5
+2025-07-04 03:00:34,115 - product_parser - INFO - Воркер 5 запущен
+2025-07-04 03:00:34,115 - page_parser - INFO - Попытка парсинга 1 из 5
+2025-07-04 03:00:34,115 - page_parser - INFO - Начинаем парсинг страницы: https://www.ozon.ru/product/intel-sistemnyy-blok-pk-igrovoy-kompyuter-intel-core-i7-7700-ram-32-gb-ssd-512-gb-nvidia-geforce-gtx-1308744489/?at=16tLrwx9XCLVoBmrC82ylzAhMk014nfD4YDPOt0omEgX
+2025-07-04 03:00:39,685 - page_parser - WARNING - Попытка 1 неуспешна. Данные не найдены: товар='Доступ ограничен', компания='Доступ ограничен'
+2025-07-04 03:00:39,686 - page_parser - INFO - Перезагружаем страницу для повторной попытки...
+2025-07-04 03:00:39,686 - page_parser - INFO - Перезагружаем страницу...
+2025-07-04 03:00:42,549 - page_parser - WARNING - Попытка 1 неуспешна. Данные не найдены: товар='Доступ ограничен', компания='Доступ ограничен'
+2025-07-04 03:00:42,550 - page_parser - INFO - Перезагружаем страницу для повторной попытки...
+2025-07-04 03:00:42,550 - page_parser - INFO - Перезагружаем страницу...
+2025-07-04 03:00:47,105 - page_parser - INFO - Попытка парсинга 2 из 5
+2025-07-04 03:00:47,105 - page_parser - INFO - Начинаем парсинг страницы: https://www.ozon.ru/product/acer-sistemnyy-blok-acer-2610-veriton-3-2100-intel-core-i3-2100-ram-4-gb-intel-graphics-bez-os-2157493460/?at=LZtl0MVZ2c0N14VnsAvZn3AixmMmVOt5BvGr6t7rQ0gL
+2025-07-04 03:00:50,609 - page_parser - INFO - Получено название товара: Роскомп Системный блок Игровой компьютер ПК системныйблок (Intel Core i7-12700F, RAM 32 ГБ, SSD 2048 ГБ, NVIDIA GeForce GTX 1650 (4 Гб), Windows 10 Pro), ПК, черный матовый
+2025-07-04 03:00:50,609 - seller_info_parser - INFO - Попытка 1 из 5 получить название компании
+2025-07-04 03:00:50,843 - seller_info_parser - INFO - Основной контент страницы загружен
+2025-07-04 03:00:53,327 - seller_info_parser - INFO - Выполнен скролл к элементу paginator
+2025-07-04 03:00:54,959 - page_parser - INFO - Попытка парсинга 2 из 5
+2025-07-04 03:00:54,959 - page_parser - INFO - Начинаем парсинг страницы: https://www.ozon.ru/product/jetgame-sistemnyy-blok-igrovoy-kompyuter-intel-xeon-e5-2650v3-ram-32-gb-ssd-1024-gb-amd-radeon-1874945342/?at=lRt6WqmvlC9NPGXwFPDoxoWC56lDXquExyyARtV5z5wB
+2025-07-04 03:00:56,392 - seller_info_parser - INFO - Секция продавца загружена
+2025-07-04 03:00:57,743 - seller_info_parser - INFO - Найдена кнопка тултипа
+2025-07-04 03:00:57,743 - seller_info_parser - INFO - Попытка 1 получить данные из тултипа
+2025-07-04 03:01:00,317 - page_parser - INFO - Получено название товара: Intel Системный блок Компьютер ПК (Intel Core i3-4130, RAM 8 ГБ, SSD 240 ГБ, Intel HD Graphics, Windows 10 Pro), черный, черный матовый
+2025-07-04 03:01:00,317 - seller_info_parser - INFO - Попытка 1 из 5 получить название компании
+2025-07-04 03:01:00,338 - seller_info_parser - INFO - Основной контент страницы загружен
+2025-07-04 03:01:00,970 - seller_info_parser - INFO - Найден тултип с информацией о компании
+2025-07-04 03:01:01,087 - seller_info_parser - INFO - Найдено название компании: ООО "ТЕХНО БИЗНЕС
+2025-07-04 03:01:01,110 - seller_info_parser - INFO - ✓ Успешно получено название компании: ООО "ТЕХНО БИЗНЕС
+2025-07-04 03:01:01,110 - page_parser - INFO - Получена информация о компании: ООО "ТЕХНО БИЗНЕС
+2025-07-04 03:01:01,110 - page_parser - INFO - Парсинг успешно завершен
+2025-07-04 03:01:01,110 - product_parser - INFO - [1/13] Обработано: https://www.ozon.ru/product/roskomp-sistemnyy-blok-igrovoy-kompyuter-pk-intel-core-i7-12700f-ram-32-gb-ssd-2048-gb-2274803571/?at=r2t4y37GOi5vvZ73FglmzlKu4Gn3mOIkMjn05TXAJnER
+2025-07-04 03:01:01,110 - product_parser - INFO -    Товар: Роскомп Системный блок Игровой компьютер ПК системныйблок (Intel Core i7-12700F, RAM 32 ГБ, SSD 2048 ГБ, NVIDIA GeForce GTX 1650 (4 Гб), Windows 10 Pro), ПК, черный матовый
+2025-07-04 03:01:01,111 - product_parser - INFO -    Компания: ООО "ТЕХНО БИЗНЕС
+2025-07-04 03:01:01,411 - page_parser - INFO - Попытка парсинга 1 из 5
+2025-07-04 03:01:01,412 - page_parser - INFO - Начинаем парсинг страницы: https://www.ozon.ru/product/intel-sistemnyy-blok-intel-core-i5-4460-ram-16-gb-ssd-480-gb-intel-hd-graphics-windows-10-1374623635/?at=99trJVApjfw4QOMGt80YNAks51oYkNty0j6GWiAJYRMr
+2025-07-04 03:01:02,385 - seller_info_parser - INFO - Выполнен скролл к элементу paginator
+2025-07-04 03:01:05,555 - seller_info_parser - INFO - Секция продавца загружена
+2025-07-04 03:01:08,939 - page_parser - INFO - Получено название товара: Acer Системный блок acer 2610 veriton 3-2100 (Intel Core i3-2100, RAM 4 ГБ, Intel Graphics, Без ОС), 1, черный
+2025-07-04 03:01:08,939 - seller_info_parser - INFO - Попытка 1 из 5 получить название компании
+2025-07-04 03:01:09,774 - seller_info_parser - INFO - Основной контент страницы загружен
+2025-07-04 03:01:10,376 - page_parser - INFO - Получено название товара: Intel Системный блок ПК Игровой компьютер (Intel Core i7-7700, RAM 32 ГБ, SSD 512 ГБ, NVIDIA GeForce GTX 1660 SUPER (6 Гб), Windows 10 Pro), черный
+2025-07-04 03:01:10,376 - seller_info_parser - INFO - Попытка 1 из 5 получить название компании
+2025-07-04 03:01:10,609 - seller_info_parser - INFO - Основной контент страницы загружен
+2025-07-04 03:01:11,084 - seller_info_parser - INFO - Найдена кнопка тултипа
+2025-07-04 03:01:11,084 - seller_info_parser - INFO - Попытка 1 получить данные из тултипа
+2025-07-04 03:01:12,626 - seller_info_parser - INFO - Выполнен скролл к элементу paginator
+2025-07-04 03:01:12,926 - seller_info_parser - INFO - Выполнен скролл к элементу paginator
+2025-07-04 03:01:14,356 - seller_info_parser - INFO - Секция продавца загружена
+2025-07-04 03:01:16,124 - seller_info_parser - INFO - Секция продавца загружена
+2025-07-04 03:01:17,658 - page_parser - INFO - Получено название товара: JetGame Системный блок Игровой компьютер (Intel Xeon E5-2650V3, RAM 32 ГБ, SSD 1024 ГБ, AMD Radeon RX 580 (4 Гб), Windows 10 Pro), черный
+2025-07-04 03:01:17,658 - seller_info_parser - INFO - Попытка 1 из 5 получить название компании
+2025-07-04 03:01:18,622 - seller_info_parser - INFO - Основной контент страницы загружен
+2025-07-04 03:01:20,789 - seller_info_parser - INFO - Найден тултип с информацией о компании
+2025-07-04 03:01:21,001 - seller_info_parser - INFO - Найдено название компании: ИП Сенчихина Ангелина Евгеньевна
+2025-07-04 03:01:21,032 - seller_info_parser - INFO - ✓ Успешно получено название компании: ИП Сенчихина Ангелина Евгеньевна
+2025-07-04 03:01:21,032 - page_parser - INFO - Получена информация о компании: ИП Сенчихина Ангелина Евгеньевна
+2025-07-04 03:01:21,032 - page_parser - INFO - Парсинг успешно завершен
+2025-07-04 03:01:21,032 - product_parser - INFO - [2/13] Обработано: https://www.ozon.ru/product/intel-sistemnyy-blok-kompyuter-pk-intel-core-i3-4130-ram-8-gb-ssd-240-gb-intel-hd-graphics-1771435264/?at=gpt4v5K7JiV7z3ZDilBJwZoCnnWVzVT8xJDqLiBn475E
+2025-07-04 03:01:21,032 - product_parser - INFO -    Товар: Intel Системный блок Компьютер ПК (Intel Core i3-4130, RAM 8 ГБ, SSD 240 ГБ, Intel HD Graphics, Windows 10 Pro), черный, черный матовый
+2025-07-04 03:01:21,032 - product_parser - INFO -    Компания: ИП Сенчихина Ангелина Евгеньевна
+2025-07-04 03:01:21,035 - seller_info_parser - INFO - Найдена кнопка тултипа
+2025-07-04 03:01:21,036 - seller_info_parser - INFO - Попытка 1 получить данные из тултипа
+2025-07-04 03:01:21,052 - seller_info_parser - INFO - Найдена кнопка тултипа
+2025-07-04 03:01:21,052 - seller_info_parser - INFO - Попытка 1 получить данные из тултипа
+2025-07-04 03:01:21,333 - page_parser - INFO - Попытка парсинга 1 из 5
+2025-07-04 03:01:21,333 - page_parser - INFO - Начинаем парсинг страницы: https://www.ozon.ru/product/intel-sistemnyy-blok-intel-core-i7-2600-ram-16-gb-ssd-1000-gb-intel-hd-graphics-windows-10-1375422912/?at=57twyY3D1cV7Z0MmHnAx0rMi8JVmXzCPEW68XFm7Zj0D
+2025-07-04 03:01:22,607 - seller_info_parser - INFO - Выполнен скролл к элементу paginator
+2025-07-04 03:01:23,925 - seller_info_parser - INFO - Секция продавца загружена
+2025-07-04 03:01:24,587 - seller_info_parser - INFO - Найдена кнопка тултипа
+2025-07-04 03:01:24,587 - seller_info_parser - INFO - Попытка 1 получить данные из тултипа
+2025-07-04 03:01:25,398 - seller_info_parser - INFO - Найден тултип с информацией о компании
+2025-07-04 03:01:25,419 - seller_info_parser - INFO - Найдено название компании: ИП Кротченко Михаил Владимирович
+2025-07-04 03:01:25,438 - seller_info_parser - INFO - ✓ Успешно получено название компании: ИП Кротченко Михаил Владимирович
+2025-07-04 03:01:25,438 - page_parser - INFO - Получена информация о компании: ИП Кротченко Михаил Владимирович
+2025-07-04 03:01:25,438 - page_parser - INFO - Парсинг успешно завершен
+2025-07-04 03:01:25,438 - product_parser - INFO - [3/13] Обработано: https://www.ozon.ru/product/acer-sistemnyy-blok-acer-2610-veriton-3-2100-intel-core-i3-2100-ram-4-gb-intel-graphics-bez-os-2157493460/?at=LZtl0MVZ2c0N14VnsAvZn3AixmMmVOt5BvGr6t7rQ0gL
+2025-07-04 03:01:25,438 - product_parser - INFO -    Товар: Acer Системный блок acer 2610 veriton 3-2100 (Intel Core i3-2100, RAM 4 ГБ, Intel Graphics, Без ОС), 1, черный
+2025-07-04 03:01:25,438 - product_parser - INFO -    Компания: ИП Кротченко Михаил Владимирович
+2025-07-04 03:01:25,691 - seller_info_parser - INFO - Найден тултип с информацией о компании
+2025-07-04 03:01:25,739 - page_parser - INFO - Попытка парсинга 1 из 5
+2025-07-04 03:01:25,739 - page_parser - INFO - Начинаем парсинг страницы: https://www.ozon.ru/product/intel-sistemnyy-blok-kompyuter-intel-core-i5-2400-ram-16-gb-ssd-256-gb-intel-hd-graphics-windows-10-2262824199/?at=PjtJBA9knc9z2K8wcq8kKNLF0VMwOnHQ963owUgMjrxq
+2025-07-04 03:01:25,787 - seller_info_parser - INFO - Найдено название компании: ИП Хубенов Иван Стефанов
+2025-07-04 03:01:26,005 - seller_info_parser - INFO - ✓ Успешно получено название компании: ИП Хубенов Иван Стефанов
+2025-07-04 03:01:26,005 - page_parser - INFO - Получена информация о компании: ИП Хубенов Иван Стефанов
+2025-07-04 03:01:26,005 - page_parser - INFO - Парсинг успешно завершен
+2025-07-04 03:01:26,005 - product_parser - INFO - [4/13] Обработано: https://www.ozon.ru/product/intel-sistemnyy-blok-pk-igrovoy-kompyuter-intel-core-i7-7700-ram-32-gb-ssd-512-gb-nvidia-geforce-gtx-1308744489/?at=16tLrwx9XCLVoBmrC82ylzAhMk014nfD4YDPOt0omEgX
+2025-07-04 03:01:26,005 - product_parser - INFO -    Товар: Intel Системный блок ПК Игровой компьютер (Intel Core i7-7700, RAM 32 ГБ, SSD 512 ГБ, NVIDIA GeForce GTX 1660 SUPER (6 Гб), Windows 10 Pro), черный
+2025-07-04 03:01:26,006 - product_parser - INFO -    Компания: ИП Хубенов Иван Стефанов
+2025-07-04 03:01:26,306 - page_parser - INFO - Попытка парсинга 1 из 5
+2025-07-04 03:01:26,306 - page_parser - INFO - Начинаем парсинг страницы: https://www.ozon.ru/product/sistemnyy-blok-kompyuter-intel-core-i7-2600-ram-16-gb-ssd-512-gb-nvidia-geforce-gtx-1050-ti-4-gb-1678819795/?at=99trJVApjfOR7nmxhmXnwwNC2532BBuMYW2GQCYw8Rrn
+2025-07-04 03:01:31,373 - seller_info_parser - INFO - Найден тултип с информацией о компании
+2025-07-04 03:01:31,387 - page_parser - INFO - Получено название товара: Intel Системный блок (Intel Core i5-4460, RAM 16 ГБ, SSD 480 ГБ, Intel HD Graphics, Windows 10 Pro), черный
+2025-07-04 03:01:31,387 - seller_info_parser - INFO - Попытка 1 из 5 получить название компании
+2025-07-04 03:01:31,404 - seller_info_parser - INFO - Найдено название компании: ИП Курлов Александр Алексеевич
+2025-07-04 03:01:31,426 - seller_info_parser - INFO - Основной контент страницы загружен
+2025-07-04 03:01:31,436 - seller_info_parser - INFO - ✓ Успешно получено название компании: ИП Курлов Александр Алексеевич
+2025-07-04 03:01:31,436 - page_parser - INFO - Получена информация о компании: ИП Курлов Александр Алексеевич
+2025-07-04 03:01:31,436 - page_parser - INFO - Парсинг успешно завершен
+2025-07-04 03:01:31,436 - product_parser - INFO - [5/13] Обработано: https://www.ozon.ru/product/jetgame-sistemnyy-blok-igrovoy-kompyuter-intel-xeon-e5-2650v3-ram-32-gb-ssd-1024-gb-amd-radeon-1874945342/?at=lRt6WqmvlC9NPGXwFPDoxoWC56lDXquExyyARtV5z5wB
+2025-07-04 03:01:31,436 - product_parser - INFO -    Товар: JetGame Системный блок Игровой компьютер (Intel Xeon E5-2650V3, RAM 32 ГБ, SSD 1024 ГБ, AMD Radeon RX 580 (4 Гб), Windows 10 Pro), черный
+2025-07-04 03:01:31,436 - product_parser - INFO -    Компания: ИП Курлов Александр Алексеевич
+2025-07-04 03:01:31,737 - page_parser - INFO - Попытка парсинга 1 из 5
+2025-07-04 03:01:31,737 - page_parser - INFO - Начинаем парсинг страницы: https://www.ozon.ru/product/treidcomputers-sistemnyy-blok-intel-core-i7-12700f-ram-32-gb-ssd-960-gb-nvidia-geforce-rtx-4060-8-gb-1922781204/?at=QktJn4gyLcwrmgQDupkzAMZhBX1m6KUWy58pZf9mOYrN
+2025-07-04 03:01:33,457 - seller_info_parser - INFO - Выполнен скролл к элементу paginator
+2025-07-04 03:01:42,941 - page_parser - INFO - Получено название товара: Intel Системный блок (Intel Core i7-2600, RAM 16 ГБ, SSD 1000 ГБ, Intel HD Graphics, Windows 10 Pro), черный
+2025-07-04 03:01:42,941 - seller_info_parser - INFO - Попытка 1 из 5 получить название компании
+2025-07-04 03:01:42,952 - seller_info_parser - INFO - Основной контент страницы загружен
+2025-07-04 03:01:43,906 - seller_info_parser - ERROR - Таймаут при ожидании загрузки секции продавца
+2025-07-04 03:01:43,906 - seller_info_parser - WARNING - Секция продавца не найдена
+2025-07-04 03:01:44,969 - seller_info_parser - INFO - Выполнен скролл к элементу paginator
+2025-07-04 03:01:45,004 - page_parser - INFO - Получено название товара: Системный блок Компьютер (Intel Core i7-2600, RAM 16 ГБ, SSD 512 ГБ, NVIDIA GeForce GTX 1050 Ti (4 Гб), Windows 10 Pro), черный
+2025-07-04 03:01:45,004 - seller_info_parser - INFO - Попытка 1 из 5 получить название компании
+2025-07-04 03:01:45,014 - seller_info_parser - INFO - Основной контент страницы загружен
+2025-07-04 03:01:45,907 - seller_info_parser - INFO - Попытка 2 из 5 получить название компании
+2025-07-04 03:01:45,919 - seller_info_parser - INFO - Основной контент страницы загружен
+2025-07-04 03:01:47,032 - seller_info_parser - INFO - Выполнен скролл к элементу paginator
+2025-07-04 03:01:47,939 - seller_info_parser - INFO - Выполнен скролл к элементу paginator
+2025-07-04 03:01:49,248 - seller_info_parser - INFO - Секция продавца загружена
+2025-07-04 03:01:49,920 - seller_info_parser - INFO - Секция продавца загружена
+2025-07-04 03:01:49,974 - seller_info_parser - INFO - Секция продавца загружена
+2025-07-04 03:01:50,055 - seller_info_parser - INFO - Найдена кнопка тултипа
+2025-07-04 03:01:50,055 - seller_info_parser - INFO - Попытка 1 получить данные из тултипа
+2025-07-04 03:01:50,239 - seller_info_parser - INFO - Найдена кнопка тултипа
+2025-07-04 03:01:50,239 - seller_info_parser - INFO - Попытка 1 получить данные из тултипа
+2025-07-04 03:01:50,285 - seller_info_parser - INFO - Найдена кнопка тултипа
+2025-07-04 03:01:50,285 - seller_info_parser - INFO - Попытка 1 получить данные из тултипа
+2025-07-04 03:01:53,187 - seller_info_parser - INFO - Найден тултип с информацией о компании
+2025-07-04 03:01:53,298 - seller_info_parser - INFO - Найдено название компании: ИП Давыдов Владимир Олегович
+2025-07-04 03:01:53,369 - seller_info_parser - INFO - ✓ Успешно получено название компании: ИП Давыдов Владимир Олегович
+2025-07-04 03:01:53,370 - page_parser - INFO - Получена информация о компании: ИП Давыдов Владимир Олегович
+2025-07-04 03:01:53,370 - page_parser - INFO - Парсинг успешно завершен
+2025-07-04 03:01:53,370 - product_parser - INFO - [6/13] Обработано: https://www.ozon.ru/product/intel-sistemnyy-blok-intel-core-i7-2600-ram-16-gb-ssd-1000-gb-intel-hd-graphics-windows-10-1375422912/?at=57twyY3D1cV7Z0MmHnAx0rMi8JVmXzCPEW68XFm7Zj0D
+2025-07-04 03:01:53,370 - product_parser - INFO -    Товар: Intel Системный блок (Intel Core i7-2600, RAM 16 ГБ, SSD 1000 ГБ, Intel HD Graphics, Windows 10 Pro), черный
+2025-07-04 03:01:53,370 - product_parser - INFO -    Компания: ИП Давыдов Владимир Олегович
+2025-07-04 03:01:53,470 - seller_info_parser - INFO - Найден тултип с информацией о компании
+2025-07-04 03:01:53,500 - seller_info_parser - INFO - Найден тултип с информацией о компании
+2025-07-04 03:01:53,532 - seller_info_parser - INFO - Найдено название компании: ИП Кузнецов Егор Сергеевич
+2025-07-04 03:01:53,533 - seller_info_parser - INFO - Найдено название компании: ИП Давыдов Владимир Олегович
+2025-07-04 03:01:53,634 - seller_info_parser - INFO - ✓ Успешно получено название компании: ИП Кузнецов Егор Сергеевич
+2025-07-04 03:01:53,635 - page_parser - INFO - Получена информация о компании: ИП Кузнецов Егор Сергеевич
+2025-07-04 03:01:53,635 - page_parser - INFO - Парсинг успешно завершен
+2025-07-04 03:01:53,635 - product_parser - INFO - [7/13] Обработано: https://www.ozon.ru/product/sistemnyy-blok-kompyuter-intel-core-i7-2600-ram-16-gb-ssd-512-gb-nvidia-geforce-gtx-1050-ti-4-gb-1678819795/?at=99trJVApjfOR7nmxhmXnwwNC2532BBuMYW2GQCYw8Rrn
+2025-07-04 03:01:53,635 - product_parser - INFO -    Товар: Системный блок Компьютер (Intel Core i7-2600, RAM 16 ГБ, SSD 512 ГБ, NVIDIA GeForce GTX 1050 Ti (4 Гб), Windows 10 Pro), черный
+2025-07-04 03:01:53,635 - product_parser - INFO -    Компания: ИП Кузнецов Егор Сергеевич
+2025-07-04 03:01:53,637 - seller_info_parser - INFO - ✓ Успешно получено название компании: ИП Давыдов Владимир Олегович
+2025-07-04 03:01:53,637 - page_parser - INFO - Получена информация о компании: ИП Давыдов Владимир Олегович
+2025-07-04 03:01:53,638 - page_parser - INFO - Парсинг успешно завершен
+2025-07-04 03:01:53,638 - product_parser - INFO - [8/13] Обработано: https://www.ozon.ru/product/intel-sistemnyy-blok-intel-core-i5-4460-ram-16-gb-ssd-480-gb-intel-hd-graphics-windows-10-1374623635/?at=99trJVApjfw4QOMGt80YNAks51oYkNty0j6GWiAJYRMr
+2025-07-04 03:01:53,638 - product_parser - INFO -    Товар: Intel Системный блок (Intel Core i5-4460, RAM 16 ГБ, SSD 480 ГБ, Intel HD Graphics, Windows 10 Pro), черный
+2025-07-04 03:01:53,638 - product_parser - INFO -    Компания: ИП Давыдов Владимир Олегович
+2025-07-04 03:01:53,672 - page_parser - INFO - Попытка парсинга 1 из 5
+2025-07-04 03:01:53,672 - page_parser - INFO - Начинаем парсинг страницы: https://www.ozon.ru/product/treidcomputers-sistemnyy-blok-storm-intel-core-i9-14900kf-ram-64-gb-ssd-1920-gb-hdd-1920-gb-2396104258/?at=28t0LoW9QC02Pm6yI8APk6Dhv52ZVpTpXQznQuBLYWL5
+2025-07-04 03:01:53,936 - page_parser - INFO - Попытка парсинга 1 из 5
+2025-07-04 03:01:53,936 - page_parser - INFO - Начинаем парсинг страницы: https://www.ozon.ru/product/treidcomputers-sistemnyy-blok-storm-intel-core-i9-14900kf-ram-64-gb-ssd-1920-gb-hdd-1920-gb-2396103804/?at=vQtrJ0q3ZfYDZ11ncVqGvxntl4BAp1hvE3673c8rPGXg
+2025-07-04 03:01:53,938 - page_parser - INFO - Попытка парсинга 1 из 5
+2025-07-04 03:01:53,938 - page_parser - INFO - Начинаем парсинг страницы: https://www.ozon.ru/product/kompyuters-sistemnyy-blok-dlya-igr-i-ucheby-s-monitorom-22-intel-xeon-e3-1220-ram-8-gb-ssd-256-511316131/?at=36tWjYoEvI7r4KNnILmg9ppCJMEyQEC1m7lrpUW20kKK
+2025-07-04 03:02:06,504 - page_parser - INFO - Получено название товара: Intel Системный блок - Компьютер (Intel Core i5-2400, RAM 16 ГБ, SSD 256 ГБ, Intel HD Graphics, Windows 10 Pro), черный
+2025-07-04 03:02:06,504 - seller_info_parser - INFO - Попытка 1 из 5 получить название компании
+2025-07-04 03:02:06,516 - seller_info_parser - INFO - Основной контент страницы загружен
+2025-07-04 03:02:08,535 - seller_info_parser - INFO - Выполнен скролл к элементу paginator
+2025-07-04 03:02:12,332 - page_parser - INFO - Получено название товара: TREIDCOMPUTERS Системный блок Storm (Intel Core i9-14900KF, RAM 64 ГБ, SSD 1920 ГБ, HDD 1920 ГБ, NVIDIA GeForce RTX 5070 (12 Гб), Windows), черный
+2025-07-04 03:02:12,332 - seller_info_parser - INFO - Попытка 1 из 5 получить название компании
+2025-07-04 03:02:12,339 - seller_info_parser - INFO - Основной контент страницы загружен
+2025-07-04 03:02:12,598 - page_parser - INFO - Получено название товара: TREIDCOMPUTERS Системный блок Storm (Intel Core i9-14900KF, RAM 64 ГБ, SSD 1920 ГБ, HDD 1920 ГБ, NVIDIA GeForce RTX 5070 (12 Гб), Windows), белый
+2025-07-04 03:02:12,598 - seller_info_parser - INFO - Попытка 1 из 5 получить название компании
+2025-07-04 03:02:12,605 - seller_info_parser - INFO - Основной контент страницы загружен
+2025-07-04 03:02:14,358 - seller_info_parser - INFO - Выполнен скролл к элементу paginator
+2025-07-04 03:02:14,624 - seller_info_parser - INFO - Выполнен скролл к элементу paginator
+2025-07-04 03:02:18,816 - seller_info_parser - ERROR - Таймаут при ожидании загрузки секции продавца
+2025-07-04 03:02:18,816 - seller_info_parser - WARNING - Секция продавца не найдена
+2025-07-04 03:02:20,817 - seller_info_parser - INFO - Попытка 2 из 5 получить название компании
+2025-07-04 03:02:20,830 - seller_info_parser - INFO - Основной контент страницы загружен
+2025-07-04 03:02:22,852 - seller_info_parser - INFO - Выполнен скролл к элементу paginator
+2025-07-04 03:02:24,766 - seller_info_parser - ERROR - Таймаут при ожидании загрузки секции продавца
+2025-07-04 03:02:24,766 - seller_info_parser - WARNING - Секция продавца не найдена
+2025-07-04 03:02:24,937 - seller_info_parser - ERROR - Таймаут при ожидании загрузки секции продавца
+2025-07-04 03:02:24,937 - seller_info_parser - WARNING - Секция продавца не найдена
+2025-07-04 03:02:26,767 - seller_info_parser - INFO - Попытка 2 из 5 получить название компании
+2025-07-04 03:02:26,782 - seller_info_parser - INFO - Основной контент страницы загружен
+2025-07-04 03:02:26,938 - seller_info_parser - INFO - Попытка 2 из 5 получить название компании
+2025-07-04 03:02:26,951 - seller_info_parser - INFO - Основной контент страницы загружен
+2025-07-04 03:02:28,803 - seller_info_parser - INFO - Выполнен скролл к элементу paginator
+2025-07-04 03:02:28,967 - seller_info_parser - INFO - Выполнен скролл к элементу paginator
+2025-07-04 03:02:33,297 - seller_info_parser - ERROR - Таймаут при ожидании загрузки секции продавца
+2025-07-04 03:02:33,299 - seller_info_parser - WARNING - Секция продавца не найдена
+2025-07-04 03:02:35,300 - seller_info_parser - INFO - Попытка 3 из 5 получить название компании
+2025-07-04 03:02:35,312 - seller_info_parser - INFO - Основной контент страницы загружен
+2025-07-04 03:02:37,333 - seller_info_parser - INFO - Выполнен скролл к элементу paginator
+2025-07-04 03:02:39,188 - seller_info_parser - ERROR - Таймаут при ожидании загрузки секции продавца
+2025-07-04 03:02:39,189 - seller_info_parser - WARNING - Секция продавца не найдена
+2025-07-04 03:02:39,297 - seller_info_parser - ERROR - Таймаут при ожидании загрузки секции продавца
+2025-07-04 03:02:39,297 - seller_info_parser - WARNING - Секция продавца не найдена
+2025-07-04 03:02:41,190 - seller_info_parser - INFO - Попытка 3 из 5 получить название компании
+2025-07-04 03:02:41,212 - seller_info_parser - INFO - Основной контент страницы загружен
+2025-07-04 03:02:41,298 - seller_info_parser - INFO - Попытка 3 из 5 получить название компании
+2025-07-04 03:02:41,312 - seller_info_parser - INFO - Основной контент страницы загружен
+2025-07-04 03:02:43,234 - seller_info_parser - INFO - Выполнен скролл к элементу paginator
+2025-07-04 03:02:43,331 - seller_info_parser - INFO - Выполнен скролл к элементу paginator
+2025-07-04 03:02:47,686 - seller_info_parser - ERROR - Таймаут при ожидании загрузки секции продавца
+2025-07-04 03:02:47,686 - seller_info_parser - WARNING - Секция продавца не найдена
+2025-07-04 03:02:49,686 - seller_info_parser - INFO - Попытка 4 из 5 получить название компании
+2025-07-04 03:02:49,704 - seller_info_parser - INFO - Основной контент страницы загружен
+2025-07-04 03:02:51,729 - seller_info_parser - INFO - Выполнен скролл к элементу paginator
+2025-07-04 03:02:53,593 - seller_info_parser - ERROR - Таймаут при ожидании загрузки секции продавца
+2025-07-04 03:02:53,593 - seller_info_parser - WARNING - Секция продавца не найдена
+2025-07-04 03:02:53,720 - seller_info_parser - ERROR - Таймаут при ожидании загрузки секции продавца
+2025-07-04 03:02:53,720 - seller_info_parser - WARNING - Секция продавца не найдена
+2025-07-04 03:02:55,594 - seller_info_parser - INFO - Попытка 4 из 5 получить название компании
+2025-07-04 03:02:55,603 - seller_info_parser - INFO - Основной контент страницы загружен
+2025-07-04 03:02:55,722 - seller_info_parser - INFO - Попытка 4 из 5 получить название компании
+2025-07-04 03:02:55,737 - seller_info_parser - INFO - Основной контент страницы загружен
+2025-07-04 03:02:57,628 - seller_info_parser - INFO - Выполнен скролл к элементу paginator
+2025-07-04 03:02:57,763 - seller_info_parser - INFO - Выполнен скролл к элементу paginator
+2025-07-04 03:02:58,331 - seller_info_parser - INFO - Секция продавца загружена
+2025-07-04 03:02:58,450 - seller_info_parser - INFO - Найдена кнопка тултипа
+2025-07-04 03:02:58,450 - seller_info_parser - INFO - Попытка 1 получить данные из тултипа
+2025-07-04 03:03:01,378 - seller_info_parser - INFO - Найден тултип с информацией о компании
+2025-07-04 03:03:01,385 - seller_info_parser - INFO - Найдено название компании: ИП Буторин Илья Сергеевич
+2025-07-04 03:03:01,398 - seller_info_parser - INFO - ✓ Успешно получено название компании: ИП Буторин Илья Сергеевич
+2025-07-04 03:03:01,399 - page_parser - INFO - Получена информация о компании: ИП Буторин Илья Сергеевич
+2025-07-04 03:03:01,399 - page_parser - INFO - Парсинг успешно завершен
+2025-07-04 03:03:01,399 - product_parser - INFO - [9/13] Обработано: https://www.ozon.ru/product/treidcomputers-sistemnyy-blok-storm-intel-core-i9-14900kf-ram-64-gb-ssd-1920-gb-hdd-1920-gb-2396104258/?at=28t0LoW9QC02Pm6yI8APk6Dhv52ZVpTpXQznQuBLYWL5
+2025-07-04 03:03:01,399 - product_parser - INFO -    Товар: TREIDCOMPUTERS Системный блок Storm (Intel Core i9-14900KF, RAM 64 ГБ, SSD 1920 ГБ, HDD 1920 ГБ, NVIDIA GeForce RTX 5070 (12 Гб), Windows), белый
+2025-07-04 03:03:01,399 - product_parser - INFO -    Компания: ИП Буторин Илья Сергеевич
+2025-07-04 03:03:02,202 - seller_info_parser - ERROR - Таймаут при ожидании загрузки секции продавца
+2025-07-04 03:03:02,202 - seller_info_parser - WARNING - Секция продавца не найдена
+2025-07-04 03:03:04,202 - seller_info_parser - INFO - Попытка 5 из 5 получить название компании
+2025-07-04 03:03:04,217 - seller_info_parser - INFO - Основной контент страницы загружен
+2025-07-04 03:03:04,258 - product_parser - INFO - Воркер 4 завершил работу
+2025-07-04 03:03:04,279 - seller_info_parser - INFO - Секция продавца загружена
+2025-07-04 03:03:04,403 - seller_info_parser - INFO - Найдена кнопка тултипа
+2025-07-04 03:03:04,403 - seller_info_parser - INFO - Попытка 1 получить данные из тултипа
+2025-07-04 03:03:06,235 - seller_info_parser - INFO - Выполнен скролл к элементу paginator
+2025-07-04 03:03:07,306 - seller_info_parser - INFO - Найден тултип с информацией о компании
+2025-07-04 03:03:07,315 - seller_info_parser - INFO - Найдено название компании: ИП Буторин Илья Сергеевич
+2025-07-04 03:03:07,329 - seller_info_parser - INFO - ✓ Успешно получено название компании: ИП Буторин Илья Сергеевич
+2025-07-04 03:03:07,329 - page_parser - INFO - Получена информация о компании: ИП Буторин Илья Сергеевич
+2025-07-04 03:03:07,329 - page_parser - INFO - Парсинг успешно завершен
+2025-07-04 03:03:07,329 - product_parser - INFO - [10/13] Обработано: https://www.ozon.ru/product/treidcomputers-sistemnyy-blok-storm-intel-core-i9-14900kf-ram-64-gb-ssd-1920-gb-hdd-1920-gb-2396103804/?at=vQtrJ0q3ZfYDZ11ncVqGvxntl4BAp1hvE3673c8rPGXg
+2025-07-04 03:03:07,329 - product_parser - INFO -    Товар: TREIDCOMPUTERS Системный блок Storm (Intel Core i9-14900KF, RAM 64 ГБ, SSD 1920 ГБ, HDD 1920 ГБ, NVIDIA GeForce RTX 5070 (12 Гб), Windows), черный
+2025-07-04 03:03:07,329 - product_parser - INFO -    Компания: ИП Буторин Илья Сергеевич
+2025-07-04 03:03:10,121 - product_parser - INFO - Воркер 5 завершил работу
+2025-07-04 03:03:11,118 - page_parser - INFO - Получено название товара: TREIDCOMPUTERS Системный блок (Intel Core i7-12700F, RAM 32 ГБ, SSD 960 ГБ, NVIDIA GeForce RTX 4060 (8 Гб), Windows 10 Pro), черный
+2025-07-04 03:03:11,118 - seller_info_parser - INFO - Попытка 1 из 5 получить название компании
+2025-07-04 03:03:11,134 - seller_info_parser - INFO - Основной контент страницы загружен
+2025-07-04 03:03:13,152 - seller_info_parser - INFO - Выполнен скролл к элементу paginator
+2025-07-04 03:03:13,785 - page_parser - INFO - Получено название товара: Компьютерс Системный блок Для игр и учебы с монитором 22" (Intel Xeon E3-1220, RAM 8 ГБ, SSD 256 ГБ, NVIDIA GeForce GTX 650 (1 Гб), Windows), черный матовый
+2025-07-04 03:03:13,785 - seller_info_parser - INFO - Попытка 1 из 5 получить название компании
+2025-07-04 03:03:13,797 - seller_info_parser - INFO - Основной контент страницы загружен
+2025-07-04 03:03:15,819 - seller_info_parser - INFO - Выполнен скролл к элементу paginator
+2025-07-04 03:03:16,362 - seller_info_parser - ERROR - Таймаут при ожидании загрузки секции продавца
+2025-07-04 03:03:16,362 - seller_info_parser - WARNING - Секция продавца не найдена
+2025-07-04 03:03:16,362 - seller_info_parser - ERROR - Ошибка при поиске кнопки тултипа: 'NoneType' object has no attribute 'find_element'
+2025-07-04 03:03:16,362 - seller_info_parser - WARNING - Кнопка тултипа не найдена
+2025-07-04 03:03:16,362 - seller_info_parser - INFO - Попытка 1 получить данные из тултипа
+2025-07-04 03:03:16,613 - seller_info_parser - ERROR - Ошибка в попытке 1 получения данных из тултипа: Message: javascript error: Cannot read properties of null (reading 'scrollIntoView')
+  (Session info: chrome=138.0.7204.49)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6f7dafea5+79173]
+	GetHandleVerifier [0x0x7ff6f7daff00+79264]
+	(No symbol) [0x0x7ff6f7b69e5a]
+	(No symbol) [0x0x7ff6f7b7184d]
+	(No symbol) [0x0x7ff6f7b74be1]
+	(No symbol) [0x0x7ff6f7c122b4]
+	(No symbol) [0x0x7ff6f7be896a]
+	(No symbol) [0x0x7ff6f7c1100d]
+	(No symbol) [0x0x7ff6f7be8743]
+	(No symbol) [0x0x7ff6f7bb14c1]
+	(No symbol) [0x0x7ff6f7bb2253]
+	GetHandleVerifier [0x0x7ff6f807a2dd+3004797]
+	GetHandleVerifier [0x0x7ff6f807472d+2981325]
+	GetHandleVerifier [0x0x7ff6f8093380+3107360]
+	GetHandleVerifier [0x0x7ff6f7dcaa2e+188622]
+	GetHandleVerifier [0x0x7ff6f7dd22bf+219487]
+	GetHandleVerifier [0x0x7ff6f7db8df4+115860]
+	GetHandleVerifier [0x0x7ff6f7db8fa9+116297]
+	GetHandleVerifier [0x0x7ff6f7d9f558+11256]
+	BaseThreadInitThunk [0x0x7ffce9847374+20]
+	RtlUserThreadStart [0x0x7ffce9b9cc91+33]
+
+2025-07-04 03:03:17,316 - seller_info_parser - INFO - Секция продавца загружена
+2025-07-04 03:03:17,467 - seller_info_parser - INFO - Найдена кнопка тултипа
+2025-07-04 03:03:17,468 - seller_info_parser - INFO - Попытка 1 получить данные из тултипа
+2025-07-04 03:03:17,614 - seller_info_parser - INFO - Попытка 2 получить данные из тултипа
+2025-07-04 03:03:17,623 - seller_info_parser - ERROR - Ошибка в попытке 2 получения данных из тултипа: Message: javascript error: Cannot read properties of null (reading 'scrollIntoView')
+  (Session info: chrome=138.0.7204.49)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6f7dafea5+79173]
+	GetHandleVerifier [0x0x7ff6f7daff00+79264]
+	(No symbol) [0x0x7ff6f7b69e5a]
+	(No symbol) [0x0x7ff6f7b7184d]
+	(No symbol) [0x0x7ff6f7b74be1]
+	(No symbol) [0x0x7ff6f7c122b4]
+	(No symbol) [0x0x7ff6f7be896a]
+	(No symbol) [0x0x7ff6f7c1100d]
+	(No symbol) [0x0x7ff6f7be8743]
+	(No symbol) [0x0x7ff6f7bb14c1]
+	(No symbol) [0x0x7ff6f7bb2253]
+	GetHandleVerifier [0x0x7ff6f807a2dd+3004797]
+	GetHandleVerifier [0x0x7ff6f807472d+2981325]
+	GetHandleVerifier [0x0x7ff6f8093380+3107360]
+	GetHandleVerifier [0x0x7ff6f7dcaa2e+188622]
+	GetHandleVerifier [0x0x7ff6f7dd22bf+219487]
+	GetHandleVerifier [0x0x7ff6f7db8df4+115860]
+	GetHandleVerifier [0x0x7ff6f7db8fa9+116297]
+	GetHandleVerifier [0x0x7ff6f7d9f558+11256]
+	BaseThreadInitThunk [0x0x7ffce9847374+20]
+	RtlUserThreadStart [0x0x7ffce9b9cc91+33]
+
+2025-07-04 03:03:17,719 - seller_info_parser - INFO - Секция продавца загружена
+2025-07-04 03:03:17,863 - seller_info_parser - INFO - Найдена кнопка тултипа
+2025-07-04 03:03:17,863 - seller_info_parser - INFO - Попытка 1 получить данные из тултипа
+2025-07-04 03:03:18,625 - seller_info_parser - INFO - Попытка 3 получить данные из тултипа
+2025-07-04 03:03:18,631 - seller_info_parser - ERROR - Ошибка в попытке 3 получения данных из тултипа: Message: javascript error: Cannot read properties of null (reading 'scrollIntoView')
+  (Session info: chrome=138.0.7204.49)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6f7dafea5+79173]
+	GetHandleVerifier [0x0x7ff6f7daff00+79264]
+	(No symbol) [0x0x7ff6f7b69e5a]
+	(No symbol) [0x0x7ff6f7b7184d]
+	(No symbol) [0x0x7ff6f7b74be1]
+	(No symbol) [0x0x7ff6f7c122b4]
+	(No symbol) [0x0x7ff6f7be896a]
+	(No symbol) [0x0x7ff6f7c1100d]
+	(No symbol) [0x0x7ff6f7be8743]
+	(No symbol) [0x0x7ff6f7bb14c1]
+	(No symbol) [0x0x7ff6f7bb2253]
+	GetHandleVerifier [0x0x7ff6f807a2dd+3004797]
+	GetHandleVerifier [0x0x7ff6f807472d+2981325]
+	GetHandleVerifier [0x0x7ff6f8093380+3107360]
+	GetHandleVerifier [0x0x7ff6f7dcaa2e+188622]
+	GetHandleVerifier [0x0x7ff6f7dd22bf+219487]
+	GetHandleVerifier [0x0x7ff6f7db8df4+115860]
+	GetHandleVerifier [0x0x7ff6f7db8fa9+116297]
+	GetHandleVerifier [0x0x7ff6f7d9f558+11256]
+	BaseThreadInitThunk [0x0x7ffce9847374+20]
+	RtlUserThreadStart [0x0x7ffce9b9cc91+33]
+
+2025-07-04 03:03:18,631 - page_parser - INFO - Получена информация о компании: Не найдено
+2025-07-04 03:03:18,631 - page_parser - WARNING - Попытка 1 неуспешна. Данные не найдены: товар='Intel Системный блок - Компьютер (Intel Core i5-2400, RAM 16 ГБ, SSD 256 ГБ, Intel HD Graphics, Windows 10 Pro), черный', компания='Не найдено'
+2025-07-04 03:03:18,631 - page_parser - INFO - Перезагружаем страницу для повторной попытки...
+2025-07-04 03:03:18,631 - page_parser - INFO - Перезагружаем страницу...
+2025-07-04 03:03:20,344 - seller_info_parser - INFO - Найден тултип с информацией о компании
+2025-07-04 03:03:20,354 - seller_info_parser - INFO - Найдено название компании: ИП Буторин Илья Сергеевич
+2025-07-04 03:03:20,369 - seller_info_parser - INFO - ✓ Успешно получено название компании: ИП Буторин Илья Сергеевич
+2025-07-04 03:03:20,369 - page_parser - INFO - Получена информация о компании: ИП Буторин Илья Сергеевич
+2025-07-04 03:03:20,369 - page_parser - INFO - Парсинг успешно завершен
+2025-07-04 03:03:20,369 - product_parser - INFO - [11/13] Обработано: https://www.ozon.ru/product/treidcomputers-sistemnyy-blok-intel-core-i7-12700f-ram-32-gb-ssd-960-gb-nvidia-geforce-rtx-4060-8-gb-1922781204/?at=QktJn4gyLcwrmgQDupkzAMZhBX1m6KUWy58pZf9mOYrN
+2025-07-04 03:03:20,369 - product_parser - INFO -    Товар: TREIDCOMPUTERS Системный блок (Intel Core i7-12700F, RAM 32 ГБ, SSD 960 ГБ, NVIDIA GeForce RTX 4060 (8 Гб), Windows 10 Pro), черный
+2025-07-04 03:03:20,369 - product_parser - INFO -    Компания: ИП Буторин Илья Сергеевич
+2025-07-04 03:03:20,852 - seller_info_parser - INFO - Найден тултип с информацией о компании
+2025-07-04 03:03:20,867 - seller_info_parser - INFO - Найдено название компании: ИП Степанов Иннокентий Юрьевич
+2025-07-04 03:03:20,892 - seller_info_parser - INFO - ✓ Успешно получено название компании: ИП Степанов Иннокентий Юрьевич
+2025-07-04 03:03:20,892 - page_parser - INFO - Получена информация о компании: ИП Степанов Иннокентий Юрьевич
+2025-07-04 03:03:20,892 - page_parser - INFO - Парсинг успешно завершен
+2025-07-04 03:03:20,892 - product_parser - INFO - [12/13] Обработано: https://www.ozon.ru/product/kompyuters-sistemnyy-blok-dlya-igr-i-ucheby-s-monitorom-22-intel-xeon-e3-1220-ram-8-gb-ssd-256-511316131/?at=36tWjYoEvI7r4KNnILmg9ppCJMEyQEC1m7lrpUW20kKK
+2025-07-04 03:03:20,892 - product_parser - INFO -    Товар: Компьютерс Системный блок Для игр и учебы с монитором 22" (Intel Xeon E3-1220, RAM 8 ГБ, SSD 256 ГБ, NVIDIA GeForce GTX 650 (1 Гб), Windows), черный матовый
+2025-07-04 03:03:20,892 - product_parser - INFO -    Компания: ИП Степанов Иннокентий Юрьевич
+2025-07-04 03:03:23,909 - product_parser - INFO - Воркер 1 завершил работу
+2025-07-04 03:03:23,925 - product_parser - INFO - Воркер 3 завершил работу
+2025-07-04 03:03:25,631 - page_parser - INFO - Попытка парсинга 2 из 5
+2025-07-04 03:03:25,631 - page_parser - INFO - Начинаем парсинг страницы: https://www.ozon.ru/product/intel-sistemnyy-blok-kompyuter-intel-core-i5-2400-ram-16-gb-ssd-256-gb-intel-hd-graphics-windows-10-2262824199/?at=PjtJBA9knc9z2K8wcq8kKNLF0VMwOnHQ963owUgMjrxq
+2025-07-04 03:03:41,295 - page_parser - INFO - Получено название товара: Intel Системный блок - Компьютер (Intel Core i5-2400, RAM 16 ГБ, SSD 256 ГБ, Intel HD Graphics, Windows 10 Pro), черный
+2025-07-04 03:03:41,295 - seller_info_parser - INFO - Попытка 1 из 5 получить название компании
+2025-07-04 03:03:41,305 - seller_info_parser - INFO - Основной контент страницы загружен
+2025-07-04 03:03:43,322 - seller_info_parser - INFO - Выполнен скролл к элементу paginator
+2025-07-04 03:03:43,359 - seller_info_parser - INFO - Секция продавца загружена
+2025-07-04 03:03:43,461 - seller_info_parser - INFO - Найдена кнопка тултипа
+2025-07-04 03:03:43,461 - seller_info_parser - INFO - Попытка 1 получить данные из тултипа
+2025-07-04 03:03:46,365 - seller_info_parser - INFO - Найден тултип с информацией о компании
+2025-07-04 03:03:46,375 - seller_info_parser - INFO - Найдено название компании: ИП Драгомиров Константин Олегович
+2025-07-04 03:03:46,388 - seller_info_parser - INFO - ✓ Успешно получено название компании: ИП Драгомиров Константин Олегович
+2025-07-04 03:03:46,388 - page_parser - INFO - Получена информация о компании: ИП Драгомиров Константин Олегович
+2025-07-04 03:03:46,388 - page_parser - INFO - Парсинг успешно завершен
+2025-07-04 03:03:46,388 - product_parser - INFO - [13/13] Обработано: https://www.ozon.ru/product/intel-sistemnyy-blok-kompyuter-intel-core-i5-2400-ram-16-gb-ssd-256-gb-intel-hd-graphics-windows-10-2262824199/?at=PjtJBA9knc9z2K8wcq8kKNLF0VMwOnHQ963owUgMjrxq
+2025-07-04 03:03:46,388 - product_parser - INFO -    Товар: Intel Системный блок - Компьютер (Intel Core i5-2400, RAM 16 ГБ, SSD 256 ГБ, Intel HD Graphics, Windows 10 Pro), черный
+2025-07-04 03:03:46,388 - product_parser - INFO -    Компания: ИП Драгомиров Константин Олегович
+2025-07-04 03:03:49,108 - product_parser - INFO - Воркер 2 завершил работу
+2025-07-04 03:03:49,158 - excel_exporter - INFO - Результаты сохранены в results\product_links_04.07.2025-03_00_24.xlsx
+2025-07-04 03:03:49,159 - product_parser - INFO - Обработка завершена успешно за 204.32 секунд
+2025-07-04 03:03:49,159 - product_parser - INFO - Обработано товаров: 13
+2025-07-04 03:03:49,159 - product_parser - INFO - Файл сохранен: results\product_links_04.07.2025-03_00_24.xlsx
+2025-07-04 03:03:49,159 - driver_manager - INFO - Все браузеры закрыты
+2025-07-04 03:03:49,159 - driver_manager - INFO - Очистка DriverManager завершена
+2025-07-04 03:03:50,176 - src.bot.handlers - INFO - Файл успешно отправлен: results\product_links_04.07.2025-03_00_24.xlsx
+2025-07-04 03:03:50,316 - aiogram.event - INFO - Update id=36893668 is handled. Duration 205671 ms by bot id=7955956815

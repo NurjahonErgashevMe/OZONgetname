@@ -18,8 +18,8 @@ class DriverManager:
         options.add_argument('--disable-blink-features=AutomationControlled')
         options.add_argument('--blink-settings=imagesEnabled=false')
         
-        if headless:
-            options.add_argument('--headless')
+        # if headless:
+        #     options.add_argument('--headless')
         
         # Отключение изображений и настройка JavaScript
         prefs = {

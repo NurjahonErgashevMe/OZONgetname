@@ -238,6 +238,23 @@ class PageParser:
 
     def _get_seller_name(self, driver):
         """Получение названия продавца"""
+        # Попытка скролла к webPdpGrid для активации виджета продавца
+        try:
+            grid_element = WebDriverWait(driver, 2).until(
+                EC.presence_of_element_located((By.XPATH, '//div[@data-widget="webPdpGrid"]'))
+            )
+            # Скролл к элементу с отступом 25px сверху
+            driver.execute_script(
+                "const rect = arguments[0].getBoundingClientRect();"
+                "window.scrollTo(0, rect.top + window.pageYOffset - 25);",
+                grid_element
+            )
+            time.sleep(0.3)  # Краткая пауза для стабилизации
+        except TimeoutException:
+            self.logger.debug("Элемент webPdpGrid не найден - скролл пропущен")
+        except Exception as e:
+            self.logger.debug(f"Ошибка при скролле к webPdpGrid: {str(e)}")
+        
         # Основной селектор
         try:
             element = WebDriverWait(driver, 5).until(
@@ -281,7 +298,7 @@ class PageParser:
             
             if seller_js:
                 return seller_js
-        except:
-            pass
+        except Exception as e:
+            self.logger.debug(f"JS-поиск продавца не удался: {str(e)}")
         
         return "Продавец не найден"

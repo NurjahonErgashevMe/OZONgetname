@@ -7,13 +7,12 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Общие настройки
-CHROMEDRIVER_PATH = r"C:\chromedriver-win64\chromedriver.exe"
 LOG_FILE = "ozon_parser.log"
-WORKER_COUNT = 3
+WORKER_COUNT = 5
 
 # Настройки для парсера ссылок
 LINKS_OUTPUT_FILE = "links.txt"
-TOTAL_LINKS = 150  # Целевое количество ссылок
+TOTAL_LINKS = 10  # Целевое количество ссылок
 MAX_IDLE_SCROLLS = 5  # Максимум скроллов без новых ссылок
 SCROLL_DELAY = 1.5  # Задержка между скроллами
 LOAD_TIMEOUT = 15

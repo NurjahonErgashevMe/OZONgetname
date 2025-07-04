@@ -50,8 +50,8 @@ def validate_ozon_url(url: str) -> Tuple[bool, str]:
             return False, 'not_ozon_url'
         
         # Проверяем, что это категория
-        if '/category/' not in parsed.path:
-            return False, 'invalid_category_url'
+        # if '/category/' not in parsed.path:
+        #     return False, 'invalid_category_url'
         
         return True, ''
         

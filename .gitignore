@@ -1,5 +1,6 @@
 venv
-links.txt
 __pycache__
 .env
 build
+links.json
+*.log

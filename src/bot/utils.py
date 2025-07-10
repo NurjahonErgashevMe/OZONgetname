@@ -115,12 +115,13 @@ def run_parser_sync(url: str, user_id: int) -> str:
         # Сбор ссылок
         from src.parser.link_parser import OzonLinkParser
         link_parser = OzonLinkParser(url)
-        success, links = link_parser.run()
-        if not success or not links:
+        success, links_with_images = link_parser.run()
+        if not success or not links_with_images:
             logger.error("Ошибка при парсинге ссылок или ссылки не найдены")
             return None
 
-        # Запускаем парсер товаров
+        # Запускаем парсер товаров (передаем только ссылки - ключи словаря)
+        links = list(links_with_images.keys())
         success = parser.run(links)
         if success:
             return parser.excel_filename

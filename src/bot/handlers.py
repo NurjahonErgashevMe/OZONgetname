@@ -183,7 +183,7 @@ class BotHandlers:
             # Отправляем основной файл
             await self._send_parsing_results(message, file_path)
             
-            # Ищем и отправляем links.txt
+            # Ищем и отправляем links.json
             await self._send_links_file(message, file_path)
             
             # Показываем меню с действиями после парсинга
@@ -339,15 +339,15 @@ class BotHandlers:
                 if can_send:
                     await message.answer(f"📤 Отправляю файл со ссылками ({size_mb:.1f}MB)...")
                     await self._send_document_with_retry(message, links_file_path, max_retries=3)
-                    # Планируем удаление файла links.txt
+                    # Планируем удаление файла links.json
                     asyncio.create_task(cleanup_file(links_file_path))
                 else:
-                    await message.answer(f"❌ Файл links.txt {reason}")
+                    await message.answer(f"❌ Файл links.json {reason}")
             else:
                 logger.info(f"Файл {LINKS_OUTPUT_FILE} не найден")
                 
         except Exception as e:
-            logger.error(f"Ошибка при отправке файла links.txt: {e}")
+            logger.error(f"Ошибка при отправке файла links.json: {e}")
             await message.answer("⚠️ Не удалось отправить файл со ссылками")
 
     async def _send_document_with_retry(self, message: types.Message, file_path: str, max_retries: int = 3):
@@ -372,7 +372,7 @@ class BotHandlers:
                 
                 # Определяем тип файла для подписи
                 file_extension = os.path.splitext(file_path)[1].lower()
-                if file_extension == '.txt':
+                if file_extension == '.txt' or file_extension == '.json':
                     caption = f"🔗 Файл со ссылками\n📄 {os.path.basename(file_path)}"
                 else:
                     caption = f"📊 Результаты парсинга\n📄 {os.path.basename(file_path)}"

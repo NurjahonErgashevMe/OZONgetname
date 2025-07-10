@@ -1,6 +1,7 @@
 import logging
 import time
 import os
+import json
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -14,6 +15,7 @@ class OzonLinkParser:
         self.driver_manager = DriverManager()
         self.unique_links = set()
         self.ordered_links = []
+        self.links_with_images = {}  # Словарь для хранения ссылок и URL изображений
         self.idle_scrolls = 0
         self.logger = logging.getLogger('link_parser')
         self.category_name = get_category_name(target_url)
@@ -69,28 +71,59 @@ class OzonLinkParser:
 
     def extract_links(self):
         try:
-            elements = self.driver.find_elements(By.CSS_SELECTOR, ".tile-root a.tile-clickable-element")
-            links = set()
+            # Находим контейнер с товарами
+            container = self.driver.find_element(By.ID, "contentScrollPaginator")
+            # Получаем все карточки товаров, отсортированные по data-index
+            elements = container.find_elements(By.CSS_SELECTOR, "div[data-index]")
+            
+            # Сортируем элементы по их data-index для сохранения порядка
+            elements.sort(key=lambda e: int(e.get_attribute("data-index")))
+            
+            # Используем OrderedDict для сохранения порядка
+            links_with_images = {}
+            ordered_elements = []
 
             for element in elements:
-                href = element.get_attribute("href")
-                if href and href.startswith("https://www.ozon.ru/product/"):
-                    links.add(href)
+                try:
+                    # Получаем индекс элемента для логирования
+                    data_index = element.get_attribute("data-index")
+                    
+                    # Получаем ссылку на товар
+                    link_element = element.find_element(By.CSS_SELECTOR, "a.tile-clickable-element")
+                    href = link_element.get_attribute("href")
+                    
+                    # Получаем URL изображения
+                    img_element = element.find_element(By.CSS_SELECTOR, "img")
+                    img_url = img_element.get_attribute("src")
+                    
+                    if href and href.startswith("https://www.ozon.ru/product/") and img_url:
+                        self.logger.debug(f"Карточка #{data_index}: {href}")
+                        # Сохраняем элемент с его индексом для последующей сортировки
+                        ordered_elements.append((int(data_index), href, img_url))
+                except Exception as e:
+                    self.logger.debug(f"Ошибка при извлечении данных из элемента: {str(e)}")
+                    continue
+            
+            # Сортируем элементы по индексу и создаем словарь, сохраняя порядок
+            ordered_elements.sort(key=lambda x: x[0])
+            for _, href, img_url in ordered_elements:
+                links_with_images[href] = img_url
 
-            return links
+            return links_with_images
         except Exception as e:
-            self.logger.warning(f"Ошибка при извлечении ссылок: {str(e)}")
-            return set()
+            self.logger.warning(f"Ошибка при извлечении ссылок и изображений: {str(e)}")
+            return {}
 
     def collect_links(self):
-        current_links = self.extract_links()
-        new_links = current_links - self.unique_links
+        current_links_with_images = self.extract_links()
+        new_links = set(current_links_with_images.keys()) - self.unique_links
 
         if new_links:
             self.logger.info(f"Найдено новых ссылок: {len(new_links)}")
             for link in new_links:
                 self.unique_links.add(link)
                 self.ordered_links.append(link)
+                self.links_with_images[link] = current_links_with_images[link]
             self.idle_scrolls = 0
             return True
         else:
@@ -99,11 +132,17 @@ class OzonLinkParser:
 
     def save_links(self):
         try:
-            links_to_save = self.ordered_links[:TOTAL_LINKS]
+            # Создаем словарь только для первых TOTAL_LINKS ссылок
+            links_to_save = {}
+            for link in self.ordered_links[:TOTAL_LINKS]:
+                if link in self.links_with_images:
+                    links_to_save[link] = self.links_with_images[link]
+            
+            # Сохраняем в JSON-формате
             with open(LINKS_OUTPUT_FILE, "w", encoding="utf-8") as f:
-                f.write("\n".join(links_to_save))
+                json.dump(links_to_save, f, ensure_ascii=False, indent=2)
 
-            self.logger.info(f"Сохранено {len(links_to_save)} ссылок в файл: {os.path.abspath(LINKS_OUTPUT_FILE)}")
+            self.logger.info(f"Сохранено {len(links_to_save)} ссылок с изображениями в файл: {os.path.abspath(LINKS_OUTPUT_FILE)}")
             return True
         except Exception as e:
             self.logger.error(f"Ошибка при сохранении ссылок: {str(e)}")
@@ -126,16 +165,30 @@ class OzonLinkParser:
                 time.sleep(0.5)
 
             if self.save_links():
-                self.logger.info(f"Собрано финально: {len(self.ordered_links)} ссылок")
-                return True, self.ordered_links[:TOTAL_LINKS]
+                self.logger.info(f"Собрано финально: {len(self.ordered_links)} ссылок с изображениями")
+                
+                # Создаем словарь только для первых TOTAL_LINKS ссылок
+                links_to_return = {}
+                for link in self.ordered_links[:TOTAL_LINKS]:
+                    if link in self.links_with_images:
+                        links_to_return[link] = self.links_with_images[link]
+                
+                return True, links_to_return
             else:
-                return False, []
+                return False, {}
         except KeyboardInterrupt:
             self.logger.warning("Остановка по Ctrl+C")
-            return False, self.ordered_links[:TOTAL_LINKS]
+            
+            # Создаем словарь только для первых TOTAL_LINKS ссылок
+            links_to_return = {}
+            for link in self.ordered_links[:TOTAL_LINKS]:
+                if link in self.links_with_images:
+                    links_to_return[link] = self.links_with_images[link]
+            
+            return False, links_to_return
         except Exception as e:
             self.logger.critical(f"Критическая ошибка: {str(e)}")
-            return False, []
+            return False, {}
         finally:
             self.cleanup()
 
@@ -153,7 +206,9 @@ class OzonLinkParser:
         return {
             'total_collected': len(self.ordered_links),
             'unique_links': len(self.unique_links),
+            'links_with_images': len(self.links_with_images),
             'target_count': TOTAL_LINKS,
             'idle_scrolls': self.idle_scrolls,
-            'category': self.category_name
+            'category': self.category_name,
+            'output_format': 'JSON'
         }

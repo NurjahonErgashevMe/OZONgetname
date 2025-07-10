@@ -32,17 +32,17 @@ def check_and_create_files():
     """Проверяет и создает недостающие файлы"""
     print("🔍 Проверка необходимых файлов...")
     
-    # Создаем links.txt если его нет
-    if not os.path.exists('links.txt'):
-        print("📝 Создаю файл links.txt...")
-        with open('links.txt', 'w', encoding='utf-8') as f:
+    # Создаем links.json если его нет
+    if not os.path.exists('links.json'):
+        print("📝 Создаю файл links.json...")
+        with open('links.json', 'w', encoding='utf-8') as f:
             f.write("# Файл для ссылок OZON\n")
             f.write("# Добавьте ссылки на товары OZON, каждую с новой строки\n")
             f.write("# Пример:\n")
             f.write("# https://www.ozon.ru/product/example-123456789/\n")
-        print("✅ Создан файл links.txt")
+        print("✅ Создан файл links.json")
     else:
-        print("✅ Файл links.txt найден")
+        print("✅ Файл links.json найден")
     
     # Проверяем .env файл
     if not os.path.exists('.env'):
@@ -120,7 +120,7 @@ def create_spec_file_with_dynamic_paths(main_file='main.py', app_name='OZONParse
     # Собираем дополнительные файлы
     data_files = []
     additional_files = [
-        'links.txt',
+        'links.json',
         'config.txt', 
         'settings.json',
         '.env'
@@ -230,8 +230,8 @@ def simple_build_exe(main_file='main.py', app_name='OZONParser'):
         ]
         
         # Добавляем файлы если есть
-        if os.path.exists('links.txt'):
-            cmd.extend(['--add-data', 'links.txt;.'])
+        if os.path.exists('links.json'):
+            cmd.extend(['--add-data', 'links.json;.'])
         if os.path.exists('.env'):
             cmd.extend(['--add-data', '.env;.'])
             
@@ -306,7 +306,7 @@ def build_exe(main_file='main.py', app_name='OZONParser', icon_path='logo.ico'):
             print("🎯 Консоль отключена - приложение запускается без черного окна")
             print("🖼️  Иконка установлена (если logo.ico найдена)")
             print("📦 Все необходимые файлы включены в .exe")
-            print("💡 Файлы links.txt, .env и selenium_stealth JS будут доступны в программе")
+            print("💡 Файлы links.json, .env и selenium_stealth JS будут доступны в программе")
             
             # Проверяем размер файла
             exe_path = Path(f"dist/{app_name}.exe") 

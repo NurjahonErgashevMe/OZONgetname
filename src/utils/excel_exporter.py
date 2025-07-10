@@ -29,7 +29,7 @@ class ExcelExporter:
             self.init_workbook()
             ws = self.worksheet
 
-            headers = ['Название товара', 'Название компании', 'Ссылка на товар']
+            headers = ['Название товара', 'Название компании', 'Ссылка на товар', 'Ссылка на изображение']
 
             header_font = Font(name='Arial', size=12, bold=True, color='FFFFFF')
             header_fill = PatternFill(start_color='4472C4', end_color='4472C4', fill_type='solid')
@@ -65,21 +65,24 @@ class ExcelExporter:
                     url = result.get('url', '')
                     product = result.get('product_name', '')
                     company = result.get('company_name', '')
+                    image_url = result.get('image_url', '')
                     status = result.get('status', 'success')
                 else:
                     if len(result) >= 3:
                         url, product, company = result[0], result[1], result[2]
+                        image_url = result[3] if len(result) >= 4 else "Не найдено"
                         status = result[5] if len(result) >= 6 else "success"
                     else:
                         url = str(result[0]) if len(result) > 0 else ""
                         product = str(result[1]) if len(result) > 1 else "Не найдено"
                         company = str(result[2]) if len(result) > 2 else "Не найдено"
+                        image_url = "Не найдено"
                         status = "success"
 
                 clean_product = self._clean_text_value(product)
                 clean_company = self._clean_text_value(company)
 
-                row_data = [clean_product, clean_company, url]
+                row_data = [clean_product, clean_company, url, image_url]
 
                 row_fill = status_colors.get(status, None)
 
@@ -92,7 +95,7 @@ class ExcelExporter:
                     if row_fill:
                         cell.fill = row_fill
 
-            column_widths = [60, 40, 75]
+            column_widths = [60, 40, 75, 75]
             for col_num, width in enumerate(column_widths, 1):
                 col_letter = get_column_letter(col_num)
                 ws.column_dimensions[col_letter].width = width
@@ -101,7 +104,7 @@ class ExcelExporter:
                 ws.row_dimensions[row].height = 25
 
             if results:
-                ws.auto_filter.ref = f"A1:C{len(results) + 1}"
+                ws.auto_filter.ref = f"A1:D{len(results) + 1}"
             ws.freeze_panes = "A2"
 
             self.workbook.save(self.excel_filename)

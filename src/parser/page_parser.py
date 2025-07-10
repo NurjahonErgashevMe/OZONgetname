@@ -43,6 +43,7 @@ class PageParser:
         result = {
             'product_name': 'Не найдено',
             'company_name': 'Не найдено',
+            'image_url': 'Не найдено',
             'status': 'success'
         }
         
@@ -61,6 +62,7 @@ class PageParser:
                 result['status'] = 'access_denied'
                 result['product_name'] = 'Доступ ограничен'
                 result['company_name'] = 'Доступ ограничен'
+                result['image_url'] = 'Доступ ограничен'
                 return result
             
             # Проверка наличия товара
@@ -68,6 +70,7 @@ class PageParser:
                 result['status'] = 'out_of_stock'
                 result['product_name'] = self._get_out_of_stock_product_name(driver)
                 result['company_name'] = self._get_out_of_stock_company_name(driver)
+                result['image_url'] = self._get_product_image_url(driver)
                 return result
             
             # Парсинг названия товара
@@ -79,6 +82,11 @@ class PageParser:
             company_info = self.seller_info_parser.get_company_name(driver)
             result['company_name'] = company_info
             self.logger.info(f"Получена информация о компании: {company_info}")
+            
+            # Получение URL изображения товара
+            image_url = self._get_product_image_url(driver)
+            result['image_url'] = image_url
+            self.logger.info(f"Получен URL изображения: {image_url}")
             
         except Exception as e:
             result['status'] = 'error'
@@ -291,3 +299,61 @@ class PageParser:
         except Exception as e:
             self.logger.error(f"Ошибка при получении названия товара: {str(e)}")
             return "Название не найдено"
+            
+    def _get_product_image_url(self, driver):
+        """Получение URL изображения товара"""
+        try:
+            # Ждем загрузки основного контента
+            WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.CSS_SELECTOR, 'div[data-widget="webGallery"]'))
+            )
+            
+            # Селекторы для изображения товара
+            selectors = [
+                '//div[@data-widget="webGallery"]//img',
+                '//div[contains(@class, "gallery")]//img',
+                '//div[contains(@id, "gallery")]//img',
+                '//div[contains(@class, "product-page")]//img[contains(@src, "ozon.ru")]'
+            ]
+            
+            for selector in selectors:
+                try:
+                    elements = driver.find_elements(By.XPATH, selector)
+                    for element in elements:
+                        src = element.get_attribute("src")
+                        if src and ("ozon.ru" in src or "ir.ozone.ru" in src):
+                            # Получаем изображение максимального качества
+                            src = src.replace("wc50/", "wc1000/").replace("wc250/", "wc1000/").replace("wc500/", "wc1000/")
+                            return src
+                except Exception as e:
+                    self.logger.debug(f"Ошибка при поиске изображения по селектору {selector}: {str(e)}")
+                    continue
+            
+            # JavaScript способ как запасной вариант
+            try:
+                image_js = driver.execute_script("""
+                    // Ищем все изображения на странице
+                    const images = document.querySelectorAll('img');
+                    
+                    // Фильтруем изображения, которые могут быть основным изображением товара
+                    for (let img of images) {
+                        const src = img.getAttribute('src');
+                        if (src && (src.includes('ozon.ru') || src.includes('ir.ozone.ru')) &&
+                            (src.includes('wc') || src.includes('multimedia'))) {
+                            // Получаем изображение максимального качества
+                            return src.replace('wc50/', 'wc1000/').replace('wc250/', 'wc1000/').replace('wc500/', 'wc1000/');
+                        }
+                    }
+                    return null;
+                """)
+                
+                if image_js:
+                    return image_js
+            except Exception as e:
+                self.logger.debug(f"Ошибка при получении изображения через JavaScript: {str(e)}")
+            
+            return "Изображение не найдено"
+            
+        except Exception as e:
+            self.logger.error(f"Ошибка при получении URL изображения товара: {str(e)}")
+            return "Изображение не найдено"

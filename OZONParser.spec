@@ -7,7 +7,7 @@ a = Analysis(
     ['main.py'],
     pathex=[],
     binaries=[],
-    datas=[('links.txt', '.'), ('config.txt', '.'), ('.env', '.'), (r'C:\\Users\\nurja\\OneDrive\\Рабочий стол\\OZONgetname\\venv\\Lib\\site-packages\\selenium_stealth\\js', 'selenium_stealth/js')],
+    datas=[('links.json', '.'), ('config.txt', '.'), ('.env', '.'), (r'C:\\Users\\nurja\\OneDrive\\Рабочий стол\\OZONgetname\\venv\\Lib\\site-packages\\selenium_stealth\\js', 'selenium_stealth/js')],
     hiddenimports=[
         'selenium', 
         'selenium_stealth',
